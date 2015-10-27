@@ -1,12 +1,11 @@
 # Site settings
 title: Nathan Shane
+subtitle: Tbilisi-based web developer
 description: >
-  Nathan Shane is a Tbilisi-based web developer. He works part-time for
-  the data-communication NGO JumpStart Georgia on projects like
-  prisoners.watch, and as a freelancer on projects that capture his interest.
-# the subpath of your site, e.g. /blog/
-baseurl: ""
-# the base hostname & protocol for your site
+  Nathan Shane is a Tbilisi-based web developer. He works part-time
+  for JumpStart Georgia, a data-communication NGO, and also as a freelancer.
+  His web skills include data scraping and full-stack application development
+  in Rails.
 url: 'http://nathanshane.me'
 github_username: nwshane
 
