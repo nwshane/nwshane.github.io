@@ -1,5 +1,4 @@
 ---
-layout: project
 title: 'Prisoners.Watch'
 date: 2015-10-23 15:07:00
 categories: open_source website JumpStartGeorgia

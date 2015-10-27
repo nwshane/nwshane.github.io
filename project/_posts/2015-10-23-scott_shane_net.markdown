@@ -1,5 +1,4 @@
 ---
-layout: project
 title: 'ScottShane.Net'
 date: 2015-10-23 15:07:00
 categories: website freelance author
