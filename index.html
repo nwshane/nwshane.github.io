@@ -9,7 +9,7 @@ layout: default
   <h2 class="page-heading">Projects</h2>
 
   <ul class="post-list">
-    {% for project in site.categories['project'] %}
+    {% for project in site.categories.project %}
       <li>
 
         <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
