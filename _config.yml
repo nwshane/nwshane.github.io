@@ -8,6 +8,10 @@ description: >
   in Rails.
 url: 'http://nathanshane.me'
 github_username: nwshane
+timezone: Asia/Tbilisi
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - octopress-debugger
