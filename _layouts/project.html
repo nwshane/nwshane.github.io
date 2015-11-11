@@ -7,9 +7,11 @@ layout: default
     <h1 class="post-title">
       {% if page.main-url %}
       <a href="{{page.main-url}}" target="_blank">
-        {{ page.title }}
+        <span class="project-title-primary">
+          {{ page.title }}
+        </span>
 
-        <small class="project-main-url">
+        <small class="project-title-secondary">
           {{ page.main-url }}
         </small>
       </a>
