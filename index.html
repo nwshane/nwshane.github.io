@@ -12,15 +12,15 @@ layout: default
     {% for project in site.categories.project %}
       <li>
 
-        <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
-
         <h3>
-          {{ project.title }}
+          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
+            {{ project.title }}
+          </a>
         </h3>
 
-        <div>
-          {{ project.content }}
-        </div>
+        <span class="post-meta">
+          {{ project.date | date: "%b %-d, %Y" }}
+        </span>
 
       </li>
     {% endfor %}
