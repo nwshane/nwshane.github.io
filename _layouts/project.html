@@ -6,17 +6,18 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if page.main-url %}
-      <a href="{{page.main-url}}" target="_blank">
         <span class="project-title-primary">
           {{ page.title }}
         </span>
 
+      <a href="{{page.main-url}}" target="_blank">
         <small class="project-title-secondary">
           {{ page.main-url }}
         </small>
       </a>
+
       {% else %}
-      {{ page.title }}
+        {{ page.title }}
       {% endif %}
     </h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
