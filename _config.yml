@@ -9,6 +9,7 @@ description: >
 url: 'http://nathanshane.me'
 github_username: nwshane
 timezone: Asia/Tbilisi
+permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown
