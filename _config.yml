@@ -15,3 +15,12 @@ markdown: kramdown
 
 gems:
   - octopress-debugger
+
+# Default front matter
+defaults:
+-
+  scope:
+    path: "project"
+    type: "posts" # previously `page` in Jekyll 2.2.
+  values:
+    layout: "project" # overrides previous default layout
