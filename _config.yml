@@ -20,7 +20,7 @@ gems:
 defaults:
 -
   scope:
-    path: "project"
+    path: "projects"
     type: "posts" # previously `page` in Jekyll 2.2.
   values:
     layout: "project" # overrides previous default layout
