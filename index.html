@@ -22,6 +22,10 @@ layout: default
           {{ project.date | date: "%b %-d, %Y" }}
         </span>
 
+        {% if project.main-image-path %}
+          <img src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+        {% endif %}
+
       </li>
     {% endfor %}
   </ul>
