@@ -19,7 +19,7 @@ layout: default
         </h3>
 
         {% if project.main-image-path %}
-          <img src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+          <img class='project-image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
         {% endif %}
 
         <span>
