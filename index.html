@@ -2,18 +2,18 @@
 layout: default
 ---
 
-<main class="home">
+<main>
 
-  <h1 class="page-heading">{{ site.title }}</h1>
+  <h1>{{ site.title }}</h1>
 
-  <h2 class="page-heading">Projects</h2>
+  <h2>Projects</h2>
 
-  <ul class="post-list">
+  <ul>
     {% for project in site.categories.projects %}
       <li>
 
         <h3>
-          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
+          <a href="{{ project.url | prepend: site.baseurl }}">
             {{ project.title }}
           </a>
         </h3>
@@ -22,7 +22,7 @@ layout: default
           <img src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
         {% endif %}
 
-        <span class="post-meta">
+        <span>
           {{ project.date | date: "%b %-d, %Y" }}
         </span>
 
