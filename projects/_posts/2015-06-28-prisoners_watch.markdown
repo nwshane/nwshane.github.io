@@ -4,6 +4,7 @@ date: 2015-06-28T14:00:00.000Z
 tags: open_source website JumpStartGeorgia
 "github-url": "https://github.com/JumpStartGeorgia/Azerbaijan-Political-Prisoners"
 "main-url": "https://prisoners.watch"
+main-image-path: /assets/images/Prisoners-Watch-Desktop.png
 published: true
 ---
 
