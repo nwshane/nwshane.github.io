@@ -18,13 +18,13 @@ layout: default
           </a>
         </h3>
 
-        <span class="post-meta">
-          {{ project.date | date: "%b %-d, %Y" }}
-        </span>
-
         {% if project.main-image-path %}
           <img src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
         {% endif %}
+
+        <span class="post-meta">
+          {{ project.date | date: "%b %-d, %Y" }}
+        </span>
 
       </li>
     {% endfor %}
