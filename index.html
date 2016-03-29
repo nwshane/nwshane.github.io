@@ -2,16 +2,40 @@
 layout: default
 ---
 
+<nav>
+  <ul>
+
+    <li>
+      <a href='{{ "#home" | prepend: site.baseurl }}'>
+        Home
+      </a>
+    </li>
+
+    <li>
+      <a href='{{ "#projects" | prepend: site.baseurl }}'>
+        Projects
+      </a>
+    </li>
+
+    <li>
+      <a href='{{ "#contact" | prepend: site.baseurl }}'>
+        Contact
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
 <main>
 
   <h1>
     {{ site.title }}
   </h1>
 
-  <section>
+  <section id='home'>
 
     <h2 class='u-hide-visually'>
-      Introduction
+      Home
     </h2>
 
     <h2>
@@ -20,7 +44,7 @@ layout: default
 
   </section>
 
-  <section>
+  <section id='projects'>
 
     <h2>Projects</h2>
 
@@ -44,7 +68,7 @@ layout: default
 
   </section>
 
-  <section>
+  <section id='contact'>
 
     <h2>Contact</h2>
 
