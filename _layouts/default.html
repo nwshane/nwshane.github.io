@@ -5,11 +5,17 @@
 
   <body>
 
-    {% include top_nav.html %}
 
-    <main class='main-content'>
-      {{ content }}
-    </main>
+    <div class='wrapper'>
+      <div class='wrapper-fixed-top'>
+        {% include top_nav.html %}
+      </div>
+
+      <main class='wrapper-bumped-down'>
+        {{ content }}
+      </main>
+
+    </div>
 
     {% include google_analytics.html %}
 
