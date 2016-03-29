@@ -36,10 +36,6 @@ layout: default
             <img class='project-image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
           {% endif %}
 
-          <span>
-            {{ project.date | date: "%b %-d, %Y" }}
-          </span>
-
         </li>
       {% endfor %}
     </ul>
