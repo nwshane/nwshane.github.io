@@ -5,11 +5,11 @@
 
   <body>
 
-    <div>
-      <div>
-        {{ content }}
-      </div>
-    </div>
+    {% include top_nav.html %}
+
+    <main class='main-content'>
+      {{ content }}
+    </main>
 
     {% include google_analytics.html %}
 
