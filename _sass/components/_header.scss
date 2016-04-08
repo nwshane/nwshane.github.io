@@ -1,0 +1,28 @@
+.header {
+  background-color: white;
+  z-index: 99;
+}
+
+  .header-nav {
+  }
+
+    .header-nav-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 15rem;
+      float: right;
+    }
+
+      .header-nav-list-item {
+        list-style-type: none;
+      }
+
+        .header-nav-list-item-link {
+          color: black;
+          text-decoration: none;
+        }
+
+        .header-nav-list-item-link:hover {
+          color: purple;
+        }

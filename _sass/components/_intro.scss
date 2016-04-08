@@ -1,0 +1,17 @@
+.intro {
+  height: 100vh;
+  margin-top: -1*$header-height;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 10%;
+}
+
+  .intro-text {
+    margin: auto;
+    max-width: 40rem;
+  }
+
+    .intro-text-line {
+      text-align: center;
+      font-size: 3rem;
+    }
