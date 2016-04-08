@@ -9,13 +9,13 @@
     .header-nav-list {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
-      width: 15rem;
-      float: right;
+      justify-content: flex-end;
+      padding: 0 1rem;
     }
 
       .header-nav-list-item {
         list-style-type: none;
+        margin: 0 0.6rem;
       }
 
         .header-nav-list-item-link {
