@@ -1,5 +1,30 @@
 ---
+layout: default
 title: Projects
-redirect_to:
-  - /#projects
 ---
+
+<h1 class='u-hide-visually'>
+  Projects
+</h1>
+
+<section>
+
+  <ul>
+    {% for project in site.categories.projects %}
+      <li>
+
+        <h3>
+          <a href="{{ project.url | prepend: site.baseurl }}">
+            {{ project.title }}
+          </a>
+        </h3>
+
+        {% if project.main-image-path %}
+          <img class='project-image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+        {% endif %}
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</section>
