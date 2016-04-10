@@ -1,9 +1,12 @@
 @mixin m-limit-content-width {
-  max-width: $max-content-width;
   margin: 0 auto;
 
-  @media (min-width: 650px) and (max-width: 800px) {
+  @media (min-width: 650px) {
     max-width: 650px;
+  }
+
+  @media (min-width: 1050px) {
+    max-width: 850px;
   }
 }
 
