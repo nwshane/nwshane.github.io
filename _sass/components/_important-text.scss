@@ -1,3 +1,11 @@
 .important-text {
   font-weight: 800;
 }
+
+.important-text.mod-intro-1 {
+  color: $primary-color;
+}
+
+.important-text.mod-intro-2 {
+  color: $secondary-color;
+}

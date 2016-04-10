@@ -1,5 +1,4 @@
 .header {
-  background-color: blue;
   z-index: 99;
   height: inherit;
 
@@ -18,16 +17,23 @@
       justify-content: flex-end;
       align-items: center;
       margin: 0;
+      padding: 0;
       height: inherit;
     }
 
       .header-nav-list-item {
         list-style-type: none;
         margin: 0 0.6rem;
+
+        @media (min-width: 600px) {
+          font-size: 1.1em;
+          margin: 0 1.5rem;
+        }
+
       }
 
         .header-nav-list-item-link {
-          color: black;
+          color: $primary-color;
           text-decoration: none;
         }
 
