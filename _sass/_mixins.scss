@@ -6,3 +6,8 @@
     max-width: 650px;
   }
 }
+
+@mixin m-content-side-padding {
+  padding-left: $content-side-padding;
+  padding-right: $content-side-padding;
+}

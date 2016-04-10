@@ -3,11 +3,10 @@
   margin-top: -1*$header-height;
   display: flex;
   box-sizing: border-box;
-  padding: 0 10%;
 }
 
   .intro-text {
-    margin: auto;
+    margin: auto 0;
     max-width: 40rem;
     padding-top: 5rem;
   }

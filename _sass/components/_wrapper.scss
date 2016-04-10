@@ -21,5 +21,6 @@
     padding-top: $header-height;
     z-index: 5;
 
+    @include m-content-side-padding();
     @include m-limit-content-width();
   }

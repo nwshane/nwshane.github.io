@@ -2,6 +2,8 @@
   background-color: blue;
   z-index: 99;
   height: inherit;
+
+  @include m-content-side-padding();
 }
 
   .header-nav {
@@ -15,7 +17,6 @@
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-      padding: 0 1rem;
       margin: 0;
       height: inherit;
     }
