@@ -7,7 +7,6 @@
 
   .intro-text {
     margin: auto 0;
-    max-width: 40rem;
     padding-top: 5rem;
   }
 
@@ -16,6 +15,14 @@
       font-size: 1.8rem;
       line-height: 1.35em;
       text-align: left;
+
+      @media (min-width: 500px) {
+        font-size: 2.5rem;
+      }
+
+      @media (min-width: 650px) {
+        font-size: 3.2rem;
+      }
     }
 
     .intro-text-line:nth-child(1) {
