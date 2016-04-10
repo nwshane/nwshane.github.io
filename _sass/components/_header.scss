@@ -24,10 +24,12 @@
 
       @media (min-width: 500px) {
         width: 70%;
+        font-size: 1.1em;
       }
 
       @media (min-width: 600px) {
-        width: 50%;
+        width: 60%;
+        font-size: 1.15em;
       }
     }
 
@@ -42,5 +44,5 @@
         }
 
         .header-nav-list-item-link:hover {
-          color: purple;
+          color: $secondary-color;
         }
