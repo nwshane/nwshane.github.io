@@ -9,13 +9,14 @@
   .intro-text {
     margin: auto;
     max-width: 40rem;
+    padding-top: 5rem;
   }
 
     .intro-text-line {
-      margin: 0.4em 0;
+      margin: 1em 0;
       font-size: 1.8rem;
-      line-height: 1.8em;
-      text-align: center;
+      line-height: 1.35em;
+      text-align: left;
     }
 
     .intro-text-line:nth-child(1) {
