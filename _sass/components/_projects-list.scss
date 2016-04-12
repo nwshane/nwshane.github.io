@@ -6,12 +6,13 @@
 }
 
   .projects-list-item {
+    box-sizing: border-box;
     padding: 0.5rem;
     list-style-type: none;
     width: 100%;
 
     @media (min-width: 700px) {
-      width: 300px;
+      width: 50%;
     }
   }
 
@@ -42,5 +43,9 @@
 
       @media (min-width: 700px) {
         height: 183px;
+      }
+
+      @media (min-width: 1050px) {
+        height: 275px;
       }
     }
