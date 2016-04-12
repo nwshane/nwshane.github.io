@@ -1,0 +1,28 @@
+.contact-list {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+}
+
+  .contact-list-item {
+    list-style-type: none;
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+
+    @media (min-width: 500px) {
+      width: 200px;
+    }
+  }
+
+    .contact-list-item-link {
+      display: block;
+      width: inherit;
+      height: inherit;
+    }
