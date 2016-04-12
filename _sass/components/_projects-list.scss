@@ -10,8 +10,8 @@
     list-style-type: none;
     width: 100%;
 
-    @media (min-width: 350px) {
-      max-width: 300px;
+    @media (min-width: 700px) {
+      width: 300px;
     }
   }
 
@@ -21,14 +21,26 @@
       .projects-list-item-heading-link {
         color: $primary-color;
         text-decoration: none;
-
+        font-size: 1.8rem;
       }
 
     .projects-list-item-image {
+      box-sizing: border-box;
       display: flex;
       width: 100%;
       border: 1px rgba(black, .3);
       border-style: dotted;
       height: 183px;
-      box-sizing: border-box;
+
+      @media (min-width: 400px) {
+        height: 240px;
+      }
+
+      @media (min-width: 550px) {
+        height: 330px;
+      }
+
+      @media (min-width: 700px) {
+        height: 183px;
+      }
     }

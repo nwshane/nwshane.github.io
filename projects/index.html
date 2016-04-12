@@ -7,34 +7,30 @@ title: Projects
   Projects
 </h1>
 
-<section>
+<ul class='projects-list'>
+  {% for project in site.categories.projects %}
+    <li class='projects-list-item'>
 
-  <ul class='projects-list'>
-    {% for project in site.categories.projects %}
-      <li class='projects-list-item'>
-
-        <h3 class='projects-list-item-heading'>
-          <a href="{{ project.url | prepend: site.baseurl }}" class='projects-list-item-heading-link'>
-            {{ project.title }}
-          </a>
-        </h3>
-
-        <a class='projects-list-item-image' href="{{ project.url | prepend: site.baseurl }}">
-
-          {% if project.main-image-path %}
-
-            <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
-
-          {% else %}
-
-            {% include icons/image_placeholder.html %}
-
-          {% endif %}
-
+      <h3 class='projects-list-item-heading'>
+        <a href="{{ project.url | prepend: site.baseurl }}" class='projects-list-item-heading-link'>
+          {{ project.title }}
         </a>
+      </h3>
 
-      </li>
-    {% endfor %}
-  </ul>
+      <a class='projects-list-item-image' href="{{ project.url | prepend: site.baseurl }}">
 
-</section>
+        {% if project.main-image-path %}
+
+          <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+
+        {% else %}
+
+          {% include icons/image_placeholder.html %}
+
+        {% endif %}
+
+      </a>
+
+    </li>
+  {% endfor %}
+</ul>
