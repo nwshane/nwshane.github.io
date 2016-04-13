@@ -15,7 +15,7 @@ $contact-list-item-hover-increase-factor: 1.5;
   justify-content: space-around;
   align-items: center;
 
-  @media (min-width: 600px) {
+  @media (min-width: 550px) {
     flex-flow: row;
     align-content: center;
   }
