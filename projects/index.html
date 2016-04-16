@@ -11,35 +11,39 @@ title: Projects
   {% for project in site.categories.projects %}
     <li class='projects-list-item'>
 
-      <h3 class='projects-list-item-heading'>
-        <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
-          {{ project.title }}
+      <div class='project mod-list-page'>
+
+        <h3 class='project-heading'>
+          <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
+            {{ project.title }}
+          </a>
+        </h3>
+
+        <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
+
+          {% if project.main-image-path %}
+
+            <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+
+          {% else %}
+
+            {% include icons/image_placeholder.html %}
+
+          {% endif %}
+
         </a>
-      </h3>
 
-      <a class='projects-list-item-image' href="{{ project.url | prepend: site.baseurl }}">
+        <ul class='project-tags'>
+          {% for tag in project.tags %}
 
-        {% if project.main-image-path %}
+            <li class='project-tags-item'>
+              {{ tag }}
+            </li>
 
-          <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+          {% endfor %}
+        </ul>
 
-        {% else %}
-
-          {% include icons/image_placeholder.html %}
-
-        {% endif %}
-
-      </a>
-
-      <ul class='projects-list-item-tags'>
-        {% for tag in project.tags %}
-
-          <li class='projects-list-item-tags-item'>
-            {{ tag }}
-          </li>
-
-        {% endfor %}
-      </ul>
+      </div>
 
     </li>
   {% endfor %}

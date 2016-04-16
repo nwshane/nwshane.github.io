@@ -19,8 +19,7 @@
 
   .wrapper-bumped-down {
     padding-top: $header-height;
-    height: 80vh;
-
+    padding-bottom: 1rem;
     z-index: 5;
 
     @include m-content-side-padding();
