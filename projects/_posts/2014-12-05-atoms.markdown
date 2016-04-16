@@ -1,7 +1,7 @@
 ---
 title: 'Atoms'
 date: 2014-12-05 14:00:00
-tags: website freelance author
+tags: website freelance
 github-url: https://github.com/nwshane/atoms
 main-url: http://atoms.nathanshane.me
 main-image-path: /assets/images/Atoms-Simulation-Desktop.png

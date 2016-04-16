@@ -9,7 +9,7 @@ $contact-list-item-hover-increase-factor: 1.5;
 
 .contact-list {
   padding: 0;
-  height: inherit;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -57,4 +57,10 @@ $contact-list-item-hover-increase-factor: 1.5;
       display: block;
       width: inherit;
       height: inherit;
+      color: $primary-color;
+      fill: currentColor;
+    }
+
+    .contact-list-item-link:hover {
+      color: $secondary-color;
     }

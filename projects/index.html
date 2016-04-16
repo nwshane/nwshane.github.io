@@ -11,25 +11,44 @@ title: Projects
   {% for project in site.categories.projects %}
     <li class='projects-list-item'>
 
-      <h3 class='projects-list-item-heading'>
-        <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
-          {{ project.title }}
+      <div class='project mod-list-page'>
+
+        <h3 class='project-heading'>
+          <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
+            {{ project.title }}
+          </a>
+        </h3>
+
+        <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
+
+          {% if project.main-image-path %}
+
+            <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+
+          {% else %}
+
+            {% include icons/image_placeholder.html %}
+
+          {% endif %}
+
         </a>
-      </h3>
 
-      <a class='projects-list-item-image' href="{{ project.url | prepend: site.baseurl }}">
+        <ul class='project-tags'>
 
-        {% if project.main-image-path %}
+          <li class='project-tags-icon'>
+            {% include icons/tag_icon.svg %}
+          </li>
 
-          <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
+          {% for tag in project.tags %}
 
-        {% else %}
+            <li class='project-tags-item'>
+              {{ tag }}
+            </li>
 
-          {% include icons/image_placeholder.html %}
+          {% endfor %}
+        </ul>
 
-        {% endif %}
-
-      </a>
+      </div>
 
     </li>
   {% endfor %}

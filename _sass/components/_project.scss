@@ -1,13 +1,133 @@
-.project-image {
-  max-width: 100%;
+.project {
 }
 
-.project-title-primary {
-  margin-bottom: 0.1em;
-  display: block;
+  .project-heading {
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+  }
+
+  .project-heading:first-child {
+    margin-top: 0;
+  }
+
+  .project-tags {
+    padding: 0;
+  }
+
+    .project-tags-icon {
+      color: $secondary-color;
+      fill: currentColor;
+      width: 0.9em;
+      display: inline-block;
+    }
+
+    .project-tags-item {
+      list-style-type: none;
+      display: inline-block;
+      font-size: 0.9em;
+      font-weight: 300;
+      line-height: 1em;
+      vertical-align: text-top;
+    }
+
+    .project-tags-item:not(:last-child)::after {
+      content: ',';
+    }
+
+  .project-image {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px rgba(black, .3);
+    border-style: dotted;
+  }
+
+.project.mod-show-page {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+
+  @media (min-width: 750px) {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 1050px) {
+    margin-top: 3rem;
+  }
+
+  .project-header {
+    margin-right: 1em;
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 800px) {
+      font-size: 1.2em;
+    }
+  }
+
+  .project-heading {
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+
+  .project-meta {
+    margin-top: 1em;
+    margin-bottom: 0;
+
+    @media (min-width: 1050px) {
+      margin-top: 2em;
+    }
+  }
+
+  .project-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.9em;
+
+    @media (min-width: 1050px) {
+      margin-top: 1rem;
+      position: static;
+    }
+  }
+
+  .project-tags {
+    margin: 0;
+    max-width: 50%;
+  }
+
+  .project-image {
+    max-width: 600px;
+  }
+
+  .project-body {
+    margin-top: 3rem;
+  }
 }
 
-.project-title-secondary {
-  display: block;
-  font-size: 0.5em;
+.project.mod-list-page {
+  font-size: 1rem;
+
+  .project-image {
+    display: flex;
+    height: 183px;
+
+    @media (min-width: 400px) {
+      height: 240px;
+    }
+
+    @media (min-width: 550px) {
+      height: 330px;
+    }
+
+    @media (min-width: 700px) {
+      height: 183px;
+    }
+
+    @media (min-width: 1050px) {
+      height: 275px;
+    }
+  }
+
 }
