@@ -1,8 +1,13 @@
 .projects-list {
+  margin-top: 0;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+
+  @media (min-width: 600px) {
+    margin-top: 1rem;
+  }
 }
 
   .projects-list-item {
@@ -10,6 +15,7 @@
     padding: 0.5rem;
     list-style-type: none;
     width: 100%;
+    font-size: 1.8rem;
 
     @media (min-width: 700px) {
       width: 50%;
@@ -17,8 +23,26 @@
   }
 
     .projects-list-item-heading {
-      font-size: 1.8rem;
+      font-size: 1em;
+      margin-top: 1em;
+      margin-bottom: 0.3em;
     }
+
+    .projects-list-item-heading:first-child {
+      margin-top: 0;
+    }
+
+    .projects-list-item-tags {
+      padding: 0;
+    }
+
+      .projects-list-item-tags-item {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 0.6em;
+        font-weight: 300;
+        line-height: 1em;
+      }
 
     .projects-list-item-image {
       box-sizing: border-box;

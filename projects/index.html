@@ -31,6 +31,16 @@ title: Projects
 
       </a>
 
+      <ul class='projects-list-item-tags'>
+        {% for tag in project.tags %}
+
+          <li class='projects-list-item-tags-item'>
+            {{ tag }}
+          </li>
+
+        {% endfor %}
+      </ul>
+
     </li>
   {% endfor %}
 </ul>
