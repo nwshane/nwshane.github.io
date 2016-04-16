@@ -19,17 +19,26 @@ layout: default
 
       {% endif %}
 
-      <p class='project-date'>
-        {{ page.date | date: "%b %-d, %Y" }}
-      </p>
+      <div class='project-meta'>
 
-      <ul class='project-tags'>
-        {% for tag in page.tags %}
+        <p class='project-date'>
+          {{ page.date | date: "%b %-d, %Y" }}
+        </p>
 
-          <li class='project-tags-item'>{{ tag }}</li>
+        <ul class='project-tags'>
 
-        {% endfor %}
-      </ul>
+          <li class='project-tags-icon'>
+            {% include icons/tag_icon.svg %}
+          </li>
+
+          {% for tag in page.tags %}
+
+            <li class='project-tags-item'>{{ tag }}</li>
+
+          {% endfor %}
+        </ul>
+        
+      </div>
 
     </header>
 
