@@ -1,0 +1,27 @@
+.project-heading {
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.project-heading:first-child {
+  margin-top: 0;
+}
+
+.project-single {
+
+  .project-header {
+    margin-right: 1em;
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 800px) {
+      font-size: 1.2em;
+    }
+  }
+
+  .project-heading {
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+}

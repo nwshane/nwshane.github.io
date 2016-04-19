@@ -1,0 +1,26 @@
+.project-single {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+
+  @media (min-width: 750px) {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 1050px) {
+    margin-top: 3rem;
+  }
+}
+
+  .project-single-intro {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1050px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .project-single-body {
+    margin-top: 3rem;
+  }
