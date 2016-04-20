@@ -1,0 +1,23 @@
+.project-tags {
+  padding: 0;
+  margin: 0;
+}
+
+  .project-tags-icon {
+    color: $secondary-color;
+    fill: currentColor;
+    width: 0.9em;
+    display: inline-block;
+  }
+
+  .project-tags-item {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: 300;
+    line-height: 1em;
+    vertical-align: text-top;
+  }
+
+  .project-tags-item:not(:last-child)::after {
+    content: ',';
+  }
