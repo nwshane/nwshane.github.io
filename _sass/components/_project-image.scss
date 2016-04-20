@@ -3,28 +3,6 @@
   width: 100%;
   border: 1px rgba(black, .3);
   border-style: dotted;
+  height: inherit;
   max-width: 600px;
-}
-
-.project.mod-list-page {
-  .project-image {
-    display: flex;
-    height: 183px;
-
-    @media (min-width: 400px) {
-      height: 240px;
-    }
-
-    @media (min-width: 550px) {
-      height: 330px;
-    }
-
-    @media (min-width: 700px) {
-      height: 183px;
-    }
-
-    @media (min-width: 1050px) {
-      height: 275px;
-    }
-  }
 }

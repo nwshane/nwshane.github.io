@@ -11,13 +11,13 @@ title: Projects
   {% for project in site.categories.projects %}
     <li class='projects-list-item'>
 
-      <div class='project mod-list-page'>
+      <h3 class='project-heading'>
+        <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
+          {{ project.title }}
+        </a>
+      </h3>
 
-        <h3 class='project-heading'>
-          <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
-            {{ project.title }}
-          </a>
-        </h3>
+      <div class='projects-list-item-image-container'>
 
         <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
 
@@ -33,20 +33,20 @@ title: Projects
 
         </a>
 
-        <ul class='project-tags'>
-
-          <li class='project-tags-icon'>
-            {% include icons/tag_icon.svg %}
-          </li>
-
-          {% for tag in project.tags %}
-
-            <li class='project-tags-item'>{{ tag }}</li>
-
-          {% endfor %}
-        </ul>
-
       </div>
+
+      <ul class='project-tags'>
+
+        <li class='project-tags-icon'>
+          {% include icons/tag_icon.svg %}
+        </li>
+
+        {% for tag in project.tags %}
+
+          <li class='project-tags-item'>{{ tag }}</li>
+
+        {% endfor %}
+      </ul>
 
     </li>
   {% endfor %}
