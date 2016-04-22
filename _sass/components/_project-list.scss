@@ -1,4 +1,4 @@
-.projects-list {
+.project-list {
   margin-top: 0;
   padding: 0;
   display: flex;
@@ -10,7 +10,7 @@
   }
 }
 
-  .projects-list-item {
+  .project-list-item {
     font-size: 1.1rem;
     box-sizing: border-box;
     padding: 0.5rem;
@@ -24,11 +24,11 @@
     }
   }
 
-  .projects-list-item:first-child {
+  .project-list-item:first-child {
     margin-top: 0;
   }
 
-    .projects-list-item-image-container {
+    .project-list-item-image-container {
       margin-top: 0.8rem;
       display: flex;
       height: 183px;

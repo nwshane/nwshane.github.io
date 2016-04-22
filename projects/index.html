@@ -7,9 +7,9 @@ title: Projects
   Projects
 </h1>
 
-<ul class='projects-list'>
+<ul class='project-list'>
   {% for project in site.categories.projects %}
-    <li class='projects-list-item'>
+    <li class='project-list-item'>
 
       <h3 class='project-heading'>
         <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
@@ -17,7 +17,7 @@ title: Projects
         </a>
       </h3>
 
-      <div class='projects-list-item-image-container'>
+      <div class='project-list-item-image-container'>
 
         {% if project.main-image-path %}
 
