@@ -25,6 +25,16 @@ layout: default
 
       <div class='project-single-intro-header-meta'>
 
+        {% if page.github-url %}
+
+          <p class='project-single-intro-header-meta-github'>
+            <a class='link' href='{{ page.github-url }}'>
+              Fork me on GitHub
+            </a>
+          </p>
+
+        {% endif %}
+
         <ul class='project-tags'>
 
           <li class='project-tags-icon'>
@@ -38,7 +48,7 @@ layout: default
           {% endfor %}
         </ul>
 
-        <p class='project-single-intro-header-meta-date'>
+        <p class='project-single-intro-header-meta-line'>
           {{ page.date | date: "%B %-d, %Y" }}
         </p>
 
