@@ -24,7 +24,6 @@ $width-project-intro-become-horizontal: 1050px;
   }
 
     .project-single-intro-header {
-      flex: 1;
       position: relative;
       width: 100%;
 
@@ -37,18 +36,17 @@ $width-project-intro-become-horizontal: 1050px;
         margin-top: 1em;
         margin-bottom: 0;
         font-weight: 300;
-        font-size: 0.9em;
+        font-size: 0.8em;
 
-        @media (min-width: 1050px) {
+        @media (min-width: $width-project-intro-become-horizontal) {
           margin-top: 2em;
         }
       }
 
     .project-single-intro-image {
-      flex: 2;
-
       @media (min-width: $width-project-intro-become-horizontal) {
         margin-right: 2em;
+        min-width: 600px;
       }
     }
 
