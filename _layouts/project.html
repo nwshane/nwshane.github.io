@@ -5,7 +5,7 @@ layout: default
 
   <div class='project-single-intro'>
 
-    <header class='project-header'>
+    <header class='project-single-intro-header'>
 
       <h1 class='project-heading'>
         {{ page.title }}
@@ -44,9 +44,13 @@ layout: default
 
     {% if page.main-image-path %}
 
-      <div class='project-image'>
+      <div class='project-single-intro-image'>
 
-          <img class='image' src="{{ page.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ page.title }}">
+        <div class='project-image'>
+
+            <img class='image' src="{{ page.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ page.title }}">
+
+        </div>
 
       </div>
 

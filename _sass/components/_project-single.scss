@@ -21,6 +21,21 @@
     }
   }
 
+    .project-single-intro-header {
+      flex: 1;
+      margin-right: 1em;
+      position: relative;
+      width: 100%;
+
+      @media (min-width: 800px) {
+        font-size: 1.2em;
+      }
+    }
+
+    .project-single-intro-image {
+      flex: 2;
+    }
+
   .project-single-body {
     margin-top: 3rem;
   }
