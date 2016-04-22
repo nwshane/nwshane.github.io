@@ -19,19 +19,23 @@ title: Projects
 
       <div class='projects-list-item-image-container'>
 
-        <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
+        {% if project.main-image-path %}
 
-          {% if project.main-image-path %}
+          <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
 
             <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
 
-          {% else %}
+          </a>
+
+        {% else %}
+
+          <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
 
             {% include icons/image_placeholder.html %}
 
-          {% endif %}
+          </a>
 
-        </a>
+        {% endif %}
 
       </div>
 
