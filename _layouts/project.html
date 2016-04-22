@@ -25,10 +25,6 @@ layout: default
 
       <div class='project-single-intro-header-meta'>
 
-        <p class='project-single-intro-header-meta-date'>
-          {{ page.date | date: "%B %-d, %Y" }}
-        </p>
-
         <ul class='project-tags'>
 
           <li class='project-tags-icon'>
@@ -41,6 +37,10 @@ layout: default
 
           {% endfor %}
         </ul>
+
+        <p class='project-single-intro-header-meta-date'>
+          {{ page.date | date: "%B %-d, %Y" }}
+        </p>
 
       </div>
 

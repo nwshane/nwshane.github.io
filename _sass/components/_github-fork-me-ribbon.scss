@@ -1,9 +1,13 @@
 .github-fork-me-ribbon {
-  width: 150px;
+  width: 100px;
   display: none;
 
-  @media (min-width: 900px) {
+  @media (min-width: 850px) {
     display: block;
+  }
+
+  @media (min-width: 1300px) {
+    width: 150px;
   }
 
 }

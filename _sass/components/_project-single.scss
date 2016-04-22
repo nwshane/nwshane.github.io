@@ -25,6 +25,7 @@ $width-project-intro-become-horizontal: 1050px;
 
     .project-single-intro-header {
       width: 100%;
+      overflow-wrap: break-word;
 
       @media (min-width: 800px) {
         font-size: 1.2em;
