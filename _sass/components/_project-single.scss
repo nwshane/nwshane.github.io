@@ -1,3 +1,5 @@
+$width-project-intro-become-horizontal: 1050px;
+
 .project-single {
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -15,15 +17,14 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 1050px) {
-      flex-direction: row;
+    @media (min-width: $width-project-intro-become-horizontal) {
+      flex-direction: row-reverse;
       justify-content: space-between;
     }
   }
 
     .project-single-intro-header {
       flex: 1;
-      margin-right: 1em;
       position: relative;
       width: 100%;
 
@@ -34,6 +35,10 @@
 
     .project-single-intro-image {
       flex: 2;
+
+      @media (min-width: $width-project-intro-become-horizontal) {
+        margin-right: 2em;
+      }
     }
 
   .project-single-body {
