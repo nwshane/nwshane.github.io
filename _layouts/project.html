@@ -7,22 +7,26 @@ layout: default
 
     <header class='project-single-intro-header'>
 
-      <h1 class='project-heading'>
-        {{ page.title }}
-      </h1>
+      <div class='project-single-intro-header-primary'>
 
-      {% if page.main-url %}
+        <h1 class='project-heading'>
+          {{ page.title }}
+        </h1>
 
-        <a href="{{page.main-url}}" target="_blank" class='link'>
-          {{ page.main-url }}
-        </a>
+        {% if page.main-url %}
 
-      {% endif %}
+          <a href="{{page.main-url}}" target="_blank" class='link'>
+            {{ page.main-url }}
+          </a>
+
+        {% endif %}
+
+      </div>
 
       <div class='project-single-intro-header-meta'>
 
-        <p class='project-date'>
-          {{ page.date | date: "%b %-d, %Y" }}
+        <p class='project-single-intro-header-meta-date'>
+          {{ page.date | date: "%B %-d, %Y" }}
         </p>
 
         <ul class='project-tags'>
