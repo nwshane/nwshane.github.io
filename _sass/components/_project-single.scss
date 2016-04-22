@@ -33,6 +33,17 @@ $width-project-intro-become-horizontal: 1050px;
       }
     }
 
+      .project-single-intro-header-meta {
+        margin-top: 1em;
+        margin-bottom: 0;
+        font-weight: 300;
+        font-size: 0.9em;
+
+        @media (min-width: 1050px) {
+          margin-top: 2em;
+        }
+      }
+
     .project-single-intro-image {
       flex: 2;
 
