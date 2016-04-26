@@ -27,14 +27,14 @@
 
     .intro-text-line:nth-child(1) {
       font-size: 1.1em;
-      font-family: 'Patua One', cursive;
+      font-family: $secondary-font-family;
     }
 
     .intro-text-line:nth-child(2) {
-      font-family: 'Indie Flower', cursive;
+      font-family: $tertiary-font-family;
     }
 
     .intro-text-line:last-child {
       font-size: 0.9em;
-      font-family: $base-font-family;
+      font-family: $primary-font-family;
     }
