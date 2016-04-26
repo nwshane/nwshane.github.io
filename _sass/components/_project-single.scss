@@ -48,21 +48,20 @@ $width-project-intro-become-horizontal: 1050px;
         margin-bottom: 0;
         font-weight: 300;
         font-size: 0.8em;
+        padding: 0;
 
         @media (min-width: $width-project-intro-become-horizontal) {
           margin-top: 2em;
         }
       }
 
-        .project-single-intro-header-meta-line {
+        .project-single-intro-header-meta-item {
+          list-style-type: none;
           margin: 0;
           padding: 0;
         }
 
-        .project-single-intro-header-meta-github {
-          margin: 0;
-          padding: 0;
-
+        .project-single-intro-header-meta-item.mod-github {
           @media (min-width: $width-show-github-fork-me-banner) {
             display: none;
           }

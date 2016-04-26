@@ -25,36 +25,48 @@ layout: default
 
       </div>
 
-      <div class='project-single-intro-header-meta'>
+      <ul class='project-single-intro-header-meta'>
 
         {% if page.github-url %}
 
-          <p class='project-single-intro-header-meta-github'>
+          <li class='project-single-intro-header-meta-item mod-github'>
             <a class='link' href='{{ page.github-url }}'>
               Fork me on GitHub
             </a>
-          </p>
+          </li>
 
         {% endif %}
 
-        <ul class='project-tags'>
+        {% if page.tags %}
 
-          <li class='project-tags-icon'>
-            {% include icons/tag_icon.svg %}
+          <li class='project-single-intro-header-meta-item'>
+
+            <div class='project-tags-icon'>
+              {% include icons/tag_icon.svg %}
+            </div>
+
+            <ul class='project-tags'>
+
+              {% for tag in page.tags %}
+
+                <li class='project-tags-item'>{{ tag }}</li>
+
+              {% endfor %}
+            </ul>
+
           </li>
 
-          {% for tag in page.tags %}
+        {% endif %}
 
-            <li class='project-tags-item'>{{ tag }}</li>
+        {% if page.date %}
 
-          {% endfor %}
-        </ul>
+          <li class='project-single-intro-header-meta-item'>
+            {{ page.date | date: "%B %-d, %Y" }}
+          </li>
 
-        <p class='project-single-intro-header-meta-line'>
-          {{ page.date | date: "%B %-d, %Y" }}
-        </p>
+        {% endif %}
 
-      </div>
+      </ul>
 
     </header>
 
