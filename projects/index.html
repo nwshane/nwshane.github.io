@@ -7,45 +7,52 @@ title: Projects
   Projects
 </h1>
 
-<ul class='projects-list'>
+<ul class='project-list'>
   {% for project in site.categories.projects %}
-    <li class='projects-list-item'>
+    <li class='project-list-item'>
 
-      <div class='project mod-list-page'>
+      <h3 class='project-heading'>
+        <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
+          {{ project.title }}
+        </a>
+      </h3>
 
-        <h3 class='project-heading'>
-          <a href="{{ project.url | prepend: site.baseurl }}" class='link'>
-            {{ project.title }}
-          </a>
-        </h3>
+      <div class='project-list-item-image-container'>
 
-        <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
+        {% if project.main-image-path %}
 
-          {% if project.main-image-path %}
+          <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
 
             <img class='image' src="{{ project.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ project.title }}">
 
-          {% else %}
+          </a>
+
+        {% else %}
+
+          <a class='project-image' href="{{ project.url | prepend: site.baseurl }}">
 
             {% include icons/image_placeholder.html %}
 
-          {% endif %}
+          </a>
 
-        </a>
+        {% endif %}
 
-        <ul class='project-tags'>
+      </div>
 
-          <li class='project-tags-icon'>
-            {% include icons/tag_icon.svg %}
-          </li>
+      <div class='project-meta-item'>
+
+        <div class='project-meta-item-icon'>
+          {% include icons/tag_icon.svg %}
+        </div>
+
+        <ul class='project-meta-item-content'>
 
           {% for tag in project.tags %}
 
-            <li class='project-tags-item'>
-              {{ tag }}
-            </li>
+            <li class='project-tag'>{{ tag }}</li>
 
           {% endfor %}
+          
         </ul>
 
       </div>

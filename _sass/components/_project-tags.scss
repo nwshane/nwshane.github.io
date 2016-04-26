@@ -1,0 +1,11 @@
+  .project-tag {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: 300;
+    line-height: 1em;
+    vertical-align: text-top;
+  }
+
+  .project-tag:not(:last-child)::after {
+    content: ',';
+  }

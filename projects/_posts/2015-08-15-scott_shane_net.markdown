@@ -1,7 +1,7 @@
 ---
 title: 'ScottShane.Net'
 date: 2015-08-15 14:00:00
-tags: website freelance author
+tags: website freelance ruby rails
 main-url: http://scottshane.net
 main-image-path: /assets/images/Scott-Shane-Objective-Troy-Page.png
 ---

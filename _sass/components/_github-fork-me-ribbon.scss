@@ -2,8 +2,7 @@
   width: 150px;
   display: none;
 
-  @media (min-width: 900px) {
+  @media (min-width: $width-show-github-fork-me-banner) {
     display: block;
   }
-
 }

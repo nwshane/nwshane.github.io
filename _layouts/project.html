@@ -1,52 +1,102 @@
 ---
 layout: default
 ---
-<article class='project mod-show-page'>
+<article class='project-single'>
 
-  <div class='header-image-responsive'>
+  <div class='project-single-intro'>
 
-    <header class='project-header'>
+    <header class='project-single-intro-header'>
 
-      <h1 class='project-heading'>
-        {{ page.title }}
-      </h1>
+      <div class='project-single-intro-header-primary'>
 
-      {% if page.main-url %}
+        <h1 class='project-heading'>
+          {{ page.title }}
+        </h1>
 
-        <a href="{{page.main-url}}" target="_blank" class='link'>
-          {{ page.main-url }}
-        </a>
+        {% if page.main-url %}
 
-      {% endif %}
+          <div class='project-single-intro-header-primary-url'>
+            <a href="{{page.main-url}}" target="_blank" class='link'>
+              {{ page.main-url }}
+            </a>
+          </div>
 
-      <div class='project-meta'>
+        {% endif %}
 
-        <p class='project-date'>
-          {{ page.date | date: "%b %-d, %Y" }}
-        </p>
+      </div>
 
-        <ul class='project-tags'>
+      <ul class='project-meta'>
 
-          <li class='project-tags-icon'>
-            {% include icons/tag_icon.svg %}
+        {% if page.date %}
+
+          <li class='project-meta-item'>
+
+            <div class='project-meta-item-icon'>
+              {% include icons/date_icon.svg %}
+            </div>
+
+            <div class='project-meta-item-content'>
+              {{ page.date | date: "%B %-d, %Y" }}
+            </div>
+
           </li>
 
-          {% for tag in page.tags %}
+        {% endif %}
 
-            <li class='project-tags-item'>{{ tag }}</li>
+        {% if page.github-url %}
 
-          {% endfor %}
-        </ul>
-        
-      </div>
+          <li class='project-meta-item mod-github'>
+
+            <div class='project-meta-item-icon'>
+              {% include icons/github_logo.html %}
+            </div>
+
+            <div class='project-meta-item-content'>
+
+              <a class='link' href='{{ page.github-url }}'>
+                Fork me on GitHub
+              </a>
+
+            </div>
+
+          </li>
+
+        {% endif %}
+
+        {% if page.tags %}
+
+          <li class='project-meta-item'>
+
+            <div class='project-meta-item-icon'>
+              {% include icons/tag_icon.svg %}
+            </div>
+
+            <ul class='project-meta-item-content'>
+
+              {% for tag in page.tags %}
+
+                <li class='project-tag'>{{ tag }}</li>
+
+              {% endfor %}
+            </ul>
+
+          </li>
+
+        {% endif %}
+
+      </ul>
 
     </header>
 
     {% if page.main-image-path %}
 
-      <div class='project-image'>
+      <div class='project-single-intro-image'>
 
-          <img class='image' src="{{ page.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ page.title }}">
+        <div class='project-image'>
+
+            <img class='image' src="{{ page.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ page.title }}">
+
+        </div>
 
       </div>
 
@@ -54,7 +104,7 @@ layout: default
 
   </div>
 
-  <div class='project-body'>
+  <div class='project-single-body'>
     {{ content }}
   </div>
 
