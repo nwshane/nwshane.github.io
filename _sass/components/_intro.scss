@@ -6,35 +6,32 @@
 }
 
   .intro-text {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin: auto 0;
     padding-top: 3rem;
 
     @media (min-width: 500px) {
-      font-size: 2.5rem;
+      font-size: 1.6rem;
     }
 
     @media (min-width: 650px) {
-      font-size: 3.2rem;
+      font-size: 2.1rem;
     }
   }
 
-    .intro-text-line {
-      margin: 1em 0;
+    .intro-text-heading {
+      margin: 0;
+      margin-bottom: 7rem;
       line-height: 1.35em;
       text-align: left;
-    }
-
-    .intro-text-line:nth-child(1) {
-      font-size: 1.1em;
+      font-size: 2.5em;
       font-family: $secondary-font-family;
     }
 
-    .intro-text-line:nth-child(2) {
-      font-family: $tertiary-font-family;
-    }
-
-    .intro-text-line:last-child {
-      font-size: 0.9em;
+    .intro-text-line {
+      margin: 0;
+      line-height: 1.35em;
+      text-align: left;
+      margin-top: 1em;
       font-family: $primary-font-family;
     }

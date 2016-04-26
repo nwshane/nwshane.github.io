@@ -3,9 +3,13 @@
 }
 
 .important-text.mod-intro-1 {
-  color: $primary-color;
+  font-family: $tertiary-font-family;
+  color: $secondary-color;
+  font-size: 1.05em;
 }
 
 .important-text.mod-intro-2 {
+  font-family: $tertiary-font-family;
   color: $secondary-color;
+  font-size: 1.05em;
 }
