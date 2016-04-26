@@ -41,13 +41,13 @@ title: Projects
 
       <ul class='project-tags'>
 
-        <li class='project-tags-icon'>
+        <li class='project-meta-item-icon'>
           {% include icons/tag_icon.svg %}
         </li>
 
         {% for tag in project.tags %}
 
-          <li class='project-tags-item'>{{ tag }}</li>
+          <li class='project-tag'>{{ tag }}</li>
 
         {% endfor %}
       </ul>
