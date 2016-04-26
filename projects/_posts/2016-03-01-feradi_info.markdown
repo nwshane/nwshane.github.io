@@ -1,7 +1,7 @@
 ---
 title: 'Feradi.Info'
 date: 2016-03-01 14:00:00
-tags: open_source website JumpStartGeorgia ruby ruby-on-rails javascript
+tags: open-source website jumpstart-georgia ruby rails javascript
 github-url: https://github.com/JumpStartGeorgia/feradi.info
 main-url: www.feradi.info
 main-image-path: /assets/images/Feradi-Home-Page.png
