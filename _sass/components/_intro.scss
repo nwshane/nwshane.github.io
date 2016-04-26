@@ -6,35 +6,36 @@
 }
 
   .intro-text {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin: auto 0;
     padding-top: 3rem;
 
     @media (min-width: 500px) {
-      font-size: 2.5rem;
+      font-size: 1.6rem;
     }
 
     @media (min-width: 650px) {
-      font-size: 3.2rem;
+      font-size: 2.1rem;
     }
   }
 
-    .intro-text-line {
-      margin: 1em 0;
+    .intro-text-heading {
+      margin: 0;
+      margin-bottom: 1.4em;
       line-height: 1.35em;
       text-align: left;
+      font-size: 2em;
+      font-family: $secondary-font-family;
+
+      @media (min-width: 360px) {
+        font-size: 2.5em;
+      }
     }
 
-    .intro-text-line:nth-child(1) {
-      font-size: 1.1em;
-      font-family: 'Patua One', cursive;
-    }
-
-    .intro-text-line:nth-child(2) {
-      font-family: 'Indie Flower', cursive;
-    }
-
-    .intro-text-line:last-child {
-      font-size: 0.9em;
-      font-family: $base-font-family;
+    .intro-text-line {
+      margin: 0;
+      line-height: 1.35em;
+      text-align: left;
+      margin-top: 1em;
+      font-family: $primary-font-family;
     }

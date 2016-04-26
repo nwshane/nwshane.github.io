@@ -15,44 +15,76 @@ layout: default
 
         {% if page.main-url %}
 
-          <a href="{{page.main-url}}" target="_blank" class='link'>
-            {{ page.main-url }}
-          </a>
+          <div class='project-single-intro-header-primary-url'>
+            <a href="{{page.main-url}}" target="_blank" class='link'>
+              {{ page.main-url }}
+            </a>
+          </div>
 
         {% endif %}
 
       </div>
 
-      <div class='project-single-intro-header-meta'>
+      <ul class='project-meta'>
+
+        {% if page.date %}
+
+          <li class='project-meta-item'>
+
+            <div class='project-meta-item-icon'>
+              {% include icons/date_icon.svg %}
+            </div>
+
+            <div class='project-meta-item-content'>
+              {{ page.date | date: "%B %-d, %Y" }}
+            </div>
+
+          </li>
+
+        {% endif %}
 
         {% if page.github-url %}
 
-          <p class='project-single-intro-header-meta-github'>
-            <a class='link' href='{{ page.github-url }}'>
-              Fork me on GitHub
-            </a>
-          </p>
+          <li class='project-meta-item mod-github'>
+
+            <div class='project-meta-item-icon'>
+              {% include icons/github_logo.html %}
+            </div>
+
+            <div class='project-meta-item-content'>
+
+              <a class='link' href='{{ page.github-url }}'>
+                Fork me on GitHub
+              </a>
+
+            </div>
+
+          </li>
 
         {% endif %}
 
-        <ul class='project-tags'>
+        {% if page.tags %}
 
-          <li class='project-tags-icon'>
-            {% include icons/tag_icon.svg %}
+          <li class='project-meta-item'>
+
+            <div class='project-meta-item-icon'>
+              {% include icons/tag_icon.svg %}
+            </div>
+
+            <ul class='project-meta-item-content'>
+
+              {% for tag in page.tags %}
+
+                <li class='project-tag'>{{ tag }}</li>
+
+              {% endfor %}
+            </ul>
+
           </li>
 
-          {% for tag in page.tags %}
+        {% endif %}
 
-            <li class='project-tags-item'>{{ tag }}</li>
-
-          {% endfor %}
-        </ul>
-
-        <p class='project-single-intro-header-meta-line'>
-          {{ page.date | date: "%B %-d, %Y" }}
-        </p>
-
-      </div>
+      </ul>
 
     </header>
 

@@ -38,30 +38,10 @@ $width-project-intro-become-horizontal: 1050px;
       }
     }
 
-      .project-single-intro-header-meta {
-        margin-top: 1em;
-        margin-bottom: 0;
+      .project-single-intro-header-primary-url {
         font-weight: 300;
         font-size: 0.8em;
-
-        @media (min-width: $width-project-intro-become-horizontal) {
-          margin-top: 2em;
-        }
       }
-
-        .project-single-intro-header-meta-line {
-          margin: 0;
-          padding: 0;
-        }
-
-        .project-single-intro-header-meta-github {
-          margin: 0;
-          padding: 0;
-
-          @media (min-width: $width-show-github-fork-me-banner) {
-            display: none;
-          }
-        }
 
     .project-single-intro-image {
       @media (min-width: $width-project-intro-become-horizontal) {

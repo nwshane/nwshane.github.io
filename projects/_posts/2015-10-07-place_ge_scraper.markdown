@@ -1,7 +1,7 @@
 ---
 title: 'Place.ge Scraper'
 date: 2015-10-07 14:00:00
-tags: open_source scraper JumpStartGeorgia
+tags: open-source scraper jumpstart-georgia ruby
 github-url: https://github.com/JumpStartGeorgia/Place-ge-Scraper
 main-url: https://github.com/JumpStartGeorgia/Place-ge-Scraper
 ---
