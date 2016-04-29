@@ -1,6 +1,6 @@
 ---
-title: Prisoners Watch
-date: {}
+title: "Prisoners Watch"
+date: "2015-06-28 14:00:00"
 tags: "open-source website jumpstart-georgia ruby rails"
 "github-url": "https://github.com/JumpStartGeorgia/Azerbaijan-Political-Prisoners"
 "main-url": "https://prisoners.watch"

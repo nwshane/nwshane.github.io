@@ -1,6 +1,6 @@
 ---
-title: Atoms
-date: {}
+title: "Atoms"
+date: "2014-12-05 14:00:00"
 tags: "website freelance javascript open-source"
 "github-url": "https://github.com/nwshane/atoms"
 "main-url": "http://atoms.nathanshane.me"
