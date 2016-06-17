@@ -1,5 +1,12 @@
 FROM ruby:2.3.0
 
+ENV APP_HOME=/myapp
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
+
+COPY Gemfile* $APP_HOME/
+RUN bundle install
+
 RUN apt-get update
 RUN apt-get install -y \
     node \
@@ -7,14 +14,4 @@ RUN apt-get install -y \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
 
-RUN mkdir /src
-WORKDIR /src
-
-ADD Gemfile /src/Gemfile
-ADD Gemfile.lock /src/Gemfile.lock
-
-RUN bundle install
-
-EXPOSE 4000
-
-ENTRYPOINT ["jekyll"]
+COPY . $APP_HOME/
