@@ -2,7 +2,10 @@ version: '2'
 services:
   web:
     build: .
-    command: 'jekyll s --host "0.0.0.0"'
+
+    # force_polling makes jekyll use the polling architecture instead of
+    # inotify to regenerate files incrementally
+    command: 'jekyll s --force_polling --incremental --host "0.0.0.0"'
     ports:
       - '4000:4000'
     volumes:
