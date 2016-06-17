@@ -7,11 +7,11 @@ WORKDIR $APP_HOME
 COPY Gemfile* $APP_HOME/
 RUN bundle install
 
-RUN apt-get update
-RUN apt-get install -y \
-    node \
-    python-pygments \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/
+RUN apt-get update && \
+    apt-get install -y \
+      node \
+      python-pygments \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/
 
 COPY . $APP_HOME/
