@@ -1,7 +1,7 @@
 ---
 title: "GogoCode Website"
 date: "2016-09-01 14:00:00"
-tags: "website jumpstart-georgia jekyll"
+tags: "open-source website jumpstart-georgia jekyll"
 main-url: "http://GogoCode.Jumpstart.ge/"
 main-image-path: "/assets/images/GogoCode-Home-Page.png"
 published: true
