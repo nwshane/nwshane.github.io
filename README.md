@@ -2,11 +2,10 @@
 
 This repo contains the code for Nathan Shane's site, accessible at [nathanshane.me](http://nathanshane.me).
 
-## Jekyll debugging tips
+## Important!
 
-* To see the contents of a variable, output it to the page with inspect, as in the following example:
-
-`{{ site.categories.projects | inspect }}`
+* Don't merge the staging branch into master, and don't merge master into staging. The branches include separate URLs in the `_config.yml` and `CNAME` files, so merging one into the other will break the site.
+* The site is deployed on github pages, so pushing to master will deploy changes in the repo to the live, production site.
 
 ## Deploy to staging
 
@@ -15,3 +14,9 @@ Each repository gets one github page, so I created a second repository on github
 Push to staging like this:
 
 `git push staging HEAD:gh-pages`
+
+## Jekyll debugging tips
+
+* To see the contents of a variable, output it to the page with inspect, as in the following example:
+
+`{{ site.categories.projects | inspect }}`
