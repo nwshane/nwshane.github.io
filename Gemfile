@@ -10,5 +10,3 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 gem 'github-pages', versions['github-pages']
 ### Github Pages Gem Code END ###
-
-gem 'octopress-debugger', '~> 1.0', '>= 1.0.2'

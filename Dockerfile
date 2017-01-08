@@ -1,20 +1,21 @@
-FROM ruby:2.3.0
+FROM ruby:2.3.1
 
-RUN apt-get update
-RUN apt-get install -y \
-    node \
-    python-pygments \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/
+ENV APP_HOME=/myapp
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
 
-RUN mkdir /src
-WORKDIR /src
+ENV BUNDLE_GEMFILE=$APP_HOME/Gemfile \
+    BUNDLE_JOBS=2 \
+    BUNDLE_PATH=/bundle
 
-ADD Gemfile /src/Gemfile
-ADD Gemfile.lock /src/Gemfile.lock
-
+COPY Gemfile* $APP_HOME/
 RUN bundle install
 
-EXPOSE 4000
+RUN apt-get update && \
+    apt-get install -y \
+      node \
+      python-pygments \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/
 
-ENTRYPOINT ["jekyll"]
+COPY . $APP_HOME/
