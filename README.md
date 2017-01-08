@@ -10,8 +10,8 @@ This repo contains the code for Nathan Shane's site, accessible at [nathanshane.
 
 ## Deploy to staging
 
+Each repository gets one github page, so I created a second repository on github to host a staging version of this site.
+
 Push to staging like this:
 
 `git push staging HEAD:gh-pages`
-
-Each repository gets one github page, so I created a second repository on github to host a staging version of this site.
