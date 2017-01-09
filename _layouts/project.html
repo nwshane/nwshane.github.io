@@ -94,7 +94,17 @@ layout: default
 
         <div class='project-image'>
 
+          {% if page.main-url %}
+
+            <a href="{{page.main-url}}" target="_blank">
+              <img class='image' src="{{ page.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ page.title }}">
+            </a>
+
+          {% else %}
+
             <img class='image' src="{{ page.main-image-path | prepend: site.baseurl }}" alt="Featured Image for {{ page.title }}">
+
+          {% endif %}
 
         </div>
 
