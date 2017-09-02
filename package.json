@@ -1,0 +1,15 @@
+{
+  "name": "nathan_shane_site",
+  "description": "Nathan Shane's personal website",
+  "repository": "https://github.com/nwshane/nwshane.github.io.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^1.8.11",
+    "gatsby-link": "^1.4.1"
+  }
+}
