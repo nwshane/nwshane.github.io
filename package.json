@@ -9,6 +9,7 @@
     "start": "gatsby serve"
   },
   "dependencies": {
+    "babel-plugin-root-import": "^5.1.0",
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.4.1",
     "styled-components": "^2.1.2"
