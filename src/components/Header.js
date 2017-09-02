@@ -1,25 +1,37 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+
+const Ul = styled.ul`
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+const Li = styled.li`
+  list-style-type: none;
+`
 
 const Header = () => (
   <nav>
-    <ul>
-      <li>
+    <Ul>
+      <Li>
         <Link to='/'>
           Home
         </Link>
-      </li>
-      <li>
+      </Li>
+      <Li>
         <Link to='/projects'>
           Projects
         </Link>
-      </li>
-      <li>
+      </Li>
+      <Li>
         <Link to='/contact'>
           Contact
         </Link>
-      </li>
-    </ul>
+      </Li>
+    </Ul>
   </nav>
 )
 
