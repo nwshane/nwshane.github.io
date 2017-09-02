@@ -15,9 +15,3 @@ Each repository gets one github page, so I created a second repository on github
 Push to staging like this:
 
 `git push staging HEAD:gh-pages`
-
-## Jekyll debugging tips
-
-* To see the contents of a variable, output it to the page with inspect, as in the following example:
-
-`{{ site.categories.projects | inspect }}`
