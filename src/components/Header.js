@@ -26,11 +26,6 @@ const Header = () => (
           Projects
         </Link>
       </Li>
-      <Li>
-        <Link to='/contact'>
-          Contact
-        </Link>
-      </Li>
     </Ul>
   </nav>
 )
