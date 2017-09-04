@@ -1,15 +1,45 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import Layout from '~/src/components/Layout'
 import Helmet from 'react-helmet'
 
-const ProjectsPage = () => (
-  <Layout>
-    <Helmet
-      title='Projects ~ Nathan Shane'
-    />
-    Projects!
+const ProjectsPage = ({data}) => {
+  const projects = data.allMarkdownRemark.edges
 
-  </Layout>
-)
+  return (
+    <Layout>
+      <Helmet
+        title='Projects ~ Nathan Shane'
+      />
+      <ul>
+        {console.log(projects)}
+        {projects.map(({node: {id, frontmatter}}) => (
+          <li key={id}>
+            <Link to={frontmatter.path}>
+              {frontmatter.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Layout>
+  )
+}
 
 export default ProjectsPage
+
+export const pageQuery = graphql`
+query ProjectsQuery {
+  allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date
+          path
+        }
+      }
+    }
+  }
+}
+`
