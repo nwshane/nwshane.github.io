@@ -1,9 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Layout from '~/src/components/Layout'
+import Helmet from 'react-helmet'
 
 const HomePage = () => (
   <Layout>
+    <Helmet
+      title='Nathan Shane'
+    />
     <main>
       <p>
         Hi, I'm Nathan.
