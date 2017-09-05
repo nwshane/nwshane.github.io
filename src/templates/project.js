@@ -2,6 +2,11 @@ import React from 'react'
 import Layout from '~/src/components/Layout'
 import Helmet from 'react-helmet'
 
+const getFeaturedImageProps = (featuredImage) => ({
+  src: featuredImage.childImageSharp.responsiveSizes.src,
+  alt: 'Featured Project Image'
+})
+
 const ProjectTemplate = ({data}) => {
   const siteTitle = data.site.siteMetadata.title
   const project = data.markdownRemark
@@ -13,6 +18,9 @@ const ProjectTemplate = ({data}) => {
       <h1>
         {frontmatter.title}
       </h1>
+      {frontmatter.featuredImage && (
+        <img {...getFeaturedImageProps(frontmatter.featuredImage)} />
+      )}
       {frontmatter.mainUrl && (
         <p>
           <a target='_blank' href={frontmatter.mainUrl}>
@@ -46,12 +54,19 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date
-        tags
         path
         title
+        date
+        tags
         mainUrl
         githubUrl
+        featuredImage {
+          childImageSharp {
+            responsiveSizes(maxWidth: 600) {
+              src
+            }
+          }
+        }
       }
     }
   }

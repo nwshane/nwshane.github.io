@@ -5,9 +5,8 @@ date: "2017-01-01 14:00:00"
 tags: "open-source website jumpstart-georgia ruby rails javascript react"
 mainUrl: "https://biujeti.jumpstart.ge"
 githubUrl: "https://github.com/JumpStartGeorgia/Georgian-Budget-Public"
+featuredImage: "Georgian-National-Budget.png"
 ---
-
-main-image-path: "./Georgian-National-Budget.png"
 
 JumpStart Georgia requested data about the national Georgian budget from the Georgian government in 2016. We received spreadsheets and PDFs containing valuable, but disconnected, financial data.
 
