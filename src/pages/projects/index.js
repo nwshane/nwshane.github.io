@@ -18,6 +18,9 @@ const ProjectsPage = ({data}) => {
             <Link to={frontmatter.path}>
               {frontmatter.title}
             </Link>
+            <p>
+              {frontmatter.tags}
+            </p>
           </li>
         ))}
       </ul>
@@ -35,8 +38,8 @@ query ProjectsQuery {
         id
         frontmatter {
           title
-          date
           path
+          tags
         }
       }
     }
