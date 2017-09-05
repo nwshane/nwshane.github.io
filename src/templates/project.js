@@ -42,7 +42,7 @@ const ProjectTemplate = ({data}) => {
       {frontmatter.githubUrl && (
         <p>
           <a target='_blank' href={frontmatter.githubUrl}>
-            {frontmatter.githubUrl}
+            Fork on Github
           </a>
         </p>
       )}
