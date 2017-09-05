@@ -1,11 +1,15 @@
 import React from 'react'
 import Layout from '~/src/components/Layout'
+import Helmet from 'react-helmet'
 
 const ProjectTemplate = ({data}) => {
+  const siteTitle = data.site.siteMetadata.title
   const project = data.markdownRemark
   const {frontmatter} = project
+
   return (
     <Layout>
+      <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
       <h1>
         {frontmatter.title}
       </h1>
@@ -34,6 +38,11 @@ export default ProjectTemplate
 
 export const pageQuery = graphql`
   query ProjectByPath($path: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 const HomePage = () => (
   <Layout>
     <Helmet
-      title='Nathan Shane'
+      title='NathanShane.me'
     />
     <main>
       <p>

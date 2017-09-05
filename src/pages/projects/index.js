@@ -9,7 +9,7 @@ const ProjectsPage = ({data}) => {
   return (
     <Layout>
       <Helmet
-        title='Projects ~ Nathan Shane'
+        title='Projects | NathanShane.me'
       />
       <ul>
         {console.log(projects)}
