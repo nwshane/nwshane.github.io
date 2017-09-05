@@ -1,7 +1,7 @@
 ---
 path: "/projects/atoms"
 title: "Atoms"
-date: "2014-12-05 14:00:00"
+date: '2014-12-05T14:00:00.000Z'
 tags: "website freelance javascript open-source"
 ---
 

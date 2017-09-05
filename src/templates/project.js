@@ -67,7 +67,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
         tags
         mainUrl
         githubUrl
