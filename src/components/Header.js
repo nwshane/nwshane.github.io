@@ -3,10 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const Ul = styled.ul`
-  display: flex;
   padding: 0;
-  flex-direction: row;
-  justify-content: space-between;
 `
 
 const Li = styled.li`
