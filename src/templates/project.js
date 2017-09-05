@@ -1,11 +1,22 @@
 import React from 'react'
 import Layout from '~/src/components/Layout'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
 
-const getFeaturedImageProps = (featuredImage) => ({
-  src: featuredImage.childImageSharp.responsiveSizes.src,
-  alt: 'Featured Project Image'
-})
+const getFeaturedImageProps = (featuredImage) => {
+  const {src, srcSet, sizes} = featuredImage.childImageSharp.responsiveSizes
+
+  return {
+    src,
+    srcSet,
+    sizes,
+    alt: 'Featured Project Image'
+  }
+}
+
+const Img = styled.img`
+  width: 100%;
+`
 
 const ProjectTemplate = ({data}) => {
   const siteTitle = data.site.siteMetadata.title
@@ -19,7 +30,7 @@ const ProjectTemplate = ({data}) => {
         {frontmatter.title}
       </h1>
       {frontmatter.featuredImage && (
-        <img {...getFeaturedImageProps(frontmatter.featuredImage)} />
+        <Img {...getFeaturedImageProps(frontmatter.featuredImage)} />
       )}
       {frontmatter.mainUrl && (
         <p>
@@ -64,6 +75,8 @@ export const pageQuery = graphql`
           childImageSharp {
             responsiveSizes(maxWidth: 600) {
               src
+              srcSet
+              sizes
             }
           }
         }
