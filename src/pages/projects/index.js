@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Layout from '~/src/components/Layout'
 import Helmet from 'react-helmet'
+import ProjectItem from '~/src/components/ProjectItem'
 
 const ProjectsPage = ({data}) => {
   const projects = data.allMarkdownRemark.edges
@@ -13,15 +13,8 @@ const ProjectsPage = ({data}) => {
       />
       <h1>Projects</h1>
       <ul>
-        {projects.map(({node: {id, frontmatter}}) => (
-          <li key={id}>
-            <Link to={frontmatter.path}>
-              <h2>{frontmatter.title}</h2>
-            </Link>
-            <p>
-              {frontmatter.tags}
-            </p>
-          </li>
+        {projects.map((project) => (
+          <ProjectItem {...project} />
         ))}
       </ul>
     </Layout>
