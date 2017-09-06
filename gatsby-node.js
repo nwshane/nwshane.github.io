@@ -31,8 +31,6 @@ exports.createPages = ({boundActionCreators, graphql}) => {
       return Promise.reject(result.errors)
     }
 
-    console.log(result.data.allMarkdownRemark.edges)
-
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
       const {path} = node.frontmatter
       createPage({
