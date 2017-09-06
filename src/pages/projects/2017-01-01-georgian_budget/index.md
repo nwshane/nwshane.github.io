@@ -1,5 +1,5 @@
 ---
-path: '/projects/georgian_budget'
+slug: 'georgian_budget'
 title: 'Georgian Budget'
 date: '2017-01-01T14:00:00.000Z'
 tags: 'open-source website jumpstart-georgia ruby rails javascript react'

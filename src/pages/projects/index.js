@@ -31,7 +31,7 @@ query ProjectsQuery {
         id
         frontmatter {
           title
-          path
+          slug
           tags
           featuredImage {
             childImageSharp {

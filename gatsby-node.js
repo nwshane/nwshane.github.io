@@ -19,7 +19,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         edges {
           node {
             frontmatter {
-              path
+              slug
             }
           }
         }
@@ -32,12 +32,12 @@ exports.createPages = ({boundActionCreators, graphql}) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
-      const {path} = node.frontmatter
+      const {slug} = node.frontmatter
       createPage({
-        path,
+        path: `/projects/${slug}`,
         component: projectTemplate,
         context: {
-          path
+          slug
         }
       })
     })

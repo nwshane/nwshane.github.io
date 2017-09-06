@@ -1,5 +1,5 @@
 ---
-path: '/projects/atoms'
+slug: 'atoms'
 title: 'Atoms'
 date: '2014-12-05T14:00:00.000Z'
 tags: 'website javascript open-source'

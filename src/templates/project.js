@@ -41,16 +41,16 @@ const ProjectTemplate = ({data}) => {
 export default ProjectTemplate
 
 export const pageQuery = graphql`
-  query ProjectByPath($path: String!) {
+  query ProjectByPath($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        path
+        slug
         title
         date(formatString: "MMMM DD, YYYY")
         tags
