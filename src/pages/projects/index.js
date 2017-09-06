@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '~/src/components/Layout'
+import HelmetTitle from '~/src/components/HelmetTitle'
 import Helmet from 'react-helmet'
 import ProjectItem from '~/src/components/ProjectItem'
 
@@ -8,9 +9,7 @@ const ProjectsPage = ({data}) => {
 
   return (
     <Layout>
-      <Helmet
-        title='Projects | NathanShane.me'
-      />
+      <HelmetTitle title='Projects | NathanShane.me' />
       <h1>Projects</h1>
       <ul>
         {projects.map((project) => (
