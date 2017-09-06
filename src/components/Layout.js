@@ -15,12 +15,30 @@ const Wrapper = styled.div`
   font-size: 1.8rem;
 `
 
+// https://github.com/DSchau/blog/blob/master/src/services/web-fonts.js
 const loadWebFonts = () => {
-  WebFont.load({
-    google: {
-      families: ['Lato']
-    }
-  })
+  const families = ['Lato:300,400']
+  if (sessionStorage.fonts === families.join(' ')) {
+    document.documentElement.classList.add('wf-active')
+  }
+
+  require.ensure(
+    'webfontloader',
+    () => {
+      const WebFonts = require('webfontloader')
+
+      WebFonts.load({
+        active() {
+          sessionStorage.fonts = families.join(' ')
+        },
+        google: {
+          families
+        },
+        timeout: 2000
+      })
+    },
+    'webfontloader'
+  )
 }
 
 export default class Layout extends Component {
