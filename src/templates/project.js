@@ -1,22 +1,7 @@
 import React from 'react'
 import Layout from '~/src/components/Layout'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
-
-const getFeaturedImageProps = (featuredImage) => {
-  const {src, srcSet, sizes} = featuredImage.childImageSharp.responsiveSizes
-
-  return {
-    src,
-    srcSet,
-    sizes,
-    alt: 'Featured Project Image'
-  }
-}
-
-const Img = styled.img`
-  width: 100%;
-`
+import SharpImage from '~/src/components/SharpImage'
 
 const ProjectTemplate = ({data}) => {
   const siteTitle = data.site.siteMetadata.title
@@ -30,7 +15,7 @@ const ProjectTemplate = ({data}) => {
         {frontmatter.title}
       </h1>
       {frontmatter.featuredImage && (
-        <Img {...getFeaturedImageProps(frontmatter.featuredImage)} />
+        <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
       )}
       {frontmatter.mainUrl && (
         <p>
