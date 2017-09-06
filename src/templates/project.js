@@ -1,16 +1,15 @@
 import React from 'react'
 import Layout from '~/src/components/Layout'
-import Helmet from 'react-helmet'
+import HelmetTitle from '~/src/components/HelmetTitle'
 import SharpImage from '~/src/components/SharpImage'
 
 const ProjectTemplate = ({data}) => {
-  const siteTitle = data.site.siteMetadata.title
   const project = data.markdownRemark
   const {frontmatter} = project
 
   return (
     <Layout>
-      <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
+      <HelmetTitle title={frontmatter.title} />
       <h1>
         {frontmatter.title}
       </h1>
@@ -42,11 +41,6 @@ export default ProjectTemplate
 
 export const pageQuery = graphql`
   query ProjectByPath($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
