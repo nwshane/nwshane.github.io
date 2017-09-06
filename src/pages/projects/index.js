@@ -9,7 +9,7 @@ const ProjectsPage = ({data}) => {
 
   return (
     <Layout>
-      <HelmetTitle title='Projects | NathanShane.me' />
+      <HelmetTitle title='Projects' />
       <h1>Projects</h1>
       <ul>
         {projects.map((project) => (
