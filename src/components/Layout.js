@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Header from './Header'
 import styled, {injectGlobal} from 'styled-components'
 import WebFont from 'webfontloader'
+import 'normalize.css'
 
 injectGlobal`
   html {
