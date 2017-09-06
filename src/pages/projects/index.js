@@ -33,6 +33,15 @@ query ProjectsQuery {
           title
           path
           tags
+          featuredImage {
+            childImageSharp {
+              responsiveSizes(maxWidth: 600) {
+                src
+                srcSet
+                sizes
+              }
+            }
+          }
         }
       }
     }
