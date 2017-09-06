@@ -2,10 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Layout from '~/src/components/Layout'
 import HelmetTitle from '~/src/components/HelmetTitle'
+import gatsbyConfig from '~/gatsby-config'
 
 const HomePage = () => (
   <Layout>
-    <HelmetTitle title='NathanShane.me' />
+    <HelmetTitle title={gatsbyConfig.siteMetadata.title} />
     <main>
       <p>
         Hi, I'm Nathan.
