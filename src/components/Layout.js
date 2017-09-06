@@ -9,6 +9,14 @@ injectGlobal`
     font-size: 10px;
     font-family: Lato,sans-serif;
   }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
 `
 
 const Wrapper = styled.div`

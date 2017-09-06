@@ -1,29 +1,20 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
-
-const Ul = styled.ul`
-  padding: 0;
-`
-
-const Li = styled.li`
-  list-style-type: none;
-`
 
 const Header = () => (
   <nav>
-    <Ul>
-      <Li>
+    <ul>
+      <li>
         <Link to='/'>
           Home
         </Link>
-      </Li>
-      <Li>
+      </li>
+      <li>
         <Link to='/projects'>
           Projects
         </Link>
-      </Li>
-    </Ul>
+      </li>
+    </ul>
   </nav>
 )
 
