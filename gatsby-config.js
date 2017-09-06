@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'NathanShane.me',
     author: 'Nathan Shane',
+    description: require('./package.json').description
   },
   plugins: [
     'gatsby-plugin-react-helmet',

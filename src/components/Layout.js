@@ -3,6 +3,9 @@ import Header from './Header'
 import styled, {injectGlobal} from 'styled-components'
 import WebFont from 'webfontloader'
 import 'normalize.css'
+import packageJson from '~/package.json'
+import gatsbyConfig from '~/gatsby-config'
+import Helmet from 'react-helmet'
 
 injectGlobal`
   html {
@@ -59,6 +62,13 @@ export default class Layout extends Component {
     return (
       <Wrapper>
         <Header />
+        <Helmet
+          meta={[
+            {property: 'og:site_name', content: gatsbyConfig.siteMetadata.title},
+            {property: 'og:description', content: packageJson.description},
+            {property: 'og:type', content: 'website'}
+          ]}
+        />
         {this.props.children}
       </Wrapper>
     )
