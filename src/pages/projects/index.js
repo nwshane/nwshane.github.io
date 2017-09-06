@@ -14,7 +14,7 @@ const ProjectsPage = ({data}) => {
       <h1>Projects</h1>
       <ul>
         {projects.map((project) => (
-          <ProjectItem {...project} />
+          <ProjectItem key={project.node.id}{...project} />
         ))}
       </ul>
     </Layout>
