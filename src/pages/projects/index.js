@@ -12,7 +12,6 @@ const ProjectsPage = ({data}) => {
         title='Projects | NathanShane.me'
       />
       <ul>
-        {console.log(projects)}
         {projects.map(({node: {id, frontmatter}}) => (
           <li key={id}>
             <Link to={frontmatter.path}>
