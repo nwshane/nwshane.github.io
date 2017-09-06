@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Header from './Header'
 import styled, {injectGlobal} from 'styled-components'
+import WebFont from 'webfontloader'
 
 injectGlobal`
   html {
     font-size: 10px;
+    font-family: Lato,sans-serif;
   }
 `
 
@@ -13,11 +15,25 @@ const Wrapper = styled.div`
   font-size: 1.8rem;
 `
 
-const Layout = (props) => (
-  <Wrapper>
-    <Header />
-    {props.children}
-  </Wrapper>
-)
+const loadWebFonts = () => {
+  WebFont.load({
+    google: {
+      families: ['Lato']
+    }
+  })
+}
 
-export default Layout
+export default class Layout extends Component {
+  componentDidMount () {
+    loadWebFonts()
+  }
+
+  render () {
+    return (
+      <Wrapper>
+        <Header />
+        {this.props.children}
+      </Wrapper>
+    )
+  }
+}
