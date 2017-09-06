@@ -11,11 +11,12 @@ const ProjectsPage = ({data}) => {
       <Helmet
         title='Projects | NathanShane.me'
       />
+      <h1>Projects</h1>
       <ul>
         {projects.map(({node: {id, frontmatter}}) => (
           <li key={id}>
             <Link to={frontmatter.path}>
-              {frontmatter.title}
+              <h2>{frontmatter.title}</h2>
             </Link>
             <p>
               {frontmatter.tags}
