@@ -23,7 +23,7 @@ injectGlobal`
 `
 
 const Wrapper = styled.div`
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 1.8rem;
 `
 
