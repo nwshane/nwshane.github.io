@@ -2,6 +2,11 @@ import React from 'react'
 import Layout from '~/src/components/Layout'
 import HelmetTitle from '~/src/components/HelmetTitle'
 import SharpImage from '~/src/components/SharpImage'
+import styled from 'styled-components'
+
+const H1 = styled.h1`
+  font-family: "Patua One",sans-serif;
+`
 
 const ProjectTemplate = ({data}) => {
   const project = data.markdownRemark
@@ -10,9 +15,9 @@ const ProjectTemplate = ({data}) => {
   return (
     <Layout>
       <HelmetTitle title={frontmatter.title} />
-      <h1>
+      <H1>
         {frontmatter.title}
-      </h1>
+      </H1>
       {frontmatter.featuredImage && (
         <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
       )}
