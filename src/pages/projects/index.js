@@ -14,6 +14,10 @@ const H1 = styled.h1`
   left: -9999px;
 `
 
+const SProjectItem = styled(ProjectItem)`
+  margin-bottom: 45px;
+`
+
 const ProjectsPage = ({data}) => {
   const projects = data.allMarkdownRemark.edges
 
@@ -23,7 +27,7 @@ const ProjectsPage = ({data}) => {
       <H1>Projects</H1>
       <ul>
         {projects.map((project) => (
-          <ProjectItem key={project.node.id}{...project} />
+          <SProjectItem key={project.node.id}{...project} />
         ))}
       </ul>
     </Layout>
