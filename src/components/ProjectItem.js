@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import SharpImage from '~/src/components/SharpImage'
 import styled from 'styled-components'
+import tagIcon from './tagIcon.svg'
 
 const H2 = styled.h2`
   font-family: "Patua One",sans-serif;
@@ -12,6 +13,39 @@ const SLink = styled(Link)`
   text-decoration: none;
 `
 
+const TagIcon = styled.img`
+  fill: currentColor;
+  height: 0.9em;
+  width: 0.9em;
+  display: inline;
+`
+
+const Ul = styled.ul`
+  display: inline;
+`
+
+const Li = styled.li`
+  display: inline;
+  margin-left: 0.7rem;
+
+  :not(:last-child):after {
+    content: ',';
+  }
+`
+
+const TagList = ({tags}) => (
+  <div>
+    <TagIcon src={tagIcon} alt='Tags' />
+    <Ul>
+      {tags.map((tag) => (
+        <Li>
+          {tag}
+        </Li>
+      ))}
+    </Ul>
+  </div>
+)
+
 const ProjectItem = ({node: {frontmatter}, className}) => (
   <li {...{className}}>
     <SLink to={`/projects/${frontmatter.slug}`}>
@@ -21,7 +55,7 @@ const ProjectItem = ({node: {frontmatter}, className}) => (
       )}
     </SLink>
     <p>
-      {frontmatter.tags}
+      <TagList tags={frontmatter.tags.split(' ')} />
     </p>
   </li>
 )
