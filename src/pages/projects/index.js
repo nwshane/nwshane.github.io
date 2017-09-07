@@ -3,6 +3,16 @@ import Layout from '~/src/components/Layout'
 import HelmetTitle from '~/src/components/HelmetTitle'
 import Helmet from 'react-helmet'
 import ProjectItem from '~/src/components/ProjectItem'
+import styled from 'styled-components'
+
+// Move title off page but leave it in markup for accessibility
+const H1 = styled.h1`
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+`
 
 const ProjectsPage = ({data}) => {
   const projects = data.allMarkdownRemark.edges
@@ -10,7 +20,7 @@ const ProjectsPage = ({data}) => {
   return (
     <Layout>
       <HelmetTitle title='Projects' />
-      <h1>Projects</h1>
+      <H1>Projects</H1>
       <ul>
         {projects.map((project) => (
           <ProjectItem key={project.node.id}{...project} />
