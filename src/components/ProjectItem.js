@@ -7,14 +7,18 @@ const H2 = styled.h2`
   font-family: "Patua One",sans-serif;
 `
 
+const SLink = styled(Link)`
+  text-decoration: none;
+`
+
 const ProjectItem = ({node: {frontmatter}}) => (
   <li>
-    <Link to={`/projects/${frontmatter.slug}`}>
+    <SLink to={`/projects/${frontmatter.slug}`}>
       <H2>{frontmatter.title}</H2>
       {frontmatter.featuredImage && (
         <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
       )}
-    </Link>
+    </SLink>
     <p>
       {frontmatter.tags}
     </p>
