@@ -32,7 +32,7 @@ const HomePage = () => (
         I like to build things on the world wide web. I also enjoy cooking, singing, and meditating.
       </IntroP>
       <IntroP>
-        Check out my <Link to='/projects'>projects</Link> and <a target='_blank' href='https://github.com/nwshane'>Github profile</a>, and don't hesitate to <a target='_blank' href='mailto:nathanwshane@gmail.com'>get in touch</a>.
+        Check out my <Link to='/projects'>work</Link> and my <a target='_blank' href='https://github.com/nwshane'>Github profile</a>, and don't hesitate to <a target='_blank' href='mailto:nathanwshane@gmail.com'>get in touch</a>.
         </IntroP>
     </main>
   </Layout>
