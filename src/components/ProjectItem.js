@@ -55,8 +55,8 @@ const ImageLink = styled(Link)`
 
 const ProjectItem = ({node: {frontmatter}, className}) => (
   <li {...{className}}>
-    <H2 to={`/projects/${frontmatter.slug}`}>
-      <TitleLink>{frontmatter.title}</TitleLink>
+    <H2>
+      <TitleLink to={`/projects/${frontmatter.slug}`}>{frontmatter.title}</TitleLink>
     </H2>
     {frontmatter.featuredImage && (
       <ImageLink to={`/projects/${frontmatter.slug}`}>
