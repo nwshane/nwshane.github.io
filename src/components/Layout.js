@@ -20,11 +20,20 @@ injectGlobal`
   li {
     list-style-type: none;
   }
+
+  a {
+    text-decoration: none;
+    color: #FF7813;
+
+    :hover {
+      color: blue;
+    }
+  }
 `
 
 const Wrapper = styled.div`
-  padding: 0 15px;
-  font-size: 1.8rem;
+  padding: 0 20px;
+  font-size: 1.9rem;
 `
 
 // https://github.com/DSchau/blog/blob/master/src/services/web-fonts.js

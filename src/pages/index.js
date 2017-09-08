@@ -3,14 +3,21 @@ import Link from 'gatsby-link'
 import Layout from '~/src/components/Layout'
 import HelmetTitle from '~/src/components/HelmetTitle'
 import gatsbyConfig from '~/gatsby-config'
+import styled from 'styled-components'
+
+const Greeting = styled.p`
+  font-size: 3.2rem;
+  font-family: "Patua One",sans-serif;
+  margin-top: 3em;
+`
 
 const HomePage = () => (
   <Layout>
     <HelmetTitle title={gatsbyConfig.siteMetadata.title} />
     <main>
-      <p>
+      <Greeting>
         Hi, I'm Nathan.
-      </p>
+      </Greeting>
       <p>
         I like to build things on the world wide web. I also enjoy cooking, singing, and meditating.
       </p>
