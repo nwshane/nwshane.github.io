@@ -6,9 +6,20 @@ import gatsbyConfig from '~/gatsby-config'
 import styled from 'styled-components'
 
 const Greeting = styled.p`
-  font-size: 3.2rem;
+  font-size: calc(2.6rem + 4vw);
   font-family: "Patua One",sans-serif;
-  margin-top: 3em;
+  margin-top: 2em;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+`
+
+const IntroP = styled.p`
+  font-size: calc(1.2rem + 2vw);
+  line-height: 1.35em;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 `
 
 const HomePage = () => (
@@ -18,12 +29,12 @@ const HomePage = () => (
       <Greeting>
         Hi, I'm Nathan.
       </Greeting>
-      <p>
+      <IntroP>
         I like to build things on the world wide web. I also enjoy cooking, singing, and meditating.
-      </p>
-      <p>
+      </IntroP>
+      <IntroP>
         Check out my <Link to='/projects'>projects</Link> and <a target='_blank' href='https://github.com/nwshane'>Github profile</a>, and don't hesitate to <a target='_blank' href='mailto:nathanwshane@gmail.com'>get in touch</a>.
-      </p>
+        </IntroP>
     </main>
   </Layout>
 )

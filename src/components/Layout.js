@@ -34,6 +34,8 @@ injectGlobal`
 const Wrapper = styled.div`
   padding: 0 20px;
   font-size: 1.9rem;
+  color: #514d54;
+  letter-spacing: .3px;
 `
 
 // https://github.com/DSchau/blog/blob/master/src/services/web-fonts.js
