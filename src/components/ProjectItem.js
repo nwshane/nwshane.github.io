@@ -41,7 +41,6 @@ const TagList = ({tags}) => (
 const H2 = styled.h2`
   font-family: "Patua One",sans-serif;
   margin-bottom: 10px;
-  filter: inherit;
 `
 
 const TitleLink = styled(Link)`
@@ -56,9 +55,9 @@ const ImageLink = styled(Link)`
 
 const ProjectItem = ({node: {frontmatter}, className}) => (
   <li {...{className}}>
-    <TitleLink to={`/projects/${frontmatter.slug}`}>
-      <H2>{frontmatter.title}</H2>
-    </TitleLink>
+    <H2 to={`/projects/${frontmatter.slug}`}>
+      <TitleLink>{frontmatter.title}</TitleLink>
+    </H2>
     {frontmatter.featuredImage && (
       <ImageLink to={`/projects/${frontmatter.slug}`}>
         <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
