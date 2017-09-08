@@ -6,6 +6,7 @@ import 'normalize.css'
 import packageJson from '~/package.json'
 import gatsbyConfig from '~/gatsby-config'
 import Helmet from 'react-helmet'
+import {primaryColor, secondaryColor} from '~/src/styles'
 
 injectGlobal`
   html {
@@ -23,10 +24,10 @@ injectGlobal`
 
   a {
     text-decoration: none;
-    color: #FF7813;
+    color: ${primaryColor};
 
     :hover {
-      color: blue;
+      filter: brightness(70%);
     }
   }
 `
@@ -36,6 +37,8 @@ const Wrapper = styled.div`
   font-size: 1.9rem;
   color: #514d54;
   letter-spacing: .3px;
+  max-width: calc(300px + 50%);
+  margin: 0 auto;
 `
 
 // https://github.com/DSchau/blog/blob/master/src/services/web-fonts.js

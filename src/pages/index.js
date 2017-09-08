@@ -8,8 +8,8 @@ import styled from 'styled-components'
 const Greeting = styled.p`
   font-size: calc(2.6rem + 4vw);
   font-family: "Patua One",sans-serif;
-  margin-top: 2em;
-  max-width: 1000px;
+  margin-top: 1.9em;
+  margin-bottom: 1.1em;
   margin-left: auto;
   margin-right: auto;
 `
@@ -17,7 +17,6 @@ const Greeting = styled.p`
 const IntroP = styled.p`
   font-size: calc(1.2rem + 2vw);
   line-height: 1.35em;
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 `
