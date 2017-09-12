@@ -63,7 +63,9 @@ const ProjectItem = ({node: {frontmatter}, className}) => (
         <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
       </ImageLink>
     )}
-    <TagList tags={frontmatter.tags.split(' ')} />
+    {frontmatter.tags && (
+      <TagList tags={frontmatter.tags.split(' ')} />
+    )}
   </li>
 )
 
