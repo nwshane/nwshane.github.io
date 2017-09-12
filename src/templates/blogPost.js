@@ -7,7 +7,10 @@ const BlogPost = ({data}) => {
 
   return (
     <Layout>
-      <h1>{frontmatter.title}</h1>
+      <article>
+        <h1>{frontmatter.title}</h1>
+        <main dangerouslySetInnerHTML={{__html: blogPost.html}}></main>
+      </article>
     </Layout>
   )
 }
@@ -17,6 +20,7 @@ export default BlogPost
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(frontmatter: {slug: {eq: $slug }}) {
+      html
       frontmatter {
         title
       }
