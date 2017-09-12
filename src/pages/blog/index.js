@@ -1,5 +1,6 @@
 import Layout from '~/src/components/Layout'
 import React from 'react'
+import Link from 'gatsby-link'
 
 const BlogPage = ({data}) => {
   const blogPosts = data.allMarkdownRemark.edges
@@ -9,7 +10,9 @@ const BlogPage = ({data}) => {
       <ul>
         {blogPosts.map((blogPost) => (
           <li key={blogPost.node.id}>
-            {blogPost.node.frontmatter.title}
+            <Link to={`/blog/${blogPost.node.frontmatter.slug}`}>
+              {blogPost.node.frontmatter.title}
+            </Link>
           </li>
         ))}
       </ul>
@@ -30,6 +33,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            slug
           }
         }
       }
