@@ -10,7 +10,6 @@ exports.modifyBabelrc = ({ babelrc }) => {
 
 exports.createPages = ({boundActionCreators, graphql}) => {
   const {createPage} = boundActionCreators
-  const projectTemplate = resolve('./src/templates/project.js')
 
   return graphql(
     `
@@ -18,6 +17,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
       allMarkdownRemark(limit: 1000) {
         edges {
           node {
+            fileAbsolutePath
             frontmatter {
               slug
             }
@@ -30,12 +30,34 @@ exports.createPages = ({boundActionCreators, graphql}) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
+    const nodes = result.data.allMarkdownRemark.edges
 
-    result.data.allMarkdownRemark.edges.forEach(({node}) => {
+    const filterByPathIncludes = (testStr, nodes) => (
+      nodes.filter(
+        ({node: {fileAbsolutePath}}) => (fileAbsolutePath.includes(testStr))
+      )
+    )
+
+    const projects = filterByPathIncludes('/pages/projects/', nodes)
+
+    projects.forEach(({node}) => {
       const {slug} = node.frontmatter
       createPage({
         path: `/projects/${slug}`,
-        component: projectTemplate,
+        component: resolve('./src/templates/project.js'),
+        context: {
+          slug
+        }
+      })
+    })
+
+    const blogPosts = filterByPathIncludes('/pages/blog/', nodes)
+
+    blogPosts.forEach(({node}) => {
+      const {slug} = node.frontmatter
+      createPage({
+        path: `/blog/${slug}`,
+        component: resolve('./src/templates/blogPost.js'),
         context: {
           slug
         }
