@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "babel-plugin-root-import": "^5.1.0",
+    "d3": "^4.10.2",
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.4.1",
     "gatsby-plugin-catch-links": "^1.0.8",
@@ -21,6 +22,7 @@
     "gatsby-transformer-remark": "^1.7.6",
     "gatsby-transformer-sharp": "^1.6.5",
     "normalize.css": "^7.0.0",
+    "ramda": "^0.24.1",
     "styled-components": "^2.1.2",
     "webfontloader": "^1.6.28"
   }
