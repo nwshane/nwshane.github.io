@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import data from '~/tmp/biggest10.json'
 // import * as d3 from 'd3'
 
 class MeteoriteViz extends Component {
@@ -8,17 +7,14 @@ class MeteoriteViz extends Component {
   }
 
   componentDidMount () {
-    d3.select('.js-meteorites-viz-container')
-    .selectAll('div')
-    .data(data)
-    .append('div')
-    .text((d) => (d.name))
+    // d3.select('.js-meteorites-viz-container')
+    // .text("It's working!!!")
   }
 
   render () {
     return (
       <div className='js-meteorites-viz-container'>
-        {data[0].name}
+        Waiting for d3 to fill text in here
       </div>
     )
   }
