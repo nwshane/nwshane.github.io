@@ -1,6 +1,6 @@
 import Layout from '~/src/components/Layout'
 import React from 'react'
-import Link from 'gatsby-link'
+import BlogItem from '~/src/components/BlogItem'
 
 const BlogPage = ({data}) => {
   const blogPosts = data.allMarkdownRemark.edges
@@ -9,11 +9,7 @@ const BlogPage = ({data}) => {
     <Layout>
       <ul>
         {blogPosts.map((blogPost) => (
-          <li key={blogPost.node.id}>
-            <Link to={`/blog/${blogPost.node.frontmatter.slug}`}>
-              {blogPost.node.frontmatter.title}
-            </Link>
-          </li>
+          <BlogItem key={blogPost.node.id} {...blogPost} />
         ))}
       </ul>
     </Layout>
@@ -31,8 +27,10 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          excerpt
           frontmatter {
             title
+            date(formatString: "MMMM DD, YYYY")
             slug
           }
         }
