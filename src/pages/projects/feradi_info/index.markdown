@@ -6,7 +6,6 @@ tags: "open-source website jumpstart-georgia ruby rails javascript"
 githubUrl: "https://github.com/JumpStartGeorgia/feradi.info"
 mainUrl: "https://feradi.info"
 featuredImage: "Feradi-Home-Page.png"
-published: true
 ---
 
 We at JumpStart Georgia create visualizations of many different kinds, including infographics, interactives, videos, and gifographics. We publish these visualizations on [feradi.info]({{ page.mainUrl }}) ("feradi" means "colorful" in Georgian).

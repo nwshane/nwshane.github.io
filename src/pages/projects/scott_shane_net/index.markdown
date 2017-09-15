@@ -5,7 +5,6 @@ date: '2015-08-15T14:00:00.000Z'
 tags: "website freelance ruby rails"
 "mainUrl": "http://scottshane.net"
 "featuredImage": "Scott-Shane-Objective-Troy-Page.png"
-published: true
 ---
 [ScottShane.Net]({{page.mainUrl}}) is the site of Scott Shane, a journalist for the New York Times and author of the book Objective Troy. I built a custom Rails application for Mr. Shane, including:
 

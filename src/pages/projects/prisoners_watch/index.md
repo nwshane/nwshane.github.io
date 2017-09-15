@@ -6,7 +6,6 @@ tags: "open-source website jumpstart-georgia ruby rails"
 githubUrl: "https://github.com/JumpStartGeorgia/Azerbaijan-Political-Prisoners"
 mainUrl: "https://prisoners.watch"
 featuredImage: "Prisoners-Watch-Desktop.png"
-published: true
 ---
 
 When this [list of Azerbaijani political prisoners][prisoners-list-aug2014] was published in August, 2014, it served as a condemnation of the deteriorating human rights situation in Azerbaijan. Yet, its impact was limited by its PDF presentation, which made studying and understanding the trends it represented painfully difficult.
