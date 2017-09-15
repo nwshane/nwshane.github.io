@@ -23,8 +23,8 @@ const SLink = styled(Link)`
   color: ${secondaryColor};
 `
 
-const Header = () => (
-  <Nav>
+const Header = (props) => (
+  <Nav {...props}>
     <Ul>
       <Li>
         <SLink to='/'>

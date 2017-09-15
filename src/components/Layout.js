@@ -32,11 +32,19 @@ injectGlobal`
   }
 `
 
+const StyledHeader = styled(Header)`
+  max-width: calc(300px + 50%);
+  margin: 0 auto;
+`
+
 const Wrapper = styled.div`
   padding: 0 20px;
   font-size: 1.9rem;
   color: #514d54;
   letter-spacing: .3px;
+`
+
+const ContentWrapper = styled.div`
   max-width: ${(props) => (props.fullWidth ? 'initial' : 'calc(300px + 50%)')};
   margin: ${(props) => (props.fullWidth ? 'initial' : '0 auto')};
 `
@@ -74,8 +82,8 @@ export default class Layout extends Component {
 
   render () {
     return (
-      <Wrapper fullWidth={this.props.fullWidth}>
-        <Header />
+      <Wrapper>
+        <StyledHeader />
         <Helmet
           meta={[
             {property: 'og:site_name', content: gatsbyConfig.siteMetadata.title},
@@ -83,7 +91,9 @@ export default class Layout extends Component {
             {property: 'og:type', content: 'website'}
           ]}
         />
-        {this.props.children}
+        <ContentWrapper fullWidth={this.props.fullWidth}>
+          {this.props.children}
+        </ContentWrapper>
       </Wrapper>
     )
   }
