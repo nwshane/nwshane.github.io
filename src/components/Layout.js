@@ -37,8 +37,8 @@ const Wrapper = styled.div`
   font-size: 1.9rem;
   color: #514d54;
   letter-spacing: .3px;
-  max-width: calc(300px + 50%);
-  margin: 0 auto;
+  max-width: ${(props) => (props.fullWidth ? 'initial' : 'calc(300px + 50%)')};
+  margin: ${(props) => (props.fullWidth ? 'initial' : '0 auto')};
 `
 
 // https://github.com/DSchau/blog/blob/master/src/services/web-fonts.js
@@ -74,7 +74,7 @@ export default class Layout extends Component {
 
   render () {
     return (
-      <Wrapper>
+      <Wrapper fullWidth={this.props.fullWidth}>
         <Header />
         <Helmet
           meta={[

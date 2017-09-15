@@ -14,21 +14,31 @@ const H1 = styled.h1`
   left: -9999px;
 `
 
+const getProjectGridSpan = ({node: {frontmatter: {featured}}})=> ({
+  gridColumn: featured ? 'span 2' : 'span 1',
+  gridRow: featured ? 'span 3' : 'span 2'
+})
+
 const SProjectItem = styled(ProjectItem)`
-  grid-column: span 3;
+  @media (min-width: 600px) {
+    grid-column: ${(props) => (getProjectGridSpan(props).gridColumn)};
+    grid-row: ${(props) => (getProjectGridSpan(props).gridRow)};
+  }
 `
 
 const Ul = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  grid-gap: 30px;
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 30px;
+  }
 `
 
 const ProjectsPage = ({data}) => {
   const projects = data.allMarkdownRemark.edges
 
   return (
-    <Layout>
+    <Layout fullWidth>
       <HelmetTitle title='Projects' />
       <H1>Projects</H1>
       <Ul>
@@ -43,24 +53,26 @@ const ProjectsPage = ({data}) => {
 export default ProjectsPage
 
 export const pageQuery = graphql`
-query ProjectsQuery {
-  allMarkdownRemark(
-    filter: { fileAbsolutePath: { regex: "/pages/projects/" }}
-    sort: { order: DESC, fields: [frontmatter___date] }
-  ) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          slug
-          tags
-          featuredImage {
-            childImageSharp {
-              responsiveSizes(maxWidth: 600) {
-                src
-                srcSet
-                sizes
+  query ProjectsQuery {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/pages/projects/" }}
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            slug
+            tags
+            featured
+            featuredImage {
+              childImageSharp {
+                responsiveSizes(maxWidth: 600) {
+                  src
+                  srcSet
+                  sizes
+                }
               }
             }
           }
@@ -68,5 +80,4 @@ query ProjectsQuery {
       }
     }
   }
-}
 `
