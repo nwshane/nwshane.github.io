@@ -1,11 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-const BlogItem = ({node}) => {
+const Li = styled.li`
+  margin-bottom: 50px;
+`
+
+const BlogItem = ({node, ...props}) => {
   const {frontmatter} = node
 
   return (
-    <li>
+    <Li {...props}>
       <h2>
         <Link to={`/blog/${frontmatter.slug}`}>
           {frontmatter.title}
@@ -13,7 +18,7 @@ const BlogItem = ({node}) => {
       </h2>
       <p>{frontmatter.date}</p>
       <div>{node.excerpt}</div>
-    </li>
+    </Li>
   )
 }
 
