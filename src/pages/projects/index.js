@@ -15,7 +15,13 @@ const H1 = styled.h1`
 `
 
 const SProjectItem = styled(ProjectItem)`
-  margin-bottom: 45px;
+  grid-column: span 3;
+`
+
+const Ul = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-gap: 30px;
 `
 
 const ProjectsPage = ({data}) => {
@@ -25,11 +31,11 @@ const ProjectsPage = ({data}) => {
     <Layout>
       <HelmetTitle title='Projects' />
       <H1>Projects</H1>
-      <ul>
+      <Ul>
         {projects.map((project) => (
           <SProjectItem key={project.node.id}{...project} />
         ))}
-      </ul>
+      </Ul>
     </Layout>
   )
 }
