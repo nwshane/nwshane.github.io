@@ -7,6 +7,10 @@ const Article = styled.article`
   margin-top: 50px;
 `
 
+const MainContent = styled.main`
+  line-height: 1.2;
+`
+
 const BlogPost = ({data}) => {
   const blogPost = data.markdownRemark
   const {frontmatter} = blogPost
@@ -16,7 +20,7 @@ const BlogPost = ({data}) => {
       <Article>
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.date}</p>
-        <main dangerouslySetInnerHTML={{__html: blogPost.html}}></main>
+        <MainContent dangerouslySetInnerHTML={{__html: blogPost.html}} />
         <MeteoriteViz />
       </Article>
     </Layout>
