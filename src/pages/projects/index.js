@@ -27,6 +27,8 @@ const SProjectItem = styled(ProjectItem)`
 `
 
 const Ul = styled.ul`
+  padding: 0;
+  
   @media (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));

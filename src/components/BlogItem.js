@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const Li = styled.li`
   margin-bottom: 50px;
+  list-style-type: none;
 `
 
 const BlogItem = ({node, ...props}) => {

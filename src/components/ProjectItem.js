@@ -19,8 +19,12 @@ const ImageLink = styled(Link)`
   }
 `
 
+const Li = styled.li`
+  list-style-type: none;
+`
+
 const ProjectItem = ({node: {frontmatter}, className}) => (
-  <li {...{className}}>
+  <Li {...{className}}>
     <H2>
       <TitleLink to={`/projects/${frontmatter.slug}`}>{frontmatter.title}</TitleLink>
     </H2>
@@ -32,7 +36,7 @@ const ProjectItem = ({node: {frontmatter}, className}) => (
     {frontmatter.tags && (
       <TagList tags={frontmatter.tags.split(' ')} />
     )}
-  </li>
+  </Li>
 )
 
 export default ProjectItem

@@ -12,9 +12,11 @@ const Ul = styled.ul`
   justify-content: space-between;
   max-width: 400px;
   margin-left: auto;
+  padding: 0;
 `
 
 const Li = styled.li`
+  list-style-type: none;
 `
 
 const SLink = styled(Link)`

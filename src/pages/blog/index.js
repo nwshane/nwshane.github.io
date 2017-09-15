@@ -1,17 +1,22 @@
 import Layout from '~/src/components/Layout'
 import React from 'react'
 import BlogItem from '~/src/components/BlogItem'
+import styled from 'styled-components'
+
+const Ul = styled.ul`
+  padding: 0;
+`
 
 const BlogPage = ({data}) => {
   const blogPosts = data.allMarkdownRemark.edges
 
   return (
     <Layout>
-      <ul>
+      <Ul>
         {blogPosts.map((blogPost) => (
           <BlogItem key={blogPost.node.id} {...blogPost} />
         ))}
-      </ul>
+      </Ul>
     </Layout>
   )
 }
