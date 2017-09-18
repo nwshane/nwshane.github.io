@@ -8,6 +8,19 @@ exports.modifyBabelrc = ({ babelrc }) => {
   }
 }
 
+exports.modifyWebpackConfig = ({config}) => {
+  config._loaders['url-loader'].config.test = new RegExp(
+    config._loaders['url-loader'].config.test.toString().replace('svg|', '')
+  )
+
+  config._loaders.svg = {
+    config: {
+      test: /\.svg$/,
+      loader: 'svg-inline'
+    }
+  }
+}
+
 exports.createPages = ({boundActionCreators, graphql}) => {
   const {createPage} = boundActionCreators
 

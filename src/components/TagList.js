@@ -1,13 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import tagIcon from './tagIcon.svg'
+import {primaryColor} from '~/src/styles'
 
-const TagIcon = styled.img`
-  fill: currentColor;
-  height: 0.9em;
-  width: 0.9em;
+const TagIcon = styled.span`
+  max-width: 0.9em;
+  max-height: 0.9em;
   display: inline;
   margin-right: 0.7rem;
+
+  svg {
+    fill: ${primaryColor};
+    max-width: inherit;
+    max-height: inherit;
+  }
 `
 
 const Ul = styled.ul`
@@ -31,7 +37,7 @@ const Wrapper = styled.div`
 
 const TagList = ({tags, className}) => (
   <Wrapper className={className}>
-    <TagIcon src={tagIcon} alt='Tags' />
+    <TagIcon dangerouslySetInnerHTML={{__html: tagIcon}} alt={'Tags'}/>
     <Ul>
       {tags.map((tag) => (
         <Li key={tag}>
