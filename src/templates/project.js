@@ -56,27 +56,33 @@ const ProjectTemplate = ({data}) => {
   return (
     <Layout>
       <HelmetTitle title={frontmatter.title} />
-      <H1>
-        {frontmatter.title}
-      </H1>
-      <MainUrlAnchor target='_blank' href={frontmatter.mainUrl}>
-        {frontmatter.mainUrl}
-      </MainUrlAnchor>
-      {frontmatter.featuredImage && (
-        <ImageAnchor target='_blank' href={frontmatter.mainUrl}>
-          <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
-        </ImageAnchor>
-      )}
-      <MetaDataContainer>
-        <StyledTagList tags={frontmatter.tags.split(' ')} />
-        <StyledDateWithIcon date={frontmatter.date} />
-        {frontmatter.githubUrl && (
-          <GithubUrlPar>
-            <ForkLinkWithIcon href={frontmatter.githubUrl} />
-          </GithubUrlPar>
-        )}
-      </MetaDataContainer>
-      <div dangerouslySetInnerHTML={{ __html: project.html }} />
+      <article>
+        <section>
+          <div>
+            <H1>
+              {frontmatter.title}
+            </H1>
+            <MainUrlAnchor target='_blank' href={frontmatter.mainUrl}>
+              {frontmatter.mainUrl}
+            </MainUrlAnchor>
+          </div>
+          {frontmatter.featuredImage && (
+            <ImageAnchor target='_blank' href={frontmatter.mainUrl}>
+              <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
+            </ImageAnchor>
+          )}
+          <MetaDataContainer>
+            <StyledTagList tags={frontmatter.tags.split(' ')} />
+            <StyledDateWithIcon date={frontmatter.date} />
+            {frontmatter.githubUrl && (
+              <GithubUrlPar>
+                <ForkLinkWithIcon href={frontmatter.githubUrl} />
+              </GithubUrlPar>
+            )}
+          </MetaDataContainer>
+        </section>
+        <main dangerouslySetInnerHTML={{ __html: project.html }} />
+      </article>
     </Layout>
   )
 }
