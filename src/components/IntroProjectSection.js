@@ -8,8 +8,7 @@ import ForkLinkWithIcon from '~/src/components/ForkLinkWithIcon'
 const H1 = styled.h1`
   font-family: "Patua One",sans-serif;
   font-size: 3rem;
-  margin-bottom: 0;
-  margin-top: 20px;
+  margin: 0
 `
 
 const smallFontSize = '1.6rem'
@@ -18,12 +17,6 @@ const MainUrlAnchor = styled.a`
   font-size: ${smallFontSize};
   display: block;
   margin-bottom: 20px;
-`
-
-const ImageAnchor = styled.a`
-  :hover {
-    filter: none;
-  }
 `
 
 const GithubUrlPar = styled.span`
@@ -43,20 +36,62 @@ const StyledTagList = styled(TagList)`
   font-size: ${smallFontSize};
 `
 
-const MetaDataContainer = styled.div`
+const minGridWidth = '900px'
+
+const Wrapper = styled.section`
+  margin-top: 30px;
   margin-bottom: 50px;
+  @media (min-width: ${minGridWidth}) {
+    @supports (grid-area: auto) {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        'picture heading'
+        'picture metadata';
+    }
+  }
+`
+
+const HeaderGroup = styled.section`
+  @media (min-width: ${minGridWidth}) {
+    @supports (grid-area: auto) {
+      grid-area: heading;
+    }
+  }
+`
+
+const ImageAnchor = styled.a`
+  :hover {
+    filter: none;
+  }
+
+  @media (min-width: ${minGridWidth}) {
+    @supports (grid-area: auto) {
+      grid-area: picture;
+    }
+  }
+`
+
+const MetaDataContainer = styled.div`
+  @media (min-width: ${minGridWidth}) {
+    @supports (grid-area: auto) {
+      grid-area: metadata;
+      align-self: flex-end;
+    }
+  }
 `
 
 const IntroProjectSection = ({project: {frontmatter}}) => (
-  <section>
-    <div>
+  <Wrapper>
+    <HeaderGroup>
       <H1>
         {frontmatter.title}
       </H1>
       <MainUrlAnchor target='_blank' href={frontmatter.mainUrl}>
         {frontmatter.mainUrl}
       </MainUrlAnchor>
-    </div>
+    </HeaderGroup>
     {frontmatter.featuredImage && (
       <ImageAnchor target='_blank' href={frontmatter.mainUrl}>
         <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
@@ -71,7 +106,7 @@ const IntroProjectSection = ({project: {frontmatter}}) => (
         </GithubUrlPar>
       )}
     </MetaDataContainer>
-  </section>
+  </Wrapper>
 )
 
 export default IntroProjectSection
