@@ -41,8 +41,8 @@ const Wrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  max-width: ${(props) => (props.fullWidth ? 'initial' : 'calc(300px + 50%)')};
-  margin: ${(props) => (props.fullWidth ? 'initial' : '0 auto')};
+  max-width: calc(300px + 50%);
+  margin: 0 auto;
 `
 
 // https://github.com/DSchau/blog/blob/master/src/services/web-fonts.js
@@ -87,7 +87,10 @@ export default class Layout extends Component {
             {property: 'og:type', content: 'website'}
           ]}
         />
-        <ContentWrapper fullWidth={this.props.fullWidth}>
+        <ContentWrapper
+          className={this.props.className}
+          fullWidth={this.props.fullWidth}
+        >
           {this.props.children}
         </ContentWrapper>
       </Wrapper>

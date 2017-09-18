@@ -39,11 +39,16 @@ const Ul = styled.ul`
   }
 `
 
+const ProjectsLayout = styled(Layout)`
+  max-width: initial;
+  margin: initial;
+`
+
 const ProjectsPage = ({data}) => {
   const projects = data.allMarkdownRemark.edges
 
   return (
-    <Layout fullWidth>
+    <ProjectsLayout>
       <HelmetTitle title='Projects' />
       <H1>Projects</H1>
       <Ul>
@@ -51,7 +56,7 @@ const ProjectsPage = ({data}) => {
           <SProjectItem key={project.node.id}{...project} />
         ))}
       </Ul>
-    </Layout>
+    </ProjectsLayout>
   )
 }
 
