@@ -13,7 +13,7 @@ injectGlobal`
     font-size: 10px;
     font-family: Lato,sans-serif;
   }
-  
+
   a {
     text-decoration: none;
     color: ${primaryColor};

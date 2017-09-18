@@ -6,6 +6,22 @@ import styled from 'styled-components'
 
 const H1 = styled.h1`
   font-family: "Patua One",sans-serif;
+  margin-bottom: 0;
+`
+
+const MainUrl = styled.p`
+  font-size: 1.4rem;
+  margin-top: 3px;
+`
+
+const ImageAnchor = styled.a`
+  :hover {
+    filter: none;
+  }
+`
+
+const MetaPar = styled.p`
+  font-size: 1.4rem;
 `
 
 const ProjectTemplate = ({data}) => {
@@ -18,25 +34,25 @@ const ProjectTemplate = ({data}) => {
       <H1>
         {frontmatter.title}
       </H1>
+      <MainUrl>
+        <a target='_blank' href={frontmatter.mainUrl}>
+          {frontmatter.mainUrl}
+        </a>
+      </MainUrl>
       {frontmatter.featuredImage && (
-        <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
+        <ImageAnchor target='_blank' href={frontmatter.mainUrl}>
+          <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
+        </ImageAnchor>
       )}
-      {frontmatter.mainUrl && (
-        <p>
-          <a target='_blank' href={frontmatter.mainUrl}>
-            {frontmatter.mainUrl}
-          </a>
-        </p>
-      )}
+      <MetaPar>{frontmatter.tags}</MetaPar>
+      <MetaPar>{frontmatter.date}</MetaPar>
       {frontmatter.githubUrl && (
-        <p>
+        <MetaPar>
           <a target='_blank' href={frontmatter.githubUrl}>
             Fork on Github
           </a>
-        </p>
+        </MetaPar>
       )}
-      <p>Date: {frontmatter.date}</p>
-      <p>Tags: {frontmatter.tags}</p>
       <div dangerouslySetInnerHTML={{ __html: project.html }} />
     </Layout>
   )
@@ -51,7 +67,7 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM D, YYYY")
         tags
         mainUrl
         githubUrl
