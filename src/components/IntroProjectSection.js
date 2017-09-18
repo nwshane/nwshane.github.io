@@ -7,11 +7,11 @@ import ForkLinkWithIcon from '~/src/components/ForkLinkWithIcon'
 
 const H1 = styled.h1`
   font-family: "Patua One",sans-serif;
-  font-size: 3rem;
+  font-size: calc(1vw + 2.7rem);
   margin: 0
 `
 
-const smallFontSize = '1.6rem'
+const smallFontSize = 'calc(0.5vw + 1.3rem)'
 
 const MainUrlAnchor = styled.a`
   font-size: ${smallFontSize};
@@ -44,7 +44,7 @@ const Wrapper = styled.section`
   @media (min-width: ${minGridWidth}) {
     @supports (grid-area: auto) {
       display: grid;
-      grid-gap: 20px;
+      grid-gap: 40px;
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
         'picture heading'
