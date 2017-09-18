@@ -7,7 +7,7 @@ const TagIcon = styled.span`
   max-width: 0.9em;
   max-height: 0.9em;
   display: inline;
-  margin-right: 0.1em;
+  margin-right: 0.2em;
 
   svg {
     fill: ${primaryColor};

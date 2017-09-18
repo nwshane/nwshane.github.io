@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {primaryColor} from '~/src/styles'
 
 const StyledDateIcon = styled.span`
+  margin-right: 0.2em;
   svg {
     fill: ${primaryColor};
     max-width: 0.9em;
