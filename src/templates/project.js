@@ -57,7 +57,7 @@ export const pageQuery = graphql`
         githubUrl
         featuredImage {
           childImageSharp {
-            responsiveSizes(maxWidth: 600) {
+            responsiveSizes(maxWidth: 1440) {
               src
               srcSet
               sizes

@@ -12,7 +12,7 @@ const getSharpImageProps = (imageData) => {
 }
 
 const Img = styled.img`
-  width: 100%;
+  max-width: 100%;
 `
 
 const SharpImage = ({imageData, ...props}) => (
