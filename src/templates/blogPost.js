@@ -2,9 +2,18 @@ import React from 'react'
 import Layout from '~/src/components/Layout'
 import styled from 'styled-components'
 import BlogLayout from '~/src/components/BlogLayout'
+import DateWithIcon from '~/src/components/DateWithIcon'
 
 const Article = styled.article`
   margin-top: 50px;
+`
+
+const IntroSection = styled.section`
+  margin-bottom: 50px;
+`
+
+const Heading = styled.h1`
+  margin-bottom: 10px;
 `
 
 const MainContent = styled.main`
@@ -18,8 +27,10 @@ const BlogPost = ({data}) => {
   return (
     <BlogLayout>
       <Article>
-        <h1>{frontmatter.title}</h1>
-        <p>{frontmatter.date}</p>
+        <IntroSection>
+          <Heading>{frontmatter.title}</Heading>
+          <DateWithIcon date={frontmatter.date} />
+        </IntroSection>
         <MainContent dangerouslySetInnerHTML={{__html: blogPost.html}} />
       </Article>
     </BlogLayout>
