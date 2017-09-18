@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import TagList from '~/src/components/TagList'
 import DateWithIcon from '~/src/components/DateWithIcon'
 import ForkLinkWithIcon from '~/src/components/ForkLinkWithIcon'
+import ResponsiveForkLink from '~/src/components/ResponsiveForkLink'
 
 const H1 = styled.h1`
   font-family: "Patua One",sans-serif;
@@ -102,7 +103,7 @@ const IntroProjectSection = ({project: {frontmatter}}) => (
       <StyledDateWithIcon date={frontmatter.date} />
       {frontmatter.githubUrl && (
         <GithubUrlPar>
-          <ForkLinkWithIcon href={frontmatter.githubUrl} />
+          <ResponsiveForkLink href={frontmatter.githubUrl} />
         </GithubUrlPar>
       )}
     </MetaDataContainer>

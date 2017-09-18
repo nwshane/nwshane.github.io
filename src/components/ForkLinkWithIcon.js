@@ -11,8 +11,8 @@ const GithubIcon = styled.span`
   }
 `
 
-const ForkLinkWithIcon = ({href}) => (
-  <a href={href}>
+const ForkLinkWithIcon = ({href, className}) => (
+  <a href={href} className={className}>
     <GithubIcon dangerouslySetInnerHTML={{__html: githubIcon}} />
     Fork on Github
   </a>
