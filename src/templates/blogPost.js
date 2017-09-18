@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '~/src/components/Layout'
-import MeteoriteViz from '../pages/blog/2017-09-12-meteorites/MeteoriteViz'
 import styled from 'styled-components'
 
 const Article = styled.article`
@@ -21,7 +20,6 @@ const BlogPost = ({data}) => {
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.date}</p>
         <MainContent dangerouslySetInnerHTML={{__html: blogPost.html}} />
-        <MeteoriteViz />
       </Article>
     </Layout>
   )
