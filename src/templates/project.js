@@ -4,6 +4,8 @@ import HelmetTitle from '~/src/components/HelmetTitle'
 import SharpImage from '~/src/components/SharpImage'
 import styled from 'styled-components'
 import TagList from '~/src/components/TagList'
+import DateWithIcon from '~/src/components/DateWithIcon'
+import ForkLinkWithIcon from '~/src/components/ForkLinkWithIcon'
 
 const H1 = styled.h1`
   font-family: "Patua One",sans-serif;
@@ -23,9 +25,16 @@ const ImageAnchor = styled.a`
   }
 `
 
-const MetaPar = styled.p`
+const GithubUrlPar = styled.span`
   font-size: ${smallFontSize};
   font-weight: 300;
+  display: block;
+`
+
+const StyledDateWithIcon = styled(DateWithIcon)`
+  font-size: ${smallFontSize};
+  font-weight: 300;
+  display: block;
 `
 
 const StyledTagList = styled(TagList)`
@@ -54,13 +63,11 @@ const ProjectTemplate = ({data}) => {
         </ImageAnchor>
       )}
       <StyledTagList tags={frontmatter.tags.split(' ')} />
-      <MetaPar>{frontmatter.date}</MetaPar>
+      <StyledDateWithIcon date={frontmatter.date} />
       {frontmatter.githubUrl && (
-        <MetaPar>
-          <a target='_blank' href={frontmatter.githubUrl}>
-            Fork on Github
-          </a>
-        </MetaPar>
+        <GithubUrlPar>
+          <ForkLinkWithIcon href={frontmatter.githubUrl} />
+        </GithubUrlPar>
       )}
       <div dangerouslySetInnerHTML={{ __html: project.html }} />
     </Layout>
