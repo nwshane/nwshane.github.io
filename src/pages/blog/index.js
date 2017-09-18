@@ -1,6 +1,6 @@
-import Layout from '~/src/components/Layout'
 import React from 'react'
 import BlogItem from '~/src/components/BlogItem'
+import BlogLayout from '~/src/components/BlogLayout'
 import styled from 'styled-components'
 
 const Ul = styled.ul`
@@ -11,13 +11,13 @@ const BlogPage = ({data}) => {
   const blogPosts = data.allMarkdownRemark.edges
 
   return (
-    <Layout>
+    <BlogLayout>
       <Ul>
         {blogPosts.map((blogPost) => (
           <BlogItem key={blogPost.node.id} {...blogPost} />
         ))}
       </Ul>
-    </Layout>
+    </BlogLayout>
   )
 }
 

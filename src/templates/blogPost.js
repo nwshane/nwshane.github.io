@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '~/src/components/Layout'
 import styled from 'styled-components'
+import BlogLayout from '~/src/components/BlogLayout'
 
 const Article = styled.article`
   margin-top: 50px;
@@ -15,13 +16,13 @@ const BlogPost = ({data}) => {
   const {frontmatter} = blogPost
 
   return (
-    <Layout>
+    <BlogLayout>
       <Article>
         <h1>{frontmatter.title}</h1>
         <p>{frontmatter.date}</p>
         <MainContent dangerouslySetInnerHTML={{__html: blogPost.html}} />
       </Article>
-    </Layout>
+    </BlogLayout>
   )
 }
 
