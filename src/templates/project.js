@@ -25,9 +25,11 @@ const ImageAnchor = styled.a`
 
 const MetaPar = styled.p`
   font-size: ${smallFontSize};
+  font-weight: 300;
 `
 
 const StyledTagList = styled(TagList)`
+  font-weight: 300;
   font-size: ${smallFontSize};
 `
 

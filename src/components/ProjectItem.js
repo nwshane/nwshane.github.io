@@ -23,6 +23,11 @@ const Li = styled.li`
   list-style-type: none;
 `
 
+const StyledTagList = styled(TagList)`
+  font-size: 1.6rem;
+  font-weight: 300;
+`
+
 const ProjectItem = ({node: {frontmatter}, className}) => (
   <Li {...{className}}>
     <H2>
@@ -34,7 +39,7 @@ const ProjectItem = ({node: {frontmatter}, className}) => (
       </ImageLink>
     )}
     {frontmatter.tags && (
-      <TagList tags={frontmatter.tags.split(' ')} />
+      <StyledTagList tags={frontmatter.tags.split(' ')} />
     )}
   </Li>
 )

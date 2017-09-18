@@ -31,8 +31,6 @@ const Li = styled.li`
 `
 
 const Wrapper = styled.div`
-  font-size: 1.6rem;
-  font-weight: 300;
 `
 
 const TagList = ({tags, className}) => (
