@@ -20,7 +20,10 @@ const getProjectGridSpan = ({node: {frontmatter: {featured}}})=> ({
 })
 
 const SProjectItem = styled(ProjectItem)`
+  margin-bottom: 50px;
+
   @media (min-width: 600px) {
+    margin-bottom: 0;
     grid-column: ${(props) => (getProjectGridSpan(props).gridColumn)};
     grid-row: ${(props) => (getProjectGridSpan(props).gridRow)};
   }
@@ -28,7 +31,7 @@ const SProjectItem = styled(ProjectItem)`
 
 const Ul = styled.ul`
   padding: 0;
-  
+
   @media (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));

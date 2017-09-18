@@ -9,7 +9,9 @@ import ForkLinkWithIcon from '~/src/components/ForkLinkWithIcon'
 
 const H1 = styled.h1`
   font-family: "Patua One",sans-serif;
+  font-size: 3rem;
   margin-bottom: 0;
+  margin-top: 20px;
 `
 
 const smallFontSize = '1.6rem'

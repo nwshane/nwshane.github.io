@@ -7,6 +7,7 @@ import TagList from './TagList'
 const H2 = styled.h2`
   font-family: "Patua One",sans-serif;
   margin-bottom: 10px;
+  margin-top: 20px;
 `
 
 const TitleLink = styled(Link)`
