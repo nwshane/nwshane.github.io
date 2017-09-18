@@ -31,9 +31,13 @@ const StyledHeader = styled(Header)`
 
 const Wrapper = styled.div`
   padding: 0 20px;
-  font-size: 1.9rem;
+  font-size: 2rem;
   color: #514d54;
   letter-spacing: .3px;
+
+  p {
+    line-height: 1.5;
+  }
 `
 
 const ContentWrapper = styled.div`

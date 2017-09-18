@@ -14,9 +14,10 @@ const H1 = styled.h1`
 
 const smallFontSize = '1.6rem'
 
-const MainUrl = styled.p`
+const MainUrlAnchor = styled.a`
   font-size: ${smallFontSize};
-  margin-top: 3px;
+  display: block;
+  margin-bottom: 20px;
 `
 
 const ImageAnchor = styled.a`
@@ -42,6 +43,10 @@ const StyledTagList = styled(TagList)`
   font-size: ${smallFontSize};
 `
 
+const MetaDataContainer = styled.div`
+  margin-bottom: 50px;
+`
+
 const ProjectTemplate = ({data}) => {
   const project = data.markdownRemark
   const {frontmatter} = project
@@ -52,23 +57,23 @@ const ProjectTemplate = ({data}) => {
       <H1>
         {frontmatter.title}
       </H1>
-      <MainUrl>
-        <a target='_blank' href={frontmatter.mainUrl}>
-          {frontmatter.mainUrl}
-        </a>
-      </MainUrl>
+      <MainUrlAnchor target='_blank' href={frontmatter.mainUrl}>
+        {frontmatter.mainUrl}
+      </MainUrlAnchor>
       {frontmatter.featuredImage && (
         <ImageAnchor target='_blank' href={frontmatter.mainUrl}>
           <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
         </ImageAnchor>
       )}
-      <StyledTagList tags={frontmatter.tags.split(' ')} />
-      <StyledDateWithIcon date={frontmatter.date} />
-      {frontmatter.githubUrl && (
-        <GithubUrlPar>
-          <ForkLinkWithIcon href={frontmatter.githubUrl} />
-        </GithubUrlPar>
-      )}
+      <MetaDataContainer>
+        <StyledTagList tags={frontmatter.tags.split(' ')} />
+        <StyledDateWithIcon date={frontmatter.date} />
+        {frontmatter.githubUrl && (
+          <GithubUrlPar>
+            <ForkLinkWithIcon href={frontmatter.githubUrl} />
+          </GithubUrlPar>
+        )}
+      </MetaDataContainer>
       <div dangerouslySetInnerHTML={{ __html: project.html }} />
     </Layout>
   )
