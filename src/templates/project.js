@@ -3,14 +3,17 @@ import Layout from '~/src/components/Layout'
 import HelmetTitle from '~/src/components/HelmetTitle'
 import SharpImage from '~/src/components/SharpImage'
 import styled from 'styled-components'
+import TagList from '~/src/components/TagList'
 
 const H1 = styled.h1`
   font-family: "Patua One",sans-serif;
   margin-bottom: 0;
 `
 
+const smallFontSize = '1.6rem'
+
 const MainUrl = styled.p`
-  font-size: 1.4rem;
+  font-size: ${smallFontSize};
   margin-top: 3px;
 `
 
@@ -21,7 +24,11 @@ const ImageAnchor = styled.a`
 `
 
 const MetaPar = styled.p`
-  font-size: 1.4rem;
+  font-size: ${smallFontSize};
+`
+
+const StyledTagList = styled(TagList)`
+  font-size: ${smallFontSize};
 `
 
 const ProjectTemplate = ({data}) => {
@@ -44,7 +51,7 @@ const ProjectTemplate = ({data}) => {
           <SharpImage imageData={frontmatter.featuredImage} alt='Featured Project Image' />
         </ImageAnchor>
       )}
-      <MetaPar>{frontmatter.tags}</MetaPar>
+      <StyledTagList tags={frontmatter.tags.split(' ')} />
       <MetaPar>{frontmatter.date}</MetaPar>
       {frontmatter.githubUrl && (
         <MetaPar>

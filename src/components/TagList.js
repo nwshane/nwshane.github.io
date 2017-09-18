@@ -7,25 +7,30 @@ const TagIcon = styled.img`
   height: 0.9em;
   width: 0.9em;
   display: inline;
+  margin-right: 0.7rem;
 `
 
 const Ul = styled.ul`
   display: inline;
-  font-size: 1.6rem;
+  padding: 0;
 `
 
 const Li = styled.li`
   display: inline-block;
-  margin-left: 0.7rem;
-  font-weight: 300;
+  margin-right: 0.7rem;
 
   :not(:last-child):after {
     content: ',';
   }
 `
 
-const TagList = ({tags}) => (
-  <div>
+const Wrapper = styled.div`
+  font-size: 1.6rem;
+  font-weight: 300;
+`
+
+const TagList = ({tags, className}) => (
+  <Wrapper className={className}>
     <TagIcon src={tagIcon} alt='Tags' />
     <Ul>
       {tags.map((tag) => (
@@ -34,7 +39,7 @@ const TagList = ({tags}) => (
         </Li>
       ))}
     </Ul>
-  </div>
+  </Wrapper>
 )
 
 export default TagList
