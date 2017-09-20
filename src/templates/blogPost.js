@@ -14,6 +14,11 @@ const IntroSection = styled.section`
 
 const Heading = styled.h1`
   margin-bottom: 10px;
+  font-size: 3.2rem;
+
+  @media (min-width: 600px) {
+    font-size: 4rem;
+  }
 `
 
 const MainContent = styled.main`
