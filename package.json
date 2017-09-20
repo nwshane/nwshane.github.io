@@ -3,6 +3,9 @@
   "description": "Nathan Shane's portfolio website",
   "repository": "https://github.com/nwshane/nwshane.github.io.git",
   "license": "MIT",
+  "engines": {
+    "node": "^8.5.0"
+  },
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
@@ -11,6 +14,7 @@
   "dependencies": {
     "babel-plugin-root-import": "^5.1.0",
     "d3": "^4.10.2",
+    "express": "^4.15.4",
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.4.1",
     "gatsby-plugin-catch-links": "^1.0.8",
