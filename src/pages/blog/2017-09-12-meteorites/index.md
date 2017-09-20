@@ -2,6 +2,7 @@
 slug: meteorites-and-things
 date: '2017-09-12T10:14:00.000Z'
 title: Meteorites and Things
+draft: true
 ---
 
 That's right, I'm starting a blog! I give no guarantees that I'll write here often, or that I'll write about certain topics. Basically, I just want a place where I can write when I want to write, whether that be about tech subjects, cats, interesting things I've learned, chocolate, what's been up in my life... you get the picture.

@@ -7,13 +7,15 @@ const Ul = styled.ul`
   padding: 0;
 `
 
+const isNotDraft = ({node: {frontmatter: {draft}}}) => (draft)
+
 const BlogPage = ({data}) => {
   const blogPosts = data.allMarkdownRemark.edges
 
   return (
     <BlogLayout>
       <Ul>
-        {blogPosts.map((blogPost) => (
+        {blogPosts.filter(isNotDraft).map((blogPost) => (
           <BlogItem key={blogPost.node.id} {...blogPost} />
         ))}
       </Ul>
@@ -37,6 +39,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             slug
+            draft
           }
         }
       }

@@ -2,6 +2,7 @@
 slug: squashing-gatsby-webpack-d3-bug
 title: Squashing a Gatsby+Webpack+d3 bug
 date: '2017-09-19T12:00:00.000Z'
+draft: true
 ---
 I was in the midst of rebuilding my site last week with Gatsby JS, a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.
 
