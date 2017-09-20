@@ -10,7 +10,8 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "start": "node index.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "deploy": "surge -p public/ --domain nathanshane.surge.sh"
   },
   "dependencies": {
     "babel-plugin-root-import": "^5.1.0",
