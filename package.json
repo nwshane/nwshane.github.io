@@ -10,7 +10,7 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "start": "node index.js",
-    "postinstall": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "babel-plugin-root-import": "^5.1.0",
