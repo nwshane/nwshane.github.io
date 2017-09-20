@@ -31,7 +31,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`
           },
-          'gatsby-remark-copy-linked-files'
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-prismjs'
         ]
       }
     }

@@ -6,6 +6,7 @@ import packageJson from '~/package.json'
 import gatsbyConfig from '~/gatsby-config'
 import Helmet from 'react-helmet'
 import {primaryColor, secondaryColor} from '~/src/styles'
+import '~/assets/prism.css'
 
 injectGlobal`
   html {

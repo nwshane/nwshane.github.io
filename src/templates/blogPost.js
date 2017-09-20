@@ -23,6 +23,24 @@ const Heading = styled.h1`
 
 const MainContent = styled.main`
   line-height: 1.2;
+
+  ol, ul {
+    margin: 40px 0;
+  }
+
+  ol li, ul li {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+
+    @media (min-width: 600px) {
+      font-size: 3rem;
+    }
+  }
 `
 
 const BlogPost = ({data}) => {
