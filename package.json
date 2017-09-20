@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "start": "gatsby serve"
+    "start": "node index.js"
   },
   "dependencies": {
     "babel-plugin-root-import": "^5.1.0",
