@@ -32,5 +32,8 @@
     "styled-components": "^2.1.2",
     "svg-inline-loader": "^0.8.0",
     "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
