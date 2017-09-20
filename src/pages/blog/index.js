@@ -7,7 +7,7 @@ const Ul = styled.ul`
   padding: 0;
 `
 
-const isNotDraft = ({node: {frontmatter: {draft}}}) => (draft)
+const isNotDraft = ({node: {frontmatter: {draft}}}) => (!draft)
 
 const BlogPage = ({data}) => {
   const blogPosts = data.allMarkdownRemark.edges
