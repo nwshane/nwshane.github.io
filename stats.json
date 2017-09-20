@@ -1,0 +1,106 @@
+{
+  "assetsByChunkName": {
+    "path---projects-georgian-budget": [
+      "path---projects-georgian-budget-a9a0b4221f8832ec1042.js",
+      "path---projects-georgian-budget-a9a0b4221f8832ec1042.js.map"
+    ],
+    "path---blog-squashing-gatsby-webpack-d-3-bug": [
+      "path---blog-squashing-gatsby-webpack-d-3-bug-0d4c9e9e475ee6830488.js",
+      "path---blog-squashing-gatsby-webpack-d-3-bug-0d4c9e9e475ee6830488.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-37ff0697c3fd29f92430.js",
+      "component---src-pages-index-js-37ff0697c3fd29f92430.js.map"
+    ],
+    "path---blog": [
+      "path---blog-36cacb98050ba99c94ad.js",
+      "path---blog-36cacb98050ba99c94ad.js.map"
+    ],
+    "path---projects-gogocode": [
+      "path---projects-gogocode-60c8a0566d4fb7b0ff0f.js",
+      "path---projects-gogocode-60c8a0566d4fb7b0ff0f.js.map"
+    ],
+    "webfontloader": [
+      "webfontloader-7e2893ef542a12a5c720.js",
+      "webfontloader-7e2893ef542a12a5c720.js.map"
+    ],
+    "path---projects-scott-shane-net": [
+      "path---projects-scott-shane-net-fa25160adacf3ae50975.js",
+      "path---projects-scott-shane-net-fa25160adacf3ae50975.js.map"
+    ],
+    "path---projects": [
+      "path---projects-eac5536d7a11488889bb.js",
+      "path---projects-eac5536d7a11488889bb.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "path---blog-meteorites-and-things": [
+      "path---blog-meteorites-and-things-b4e38b0bd4e34fea5e4e.js",
+      "path---blog-meteorites-and-things-b4e38b0bd4e34fea5e4e.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-e78ddb4780397b1521cc.js",
+      "component---src-templates-blog-post-js-e78ddb4780397b1521cc.js.map"
+    ],
+    "component---src-templates-project-js": [
+      "component---src-templates-project-js-a9d2d1b2a7f66086eaf7.js",
+      "component---src-templates-project-js-a9d2d1b2a7f66086eaf7.js.map"
+    ],
+    "path---projects-feradi-info": [
+      "path---projects-feradi-info-1d63c520a1b87d5a3635.js",
+      "path---projects-feradi-info-1d63c520a1b87d5a3635.js.map"
+    ],
+    "component---src-pages-blog-2017-09-12-meteorites-meteorite-viz-js": [
+      "component---src-pages-blog-2017-09-12-meteorites-meteorite-viz-js-42eeb8f701d7616b7032.js",
+      "component---src-pages-blog-2017-09-12-meteorites-meteorite-viz-js-42eeb8f701d7616b7032.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-blog-index-js": [
+      "component---src-pages-blog-index-js-09a6f8c9e6c5d0582950.js",
+      "component---src-pages-blog-index-js-09a6f8c9e6c5d0582950.js.map"
+    ],
+    "path---projects-place-ge-scraper": [
+      "path---projects-place-ge-scraper-48940fb956cc6d032a64.js",
+      "path---projects-place-ge-scraper-48940fb956cc6d032a64.js.map"
+    ],
+    "commons": [
+      "commons-b20e06c14c0e322727af.js",
+      "build-js-styles.css",
+      "commons-b20e06c14c0e322727af.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-projects-index-js": [
+      "component---src-pages-projects-index-js-6c443787ea477320a34f.js",
+      "component---src-pages-projects-index-js-6c443787ea477320a34f.js.map"
+    ],
+    "path---projects-prisoners-watch": [
+      "path---projects-prisoners-watch-d152744132b2a524a15e.js",
+      "path---projects-prisoners-watch-d152744132b2a524a15e.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---blog-2017-09-12-meteorites-meteorite-viz": [
+      "path---blog-2017-09-12-meteorites-meteorite-viz-a0e39f21c11f6a62c5ab.js",
+      "path---blog-2017-09-12-meteorites-meteorite-viz-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-1437bab8bf2d9088bb26.js",
+      "app-1437bab8bf2d9088bb26.js.map"
+    ],
+    "path---blog-why-im-starting-a-blog": [
+      "path---blog-why-im-starting-a-blog-aeb318de4cbbce4b3292.js",
+      "path---blog-why-im-starting-a-blog-aeb318de4cbbce4b3292.js.map"
+    ],
+    "path---projects-atoms": [
+      "path---projects-atoms-5ce22f3f3591ca2fe263.js",
+      "path---projects-atoms-5ce22f3f3591ca2fe263.js.map"
+    ]
+  }
+}
