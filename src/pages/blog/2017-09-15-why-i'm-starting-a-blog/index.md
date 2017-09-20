@@ -6,7 +6,7 @@ date: '2017-09-15T10:14:00.000Z'
 
 Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere!
 
-I’ve decided that I want to have a space to share what’s going in my head and my life—whether that be technical subjects, cat memes, reflections on books I’m reading, tasty recipes, life updates... pretty much anything I want to write about.
+I’ve decided that I want to have a space to share what’s going in my head and my life—whether that be technical subjects, cat memes, reflections on books I’m reading, tasty recipes, beautiful music, life updates... pretty much anything I want to write about.
 
 I know that’s a bit vague, so I’ll try to clarify my primary reason for starting this blog. I’ve experimented with various learning techniques over the past few years, and one that’s really stuck has been my use of flashcards. I make flashcards for everything ([Anki](https://ankiweb.net/about) anyone?), because I’ve found that flashcards help my ailing 27-year old memory remember what I learned yesterday, a month ago, and even a year ago.
 
