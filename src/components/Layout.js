@@ -47,7 +47,7 @@ const ContentWrapper = styled.div`
 
 // https://github.com/DSchau/blog/blob/master/src/services/web-fonts.js
 const loadWebFonts = () => {
-  const families = ['Lato:300,400', 'Patua One']
+  const families = ['Lato:300,400,700', 'Patua One']
   if (sessionStorage.fonts === families.join(' ')) {
     document.documentElement.classList.add('wf-active')
   }
