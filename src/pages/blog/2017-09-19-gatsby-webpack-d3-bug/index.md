@@ -164,7 +164,7 @@ With these two things in mind, Harold and I opened the webpack documentation. Af
 
 Of the properties specified by webpack v1, `main` is the only one that appears in d3-request’s package.json; thus, webpack v1 was loading the `main` build (for node). However, d3-request's package.json also has a `module` property, which webpack v3 includes before `main`, meaning that webpack v3 was loading the `module` build.
 
-Webpack v3’s docs for [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) also include a link to webpack’s [`target`](https://webpack.js.org/concepts/targets/) configuration, which is what makes webpack choose the environment to emulate when building its bundle. By [hooking into Gatsby’s webpack config](https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/add-custom-webpack-config.md) and logging it to the console, we were able to see that `target` was set to `'web'`, which explained why node modules were breaking.
+Webpack v3’s docs for [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) also include a link to webpack’s [`target`](https://webpack.js.org/concepts/targets/) configuration, which is what makes webpack choose the environment to emulate when building its bundle. By [hooking into Gatsby’s webpack config](https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/add-custom-webpack-config.md) and logging it to the console, we were able to see that `target` was set to `'web'`, which explained why fs and child_process could not be imported.
 
 ## Summary
 
@@ -186,11 +186,11 @@ As an aside, Harold found this d3-request [issue](https://github.com/d3/d3-reque
 
 ## Notes for Future Self
 
-We solved the bug! Hurray! But before you celebrate, let's remember that it's important to learn from your bugs so that you'll have more tools at your disposal to squash the next one. Process, not product! There are a few takeaways I’d like to remember from this debugging adventure, namely:
+We solved the bug! Hurray! But before you celebrate, let's remember that it's important to learn from your bugs so that you'll have more tools at your disposal to squash the next one. Focus on process, not product! There are a few takeaways I’d like to remember from this debugging adventure, namely:
 
 - **Take breaks and get help**: I spent a lot of time thinking about how this bug shouldn't be possible, and feeling frustrated because I didn't know how to debug it. If you don't have a clear mind, it'll be 1000x harder to debug—so take a break, and if you still don't have a clue, then ask for help.
 - **Don’t sit there, do something**: Instead of trying to brainstorm reasons the bug could exist, use all the tools at your disposal to get more information. Get into the weeds, change things around, and see what happens.
 - **webpack isn’t magic**: And no other libraries are magic, either. I let this webpack error intimidate me, because I didn't actually understand what webpack does—and plus, its configuration was hidden away by Gatsby, which made it feel even more like black magic. But webpack is just code, and code can always be debugged.
 - **reproduce bugs with the _same version_**: This one’s obvious in retrospect, but clearly I should have checked Gatsby’s webpack version before trying to reproduce the bug in a separate application.
 
-I feel like I learned a lot from this experience, and I hope this walkthrough gave you something to think about as well. Thanks to Harold for helping me out of this mess, and of course, thanks to the makers of gatsby, webpack, and d3 for making some great libraries and providing me with some occasional debugging practice.
+I feel like I learned a lot from this experience, and I hope this story gave you something to think about as well. Thanks to Harold for helping me out of this mess, and thanks to the makers of gatsby, webpack, and d3 for their work in open source.
