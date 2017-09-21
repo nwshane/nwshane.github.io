@@ -1,0 +1,2 @@
+webpackJsonp([0xbc61a9088db5],{"./node_modules/json-loader/index.js!./.cache/json/projects-prisoners-watch.json":function(o,n){o.exports={data:{markdownRemark:null},pathContext:{slug:"prisoners_watch"}}}});
+//# sourceMappingURL=path---projects-prisoners-watch-08966a4b8a8be60b752b.js.map
