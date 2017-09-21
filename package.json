@@ -9,13 +9,12 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "start": "node index.js",
+    "start": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public --branch master"
   },
   "dependencies": {
     "babel-plugin-root-import": "^5.1.0",
     "d3": "^4.10.2",
-    "express": "^4.15.4",
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.4.1",
     "gatsby-plugin-catch-links": "^1.0.8",
