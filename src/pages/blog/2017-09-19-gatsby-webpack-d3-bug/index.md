@@ -196,3 +196,5 @@ We solved the bug! Hurray! But before you celebrate, let's remember that it's im
 I feel like I learned a lot from this experience, and I hope this story gave you something to think about as well. Thanks to Harold for helping me out of this mess, and thanks to the makers of gatsby, webpack, and d3 for all their open source work.
 
 Now go squash some bugs!
+
+*
