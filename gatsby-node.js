@@ -33,6 +33,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
             fileAbsolutePath
             frontmatter {
               slug
+              draft
             }
           }
         }
@@ -66,13 +67,16 @@ exports.createPages = ({boundActionCreators, graphql}) => {
 
     const blogPosts = filterByPathIncludes('/pages/blog/', nodes)
 
+    const getBlogPostPath = ({draft, slug}) => (
+      draft ? `/blog/drafts/${slug}` : `/blog/${slug}`
+    )
+
     blogPosts.forEach(({node}) => {
-      const {slug} = node.frontmatter
       createPage({
-        path: `/blog/${slug}`,
+        path: getBlogPostPath(node.frontmatter),
         component: resolve('./src/templates/blogPost.js'),
         context: {
-          slug
+          slug: node.frontmatter.slug
         }
       })
     })
