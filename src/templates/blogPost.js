@@ -52,6 +52,9 @@ const BlogPost = ({data}) => {
       <Article>
         <IntroSection>
           <Heading>{frontmatter.title}</Heading>
+          {frontmatter.draft && (
+            <p><em>(This is a draft, so it's not included in the blog index.)</em></p>
+          )}
           <DateWithIcon date={frontmatter.date} />
         </IntroSection>
         <MainContent dangerouslySetInnerHTML={{__html: blogPost.html}} />
@@ -69,6 +72,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        draft
       }
     }
   }
