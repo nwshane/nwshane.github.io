@@ -193,4 +193,6 @@ We solved the bug! Hurray! But before you celebrate, let's remember that it's im
 - **webpack isn’t magic**: And no other libraries are magic, either. I let this webpack error intimidate me, because I didn't actually understand what webpack does—and plus, its configuration was hidden away by Gatsby, which made it feel even more like black magic. But webpack is just code, and code can always be debugged.
 - **reproduce bugs with the _same version_**: This one’s obvious in retrospect, but clearly I should have checked Gatsby’s webpack version before trying to reproduce the bug in a separate application.
 
-I feel like I learned a lot from this experience, and I hope this story gave you something to think about as well. Thanks to Harold for helping me out of this mess, and thanks to the makers of gatsby, webpack, and d3 for their work in open source.
+I feel like I learned a lot from this experience, and I hope this story gave you something to think about as well. Thanks to Harold for helping me out of this mess, and thanks to the makers of gatsby, webpack, and d3 for all their open source work.
+
+Now go squash some bugs!
