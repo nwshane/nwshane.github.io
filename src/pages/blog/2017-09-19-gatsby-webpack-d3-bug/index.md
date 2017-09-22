@@ -43,8 +43,8 @@ var fs = require("fs");
 
 Now I had the error isolated. Well... sort of. I had traced it to a single line of my own code, which eventually led to a module failing to import node modules. But there was a whole lot going on under the hood that I didn’t understand. My confusion could be summarized with these two questions:
 
-1. Why does importing d3, a frontend data viz library, cause webpack to import the `xmlhttprequest` module, which is used for making http requests on the server?
-2. How is it possible that built-in node libraries like `child_process` and `fs` can fail to be imported?
+1. Why does importing d3 (a frontend data viz library) cause webpack to import the `xmlhttprequest` module, which is used for making http requests on the server?
+2. Why would webpack fail to import `child_process` and `fs`, both of which are built-in node libraries?
 
 All I wanted to do was play around a bit with d3 and start making this game! At a loss, I decided to make a separate, smaller application with no framework to see if I could get d3 working with webpack. A little while later, I had a small app with a tiny webpack config, and—what do you know—importing d3 worked just fine. This gave rise to a third question:
 
