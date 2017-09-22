@@ -9,6 +9,8 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
+    // gatsby-plugin-offline uses sw-precache under the hood:
+    // https://github.com/GoogleChromeLabs/sw-precache
     'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
