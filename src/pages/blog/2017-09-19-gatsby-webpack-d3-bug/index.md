@@ -150,7 +150,7 @@ Stick with me, dear reader. We're almost there, I promise!
 To recap, we had learned two critical pieces of information:
 
 1. `d3-request` provides a node-based build via package.json’s `main` attribute, as well as a few other builds
-2. webpack version 1 failed with the import * as d3 statement, whereas webpack version 3 worked
+2. webpack version 1 failed with the `import * as d3` statement, whereas webpack version 3 worked
 
 With these two things in mind, Harold and I opened the webpack documentation. After some searching, we learned that webpack uses an array of package.json property names to decide how to import a module: it tries the first name in the array, then the second, then the third, etc. The main difference between the versions is the name they give to this array.
 
