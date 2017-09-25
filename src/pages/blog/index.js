@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogItem from '~/src/components/BlogItem'
 import BlogLayout from '~/src/components/BlogLayout'
+import HelmetTitle from '~/src/components/HelmetTitle'
 import styled from 'styled-components'
 
 const Ul = styled.ul`
@@ -14,6 +15,7 @@ const BlogPage = ({data}) => {
 
   return (
     <BlogLayout>
+      <HelmetTitle title='Blog' />
       <Ul>
         {blogPosts.filter(isNotDraft).map((blogPost) => (
           <BlogItem key={blogPost.node.id} {...blogPost} />

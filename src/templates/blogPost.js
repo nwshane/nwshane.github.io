@@ -3,6 +3,7 @@ import Layout from '~/src/components/Layout'
 import styled from 'styled-components'
 import BlogLayout from '~/src/components/BlogLayout'
 import DateWithIcon from '~/src/components/DateWithIcon'
+import HelmetTitle from '~/src/components/HelmetTitle'
 
 const Article = styled.article`
   margin-top: 50px;
@@ -49,6 +50,7 @@ const BlogPost = ({data}) => {
 
   return (
     <BlogLayout>
+      <HelmetTitle title={frontmatter.title} />
       <Article>
         <IntroSection>
           <Heading>{frontmatter.title}</Heading>
