@@ -11,7 +11,9 @@ module.exports = {
     'gatsby-transformer-sharp',
     // gatsby-plugin-offline uses sw-precache under the hood:
     // https://github.com/GoogleChromeLabs/sw-precache
-    'gatsby-plugin-offline',
+    // TODO: enable gatsby-plugin-offline and ensure that it does not
+    // over enthusiastically cache resources
+    // 'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
