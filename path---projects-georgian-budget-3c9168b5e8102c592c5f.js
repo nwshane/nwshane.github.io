@@ -1,2 +1,0 @@
-webpackJsonp([25809487285447],{"./node_modules/json-loader/index.js!./.cache/json/projects-georgian-budget.json":function(e,o){e.exports={data:{markdownRemark:null},pathContext:{slug:"georgian_budget"}}}});
-//# sourceMappingURL=path---projects-georgian-budget-3c9168b5e8102c592c5f.js.map
