@@ -15,6 +15,12 @@ module.exports = {
     // over enthusiastically cache resources
     // 'gatsby-plugin-offline',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-66298356-2',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/projects`,
