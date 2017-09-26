@@ -1,11 +1,10 @@
 ---
 slug: squashing-gatsby-webpack-d3-bug
 title: Squashing a Gatsby+Webpack+d3 bug
-date: '2017-09-19T12:00:00.000Z'
-draft: true
+date: '2017-09-26T12:00:00.000Z'
 ---
 
-I was in the midst of rebuilding my site last week with [Gatsby JS](https://www.gatsbyjs.org/), a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.
+I was in the midst of rebuilding my site a couple weeks ago with [Gatsby JS](https://www.gatsbyjs.org/), a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.
 
 This is a perfect chance to learn [d3](https://d3js.org/), I thought! So I went off and read all about d3, and when I felt I was ready, I opened my application and typed:
 
