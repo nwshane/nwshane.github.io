@@ -1,8 +1,11 @@
+const blogFeed = require('./src/feeds/blog')
+
 module.exports = {
   siteMetadata: {
     title: 'NathanShane.me',
     author: 'Nathan Shane',
-    description: require('./package.json').description
+    description: require('./package.json').description,
+    siteUrl: 'https://nathanshane.me'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -44,6 +47,24 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-prismjs'
         ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+        `,
+        feeds: [blogFeed]
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
   "name": "nathan_shane_site",
-  "description": "Nathan Shane's portfolio website",
+  "description": "Nathan Shane's portfolio and blog",
   "repository": "https://github.com/nwshane/nwshane.github.io.git",
   "license": "MIT",
   "engines": {
@@ -19,6 +19,7 @@
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.4.1",
     "gatsby-plugin-catch-links": "^1.0.8",
+    "gatsby-plugin-feed": "^1.3.9",
     "gatsby-plugin-google-analytics": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.9",
     "gatsby-plugin-react-helmet": "^1.0.6",

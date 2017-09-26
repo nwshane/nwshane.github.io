@@ -1,4 +1,5 @@
 const {resolve} = require('path')
+const filterByPathIncludes = require('./src/helpers/filterByPathIncludes')
 
 exports.modifyBabelrc = ({ babelrc }) => {
   return {
@@ -45,12 +46,6 @@ exports.createPages = ({boundActionCreators, graphql}) => {
       return Promise.reject(result.errors)
     }
     const nodes = result.data.allMarkdownRemark.edges
-
-    const filterByPathIncludes = (testStr, nodes) => (
-      nodes.filter(
-        ({node: {fileAbsolutePath}}) => (fileAbsolutePath.includes(testStr))
-      )
-    )
 
     const projects = filterByPathIncludes('/pages/projects/', nodes)
 
