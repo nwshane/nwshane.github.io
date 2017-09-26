@@ -1,4 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Sep 2017 20:25:39 GMT</lastBuildDate><item><title><![CDATA[Why I'm Starting a Blog]]></title><description><![CDATA[Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere! I’ve decided that I want to have a space to share what’s...]]></description><link>https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</link><guid isPermaLink="false">https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</guid><pubDate>Fri, 15 Sep 2017 10:14:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Tue, 26 Sep 2017 20:32:05 GMT</lastBuildDate><item><title><![CDATA[Squashing a Gatsby+Webpack+d3 bug]]></title><description><![CDATA[I was in the midst of rebuilding my site a couple weeks ago with  Gatsby JS , a React-based static site generator, when I decided I wanted...]]></description><link>https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</link><guid isPermaLink="false">https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</guid><pubDate>Tue, 26 Sep 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was in the midst of rebuilding my site a couple weeks ago with &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby JS&lt;/a&gt;, a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.&lt;/p&gt;
+&lt;p&gt;This is a perfect chance to learn &lt;a href=&quot;https://d3js.org/&quot;&gt;d3&lt;/a&gt;, I thought! So I went off and read all about d3, and when I felt I was ready, I opened my application and typed:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; d3 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;at the top of the React component that would contain my game (this being the standard way to import d3). I then added some d3 code, just to make sure that d3 was working. With that done, I switched to the terminal to check that gatsby’s develop script had completed its build properly, and this is what I saw...&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;ERROR  Failed to compile with 2 errors
+
+These dependencies were not found:
+
+* child_process in ./~/xmlhttprequest/lib/XMLHttpRequest.js
+* fs in ./~/xmlhttprequest/lib/XMLHttpRequest.js
+
+To install them, you can run: npm install --save child_process fs&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;“Huh? That’s weird! This error seems totally unrelated to d3!” I thought.&lt;/p&gt;
+&lt;h2&gt;The Journey: Part One&lt;/h2&gt;
+&lt;p&gt;They say that the journey of one thousand miles begins with a single step. Well, this debugging journey began with a big &lt;em&gt;Sigh&lt;/em&gt;, and I resigned myself to the fact that nothing is ever easy in JavaScript (okay okay, I know, I&apos;m exaggerating a little bit).&lt;/p&gt;
+&lt;p&gt;The first thing I noticed about the error was that it mentioned failing to compile due to missing dependencies. Maybe it had something to do with webpack? I switched to my editor, commented out everything new except the &lt;code&gt;import * as d3 from &apos;d3&apos;&lt;/code&gt; statement, returned to the terminal, and—same error message. I then commented out the import statement, and the error disappeared.&lt;/p&gt;
+&lt;p&gt;Reading on in the error message, I saw that both of the missing dependencies had been specified by the module &lt;code&gt;xmlhttprequest&lt;/code&gt;. I opened my editor to that module, and there they were:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;var spawn = require(&quot;child_process&quot;).spawn;
+var fs = require(&quot;fs&quot;);&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Now I had the error isolated. Well... sort of. I had traced it to a single line of my own code, which eventually led to a module failing to import node modules. But there was a whole lot going on under the hood that I didn’t understand. My confusion could be summarized with these two questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Why does importing d3 (a frontend data viz library) cause webpack to import the &lt;code&gt;xmlhttprequest&lt;/code&gt; module, which is used for making http requests on the server?&lt;/li&gt;
+&lt;li&gt;Why would webpack fail to import &lt;code&gt;child_process&lt;/code&gt; and &lt;code&gt;fs&lt;/code&gt;, both of which are built-in node libraries?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All I wanted to do was play around a bit with d3 and start making this game! At a loss, I decided to make a separate, smaller application with no framework to see if I could get d3 working with webpack. A little while later, I had a small app with a tiny webpack config, and—what do you know—importing d3 worked just fine. This gave rise to a third question:&lt;/p&gt;
+&lt;p&gt;Why does importing d3 break in my Gatsby app, but work fine in my small, custom webpack config app?&lt;/p&gt;
+&lt;p&gt;At this point, I laid the bug to rest for a while, both so that I could get some practice with d3 in this little app and to let my unconscious mind (hopefully) solve the problem for me.&lt;/p&gt;
+&lt;p&gt;The next day, I paired with another person at the &lt;a href=&quot;https://www.recurse.com/&quot;&gt;Recurse Center&lt;/a&gt; (where I&apos;m currently studying), but neither of us were able to make any real progress on this bug. When I saw that I wasn&apos;t the only one confused, I went big: I posted on the chat app Zulip to get help from the RC community, and I created an &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/issues/2107&quot;&gt;issue&lt;/a&gt; in Gatsby’s repo.&lt;/p&gt;
+&lt;h2&gt;The Journey: Part Two&lt;/h2&gt;
+&lt;p&gt;The next time I took a look at this bug was a few days later, when I met up with &lt;a href=&quot;https://haroldtreen.com/&quot;&gt;Harold Treen&lt;/a&gt;, a fellow Recurser and JavaScript enthusiast.&lt;/p&gt;
+&lt;p&gt;Just as a reminder, this is the error message I was getting:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;ERROR  Failed to compile with 2 errors
+
+These dependencies were not found:
+
+* child_process in ./~/xmlhttprequest/lib/XMLHttpRequest.js
+* fs in ./~/xmlhttprequest/lib/XMLHttpRequest.js
+
+To install them, you can run: npm install --save child_process fs&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Almost immediately, Harold and I noticed that we could make this error go away by replacing the import all of d3 statement with statements importing parts of specific libraries:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Replace this...&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; d3 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// With this:&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;forceSimulation&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;selectAll&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;We also figured out &lt;a href=&quot;https://github.com/josephsavona/valuable/issues/9#issuecomment-65000999&quot;&gt;another way&lt;/a&gt; to patch the problem. Webpack lets you override the return value for node modules; you can make &lt;code&gt;require(&apos;fs&apos;)&lt;/code&gt; and &lt;code&gt;require(&apos;child_process&apos;)&lt;/code&gt; return empty objects like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code&gt;node&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  fs&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;empty&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  child_process&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;empty&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Of these two fixes, I especially liked the first one, because it would also reduce bundle size. So we were done, right? Problem solved? Well, we still didn&apos;t know &lt;em&gt;why&lt;/em&gt; this error was occurring with the &lt;code&gt;import *&lt;/code&gt; statement, and both Harold and I were curious enough that we decided to continue digging.&lt;/p&gt;
+&lt;p&gt;After all, the original questions that had so vexed me earlier were still unanswered:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Why does importing d3, a frontend data viz library, cause webpack to import xmlhttprequest, used for making http requests?&lt;/li&gt;
+&lt;li&gt;How is it possible that built-in node libraries like &lt;code&gt;child_process&lt;/code&gt; and &lt;code&gt;fs&lt;/code&gt; can fail to be imported?&lt;/li&gt;
+&lt;li&gt;Why does importing d3 break in my Gatsby app, but work fine in my small, custom webpack config app?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To begin answering the first question, Harold had the idea of searching for xmlhttprequest in package-lock.json. Sure enough, &lt;code&gt;xmlhttprequest&lt;/code&gt; was being required by &lt;code&gt;d3-request&lt;/code&gt;, and &lt;code&gt;d3-request&lt;/code&gt; was being required by &lt;code&gt;d3&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code&gt;# package-lock.json
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;d3-request&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;requires&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;xmlhttprequest&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;d3&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;requires&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;d3-request&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.0.6&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;But why would a part of d3 specify a dependency that depends on node? Reading d3-request’s documentation closely, we realized that d3-request can be used both on the server and in the browser. (Its purpose is to make it easy to load different formats of data, such as CSV.)&lt;/p&gt;
+&lt;p&gt;In the npm module system, a module is able to provide different entry points to its code via its package.json file. Taking a look at d3-request’s package.json revealed no less than five different entry points into the module:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;main&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;build/d3-request.node.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;unpkg&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;build/d3-request.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;jsdelivr&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;build/d3-request.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;module&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;index&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;jsnext:main&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;index.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Notice anything about those entry points? The &lt;code&gt;main&lt;/code&gt; property is set to the node build! Now we were onto something: if webpack was loading the &lt;code&gt;main&lt;/code&gt; entry point of the module, then that would cause the following import chain:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// import * as d3 from &apos;d3&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; d3-request&lt;/span&gt;
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; xmlhttprequest&lt;/span&gt;
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; fs and child_process&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;At around this time, one of us noticed something else of interest: Gatsby was using version 1 of webpack! I jumped over to my custom webpack config app and checked the version of webpack, which was version 3. We changed the version to 1, migrated webpack’s config to the version 1 syntax, checked the build step—and it broke!&lt;/p&gt;
+&lt;h2&gt;Resolution&lt;/h2&gt;
+&lt;p&gt;Stick with me, dear reader. We&apos;re almost there, I promise!&lt;/p&gt;
+&lt;p&gt;To recap, we had learned two critical pieces of information:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;d3-request&lt;/code&gt; provides a node-based build via package.json’s &lt;code&gt;main&lt;/code&gt; attribute, as well as a few other builds&lt;/li&gt;
+&lt;li&gt;webpack version 1 failed with the &lt;code&gt;import * as d3&lt;/code&gt; statement, whereas webpack version 3 worked&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With these two things in mind, Harold and I opened the webpack documentation. After some searching, we learned that webpack uses an array of package.json property names to decide how to import a module: it tries the first name in the array, then the second, then the third, etc. The main difference between the versions is the name they give to this array.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;webpack v1 default&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://webpack.github.io/docs/configuration.html#resolve-packagemains&quot;&gt;&lt;code&gt;resolve.packageMains&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;[&quot;webpack&quot;, &quot;browser&quot;, &quot;web&quot;, &quot;browserify&quot;, [&quot;jam&quot;, &quot;main&quot;], &quot;main&quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;webpack v3 default (for &lt;code&gt;target: web&lt;/code&gt;)&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://webpack.js.org/configuration/resolve/#resolve-mainfields&quot;&gt;&lt;code&gt;resolve.mainFields&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;[&quot;browser&quot;, &quot;module&quot;, &quot;main&quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Of the properties specified by webpack v1, &lt;code&gt;main&lt;/code&gt; is the only one that appears in d3-request’s package.json; thus, webpack v1 was loading the &lt;code&gt;main&lt;/code&gt; build (for node). However, d3-request&apos;s package.json also has a &lt;code&gt;module&lt;/code&gt; property, which webpack v3 includes before &lt;code&gt;main&lt;/code&gt;, meaning that webpack v3 was loading the &lt;code&gt;module&lt;/code&gt; build.&lt;/p&gt;
+&lt;p&gt;Webpack v3’s docs for &lt;a href=&quot;https://webpack.js.org/configuration/resolve/#resolve-mainfields&quot;&gt;&lt;code&gt;resolve.mainFields&lt;/code&gt;&lt;/a&gt; also include a link to webpack’s &lt;a href=&quot;https://webpack.js.org/concepts/targets/&quot;&gt;&lt;code&gt;target&lt;/code&gt;&lt;/a&gt; configuration, which is what makes webpack choose the environment to emulate when building its bundle. By &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/add-custom-webpack-config.md&quot;&gt;hooking into Gatsby’s webpack config&lt;/a&gt; and logging it to the console, we were able to see that &lt;code&gt;target&lt;/code&gt; was set to &lt;code&gt;&apos;web&apos;&lt;/code&gt;, which explained why fs and child_process could not be imported.&lt;/p&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;So, to get back to where we started...&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Why does importing d3 cause webpack to import node modules?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Because d3-request provides a node build, and that’s the one webpack v1 loaded.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Why was webpack failing to import node libraries?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Webpack’s target was set to “web,” so it resolved dependencies in a browser-like environment without access to node modules.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Why was the Gatsby webpack build breaking and my custom webpack build working?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Because Gatsby uses webpack version 1, which was importing d3-request’s node build into a web environment. My custom webpack build worked because it used version 3, which loaded d3-request’s browser build.&lt;/p&gt;
+&lt;p&gt;As an aside, Harold found this d3-request &lt;a href=&quot;https://github.com/d3/d3-request/issues/24&quot;&gt;issue&lt;/a&gt; and &lt;a href=&quot;https://github.com/d3/d3-request/commit/d635b894fee995930f7419189255da8e66062710&quot;&gt;commit&lt;/a&gt; from September 2, 2017, which seems to have triggered this problem.&lt;/p&gt;
+&lt;h2&gt;Notes for Future Self&lt;/h2&gt;
+&lt;p&gt;We solved the bug! Hurray! But before you celebrate, let&apos;s remember that it&apos;s important to learn from your bugs so that you&apos;ll have more tools at your disposal to squash the next one. Focus on process, not product! There are a few takeaways I’d like to remember from this debugging adventure, namely:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Take breaks and get help&lt;/strong&gt;: I spent a lot of time thinking about how this bug shouldn&apos;t be possible, and feeling frustrated because I didn&apos;t know how to debug it. If you don&apos;t have a clear mind, it&apos;ll be 1000x harder to debug—so take a break, and if you still don&apos;t have a clue, then ask for help.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Don’t sit there, do something&lt;/strong&gt;: Instead of trying to brainstorm reasons the bug could exist, use all the tools at your disposal to get more information. Get into the weeds, change things around, and see what happens.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;webpack isn’t magic&lt;/strong&gt;: And no other libraries are magic, either. I let this webpack error intimidate me, because I didn&apos;t actually understand what webpack does—and plus, its configuration was hidden away by Gatsby, which made it feel even more like black magic. But webpack is just code, and code can always be debugged.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;reproduce bugs with the &lt;em&gt;same version&lt;/em&gt;&lt;/strong&gt;: This one’s obvious in retrospect, but clearly I should have checked Gatsby’s webpack version before trying to reproduce the bug in a separate application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I feel like I learned a lot from this experience, and I hope this story gave you something to think about as well. Thanks to Harold for helping me out of this mess, and thanks to the makers of gatsby, webpack, and d3 for all their open source work.&lt;/p&gt;
+&lt;p&gt;Now go squash some bugs!&lt;/p&gt;
+&lt;p&gt;*&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why I'm Starting a Blog]]></title><description><![CDATA[Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere! I’ve decided that I want to have a space to share what’s...]]></description><link>https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</link><guid isPermaLink="false">https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</guid><pubDate>Fri, 15 Sep 2017 10:14:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere!&lt;/p&gt;
 &lt;p&gt;I’ve decided that I want to have a space to share what’s going in my head and my life—whether that be technical subjects, cat memes, reflections on books I’m reading, tasty recipes, beautiful music, life updates... pretty much anything I want to write about.&lt;/p&gt;
 &lt;p&gt;I know that’s a bit vague, so I’ll try to clarify my primary reason for starting this blog. I’ve experimented with various learning techniques over the past few years, and one that’s really stuck has been my use of flashcards. I make flashcards for everything (&lt;a href=&quot;https://ankiweb.net/about&quot;&gt;Anki&lt;/a&gt; anyone?), because I’ve found that flashcards help my ailing 27-year old memory remember what I learned yesterday, a month ago, and even (gasp!) a year ago.&lt;/p&gt;
 &lt;p&gt;Yet, flashcards aren’t ideal for all kinds of learning. Each flashcard only tests a single idea, concept, or chunk of knowledge; often, it’s hard to truly contextualize and understand a subject in depth when you break it up into parts and test those parts separately. And recently, while studying at the &lt;a href=&quot;https://www.recurse.com/&quot;&gt;Recurse Center&lt;/a&gt;, I&apos;ve gained more of an appreciation for this kind of deep knowledge.&lt;/p&gt;

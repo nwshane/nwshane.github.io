@@ -4,13 +4,17 @@
       "path---projects-georgian-budget-a9a0b4221f8832ec1042.js",
       "path---projects-georgian-budget-a9a0b4221f8832ec1042.js.map"
     ],
+    "path---blog-squashing-gatsby-webpack-d-3-bug": [
+      "path---blog-squashing-gatsby-webpack-d-3-bug-ee5d9f8a8273db2ff423.js",
+      "path---blog-squashing-gatsby-webpack-d-3-bug-ee5d9f8a8273db2ff423.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-674efe351cd81fcaa37f.js",
       "component---src-pages-index-js-674efe351cd81fcaa37f.js.map"
     ],
     "path---blog": [
-      "path---blog-d7095b54746557ad81d8.js",
-      "path---blog-d7095b54746557ad81d8.js.map"
+      "path---blog-4b1ec8ade9e086b1f6ad.js",
+      "path---blog-4b1ec8ade9e086b1f6ad.js.map"
     ],
     "path---projects-gogocode": [
       "path---projects-gogocode-60c8a0566d4fb7b0ff0f.js",
@@ -74,17 +78,13 @@
       "path---projects-prisoners-watch-d152744132b2a524a15e.js",
       "path---projects-prisoners-watch-d152744132b2a524a15e.js.map"
     ],
-    "path---blog-drafts-squashing-gatsby-webpack-d-3-bug": [
-      "path---blog-drafts-squashing-gatsby-webpack-d-3-bug-0e03ed92e8df881a4200.js",
-      "path---blog-drafts-squashing-gatsby-webpack-d-3-bug-0e03ed92e8df881a4200.js.map"
-    ],
     "path---blog-2017-09-12-meteorites-meteorite-viz": [
       "path---blog-2017-09-12-meteorites-meteorite-viz-a0e39f21c11f6a62c5ab.js",
       "path---blog-2017-09-12-meteorites-meteorite-viz-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-d47ac2b4f8c8b4729619.js",
-      "app-d47ac2b4f8c8b4729619.js.map"
+      "app-3dbcbfd25b3525c68655.js",
+      "app-3dbcbfd25b3525c68655.js.map"
     ],
     "path---blog-why-im-starting-a-blog": [
       "path---blog-why-im-starting-a-blog-e9a055bfc39c1299ae84.js",
