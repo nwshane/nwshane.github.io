@@ -11,9 +11,9 @@ featured: true
 
 JumpStart Georgia requested data about the national Georgian budget from the Georgian government in 2016. We received spreadsheets and PDFs containing valuable, but disconnected, financial data.
 
-As the sole developer on this project, I was challenged to organize the financial data and create a website visualizing the data. I chose to separate the frontend, for which I used React/Redux, from the backend, which uses Rails.
+As the lead developer on this project, I organized the financial data and created a website visualizing the data. I chose to separate the frontend (React/Redux) from the backend (Rails), which contains the API and the data uploader.
 
-If you're interested in contributing, here are the relevant repositories:
+If you're interested in contributing to this project, here are the relevant repositories:
 
 * [Backend/API](https://github.com/JumpStartGeorgia/Georgian-Budget-API)
 * [Public Site](https://github.com/JumpStartGeorgia/Georgian-Budget-Public)
