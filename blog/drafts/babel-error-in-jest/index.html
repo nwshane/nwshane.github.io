@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+ <html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-templates-blog-post-js-c613eb7641e3ac9e877d.js" as="script"/><link rel="preload" href="/path---blog-drafts-babel-error-in-jest-309ba0758b81ed0e5678.js" as="script"/><link rel="preload" href="/app-5f83fb9657be6b7c0af0.js" as="script"/><link rel="preload" href="/commons-172fe77c15c673bafc06.js" as="script"/><script id="webpack-manifest">
+            //<![CDATA[
+            window.webpackManifest = {"231608221292675":"app-5f83fb9657be6b7c0af0.js","110308036455227":"component---src-templates-project-js-cd8866beabd776761b80.js","67604419171931":"webfontloader-7e2893ef542a12a5c720.js","107818501498521":"component---src-templates-blog-post-js-c613eb7641e3ac9e877d.js","35783957827783":"component---src-pages-index-js-4e820523335a3fa8d132.js","156897593687669":"component---src-pages-resume-js-8833cd57daf47dafde08.js","202660965941462":"component---src-pages-projects-index-js-8d6e831311f267211731.js","152176518627018":"component---src-pages-blog-index-js-4ad8c6a182885230d8bf.js","274127355567122":"path---projects-atoms-5ce22f3f3591ca2fe263.js","129355780045025":"path---projects-feradi-info-1d63c520a1b87d5a3635.js","25809487285447":"path---projects-georgian-budget-8a1a5d7e33120c4c2bfe.js","67578937172164":"path---projects-gogocode-60c8a0566d4fb7b0ff0f.js","156033193079102":"path---projects-place-ge-scraper-48940fb956cc6d032a64.js","207127633759669":"path---projects-prisoners-watch-d152744132b2a524a15e.js","80249059781645":"path---projects-scott-shane-net-fa25160adacf3ae50975.js","262131366328317":"path---blog-why-im-starting-a-blog-e9a055bfc39c1299ae84.js","29866270409745":"path---blog-drafts-babel-error-in-jest-309ba0758b81ed0e5678.js","33759698319820":"path---blog-squashing-gatsby-webpack-d-3-bug-ee5d9f8a8273db2ff423.js","142629428675168":"path---index-a0e39f21c11f6a62c5ab.js","218357007423260":"path---resume-a0e39f21c11f6a62c5ab.js","97786326051841":"path---projects-eac5536d7a11488889bb.js","49683490770531":"path---blog-e7d14f6d14d28e5b09b4.js"}
+            //]]>
+            </script><style type="text/css" data-styled-components="fePDys gqJdPt ikASqS ckgfBN" data-styled-components-is-local="true">/* sc-component-id: sc-bdVaJa */
+
+/* sc-component-id: sc-bwzfXH */
+
+.gqJdPt{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:space-between;-webkit-justify-content:space-between;-ms-flex-pack:space-between;justify-content:space-between;max-width:400px;margin-left:auto;padding:0;}
+/* sc-component-id: sc-htpNat */
+
+.ikASqS{list-style-type:none;}
+/* sc-component-id: sc-bxivhb */
+
+.ckgfBN{font-size:calc(1.6rem + 0.5vw);font-family:"Patua One",sans-serif;color:#67A5C6;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-3362111964 */
+html{font-size:10px;font-family:Lato,sans-serif;}a{text-decoration:none;color:#FF7813;}a:hover{-webkit-filter:brightness(70%);filter:brightness(70%);}
+</style><style type="text/css" data-styled-components="diQkgx bhCAFm dhvomK koiztt gXLqiw laSfXB dkrtRS bPLgnQ bUaHu" data-styled-components-is-local="true">/* sc-component-id: sc-ifAKCX */
+
+.dhvomK{max-width:calc(300px + 50%);margin:0 auto;}
+/* sc-component-id: sc-EHOje */
+
+.bhCAFm{padding:0 20px;font-size:2rem;color:#514d54;-webkit-letter-spacing:.3px;-moz-letter-spacing:.3px;-ms-letter-spacing:.3px;letter-spacing:.3px;}.bhCAFm p{line-height:1.5;}
+/* sc-component-id: sc-bZQynM */
+
+.koiztt{max-width:calc(300px + 50%);margin:0 auto;}
+/* sc-component-id: sc-gZMcBi */
+
+.bPLgnQ{margin-right:0.2em;}.bPLgnQ svg{-webkit-fill:#FF7813;fill:#FF7813;max-width:0.9em;max-height:0.9em;}
+/* sc-component-id: sc-ckVGcZ */
+
+.diQkgx{max-width:75rem;}
+/* sc-component-id: sc-jKJlTe */
+
+.gXLqiw{margin-top:50px;}
+/* sc-component-id: sc-eNQAEJ */
+
+.laSfXB{margin-bottom:50px;}
+/* sc-component-id: sc-hMqMXs */
+
+.dkrtRS{margin-bottom:10px;font-size:3.2rem;}@media (min-width:600px){.dkrtRS{font-size:4rem;}}
+/* sc-component-id: sc-kEYyzF */
+
+.bUaHu{line-height:1.2;}.bUaHu ol,.bUaHu ul{margin:40px 0;}.bUaHu ol li,.bUaHu ul li{margin-bottom:15px;}.bUaHu h2{margin-top:50px;margin-bottom:30px;font-size:2.5rem;}@media (min-width:600px){.bUaHu h2{font-size:3rem;}}
+</style><title data-react-helmet="true">Digging into a Babel-Related Error in Jest | NathanShane.me</title><meta data-react-helmet="true" property="og:site_name" content="NathanShane.me"/><meta data-react-helmet="true" property="og:description" content="Nathan Shane&#x27;s portfolio and blog"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:title" content="Digging into a Babel-Related Error in Jest"/><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml"/><script>
+  !function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",[
+  "/commons-172fe77c15c673bafc06.js","/app-5f83fb9657be6b7c0af0.js","/path---blog-drafts-babel-error-in-jest-309ba0758b81ed0e5678.js","/component---src-templates-blog-post-js-c613eb7641e3ac9e877d.js"
+])
+  </script><style id="gatsby-inlined-css">/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}[hidden],template{display:none}.gatsby-highlight-code-line{background-color:#feb;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:.75em;border-left:.25em solid #f99}.gatsby-highlight{background-color:#fdf6e3;border-radius:.3em;margin:.5em 0;padding:1em;overflow:auto}.gatsby-highlight pre[class*=language-]{background-color:transparent;margin:0;padding:0;overflow:visible;overflow:initial;float:left;min-width:100%}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#a67f59;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="-355029538"><div class="sc-EHOje bhCAFm" data-reactid="2"><nav class="sc-ifAKCX dhvomK sc-bdVaJa fePDys" data-reactid="3"><ul class="sc-bwzfXH gqJdPt" data-reactid="4"><li class="sc-htpNat ikASqS" data-reactid="5"><a class="sc-bxivhb ckgfBN" href="/" data-reactid="6">Home</a></li><li class="sc-htpNat ikASqS" data-reactid="7"><a class="sc-bxivhb ckgfBN" href="/projects" data-reactid="8">Projects</a></li><li class="sc-htpNat ikASqS" data-reactid="9"><a class="sc-bxivhb ckgfBN" href="/blog" data-reactid="10">Blog</a></li></ul></nav><!-- react-empty: 11 --><div class="sc-ckVGcZ diQkgx sc-bZQynM koiztt" data-reactid="12"><!-- react-empty: 13 --><article class="sc-jKJlTe gXLqiw" data-reactid="14"><section class="sc-eNQAEJ laSfXB" data-reactid="15"><h1 class="sc-hMqMXs dkrtRS" data-reactid="16">Digging into a Babel-Related Error in Jest</h1><p data-reactid="17"><em data-reactid="18">(This is a draft, so it&#x27;s not included in the blog index.)</em></p><span data-reactid="19"><span class="sc-gZMcBi bPLgnQ" data-reactid="20"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-responsive"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span><span data-reactid="21">October 11, 2017</span></span></section><main class="sc-kEYyzF bUaHu" data-reactid="22"><p>Not so long ago, I decided to add some tests to a small program I wrote. I chose <a href="https://facebook.github.io/jest/">jest</a>, a nice testing platform by facebook that I've enjoyed using in the past. This time, however, I had some trouble: I ran into a babel-related error with my very first test. I'd like to be a world-class debugger someday, so I figured I'd dig in and really try to understand the error.</p>
+<p>This post describes how to set up a little app that reproduces the error, and next, how to debug the error using tools from the modern JavaScript toolbox.</p>
+<h2>Reproducing the Error</h2>
+<p>(If you'd like, you can skip this section and reproduce the error by cloning this <a href="https://github.com/nwshane/jest-babel-error">repository</a>.)</p>
+<p>In order to get jest to show us this babel-related error, we'll do the following things:</p>
+<ol>
+<li>Write a sum function that we will test.</li>
+<li>Write a simple jest test for the sum function.</li>
+<li>Create an npm <code>test</code> script to run our tests.</li>
+<li>Install jest.</li>
+<li>Configure babel to recognize ES2015 imports.</li>
+</ol>
+<p>Let's start out by creating that sum function.</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code><span class="token comment" spellcheck="true">// index.js</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> sum <span class="token operator">=</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+</code></pre>
+      </div>
+<p>Simple enough. Now we want to test our sum function, because we're responsible devs, and that's what responsible devs do.</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code><span class="token comment" spellcheck="true">// spec.js</span>
+<span class="token keyword">import</span> sum <span class="token keyword">from</span> <span class="token string">'./index'</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'sum'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'correctly adds 1 and 1'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+      </div>
+<p>(If you saw the bug in this code, then good for you! If not, then that's fine—I didn't see it either, so I had to learn how to debug it.)</p>
+<p>Two more steps until we can run our tests. First, we'll create a <code>package.json</code> file containing our <code>test</code> script, which will run jest. Run <code>npm init</code>, and answer the <code>test command</code> prompt with <code>jest</code> (you can use the defaults for everything else).</p>
+<p>Finally, we install jest with <code>npm i jest</code>.</p>
+<p>Hurray! We now run the test script with <code>npm t</code> (a shortcut for <code>npm test</code>, or <code>npm run test</code>), and we see...</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>Test suite failed to run
+
+SyntaxError: Unexpected token import
+
+at ScriptTransformer._transformAndBuildScript (node_modules/jest-runtime/build/script_transformer.js:305:17)
+          at Generator.next (<anonymous>)
+          at Promise (<anonymous>)</code></pre>
+      </div>
+<p>Dang! It looks like jest doesn't understand the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">ES2015 import</a> syntax. That's okay, we just need to install <a href="https://babeljs.io/">babel</a> and the <a href="https://babeljs.io/docs/plugins/preset-es2015/">ES2015 babel preset</a>, which jest will use to transform the import syntax into something it understands.</p>
+<p>Jest's documentation on <a href="https://facebook.github.io/jest/docs/en/getting-started.html#using-babel">configuring babel</a> is a bit complicated with a number of side notes. Long story short, jest comes with a library called <a href="https://github.com/facebook/jest/tree/master/packages/babel-jest">babel-jest</a>, so all we have to do to make jest understand our <code>import</code> syntax is the following:</p>
+<ol>
+<li>Add a <code>.babelrc</code> file to our project:</li>
+</ol>
+<div class="gatsby-highlight">
+      <pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">"presets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"es2015"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+      </div>
+<ol start="2">
+<li>Install the ES2015 preset: <code>npm i babel-preset-es2015</code></li>
+</ol>
+<p>With that done, babel should be good to go.</p>
+<h2>Debugging our Babel-Related Error</h2>
+<p>Running our tests again (<code>npm t</code>), we get a more cryptic error this time:</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>FAIL  ./spec.js
+ sum
+   ✕ correctly adds 1 and 1 (4ms)
+
+ ● sum › correctly adds 1 and 1
+
+   TypeError: (0 , _index2.default) is not a function
+
+     at Object.<anonymous> (spec.js:5:32)
+         at Promise (<anonymous>)
+         at <anonymous></code></pre>
+      </div>
+<p>Hey, at least our test suite is running now!</p>
+<p>If you don't have a lot of experience with babel, then this error will seem a bit strange. Where in the world did <code>_index2.default</code> come from? Who cares if it's not a function—I didn't write anything like that in my code!</p>
+<p>Hold on a moment. Let's try to remember what babel is doing. Babel is a transpiler, so it's transforming your code into something that jest can understand. Does that mean it might be transforming variable names as well, and outputting things like <code>_index2.default</code>?</p>
+<p>In order to answer that question, let's consult a handy section of the jest docs, aptly named, "<a href="https://facebook.github.io/jest/docs/en/troubleshooting.html#tests-are-failing-and-you-don-t-know-why">Tests are Failing and You Don't Know Why</a>". The docs recommend we use a debugger, which seems like a great idea for getting more info!</p>
+<p>Let's add a <code>debugger</code> line into our code, to tell our debugging tool to stop at that line:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code><span class="token keyword">import</span> sum <span class="token keyword">from</span> <span class="token string">'./index'</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'sum'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'correctly adds 1 and 1'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">debugger</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+      </div>
+<p>Next, let's run our tests as recommended by the docs:</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>node --inspect-brk node_modules/.bin/jest --runInBand</code></pre>
+      </div>
+<p>This gives us the following output:</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>Debugger listening on ws://127.0.0.1:9229/cedc923a-cc9f-4531-a947-9c1ef7226bc8
+For help see https://nodejs.org/en/docs/inspector</code></pre>
+      </div>
+<p>Looking at the above link, we can see a bunch of different options for debugging our code. Let's use Chrome, since most of us will have it installed already.</p>
+<ol>
+<li>Navigate to <code>chrome://inspect/</code> in Chrome.</li>
+<li>In the <code>Remote Target</code> section, you should see the script <code>node_modules/.bin/jest</code>. Click the <code>inspect</code> link below it.</li>
+</ol>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/c3c45424dfaefd9b73f69e06708a1f97-e2a9d.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 376px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 80.58510638297874%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAACMUlEQVQ4y5VUyXLaQBDVr+cHcs85X5GcXIkPYSvAQQJkgdDCJgvtAu0v3UPAYHAq7qqunuoZ9bzX/UZSWZao6wZFUaCqauEnq+saBe2XVYWmac7O9nZ9Msl1XfT7A6hTFTNNo/UQ7s4Tm34QoNVuoz8Yot3toD/8fVX4nkunyheX4DXXfNilJI4gywoURYHn+VcF87LBt2kFZTKGYRjQFwZMitpshqmqUtTgEYtLk/I8RxCESJL4LkI3bbDf769QcG8r6ivHpqnFDM4FORnHMbIsuylYVA26VkXIdBimCd0wYVom5vqcooUFoZ1Mx3Dc3WvBw+EAx3GwFb4VaC5NnkeY2ylGWgSF1k/PEZ6NBFMjphhDsxNoZgx9mWCghkeEDLm5MxXOlVV9pMrniF5T1xf06zNtsSaXWH+bzRpJmt4UzIscYRSB+8zIuW+e51G+ELrNKP/WpIwor9ZrQZs1KahvNwJBTIPq9np4kmXSImmVpmtRD1vdHh5+PorvWBkBTZq/TQmU9K8XUBLCKIqxp0vjJEEQhgKp5/t4zwRCRse+oxfCg3lxXohSSf0qMRpP0Op0YNBUR8qYENqkv/n7BfktR9Snw13ZFHhQv2Np27CXK6xWy6N8SEa2bcGi/IKkFAa+6C3Tl7jRzJ3lc2/KfupD1nz0FQf2lvRK57IwELplEBzFT4SGxOAk/KfVf3sbf/6E9OsXFMpQSOiGMj5oQocV/fIIZd5+RP7rB0pdO+//AfU20R51RfaeAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Chrome Remote Target"
+        title=""
+        src="/static/c3c45424dfaefd9b73f69e06708a1f97-e2a9d.png"
+        srcset="/static/c3c45424dfaefd9b73f69e06708a1f97-80caa.png 163w,
+/static/c3c45424dfaefd9b73f69e06708a1f97-94f4e.png 325w,
+/static/c3c45424dfaefd9b73f69e06708a1f97-e2a9d.png 376w"
+        sizes="(max-width: 376px) 100vw, 376px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<ol start="3">
+<li>Cool! Looks like a debugger! <code>--inspect-brk</code> pauses code execution at the first line of the script, so we've stopped at the first line of the jest script file. To get to our debugger line, let's press the play button.</li>
+</ol>
+<p>After a little wait, our <code>spec.js</code> file will open and you'll see our sum test containing the <code>debugger</code> line.</p>
+<p><code>_index2.default</code> is still no where in sight, but that's because we're looking at the "Source Map" of our code—that is, the original code that we wrote. Chrome shows this to us in a couple places:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/977ee10b94867637f15ba3cbb4d13330-57162.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 597px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 79.39698492462311%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABR0lEQVQ4y+2Uy2rDMBBF/f+f0VWhi5JFoR/RRSkNJo5rx684tuTYliXHD9m3Hi1CFyEEmu564cJoJI6G0SCrKAqQq6pCXddomgZSSrOmmHK3mjgWYwxpmiIMQ3DOkec54ihGlmVg2w3E6hHK/kSz/oDYrKGWS5RSF12WJSwhhIHIvcDQdGDshK46YZAdhqpEl6WY5xmkeRwwTxrXZIBJksBxHNi2Df61hXRsVFGIemtDFRzdIV0ukKaKXgn0fX8dGEYJajXj9cXD6tnF2/sBGe+wzxT8iMMLGYJ46ZOczLlrNkDq4fF4RNv2OHUjxpGsofVkYqqI1rfo3MO2bXEPGSC9zr30D/wD4MTz+wI1O2D03d8Baai11mePokL79AC9DPXP/C22qDoa7CAIEEURfN9HHMfYU+x5Ju+6Lna7nYlpn87T13bJ3+wn3Um7PiHuAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Chrome Source Map"
+        title=""
+        src="/static/977ee10b94867637f15ba3cbb4d13330-57162.png"
+        srcset="/static/977ee10b94867637f15ba3cbb4d13330-80caa.png 163w,
+/static/977ee10b94867637f15ba3cbb4d13330-94f4e.png 325w,
+/static/977ee10b94867637f15ba3cbb4d13330-57162.png 597w"
+        sizes="(max-width: 376px) 100vw, 376px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>Generally, it's much nicer to look at the Source Map of some code than its transpiled version, which is why Chrome shows it to us. However, we're interested to see whether our transpiled code contains <code>_index2.default</code>, so we need to go beyond the source map.</p>
+<p>First, let's look in the Scope section of the debugging window. Scope contains all the variables that are accessible where we paused our code with <code>debugger</code>, and notably it shows us variables from our <em>transpiled</em> code, which is what we want to see. Taking a look around, we open up the <code>Closure</code> object, and... there's <code>_index2</code>! Open that up, and we see a <code>sum</code> property, but no <code>default</code> property.</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/8d7fe9904055b6e733dcde9167c02ba1-a2e33.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 410px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 88.04878048780488%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAABxElEQVQ4y6VU2ZKbMBDk/z9pH1KVl00cs3G2NjY2iMMcQlziNiwF7kjaysO++FhPVdcISmqGnh5pnHMErILMjDEkSYKqqhDHscpRFKm1YRhqT13XF6EVRYGXA0cYhnAcRxHIgzKXZYntdgvXdbFarZBl2XXCJNnBPDyBGN8QOD8RuM9Iot/w3R9wzO9YpgiY6c3Q+i5FXTooc4KE7pDGBsrCRpGZ4LmF94FhGm+HJvXZ7/dYv+hwvSPatn0IWhhS2LYtRN9hres4mOZVnS43hX90VDZHii7zQ4SSxPNcbF5fQUSlXdc9BGUbxmJY5IPs0dCmaVJ+K0JBfEwRBgFMy4LvB18jlBVKE3uiw0eBXDzLrts2QZZmIIQI2DBFsyyLgCXpbRWe6h7UjMGcFMMwYF6WTxvneVb5fD5fJ5TBQgZGGOqqFVUUykrSl3mWo+/7+zT8/+X3XlQbNmjiFl3WCxtVoKwBL4f7CXnBcRIHJXo+iN8e4QgdPc8HpfHthPKKyvNCIEeRcvVymRfM0/xJu0sxDCdkgiNNU2hN06jpoGJapMnHcbwbcoblXRqJK1CjlOLt7xtWax2/9DU2mz84+v6XR+8fFDBg9k61GfIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Chrome Debugger Scope"
+        title=""
+        src="/static/8d7fe9904055b6e733dcde9167c02ba1-a2e33.png"
+        srcset="/static/8d7fe9904055b6e733dcde9167c02ba1-80caa.png 163w,
+/static/8d7fe9904055b6e733dcde9167c02ba1-94f4e.png 325w,
+/static/8d7fe9904055b6e733dcde9167c02ba1-a2e33.png 410w"
+        sizes="(max-width: 376px) 100vw, 376px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>But where is <code>_index2</code> coming from? And where is <code>_index2.default</code> being called? Clearly we need to see the actual transpiled code, not just its representation in the debugger. We can access the transpiled files in the Sources file tree, as seen here:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/8eef1c5b8517f1c23727ec7e47d0f913-15695.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 319px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 91.22257053291534%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAAClklEQVQ4y5VUyXLaQBDV//9BviC3VKpyzMmV2GWbVYCxMEhIILQhoRVsSYiX7rblxM4Be6qaGXp6Xr/epGRpit1uJ5JlGfI8R5LESEnfSlEUoovjGDnZZNlfHd9nont+qziOg/F4hM7tDe7uNTHU9QUGgx66vR4md1MyLGi/x8WvK1xeXuO2O0Cc5pg/aGLT6/ehqqqAK+w1iiK0OzONSMIwFEniCOZmh44WQ9UzDBcZurMEmrlDsA2RJomwY7CEzgoDjEYjGIYBTdPgeR4MXcdkMhav0+kUs5mGITFeWUu6m2M8GmLCUXU6cF1XQm3DVhiVFSxxnJCXlDxvRcIwejHOhQGfOSVpmiF5yR3/3+/3r6Js+XEQiNgbF36whW6YmC8MWGsbVVXjM0thVNu24Ww22DieMCuKPeq6RlmWOB6Pbx6cTqc38l6n+L4Py7KwIjYP84WwZJDWmFfTNDgcHv8D51WW1VuG/JNSjowUcPMTwsAXpo7rwVytafexNFciprWG7bhyt7I34twiG07PeuPQOxcKM+HE9vUQN+YjNGONbp+qONVwP5vLuTccYWEsJaeu58P3A9oDyfeOCmmYloB5pFdaqnmaYLY9wSKmGZ3DaEdhHqTXWuOqPl8g5TWxTQnP/I7AHWE2X0IdT8QzTwnnjsE4l++LwsL6pnkpSgvY1AcUzjeUuQ4viCgkT1gm1HO8jsdGHrZVPcuwOT4hd34gC4dUDJcKYEnSuTDT+5mE/G+LnAckhun6KwGqVBAaL/oocDUzmaICT0/lJwGJYeH/xCE16OOQPn+qCOh9U3+4KE29R7L8gtC+wHVHxUDl4ujSOr+vbqRF2ib/EMPTqUH96ONYpShpfquqkvHjWeZw2yk5x/IPoOJakxBOg3IAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Chrome Sources File Tree"
+        title=""
+        src="/static/8eef1c5b8517f1c23727ec7e47d0f913-15695.png"
+        srcset="/static/8eef1c5b8517f1c23727ec7e47d0f913-80caa.png 163w,
+/static/8eef1c5b8517f1c23727ec7e47d0f913-15695.png 319w"
+        sizes="(max-width: 376px) 100vw, 376px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>We then "pretty-print" the transpiled code to improve its readability:</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/0ad11bac5c6217bb6e808a9d24419ef1-48a74.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; ; max-width: 194px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 122.16494845360826%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAD10lEQVQ4y6VVy24iVxDlF/MB2UVZZpd1fmAWWSdSFok0i1HGI1mOEieWDQyYGGPej27ANK9+AP0Emm7obk6qLgLbmljK40qle+teOFSdU1WkdF2H4zgn8zwPm80G/noNf7WC7/vCF3d0fu4/v98EgTinVFWFbdtYLBZQFAWu60LVdBjjEfxGBV6tjGA8RDAhvychNDQk263wNyMFoTZFMB0L8x97T4Dz+RyyLIsIR6MRdPJjx4ZTvMWyURX7Smoj1FUB4j0Uxf2KzO/JcPIZOHf5l4DtdluE/X/WC8BWq3VIme7Y53uXeJ3PZtA1Fcz3ivzYc7GzLZHmznWAJAH2e6ynzktASZLEnslkUKvVBKfsd+UuPmazuC0UMCM/MhdYU5pepSTAV0FImDGsjnUAZHVnFEW1SpyQslEUibsCAZTLZTSbDbSIDlMZYNWViLsa1t0OvHIRm8cuZiTcut9FOBk+AXIkjUZDlACvgMpA7nYhdTrotbuUso7AtUlxBf6gR2pT+lKHzn1s1TG2izlWcudTDhlwT3wc187YYPFxAvNehVkzMC8ZUNNjeJILYzbH7u9EOabM6R0jZNCEyLZ0E72yjGFrgFFLQStTRTvXwHw4RaWk0+fjE5hlhq+nfFzGzED+z1uyPB6qZXQoLYWKeraYknBrDBUSKdphYQZoNqzXAVkcrkt1qopS2lJ3sMVxfLIoSoSAnE0UJ9jtkicOTdMUHcKdwqAMyDTwDy2X3itlvP/kfIqQizaTzYgzRzYcjqio3f/WKQzCw6HT7sDxCNyaQDG6UPQe4iSCZo9hrWZwfeoc38LYfERHrdL9CObSwGKpw6T3qaU8AfJeLN4ToI2+1sadfINSPwvDmeDnwve4aZ7jYZBDXvodf9Q/4F3hO5zd/YDz0k+oKLe4pvcfs98ipWkaLMuibmiiXq8L8H6vD3WiYaHNic/g36V8BBwMBmJ88TCY0iyc0TAwSZwliRPmrhDKTUF7EkdEQyyo4P5N9snBqGb3+2cqs7oelceKJvVpcUudv8Pml/eIhv2DluKL+1dNAHKEFpUNl45LEe/qDwivf0Xw4a04nxaPqX80DwnQodQsTvPrL+F88RmW17/BJ39LHwppUGzJQh79tD+3Y8GHYSgsxcXLkan8Z3VfgP3V5zDffIM1/Y9w47uWeSorpoZBuPCPAPzdQ/EvRTMIwEqlAhZHqlbgUJ9Wi0Xc5XJI39zg8vJSvLNoFxcXSKfTyNHb1dWVmJf5fB5nZ2cCdE38p/jAXcKpmxTBkiKwXU+c+Y0jY2Oe2T/e8c7R8T0HxaJyhH8BIhYBFtf80yUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Chrome Pretty Print Button"
+        title=""
+        src="/static/0ad11bac5c6217bb6e808a9d24419ef1-48a74.png"
+        srcset="/static/0ad11bac5c6217bb6e808a9d24419ef1-80caa.png 163w,
+/static/0ad11bac5c6217bb6e808a9d24419ef1-48a74.png 194w"
+        sizes="(max-width: 376px) 100vw, 376px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<p>And we see the transpiled code in all its glory:</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>({
+    "Object.<anonymous>": function(module, exports, require, __dirname, __filename, global, jest) {
+        'use strict';
+        var _index = require('./index');
+        var _index2 = _interopRequireDefault(_index);
+        function _interopRequireDefault(obj) {
+            return obj && obj.__esModule ? obj : {
+                default: obj
+            };
+        }
+
+        describe('sum', function() {
+            test('correctly adds 1 and 1', function() {
+                debugger ;expect((0,
+                _index2.default)(1, 1)).toEqual(2);
+            });
+        });
+        //# sourceMappingURL=...
+    }
+});</code></pre>
+      </div>
+<p>Without getting too much into the details of babel's output, we can now see that <code>_index2</code> refers to an object containing the default import, and that <code>_index2.default</code> is used in our test in the place of <code>sum</code>.</p>
+<p>So wait, what was our original error again?</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>FAIL  ./spec.js
+ sum
+   ✕ correctly adds 1 and 1 (4ms)
+
+ ● sum › correctly adds 1 and 1
+
+   TypeError: (0 , _index2.default) is not a function
+
+     at Object.<anonymous> (spec.js:5:32)
+         at Promise (<anonymous>)
+         at <anonymous></code></pre>
+      </div>
+<p>Now this error makes sense. <code>_index2.default</code> isn't a function because it's undefined, as we saw when we looked in the <code>_index2</code> object in the Debugger Scope. <code>_index2</code> has a <code>sum</code> property and no <code>default</code> property. We seem to be accessing the <code>sum</code> function in the wrong way, so let's check out how we're importing and exporting the function:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code><span class="token comment" spellcheck="true">// index.js</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> sum <span class="token operator">=</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// spec.js</span>
+<span class="token keyword">import</span> sum <span class="token keyword">from</span> <span class="token string">'./index'</span>
+</code></pre>
+      </div>
+<p>Ah-ha! We're exporting sum as a named variable and importing it as the default. To fix this error, we can either change the named export into a default export or change the default import into a named import. Let's do the former:</p>
+<div class="gatsby-highlight">
+      <pre class="language-javascript"><code><span class="token comment" spellcheck="true">// index.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// spec.js</span>
+<span class="token keyword">import</span> sum <span class="token keyword">from</span> <span class="token string">'./index'</span>
+</code></pre>
+      </div>
+<p>Now we run <code>npm t</code> once again, and we get...</p>
+<div class="gatsby-highlight">
+      <pre class="language-none"><code>PASS  ./spec.js
+ sum
+   ✓ correctly adds 1 and 1 (5ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.602s
+Ran all test suites.</code></pre>
+      </div>
+<p><em>Passing tests = pure bliss</em></p>
+<p>And now we can feel extra happy, because we debugged the error, we understand where it's coming from, and we'll be unfazed if we see it again.</p>
+<p>The takeaway from this debugging round is... do your best to deeply understand errors in your code! If you think you understand an error, but you're not sure, it can help to write down any questions about the error that are floating around your head. Then you can methodically tackle each question and improve your debugging skills. This is a strategy that I'm learning myself, and I hope it proves useful to you.</p></main></article></div></div></div></div><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66298356-2', 'auto');
+  ga('send', 'pageview');
+      </script></body></html>
