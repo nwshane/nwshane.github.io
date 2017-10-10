@@ -1,16 +1,16 @@
 {
   "assetsByChunkName": {
     "path---projects-georgian-budget": [
-      "path---projects-georgian-budget-a9a0b4221f8832ec1042.js",
-      "path---projects-georgian-budget-a9a0b4221f8832ec1042.js.map"
+      "path---projects-georgian-budget-8a1a5d7e33120c4c2bfe.js",
+      "path---projects-georgian-budget-8a1a5d7e33120c4c2bfe.js.map"
     ],
     "path---blog-squashing-gatsby-webpack-d-3-bug": [
       "path---blog-squashing-gatsby-webpack-d-3-bug-ee5d9f8a8273db2ff423.js",
       "path---blog-squashing-gatsby-webpack-d-3-bug-ee5d9f8a8273db2ff423.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-674efe351cd81fcaa37f.js",
-      "component---src-pages-index-js-674efe351cd81fcaa37f.js.map"
+      "component---src-pages-index-js-4e820523335a3fa8d132.js",
+      "component---src-pages-index-js-4e820523335a3fa8d132.js.map"
     ],
     "path---blog": [
       "path---blog-4b1ec8ade9e086b1f6ad.js",
@@ -64,6 +64,10 @@
       "path---projects-place-ge-scraper-48940fb956cc6d032a64.js",
       "path---projects-place-ge-scraper-48940fb956cc6d032a64.js.map"
     ],
+    "component---src-pages-resume-js": [
+      "component---src-pages-resume-js-8833cd57daf47dafde08.js",
+      "component---src-pages-resume-js-8833cd57daf47dafde08.js.map"
+    ],
     "commons": [
       "commons-172fe77c15c673bafc06.js",
       "build-js-styles.css",
@@ -82,9 +86,13 @@
       "path---blog-2017-09-12-meteorites-meteorite-viz-a0e39f21c11f6a62c5ab.js",
       "path---blog-2017-09-12-meteorites-meteorite-viz-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---resume": [
+      "path---resume-a0e39f21c11f6a62c5ab.js",
+      "path---resume-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "app": [
-      "app-cb5c4e23a9babd32aaab.js",
-      "app-cb5c4e23a9babd32aaab.js.map"
+      "app-0c8fe130fec076d7ad6d.js",
+      "app-0c8fe130fec076d7ad6d.js.map"
     ],
     "path---blog-why-im-starting-a-blog": [
       "path---blog-why-im-starting-a-blog-e9a055bfc39c1299ae84.js",
