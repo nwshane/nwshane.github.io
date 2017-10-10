@@ -1,7 +1,7 @@
 ---
-slug: understanding-babel-error-in-jest
-title: Deciphering a Strange Babel-Related Error in Jest
-date: '2017-10-10T12:00:00.000Z'
+slug: babel-error-in-jest
+title: Digging into a Babel-Related Error in Jest
+date: '2017-10-11T12:00:00.000Z'
 draft: true
 ---
 
