@@ -5,7 +5,7 @@ date: '2017-10-11T12:00:00.000Z'
 draft: true
 ---
 
-Not so long ago, I decided to add some tests to a small program I wrote. I chose [jest](https://facebook.github.io/jest/), a nice testing platform by facebook that I've enjoyed using in the past. This time, however, I had some trouble: I ran into a babel-related error with my very first test. I'd like to be a world-class debugger someday, so I figured I'd dig in and really try to understand the error.
+Not so long ago, I decided to add some tests to a small program I wrote. I chose to use [jest](https://facebook.github.io/jest/), a nice testing platform by facebook that I've enjoyed using in the past. This time, however, I had some trouble: I ran into a babel-related error with my very first test. I'd like to be a world-class debugger someday, so I figured I'd dig in and really try to understand the error.
 
 This post describes how to set up a little app that reproduces the error, and next, how to debug the error using tools from the modern JavaScript toolbox.
 
