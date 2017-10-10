@@ -233,7 +233,7 @@ Time:        1.602s
 Ran all test suites.
 ```
 
-*Passing tests = pure bliss*
+Passing Tests = *Pure Bliss* :)
 
 And now we can feel extra happy, because we debugged the error, we understand where it's coming from, and we'll be unfazed if we see it again.
 
