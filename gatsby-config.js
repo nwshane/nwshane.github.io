@@ -42,7 +42,10 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`
+            resolve: 'gatsby-remark-images',
+            options: {
+              linkImagesToOriginal: false
+            }
           },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-prismjs'
