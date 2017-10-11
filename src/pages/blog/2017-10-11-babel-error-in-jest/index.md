@@ -194,7 +194,7 @@ Without getting too much into the details of babel's output, we can get a feelin
 1. In `index.js`, Babel passes in an `exports` object, sets `exports.__esModule` to true, and sets `exports.sum` to our sum function.
 2. In `spec.js`, Babel uses a `require` method to get the value of the `index.js` module, which we can assume to be the `exports` object in `index.js`.
 3. The code sees that the imported object's `__esModule` property is true, so it sets `_index2.default` to the default export.
-4. The `sum` invocation in our code is replaced with `(0, _index2.default)`, which evaluates to `_index2.default`. (The reasons for this specific syntax are beyond the scope of this blog post.)
+4. The `sum` invocation in our original code is replaced with `(0, _index2.default)`, which evaluates to `_index2.default`. (The reasons for this specific syntax are beyond the scope of this blog post.)
 
 Seems like we're getting somewhere! If `index.js` sets `exports.sum` to our sum function, then we would expect `spec.js` to use it like `_index2.sum`. Instead, it tries to use `_index2.default`, which explains our original error...
 
