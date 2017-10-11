@@ -136,21 +136,37 @@ After a little wait, our `spec.js` file will open and you'll see our sum test co
 
 Generally, it's much nicer to look at the Source Map of some code than its transpiled version, which is why Chrome shows it to us. However, we're interested to see whether our transpiled code contains `_index2.default`, so we need to go beyond the source map.
 
-First, let's look in the Scope section of the debugging window. Scope contains all the variables that are accessible where we paused our code with `debugger`, and notably it shows us variables from our *transpiled* code, which is what we want to see. Taking a look around, we open up the `Closure` object, and... there's `_index2`! Open that up, and we see a `sum` property, but no `default` property.
+First, let's look in the Scope section of the debugging window. Scope contains all the variables that are accessible where we paused our code with `debugger`, and notably it shows us variables from our *transpiled* code, which is what we want to see. Taking a look around, we open up the `Closure` object, and... there's `_index2`! Open that up, and we see a `sum` property, as well as an `__esModule` property, but no `default` property.
 
 ![Chrome Debugger Scope](./images/chrome_debugger_scope.png)
 
-But where is `_index2` coming from? And where is `_index2.default` being called? Clearly we need to see the actual transpiled code, not just its representation in the debugger. We can access the transpiled files in the Sources file tree, as seen here:
+But where is `_index2` coming from? And where is `_index2.default` being called? Clearly we need to see the actual transpiled code, not just its representation in the debugger. We can select the transpiled files in the Sources file tree, as seen here:
 
 ![Chrome Sources File Tree](./images/chrome_sources_file_tree.png)
 
-We then "pretty-print" the transpiled code to improve its readability:
+And we can "pretty-print" the transpiled code to improve its readability.
 
 ![Chrome Pretty Print Button](./images/chrome_pretty_print.png)
 
-And we see the transpiled code in all its glory:
+Now we finally see our transpiled code in all its glory! We'll want to look at both `index.js` and `spec.js` to get a complete picture of what's going wrong. Here's both of the transpiled files:
 
-```
+```javascript
+// index.js
+({
+    "Object.<anonymous>": function(module, exports, require, __dirname, __filename, global, jest) {
+        "use strict";
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+        var sum = exports.sum = function sum(a, b) {
+            return a + b;
+        }
+        ;
+        //# sourceMappingURL=...
+    }
+});
+
+// spec.js
 ({
     "Object.<anonymous>": function(module, exports, require, __dirname, __filename, global, jest) {
         'use strict';
@@ -173,9 +189,14 @@ And we see the transpiled code in all its glory:
 });
 ```
 
-Without getting too much into the details of babel's output, we can now see that `_index2` refers to an object containing the default import, and that `_index2.default` is used in our test in the place of `sum`.
+Without getting too much into the details of babel's output, we can get a feeling for how this code works:
 
-So wait, what was our original error again?
+1. In `index.js`, Babel passes in an `exports` object, sets `exports.__esModule` to true, and sets `exports.sum` to our sum function.
+2. In `spec.js`, Babel uses a `require` method to get the value of the `index.js` module, which we can assume to be the `exports` object in `index.js`.
+3. The code sees that the imported object's `__esModule` property is true, so it sets `_index2.default` to the default export.
+4. The `sum` invocation in our code is replaced with `(0, _index2.default)`, which evaluates to `_index2.default`. (The reasons for this specific syntax are beyond the scope of this blog post.)
+
+Seems like we're getting somewhere! If `index.js` sets `exports.sum` to our sum function, then we would expect `spec.js` to use it like `_index2.sum`. Instead, it tries to use `_index2.default`, which explains our original error...
 
 ```
 FAIL  ./spec.js
@@ -187,7 +208,7 @@ FAIL  ./spec.js
    TypeError: (0 , _index2.default) is not a function
 ```
 
-Now this error makes sense. `_index2.default` isn't a function because it's undefined, as we saw when we looked in the `_index2` object in the Debugger Scope. `_index2` has a `sum` property and no `default` property. We seem to be accessing the `sum` function in the wrong way, so let's check out how we're importing and exporting the function:
+`_index2.default` isn't a function because it's undefined, as we saw when we looked in the `_index2` object in the Debugger Scope. But how can we fix our original code? We seem to be accessing the `sum` function in the wrong way, so let's check out how we're importing and exporting the function:
 
 ```javascript
 // index.js
@@ -197,7 +218,7 @@ export const sum = (a, b) => (a + b)
 import sum from './index'
 ```
 
-Ah-ha! We're exporting sum as a named variable and importing it as the default. To fix this error, we can either change the named export into a default export or change the default import into a named import. Let's do the former:
+Ah-ha! We're exporting `sum` as a named variable and importing it as the default. To fix this error, we can either change the named export into a default export or change the default import into a named import. Let's do the former:
 
 ```javascript
 // index.js
@@ -225,4 +246,4 @@ Passing Tests = *Pure Bliss* :)
 
 And now we can feel extra happy, because we debugged the error, we understand where it's coming from, and we'll be unfazed if we see it again.
 
-The takeaway from this debugging round is... do your best to deeply understand errors in your code! If you think you understand an error, but you're not sure, it can help to write down any questions about the error that are floating around your head. Then you can methodically tackle each question and improve your debugging skills. This is a strategy that I'm learning myself, and I hope it proves useful to you.
+The takeaway from this round of debugging is: do your best to *deeply* understand the errors you encounter. If you think you understand an error, but you're not sure, it can help to write down any questions that are floating around your head. Then you can methodically tackle each question and improve your debugging skills. This is a strategy that I'm learning myself, and I hope it proves useful to you.
