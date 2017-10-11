@@ -1,4 +1,310 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Wed, 11 Oct 2017 15:46:50 GMT</lastBuildDate><item><title><![CDATA[Squashing a Gatsby+Webpack+d3 bug]]></title><description><![CDATA[I was in the midst of rebuilding my site a couple weeks ago with  Gatsby JS , a React-based static site generator, when I decided I wanted...]]></description><link>https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</link><guid isPermaLink="false">https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</guid><pubDate>Tue, 26 Sep 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was in the midst of rebuilding my site a couple weeks ago with &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby JS&lt;/a&gt;, a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Wed, 11 Oct 2017 16:26:37 GMT</lastBuildDate><item><title><![CDATA[Digging into a Babel-Related Error in Jest]]></title><description><![CDATA[Not so long ago, I decided to add some tests to a small program I wrote. I chose to use  jest , a nice testing platform by facebook that I...]]></description><link>https://nathanshane.me/blog/babel-error-in-jest</link><guid isPermaLink="false">https://nathanshane.me/blog/babel-error-in-jest</guid><pubDate>Wed, 11 Oct 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Not so long ago, I decided to add some tests to a small program I wrote. I chose to use &lt;a href=&quot;https://facebook.github.io/jest/&quot;&gt;jest&lt;/a&gt;, a nice testing platform by facebook that I&apos;ve enjoyed using in the past. This time, however, I had some trouble: I ran into a babel-related error with my very first test. I&apos;d like to be a world-class debugger someday, so I figured I&apos;d dig in and really try to understand the error.&lt;/p&gt;
+&lt;p&gt;This post describes how to set up a little app that reproduces the error, and next, how to debug the error using tools from the modern JavaScript toolbox.&lt;/p&gt;
+&lt;h2&gt;Reproducing the Error&lt;/h2&gt;
+&lt;p&gt;(If you&apos;d like, you can skip this section and reproduce the error by cloning this &lt;a href=&quot;https://github.com/nwshane/jest-babel-error&quot;&gt;repository&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;In order to get jest to show us this babel-related error, we&apos;ll do the following things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write a sum function that we will test.&lt;/li&gt;
+&lt;li&gt;Write a simple jest test for the sum function.&lt;/li&gt;
+&lt;li&gt;Create an npm &lt;code&gt;test&lt;/code&gt; script to run our tests.&lt;/li&gt;
+&lt;li&gt;Install jest.&lt;/li&gt;
+&lt;li&gt;Configure babel to recognize ES2015 imports.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let&apos;s start out by creating that sum function.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Simple enough. Now we want to test our sum function, because we&apos;re responsible devs, and that&apos;s what responsible devs do.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sum&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;correctly adds 1 and 1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;(If you saw the bug in this code, then good for you! If not, then that&apos;s fine—I didn&apos;t see it either, so I had to learn how to debug it.)&lt;/p&gt;
+&lt;p&gt;Two more steps until we can run our tests. First, we&apos;ll create a &lt;code&gt;package.json&lt;/code&gt; file containing our &lt;code&gt;test&lt;/code&gt; script, which will run jest. Run &lt;code&gt;npm init&lt;/code&gt;, and answer the &lt;code&gt;test command&lt;/code&gt; prompt with &lt;code&gt;jest&lt;/code&gt; (you can use the defaults for everything else).&lt;/p&gt;
+&lt;p&gt;Finally, we install jest with &lt;code&gt;npm i jest&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Hurray! We now run the test script with &lt;code&gt;npm t&lt;/code&gt; (a shortcut for &lt;code&gt;npm test&lt;/code&gt;, or &lt;code&gt;npm run test&lt;/code&gt;), and we see...&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;Test suite failed to run
+
+SyntaxError: Unexpected token import&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Dang! It looks like jest doesn&apos;t understand the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import&quot;&gt;ES2015 import&lt;/a&gt; syntax. That&apos;s okay, we just need to install &lt;a href=&quot;https://babeljs.io/&quot;&gt;babel&lt;/a&gt; and the &lt;a href=&quot;https://babeljs.io/docs/plugins/preset-es2015/&quot;&gt;ES2015 babel preset&lt;/a&gt;, which jest will use to transform the import syntax into something it understands.&lt;/p&gt;
+&lt;p&gt;Jest&apos;s documentation on &lt;a href=&quot;https://facebook.github.io/jest/docs/en/getting-started.html#using-babel&quot;&gt;configuring babel&lt;/a&gt; is a bit complicated with a number of side notes. Long story short, jest comes with a library called &lt;a href=&quot;https://github.com/facebook/jest/tree/master/packages/babel-jest&quot;&gt;babel-jest&lt;/a&gt;, so all we have to do to make jest understand our &lt;code&gt;import&lt;/code&gt; syntax is the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add a &lt;code&gt;.babelrc&lt;/code&gt; file to our project:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;es2015&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Install the ES2015 preset: &lt;code&gt;npm i babel-preset-es2015&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With that done, babel should be good to go.&lt;/p&gt;
+&lt;h2&gt;Debugging our Babel-Related Error&lt;/h2&gt;
+&lt;p&gt;Running our tests again (&lt;code&gt;npm t&lt;/code&gt;), we get a more cryptic error this time:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;FAIL  ./spec.js
+ sum
+   ✕ correctly adds 1 and 1 (4ms)
+
+ ● sum › correctly adds 1 and 1
+
+   TypeError: (0 , _index2.default) is not a function&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Hey, at least our test suite is running now!&lt;/p&gt;
+&lt;p&gt;If you don&apos;t have a lot of experience with babel, then this error will seem a bit strange. Where in the world did &lt;code&gt;_index2.default&lt;/code&gt; come from? Who cares if it&apos;s not a function—I didn&apos;t write anything like that in my code!&lt;/p&gt;
+&lt;p&gt;Hold on a moment. Let&apos;s try to remember what babel is doing. Babel is a transpiler, so it&apos;s transforming your code into something that jest can understand. Does that mean it might be transforming variable names as well, and outputting things like &lt;code&gt;_index2.default&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;In order to answer that question, let&apos;s consult a handy section of the jest docs, aptly named, &quot;&lt;a href=&quot;https://facebook.github.io/jest/docs/en/troubleshooting.html#tests-are-failing-and-you-don-t-know-why&quot;&gt;Tests are Failing and You Don&apos;t Know Why&lt;/a&gt;&quot;. The docs recommend we use a debugger, which seems like a great idea for getting more info!&lt;/p&gt;
+&lt;p&gt;Let&apos;s add a &lt;code&gt;debugger&lt;/code&gt; line into our code, to tell our debugging tool to stop at that line:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sum&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;correctly adds 1 and 1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;debugger&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Next, let&apos;s run our tests as recommended by the docs:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;node --inspect-brk node_modules/.bin/jest --runInBand&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;This gives us the following output:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;Debugger listening on ws://127.0.0.1:9229/cedc923a-cc9f-4531-a947-9c1ef7226bc8
+For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Looking at the above link, we can see a bunch of different options for debugging our code. Let&apos;s use Chrome, since most of us will have it installed already.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate to &lt;code&gt;chrome://inspect/&lt;/code&gt; in Chrome.&lt;/li&gt;
+&lt;li&gt;In the &lt;code&gt;Remote Target&lt;/code&gt; section, you should see the script &lt;code&gt;node_modules/.bin/jest&lt;/code&gt;. Click the &lt;code&gt;inspect&lt;/code&gt; link below it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 376px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 80.58510638297874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAACMUlEQVQ4y5VUyXLaQBDVr+cHcs85X5GcXIkPYSvAQQJkgdDCJgvtAu0v3UPAYHAq7qqunuoZ9bzX/UZSWZao6wZFUaCqauEnq+saBe2XVYWmac7O9nZ9Msl1XfT7A6hTFTNNo/UQ7s4Tm34QoNVuoz8Yot3toD/8fVX4nkunyheX4DXXfNilJI4gywoURYHn+VcF87LBt2kFZTKGYRjQFwZMitpshqmqUtTgEYtLk/I8RxCESJL4LkI3bbDf769QcG8r6ivHpqnFDM4FORnHMbIsuylYVA26VkXIdBimCd0wYVom5vqcooUFoZ1Mx3Dc3WvBw+EAx3GwFb4VaC5NnkeY2ylGWgSF1k/PEZ6NBFMjphhDsxNoZgx9mWCghkeEDLm5MxXOlVV9pMrniF5T1xf06zNtsSaXWH+bzRpJmt4UzIscYRSB+8zIuW+e51G+ELrNKP/WpIwor9ZrQZs1KahvNwJBTIPq9np4kmXSImmVpmtRD1vdHh5+PorvWBkBTZq/TQmU9K8XUBLCKIqxp0vjJEEQhgKp5/t4zwRCRse+oxfCg3lxXohSSf0qMRpP0Op0YNBUR8qYENqkv/n7BfktR9Snw13ZFHhQv2Np27CXK6xWy6N8SEa2bcGi/IKkFAa+6C3Tl7jRzJ3lc2/KfupD1nz0FQf2lvRK57IwELplEBzFT4SGxOAk/KfVf3sbf/6E9OsXFMpQSOiGMj5oQocV/fIIZd5+RP7rB0pdO+//AfU20R51RfaeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Chrome Remote Target&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-beeed.png&quot;
+        srcset=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-a7bfb.png 163w,
+/static/c3c45424dfaefd9b73f69e06708a1f97-c740e.png 325w,
+/static/c3c45424dfaefd9b73f69e06708a1f97-beeed.png 376w&quot;
+        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Cool! Looks like a debugger! &lt;code&gt;--inspect-brk&lt;/code&gt; pauses code execution at the first line of the script, so we&apos;ve stopped at the first line of the jest script file. To get to our debugger line, let&apos;s press the play button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After a little wait, our &lt;code&gt;spec.js&lt;/code&gt; file will open and you&apos;ll see our sum test containing the &lt;code&gt;debugger&lt;/code&gt; line.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;_index2.default&lt;/code&gt; is still no where in sight, but that&apos;s because we&apos;re looking at the &quot;Source Map&quot; of our code—that is, the original code that we wrote. Chrome shows this to us in a couple places:&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 597px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 79.39698492462311%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABR0lEQVQ4y+2Uy2rDMBBF/f+f0VWhi5JFoR/RRSkNJo5rx684tuTYliXHD9m3Hi1CFyEEmu564cJoJI6G0SCrKAqQq6pCXddomgZSSrOmmHK3mjgWYwxpmiIMQ3DOkec54ihGlmVg2w3E6hHK/kSz/oDYrKGWS5RSF12WJSwhhIHIvcDQdGDshK46YZAdhqpEl6WY5xmkeRwwTxrXZIBJksBxHNi2Df61hXRsVFGIemtDFRzdIV0ukKaKXgn0fX8dGEYJajXj9cXD6tnF2/sBGe+wzxT8iMMLGYJ46ZOczLlrNkDq4fF4RNv2OHUjxpGsofVkYqqI1rfo3MO2bXEPGSC9zr30D/wD4MTz+wI1O2D03d8Baai11mePokL79AC9DPXP/C22qDoa7CAIEEURfN9HHMfYU+x5Ju+6Lna7nYlpn87T13bJ3+wn3Um7PiHuAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Chrome Source Map&quot;
+        title=&quot;&quot;
+        src=&quot;/static/977ee10b94867637f15ba3cbb4d13330-e0174.png&quot;
+        srcset=&quot;/static/977ee10b94867637f15ba3cbb4d13330-a7bfb.png 163w,
+/static/977ee10b94867637f15ba3cbb4d13330-c740e.png 325w,
+/static/977ee10b94867637f15ba3cbb4d13330-e0174.png 597w&quot;
+        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;Generally, it&apos;s much nicer to look at the Source Map of some code than its transpiled version, which is why Chrome shows it to us. However, we&apos;re interested to see whether our transpiled code contains &lt;code&gt;_index2.default&lt;/code&gt;, so we need to go beyond the source map.&lt;/p&gt;
+&lt;p&gt;First, let&apos;s look in the Scope section of the debugging window. Scope contains all the variables that are accessible where we paused our code with &lt;code&gt;debugger&lt;/code&gt;, and notably it shows us variables from our &lt;em&gt;transpiled&lt;/em&gt; code, which is what we want to see. Taking a look around, we open up the &lt;code&gt;Closure&lt;/code&gt; object, and... there&apos;s &lt;code&gt;_index2&lt;/code&gt;! Open that up, and we see a &lt;code&gt;sum&lt;/code&gt; property, as well as an &lt;code&gt;__esModule&lt;/code&gt; property, but no &lt;code&gt;default&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 410px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 88.04878048780488%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAABxElEQVQ4y6VU2ZKbMBDk/z9pH1KVl00cs3G2NjY2iMMcQlziNiwF7kjaysO++FhPVdcISmqGnh5pnHMErILMjDEkSYKqqhDHscpRFKm1YRhqT13XF6EVRYGXA0cYhnAcRxHIgzKXZYntdgvXdbFarZBl2XXCJNnBPDyBGN8QOD8RuM9Iot/w3R9wzO9YpgiY6c3Q+i5FXTooc4KE7pDGBsrCRpGZ4LmF94FhGm+HJvXZ7/dYv+hwvSPatn0IWhhS2LYtRN9hres4mOZVnS43hX90VDZHii7zQ4SSxPNcbF5fQUSlXdc9BGUbxmJY5IPs0dCmaVJ+K0JBfEwRBgFMy4LvB18jlBVKE3uiw0eBXDzLrts2QZZmIIQI2DBFsyyLgCXpbRWe6h7UjMGcFMMwYF6WTxvneVb5fD5fJ5TBQgZGGOqqFVUUykrSl3mWo+/7+zT8/+X3XlQbNmjiFl3WCxtVoKwBL4f7CXnBcRIHJXo+iN8e4QgdPc8HpfHthPKKyvNCIEeRcvVymRfM0/xJu0sxDCdkgiNNU2hN06jpoGJapMnHcbwbcoblXRqJK1CjlOLt7xtWax2/9DU2mz84+v6XR+8fFDBg9k61GfIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Chrome Debugger Scope&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-c3675.png&quot;
+        srcset=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-a7bfb.png 163w,
+/static/8d7fe9904055b6e733dcde9167c02ba1-c740e.png 325w,
+/static/8d7fe9904055b6e733dcde9167c02ba1-c3675.png 410w&quot;
+        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;But where is &lt;code&gt;_index2&lt;/code&gt; coming from? And where is &lt;code&gt;_index2.default&lt;/code&gt; being called? Clearly we need to see the actual transpiled code, not just its representation in the debugger. We can select the transpiled files in the Sources file tree, as seen here:&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 319px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 91.22257053291534%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAAClklEQVQ4y5VUyXLaQBDV//9BviC3VKpyzMmV2GWbVYCxMEhIILQhoRVsSYiX7rblxM4Be6qaGXp6Xr/epGRpit1uJ5JlGfI8R5LESEnfSlEUoovjGDnZZNlfHd9nont+qziOg/F4hM7tDe7uNTHU9QUGgx66vR4md1MyLGi/x8WvK1xeXuO2O0Cc5pg/aGLT6/ehqqqAK+w1iiK0OzONSMIwFEniCOZmh44WQ9UzDBcZurMEmrlDsA2RJomwY7CEzgoDjEYjGIYBTdPgeR4MXcdkMhav0+kUs5mGITFeWUu6m2M8GmLCUXU6cF1XQm3DVhiVFSxxnJCXlDxvRcIwejHOhQGfOSVpmiF5yR3/3+/3r6Js+XEQiNgbF36whW6YmC8MWGsbVVXjM0thVNu24Ww22DieMCuKPeq6RlmWOB6Pbx6cTqc38l6n+L4Py7KwIjYP84WwZJDWmFfTNDgcHv8D51WW1VuG/JNSjowUcPMTwsAXpo7rwVytafexNFciprWG7bhyt7I34twiG07PeuPQOxcKM+HE9vUQN+YjNGONbp+qONVwP5vLuTccYWEsJaeu58P3A9oDyfeOCmmYloB5pFdaqnmaYLY9wSKmGZ3DaEdhHqTXWuOqPl8g5TWxTQnP/I7AHWE2X0IdT8QzTwnnjsE4l++LwsL6pnkpSgvY1AcUzjeUuQ4viCgkT1gm1HO8jsdGHrZVPcuwOT4hd34gC4dUDJcKYEnSuTDT+5mE/G+LnAckhun6KwGqVBAaL/oocDUzmaICT0/lJwGJYeH/xCE16OOQPn+qCOh9U3+4KE29R7L8gtC+wHVHxUDl4ujSOr+vbqRF2ib/EMPTqUH96ONYpShpfquqkvHjWeZw2yk5x/IPoOJakxBOg3IAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Chrome Sources File Tree&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-8e955.png&quot;
+        srcset=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-a7bfb.png 163w,
+/static/8eef1c5b8517f1c23727ec7e47d0f913-8e955.png 319w&quot;
+        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;And we can &quot;pretty-print&quot; the transpiled code to improve its readability.&lt;/p&gt;
+&lt;p&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 194px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 122.16494845360826%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAD10lEQVQ4y6VVy24iVxDlF/MB2UVZZpd1fmAWWSdSFok0i1HGI1mOEieWDQyYGGPej27ANK9+AP0Emm7obk6qLgLbmljK40qle+teOFSdU1WkdF2H4zgn8zwPm80G/noNf7WC7/vCF3d0fu4/v98EgTinVFWFbdtYLBZQFAWu60LVdBjjEfxGBV6tjGA8RDAhvychNDQk263wNyMFoTZFMB0L8x97T4Dz+RyyLIsIR6MRdPJjx4ZTvMWyURX7Smoj1FUB4j0Uxf2KzO/JcPIZOHf5l4DtdluE/X/WC8BWq3VIme7Y53uXeJ3PZtA1Fcz3ivzYc7GzLZHmznWAJAH2e6ynzktASZLEnslkUKvVBKfsd+UuPmazuC0UMCM/MhdYU5pepSTAV0FImDGsjnUAZHVnFEW1SpyQslEUibsCAZTLZTSbDbSIDlMZYNWViLsa1t0OvHIRm8cuZiTcut9FOBk+AXIkjUZDlACvgMpA7nYhdTrotbuUso7AtUlxBf6gR2pT+lKHzn1s1TG2izlWcudTDhlwT3wc187YYPFxAvNehVkzMC8ZUNNjeJILYzbH7u9EOabM6R0jZNCEyLZ0E72yjGFrgFFLQStTRTvXwHw4RaWk0+fjE5hlhq+nfFzGzED+z1uyPB6qZXQoLYWKeraYknBrDBUSKdphYQZoNqzXAVkcrkt1qopS2lJ3sMVxfLIoSoSAnE0UJ9jtkicOTdMUHcKdwqAMyDTwDy2X3itlvP/kfIqQizaTzYgzRzYcjqio3f/WKQzCw6HT7sDxCNyaQDG6UPQe4iSCZo9hrWZwfeoc38LYfERHrdL9CObSwGKpw6T3qaU8AfJeLN4ToI2+1sadfINSPwvDmeDnwve4aZ7jYZBDXvodf9Q/4F3hO5zd/YDz0k+oKLe4pvcfs98ipWkaLMuibmiiXq8L8H6vD3WiYaHNic/g36V8BBwMBmJ88TCY0iyc0TAwSZwliRPmrhDKTUF7EkdEQyyo4P5N9snBqGb3+2cqs7oelceKJvVpcUudv8Pml/eIhv2DluKL+1dNAHKEFpUNl45LEe/qDwivf0Xw4a04nxaPqX80DwnQodQsTvPrL+F88RmW17/BJ39LHwppUGzJQh79tD+3Y8GHYSgsxcXLkan8Z3VfgP3V5zDffIM1/Y9w47uWeSorpoZBuPCPAPzdQ/EvRTMIwEqlAhZHqlbgUJ9Wi0Xc5XJI39zg8vJSvLNoFxcXSKfTyNHb1dWVmJf5fB5nZ2cCdE38p/jAXcKpmxTBkiKwXU+c+Y0jY2Oe2T/e8c7R8T0HxaJyhH8BIhYBFtf80yUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Chrome Pretty Print Button&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-63acb.png&quot;
+        srcset=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-a7bfb.png 163w,
+/static/0ad11bac5c6217bb6e808a9d24419ef1-63acb.png 194w&quot;
+        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;p&gt;Now we finally see our transpiled code in all its glory! We&apos;ll want to look at both &lt;code&gt;index.js&lt;/code&gt; and &lt;code&gt;spec.js&lt;/code&gt; to get a complete picture of what&apos;s going wrong. Here&apos;s both of the transpiled files:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;Object.&amp;lt;anonymous&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;module&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; require&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __filename&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; global&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; jest&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;defineProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;__esModule&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;//# sourceMappingURL=...&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;Object.&amp;lt;anonymous&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;module&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; require&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __filename&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; global&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; jest&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;use strict&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; _index &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; _index2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;_interopRequireDefault&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_index&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;_interopRequireDefault&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; obj &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__esModule &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; obj &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; obj
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token function&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sum&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;correctly adds 1 and 1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;debugger&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                _index2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;//# sourceMappingURL=...&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Without getting too much into the details of babel&apos;s output, we can get a feeling for how this code works:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In &lt;code&gt;index.js&lt;/code&gt;, Babel passes in an &lt;code&gt;exports&lt;/code&gt; object, sets &lt;code&gt;exports.__esModule&lt;/code&gt; to true, and sets &lt;code&gt;exports.sum&lt;/code&gt; to our sum function.&lt;/li&gt;
+&lt;li&gt;In &lt;code&gt;spec.js&lt;/code&gt;, Babel uses a &lt;code&gt;require&lt;/code&gt; method to get the value of the &lt;code&gt;index.js&lt;/code&gt; module, which we can assume to be the &lt;code&gt;exports&lt;/code&gt; object in &lt;code&gt;index.js&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The code sees that the imported object&apos;s &lt;code&gt;__esModule&lt;/code&gt; property is true, so it sets &lt;code&gt;_index2.default&lt;/code&gt; to the default export.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;sum&lt;/code&gt; invocation in our original code is replaced with &lt;code&gt;(0, _index2.default)&lt;/code&gt;, which evaluates to &lt;code&gt;_index2.default&lt;/code&gt;. (The reasons for this specific syntax are beyond the scope of this blog post.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Seems like we&apos;re getting somewhere! If &lt;code&gt;index.js&lt;/code&gt; sets &lt;code&gt;exports.sum&lt;/code&gt; to our sum function, then we would expect &lt;code&gt;spec.js&lt;/code&gt; to use it like &lt;code&gt;_index2.sum&lt;/code&gt;. Instead, it tries to use &lt;code&gt;_index2.default&lt;/code&gt;, which explains our original error...&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;FAIL  ./spec.js
+ sum
+   ✕ correctly adds 1 and 1 (4ms)
+
+ ● sum › correctly adds 1 and 1
+
+   TypeError: (0 , _index2.default) is not a function&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;code&gt;_index2.default&lt;/code&gt; isn&apos;t a function because it&apos;s undefined, as we saw when we looked in the &lt;code&gt;_index2&lt;/code&gt; object in the Debugger Scope. But how can we fix our original code? We seem to be accessing the &lt;code&gt;sum&lt;/code&gt; function in the wrong way, so let&apos;s check out how we&apos;re importing and exporting the function:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Ah-ha! We&apos;re exporting &lt;code&gt;sum&lt;/code&gt; as a named variable and importing it as the default. To fix this error, we can either change the named export into a default export or change the default import into a named import. Let&apos;s do the former:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Now we run &lt;code&gt;npm t&lt;/code&gt; once again, and we get...&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;PASS  ./spec.js
+ sum
+   ✓ correctly adds 1 and 1 (5ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.602s
+Ran all test suites.&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Passing Tests = &lt;em&gt;Pure Bliss&lt;/em&gt; :)&lt;/p&gt;
+&lt;p&gt;And now we can feel extra happy, because we debugged the error, we understand where it&apos;s coming from, and we&apos;ll be unfazed if we see it again.&lt;/p&gt;
+&lt;p&gt;The takeaway from this round of debugging is: do your best to &lt;em&gt;deeply&lt;/em&gt; understand the errors you encounter. If you think you understand an error, but you&apos;re not sure, it can help to write down any questions that are floating around your head. Then you can methodically tackle each question and improve your debugging skills. This is a strategy that I&apos;m learning myself, and I hope it proves useful to you.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Squashing a Gatsby+Webpack+d3 bug]]></title><description><![CDATA[I was in the midst of rebuilding my site a couple weeks ago with  Gatsby JS , a React-based static site generator, when I decided I wanted...]]></description><link>https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</link><guid isPermaLink="false">https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</guid><pubDate>Tue, 26 Sep 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was in the midst of rebuilding my site a couple weeks ago with &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby JS&lt;/a&gt;, a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.&lt;/p&gt;
 &lt;p&gt;This is a perfect chance to learn &lt;a href=&quot;https://d3js.org/&quot;&gt;d3&lt;/a&gt;, I thought! So I went off and read all about d3, and when I felt I was ready, I opened my application and typed:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; d3 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
