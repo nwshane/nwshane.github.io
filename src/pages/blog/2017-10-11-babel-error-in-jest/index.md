@@ -53,10 +53,6 @@ Hurray! We now run the test script with `npm t` (a shortcut for `npm test`, or `
 Test suite failed to run
 
 SyntaxError: Unexpected token import
-
-at ScriptTransformer._transformAndBuildScript (node_modules/jest-runtime/build/script_transformer.js:305:17)
-          at Generator.next (<anonymous>)
-          at Promise (<anonymous>)
 ```
 
 Dang! It looks like jest doesn't understand the [ES2015 import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) syntax. That's okay, we just need to install [babel](https://babeljs.io/) and the [ES2015 babel preset](https://babeljs.io/docs/plugins/preset-es2015/), which jest will use to transform the import syntax into something it understands.
@@ -87,10 +83,6 @@ FAIL  ./spec.js
  ● sum › correctly adds 1 and 1
 
    TypeError: (0 , _index2.default) is not a function
-
-     at Object.<anonymous> (spec.js:5:32)
-         at Promise (<anonymous>)
-         at <anonymous>
 ```
 
 Hey, at least our test suite is running now!
@@ -193,10 +185,6 @@ FAIL  ./spec.js
  ● sum › correctly adds 1 and 1
 
    TypeError: (0 , _index2.default) is not a function
-
-     at Object.<anonymous> (spec.js:5:32)
-         at Promise (<anonymous>)
-         at <anonymous>
 ```
 
 Now this error makes sense. `_index2.default` isn't a function because it's undefined, as we saw when we looked in the `_index2` object in the Debugger Scope. `_index2` has a `sum` property and no `default` property. We seem to be accessing the `sum` function in the wrong way, so let's check out how we're importing and exporting the function:
