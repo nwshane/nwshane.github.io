@@ -17,8 +17,8 @@
       "component---src-pages-index-js-4e820523335a3fa8d132.js.map"
     ],
     "path---blog": [
-      "path---blog-097f9ba5bd6021bfaf9e.js",
-      "path---blog-097f9ba5bd6021bfaf9e.js.map"
+      "path---blog-abf5e576c72d99829ff0.js",
+      "path---blog-abf5e576c72d99829ff0.js.map"
     ],
     "path---projects-gogocode": [
       "path---projects-gogocode-60c8a0566d4fb7b0ff0f.js",
@@ -64,10 +64,14 @@
       "component---src-pages-resume-js-8833cd57daf47dafde08.js",
       "component---src-pages-resume-js-8833cd57daf47dafde08.js.map"
     ],
+    "path---blog-drafts-lets-define-undefined": [
+      "path---blog-drafts-lets-define-undefined-0a896e82e081453d8703.js",
+      "path---blog-drafts-lets-define-undefined-0a896e82e081453d8703.js.map"
+    ],
     "commons": [
-      "commons-243b07890d0e559bba63.js",
+      "commons-10dc7d5ed80207606b06.js",
       "build-js-styles.css",
-      "commons-243b07890d0e559bba63.js.map",
+      "commons-10dc7d5ed80207606b06.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-projects-index-js": [
@@ -83,8 +87,8 @@
       "path---resume-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-128680ac69d624be1918.js",
-      "app-128680ac69d624be1918.js.map"
+      "app-9ab00abcfef173508429.js",
+      "app-9ab00abcfef173508429.js.map"
     ],
     "path---blog-why-im-starting-a-blog": [
       "path---blog-why-im-starting-a-blog-72cfae20f873df875ecc.js",
