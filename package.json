@@ -11,7 +11,7 @@
     "build": "gatsby build",
     "start": "gatsby serve",
     "build-cname": "cp CNAME public/CNAME",
-    "deploy": "gatsby build && npm run build-cname && gh-pages -d public --branch master"
+    "deploy": "rm -rf .cache && gatsby build && npm run build-cname && gh-pages -d public --branch master"
   },
   "dependencies": {
     "babel-plugin-root-import": "^5.1.0",
