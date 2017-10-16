@@ -165,8 +165,6 @@ updateFirebaseRecording(recordingId, {year})
 Can you see the problem there? When the year input was blank, the destructured `year` variable was set to `undefined`. By creating a new object with the `{year}` syntax, I was sending an object to Firebase which included `year: undefined`. Thus causing my validation to fail.
 
 ```javascript
-// pseudocode
-
 // it turns out that this code...
 const {year} = formValues
 updateFirebaseRecording(recordingId, {year})
