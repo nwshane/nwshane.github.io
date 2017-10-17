@@ -4,6 +4,10 @@
       "path---blog-babel-error-in-jest-e932d5e72ba5a8d87805.js",
       "path---blog-babel-error-in-jest-e932d5e72ba5a8d87805.js.map"
     ],
+    "path---blog-lets-define-undefined": [
+      "path---blog-lets-define-undefined-984d3894bd43461dee53.js",
+      "path---blog-lets-define-undefined-984d3894bd43461dee53.js.map"
+    ],
     "path---projects-georgian-budget": [
       "path---projects-georgian-budget-8a1a5d7e33120c4c2bfe.js",
       "path---projects-georgian-budget-8a1a5d7e33120c4c2bfe.js.map"
@@ -17,8 +21,8 @@
       "component---src-pages-index-js-4e820523335a3fa8d132.js.map"
     ],
     "path---blog": [
-      "path---blog-abf5e576c72d99829ff0.js",
-      "path---blog-abf5e576c72d99829ff0.js.map"
+      "path---blog-a345bdb309f6f26a5efa.js",
+      "path---blog-a345bdb309f6f26a5efa.js.map"
     ],
     "path---projects-gogocode": [
       "path---projects-gogocode-60c8a0566d4fb7b0ff0f.js",
@@ -64,10 +68,6 @@
       "component---src-pages-resume-js-8833cd57daf47dafde08.js",
       "component---src-pages-resume-js-8833cd57daf47dafde08.js.map"
     ],
-    "path---blog-drafts-lets-define-undefined": [
-      "path---blog-drafts-lets-define-undefined-0a896e82e081453d8703.js",
-      "path---blog-drafts-lets-define-undefined-0a896e82e081453d8703.js.map"
-    ],
     "commons": [
       "commons-10dc7d5ed80207606b06.js",
       "build-js-styles.css",
@@ -87,8 +87,8 @@
       "path---resume-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-9ab00abcfef173508429.js",
-      "app-9ab00abcfef173508429.js.map"
+      "app-4567594e58b3eb3a9a51.js",
+      "app-4567594e58b3eb3a9a51.js.map"
     ],
     "path---blog-why-im-starting-a-blog": [
       "path---blog-why-im-starting-a-blog-72cfae20f873df875ecc.js",
