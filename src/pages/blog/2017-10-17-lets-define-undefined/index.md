@@ -1,7 +1,7 @@
 ---
 slug: let's-define-undefined
 title: Let's Define "undefined"
-date: '2017-10-13T12:00:00.000Z'
+date: '2017-10-17T14:00:00.000Z'
 ---
 
 The nature of `undefined` in JavaScript can be a bit confusing at times. In this blog post, I'm going to explore `undefined` in the context of Arrays and Objects, in order to cast a bit of light on how it works.
