@@ -159,6 +159,7 @@ Here's what happened. My database has a `recordings` entity, and each `recording
 ```javascript
 // pseudocode
 const {year} = formValues
+// ...other code
 updateFirebaseRecording(recordingId, {year})
 ```
 
