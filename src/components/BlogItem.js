@@ -28,7 +28,7 @@ const BlogItem = ({node, ...props}) => {
         </Link>
       </Heading>
       <StyledDateWithIcon date={frontmatter.date} />
-      <div>{node.excerpt}</div>
+      <div dangerouslySetInnerHTML={{__html: node.excerpt}} />
     </Li>
   )
 }
