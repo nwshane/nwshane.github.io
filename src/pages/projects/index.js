@@ -22,26 +22,32 @@ const getProjectGridSpan = ({node: {frontmatter: {featured}}})=> ({
 const SProjectItem = styled(ProjectItem)`
   margin-bottom: 50px;
 
-  @media (min-width: 600px) {
-    margin-bottom: 0;
-    grid-column: ${(props) => (getProjectGridSpan(props).gridColumn)};
-    grid-row: ${(props) => (getProjectGridSpan(props).gridRow)};
+  @supports (grid-area: auto) {
+    @media (min-width: 600px) {
+      margin-bottom: 0;
+      grid-column: ${(props) => (getProjectGridSpan(props).gridColumn)};
+      grid-row: ${(props) => (getProjectGridSpan(props).gridRow)};
+    }
   }
 `
 
 const Ul = styled.ul`
   padding: 0;
 
-  @media (min-width: 600px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-gap: 30px;
+  @supports (grid-area: auto) {
+    @media (min-width: 600px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      grid-gap: 30px;
+    }
   }
 `
 
 const ProjectsLayout = styled(Layout)`
-  max-width: initial;
-  margin: initial;
+  @supports (grid-area: auto) {
+    max-width: initial;
+    margin: initial;
+  }
 `
 
 const ProjectsPage = ({data}) => {
