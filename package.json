@@ -28,7 +28,7 @@
     "gatsby-remark-images": "^1.5.10",
     "gatsby-remark-prismjs": "^1.2.8",
     "gatsby-source-filesystem": "^1.4.12",
-    "gatsby-transformer-remark": "^1.7.6",
+    "gatsby-transformer-remark": "^1.7.18",
     "gatsby-transformer-sharp": "^1.6.5",
     "normalize.css": "^7.0.0",
     "ramda": "^0.24.1",
