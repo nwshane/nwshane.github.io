@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import {secondaryColor} from '~/src/styles'
+import PropTypes from 'prop-types'
 
 const Ul = styled.ul`
   display: flex;
@@ -18,22 +19,40 @@ const Li = styled.li`
 
 // can't use gatsby-link activeStyle prop here, because it makes home
 // active when on any page
-const isActive = (to) => {
-  const currentPath = window.location.pathname
+const isActive = (to, router) => {
+  const currentPath = router.route.location.pathname
   if (currentPath === to) return true
   if (to === '/projects' && currentPath.includes('/projects')) return true
   if (to === '/blog' && currentPath.includes('/blog')) return true
   return false
 }
 
-const HeaderLink = styled(Link)`
+const StyledLink = styled(Link)`
   font-size: calc(1.6rem + 0.5vw);
   font-family: "Patua One",sans-serif;
   color: ${secondaryColor};
   padding-bottom: 2px;
-  border-bottom: ${props => isActive(props.to) && '3px solid currentColor'};
   display: inline-block;
 `
+
+const HeaderLink = (props, {router}) => {
+  const style = {}
+
+  if (isActive(props.to, router)) {
+    style.borderBottom = '3px solid currentColor'
+  }
+
+  return (
+    <StyledLink
+      {...props}
+      style={style}
+    />
+  )
+}
+
+HeaderLink.contextTypes = {
+  router: PropTypes.object
+}
 
 const Header = (props) => (
   <nav {...props}>
