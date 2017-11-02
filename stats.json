@@ -1,102 +1,102 @@
 {
   "assetsByChunkName": {
     "path---blog-babel-error-in-jest": [
-      "path---blog-babel-error-in-jest-e932d5e72ba5a8d87805.js",
-      "path---blog-babel-error-in-jest-e932d5e72ba5a8d87805.js.map"
+      "path---blog-babel-error-in-jest-90feac1c110e20e38675.js",
+      "path---blog-babel-error-in-jest-90feac1c110e20e38675.js.map"
     ],
     "path---blog-lets-define-undefined": [
-      "path---blog-lets-define-undefined-984d3894bd43461dee53.js",
-      "path---blog-lets-define-undefined-984d3894bd43461dee53.js.map"
+      "path---blog-lets-define-undefined-6270af0b4d6178647c73.js",
+      "path---blog-lets-define-undefined-6270af0b4d6178647c73.js.map"
     ],
     "path---projects-georgian-budget": [
-      "path---projects-georgian-budget-8a1a5d7e33120c4c2bfe.js",
-      "path---projects-georgian-budget-8a1a5d7e33120c4c2bfe.js.map"
+      "path---projects-georgian-budget-dd35c322b565abf226ec.js",
+      "path---projects-georgian-budget-dd35c322b565abf226ec.js.map"
     ],
     "path---blog-squashing-gatsby-webpack-d-3-bug": [
-      "path---blog-squashing-gatsby-webpack-d-3-bug-ee5d9f8a8273db2ff423.js",
-      "path---blog-squashing-gatsby-webpack-d-3-bug-ee5d9f8a8273db2ff423.js.map"
+      "path---blog-squashing-gatsby-webpack-d-3-bug-416672ae84da37bb9647.js",
+      "path---blog-squashing-gatsby-webpack-d-3-bug-416672ae84da37bb9647.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-4e820523335a3fa8d132.js",
       "component---src-pages-index-js-4e820523335a3fa8d132.js.map"
     ],
     "path---blog": [
-      "path---blog-a345bdb309f6f26a5efa.js",
-      "path---blog-a345bdb309f6f26a5efa.js.map"
+      "path---blog-d0ce0352b1599274528b.js",
+      "path---blog-d0ce0352b1599274528b.js.map"
     ],
     "path---projects-gogocode": [
-      "path---projects-gogocode-60c8a0566d4fb7b0ff0f.js",
-      "path---projects-gogocode-60c8a0566d4fb7b0ff0f.js.map"
+      "path---projects-gogocode-c738d6cdc14a2193b17a.js",
+      "path---projects-gogocode-c738d6cdc14a2193b17a.js.map"
     ],
     "webfontloader": [
       "webfontloader-7e2893ef542a12a5c720.js",
       "webfontloader-7e2893ef542a12a5c720.js.map"
     ],
     "path---projects-scott-shane-net": [
-      "path---projects-scott-shane-net-fa25160adacf3ae50975.js",
-      "path---projects-scott-shane-net-fa25160adacf3ae50975.js.map"
+      "path---projects-scott-shane-net-26d7c8d276937de6a09b.js",
+      "path---projects-scott-shane-net-26d7c8d276937de6a09b.js.map"
     ],
     "path---projects": [
-      "path---projects-eac5536d7a11488889bb.js",
-      "path---projects-eac5536d7a11488889bb.js.map"
+      "path---projects-732c25b9a850aca5da17.js",
+      "path---projects-732c25b9a850aca5da17.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-c613eb7641e3ac9e877d.js",
-      "component---src-templates-blog-post-js-c613eb7641e3ac9e877d.js.map"
+      "component---src-templates-blog-post-js-9472a5cbf8d02acc26f1.js",
+      "component---src-templates-blog-post-js-9472a5cbf8d02acc26f1.js.map"
     ],
     "component---src-templates-project-js": [
-      "component---src-templates-project-js-cd8866beabd776761b80.js",
-      "component---src-templates-project-js-cd8866beabd776761b80.js.map"
+      "component---src-templates-project-js-5ba2de4ba727aaaaf57d.js",
+      "component---src-templates-project-js-5ba2de4ba727aaaaf57d.js.map"
     ],
     "path---projects-feradi-info": [
-      "path---projects-feradi-info-1d63c520a1b87d5a3635.js",
-      "path---projects-feradi-info-1d63c520a1b87d5a3635.js.map"
+      "path---projects-feradi-info-b80e5e28f6c07a0e63f2.js",
+      "path---projects-feradi-info-b80e5e28f6c07a0e63f2.js.map"
     ],
     "path---index": [
-      "path---index-a0e39f21c11f6a62c5ab.js",
-      "path---index-a0e39f21c11f6a62c5ab.js.map"
+      "path---index-1db04e5021b40904aca6.js",
+      "path---index-1db04e5021b40904aca6.js.map"
     ],
     "component---src-pages-blog-index-js": [
-      "component---src-pages-blog-index-js-4ad8c6a182885230d8bf.js",
-      "component---src-pages-blog-index-js-4ad8c6a182885230d8bf.js.map"
+      "component---src-pages-blog-index-js-13b37432bca5c3fcb047.js",
+      "component---src-pages-blog-index-js-13b37432bca5c3fcb047.js.map"
     ],
     "path---projects-place-ge-scraper": [
-      "path---projects-place-ge-scraper-48940fb956cc6d032a64.js",
-      "path---projects-place-ge-scraper-48940fb956cc6d032a64.js.map"
+      "path---projects-place-ge-scraper-0df42623f8d4ae9e0ddf.js",
+      "path---projects-place-ge-scraper-0df42623f8d4ae9e0ddf.js.map"
     ],
     "component---src-pages-resume-js": [
       "component---src-pages-resume-js-8833cd57daf47dafde08.js",
       "component---src-pages-resume-js-8833cd57daf47dafde08.js.map"
     ],
     "commons": [
-      "commons-10dc7d5ed80207606b06.js",
+      "commons-9b9e2378c6c1ce2dd80d.js",
       "build-js-styles.css",
-      "commons-10dc7d5ed80207606b06.js.map",
+      "commons-9b9e2378c6c1ce2dd80d.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-projects-index-js": [
-      "component---src-pages-projects-index-js-8d6e831311f267211731.js",
-      "component---src-pages-projects-index-js-8d6e831311f267211731.js.map"
+      "component---src-pages-projects-index-js-ab733981d04e3b461300.js",
+      "component---src-pages-projects-index-js-ab733981d04e3b461300.js.map"
     ],
     "path---projects-prisoners-watch": [
-      "path---projects-prisoners-watch-d152744132b2a524a15e.js",
-      "path---projects-prisoners-watch-d152744132b2a524a15e.js.map"
+      "path---projects-prisoners-watch-2ca8833ec81a216d20c1.js",
+      "path---projects-prisoners-watch-2ca8833ec81a216d20c1.js.map"
     ],
     "path---resume": [
-      "path---resume-a0e39f21c11f6a62c5ab.js",
-      "path---resume-a0e39f21c11f6a62c5ab.js.map"
+      "path---resume-1db04e5021b40904aca6.js",
+      "path---resume-1db04e5021b40904aca6.js.map"
     ],
     "app": [
-      "app-4567594e58b3eb3a9a51.js",
-      "app-4567594e58b3eb3a9a51.js.map"
+      "app-05ee3488c97ffebe52b3.js",
+      "app-05ee3488c97ffebe52b3.js.map"
     ],
     "path---blog-why-im-starting-a-blog": [
-      "path---blog-why-im-starting-a-blog-72cfae20f873df875ecc.js",
-      "path---blog-why-im-starting-a-blog-72cfae20f873df875ecc.js.map"
+      "path---blog-why-im-starting-a-blog-4aa4f7e5cdf00afd9dc2.js",
+      "path---blog-why-im-starting-a-blog-4aa4f7e5cdf00afd9dc2.js.map"
     ],
     "path---projects-atoms": [
-      "path---projects-atoms-5ce22f3f3591ca2fe263.js",
-      "path---projects-atoms-5ce22f3f3591ca2fe263.js.map"
+      "path---projects-atoms-7e487cce70b265208130.js",
+      "path---projects-atoms-7e487cce70b265208130.js.map"
     ]
   }
 }

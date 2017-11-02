@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Oct 2017 18:07:03 GMT</lastBuildDate><item><title><![CDATA[Let's Define "undefined"]]></title><description><![CDATA[The nature of   in JavaScript can be a bit confusing at times. In this blog post, I'm going to explore   in the context of Arrays and...]]></description><link>https://nathanshane.me/blog/let&apos;s-define-undefined</link><guid isPermaLink="false">https://nathanshane.me/blog/let&apos;s-define-undefined</guid><pubDate>Tue, 17 Oct 2017 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The nature of &lt;code&gt;undefined&lt;/code&gt; in JavaScript can be a bit confusing at times. In this blog post, I&apos;m going to explore &lt;code&gt;undefined&lt;/code&gt; in the context of Arrays and Objects, in order to cast a bit of light on how it works.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Thu, 02 Nov 2017 17:11:35 GMT</lastBuildDate><item><title><![CDATA[Let's Define "undefined"]]></title><description><![CDATA[The nature of  undefined  in JavaScript can be a bit confusing at times. In this blog post, I'm going to explore  undefined  in the context…]]></description><link>https://nathanshane.me/blog/let&apos;s-define-undefined</link><guid isPermaLink="false">https://nathanshane.me/blog/let&apos;s-define-undefined</guid><pubDate>Tue, 17 Oct 2017 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The nature of &lt;code&gt;undefined&lt;/code&gt; in JavaScript can be a bit confusing at times. In this blog post, I&apos;m going to explore &lt;code&gt;undefined&lt;/code&gt; in the context of Arrays and Objects, in order to cast a bit of light on how it works.&lt;/p&gt;
 &lt;h2&gt;&lt;code&gt;undefined&lt;/code&gt; in Objects&lt;/h2&gt;
 &lt;p&gt;Did you know that there&apos;s a difference in JavaScript between object properties that have not been defined, and object properties that are defined as &lt;code&gt;undefined&lt;/code&gt;?&lt;/p&gt;
 &lt;p&gt;I&apos;ll explain what I mean. Take a look at the code below and see if you can figure out what it logs to the console:&lt;/p&gt;
@@ -141,7 +141,7 @@ arr 2. undefined&lt;/code&gt;&lt;/pre&gt;
 &lt;span class=&quot;token function&quot;&gt;updateFirebaseRecording&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;recordingId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; formValues&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;This kind of situation is what makes it worthwhile to learn the details of JavaScript.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Digging into a Babel-Related Error in Jest]]></title><description><![CDATA[Not so long ago, I decided to add some tests to a small program I wrote. I chose to use  jest , a nice testing platform by facebook that I...]]></description><link>https://nathanshane.me/blog/babel-error-in-jest</link><guid isPermaLink="false">https://nathanshane.me/blog/babel-error-in-jest</guid><pubDate>Wed, 11 Oct 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Not so long ago, I decided to add some tests to a small program I wrote. I chose to use &lt;a href=&quot;https://facebook.github.io/jest/&quot;&gt;jest&lt;/a&gt;, a nice testing platform by facebook that I&apos;ve enjoyed using in the past. This time, however, I had some trouble: I ran into a babel-related error with my very first test. I&apos;d like to be a world-class debugger someday, so I figured I&apos;d dig in and really try to understand the error.&lt;/p&gt;
+&lt;p&gt;This kind of situation is what makes it worthwhile to learn the details of JavaScript.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Digging into a Babel-Related Error in Jest]]></title><description><![CDATA[Not so long ago, I decided to add some tests to a small program I wrote. I chose to use  jest , a nice testing platform by facebook that I…]]></description><link>https://nathanshane.me/blog/babel-error-in-jest</link><guid isPermaLink="false">https://nathanshane.me/blog/babel-error-in-jest</guid><pubDate>Wed, 11 Oct 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Not so long ago, I decided to add some tests to a small program I wrote. I chose to use &lt;a href=&quot;https://facebook.github.io/jest/&quot;&gt;jest&lt;/a&gt;, a nice testing platform by facebook that I&apos;ve enjoyed using in the past. This time, however, I had some trouble: I ran into a babel-related error with my very first test. I&apos;d like to be a world-class debugger someday, so I figured I&apos;d dig in and really try to understand the error.&lt;/p&gt;
 &lt;p&gt;This post describes how to set up a little app that reproduces the error, and next, how to debug the error using tools from the modern JavaScript toolbox.&lt;/p&gt;
 &lt;h2&gt;Reproducing the Error&lt;/h2&gt;
 &lt;p&gt;(If you&apos;d like, you can skip this section and reproduce the error by cloning this &lt;a href=&quot;https://github.com/nwshane/jest-babel-error&quot;&gt;repository&lt;/a&gt;.)&lt;/p&gt;
@@ -156,7 +156,7 @@ arr 2. undefined&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let&apos;s start out by creating that sum function.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Simple enough. Now we want to test our sum function, because we&apos;re responsible devs, and that&apos;s what responsible devs do.&lt;/p&gt;
@@ -247,13 +247,13 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Remote Target&quot;
         title=&quot;&quot;
-        src=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-beeed.png&quot;
-        srcset=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-a7bfb.png 163w,
-/static/c3c45424dfaefd9b73f69e06708a1f97-c740e.png 325w,
-/static/c3c45424dfaefd9b73f69e06708a1f97-beeed.png 376w&quot;
+        src=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-355f8.png&quot;
+        srcset=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-2d9b1.png 163w,
+/static/c3c45424dfaefd9b73f69e06708a1f97-17d51.png 325w,
+/static/c3c45424dfaefd9b73f69e06708a1f97-355f8.png 376w&quot;
         sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
       /&gt;
     &lt;/span&gt;
@@ -275,14 +275,14 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Source Map&quot;
         title=&quot;&quot;
-        src=&quot;/static/977ee10b94867637f15ba3cbb4d13330-e0174.png&quot;
-        srcset=&quot;/static/977ee10b94867637f15ba3cbb4d13330-a7bfb.png 163w,
-/static/977ee10b94867637f15ba3cbb4d13330-c740e.png 325w,
-/static/977ee10b94867637f15ba3cbb4d13330-e0174.png 597w&quot;
-        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+        src=&quot;/static/977ee10b94867637f15ba3cbb4d13330-f636d.png&quot;
+        srcset=&quot;/static/977ee10b94867637f15ba3cbb4d13330-1783f.png 163w,
+/static/977ee10b94867637f15ba3cbb4d13330-7ad53.png 325w,
+/static/977ee10b94867637f15ba3cbb4d13330-f636d.png 597w&quot;
+        sizes=&quot;(max-width: 597px) 100vw, 597px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -300,14 +300,14 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Debugger Scope&quot;
         title=&quot;&quot;
-        src=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-c3675.png&quot;
-        srcset=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-a7bfb.png 163w,
-/static/8d7fe9904055b6e733dcde9167c02ba1-c740e.png 325w,
-/static/8d7fe9904055b6e733dcde9167c02ba1-c3675.png 410w&quot;
-        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+        src=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-187b0.png&quot;
+        srcset=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-855d2.png 163w,
+/static/8d7fe9904055b6e733dcde9167c02ba1-07b9d.png 325w,
+/static/8d7fe9904055b6e733dcde9167c02ba1-187b0.png 410w&quot;
+        sizes=&quot;(max-width: 410px) 100vw, 410px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -324,13 +324,13 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Sources File Tree&quot;
         title=&quot;&quot;
-        src=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-8e955.png&quot;
-        srcset=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-a7bfb.png 163w,
-/static/8eef1c5b8517f1c23727ec7e47d0f913-8e955.png 319w&quot;
-        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+        src=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-a9fb3.png&quot;
+        srcset=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-a16ad.png 163w,
+/static/8eef1c5b8517f1c23727ec7e47d0f913-a9fb3.png 319w&quot;
+        sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -347,13 +347,13 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Pretty Print Button&quot;
         title=&quot;&quot;
-        src=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-63acb.png&quot;
-        srcset=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-a7bfb.png 163w,
-/static/0ad11bac5c6217bb6e808a9d24419ef1-63acb.png 194w&quot;
-        sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
+        src=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-551fb.png&quot;
+        srcset=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-f958f.png 163w,
+/static/0ad11bac5c6217bb6e808a9d24419ef1-551fb.png 194w&quot;
+        sizes=&quot;(max-width: 194px) 100vw, 194px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -367,7 +367,7 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
         Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;defineProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;__esModule&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
             value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -418,7 +418,7 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code&gt;_index2.default&lt;/code&gt; isn&apos;t a function because it&apos;s undefined, as we saw when we looked in the &lt;code&gt;_index2&lt;/code&gt; object in the Debugger Scope. But how can we fix our original code? We seem to be accessing the &lt;code&gt;sum&lt;/code&gt; function in the wrong way, so let&apos;s check out how we&apos;re importing and exporting the function:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
@@ -447,7 +447,7 @@ Ran all test suites.&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Passing Tests = &lt;em&gt;Pure Bliss&lt;/em&gt; :)&lt;/p&gt;
 &lt;p&gt;And now we can feel extra happy, because we debugged the error, we understand where it&apos;s coming from, and we&apos;ll be unfazed if we see it again.&lt;/p&gt;
-&lt;p&gt;The takeaway from this round of debugging is: do your best to &lt;em&gt;deeply&lt;/em&gt; understand the errors you encounter. If you think you understand an error, but you&apos;re not sure, it can help to write down any questions that are floating around your head. Then you can methodically tackle each question and improve your debugging skills. This is a strategy that I&apos;m learning myself, and I hope it proves useful to you.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Squashing a Gatsby+Webpack+d3 bug]]></title><description><![CDATA[I was in the midst of rebuilding my site a couple weeks ago with  Gatsby JS , a React-based static site generator, when I decided I wanted...]]></description><link>https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</link><guid isPermaLink="false">https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</guid><pubDate>Tue, 26 Sep 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was in the midst of rebuilding my site a couple weeks ago with &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby JS&lt;/a&gt;, a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.&lt;/p&gt;
+&lt;p&gt;The takeaway from this round of debugging is: do your best to &lt;em&gt;deeply&lt;/em&gt; understand the errors you encounter. If you think you understand an error, but you&apos;re not sure, it can help to write down any questions that are floating around your head. Then you can methodically tackle each question and improve your debugging skills. This is a strategy that I&apos;m learning myself, and I hope it proves useful to you.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Squashing a Gatsby+Webpack+d3 bug]]></title><description><![CDATA[I was in the midst of rebuilding my site a couple weeks ago with  Gatsby JS , a React-based static site generator, when I decided I wanted…]]></description><link>https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</link><guid isPermaLink="false">https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</guid><pubDate>Tue, 26 Sep 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was in the midst of rebuilding my site a couple weeks ago with &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby JS&lt;/a&gt;, a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.&lt;/p&gt;
 &lt;p&gt;This is a perfect chance to learn &lt;a href=&quot;https://d3js.org/&quot;&gt;d3&lt;/a&gt;, I thought! So I went off and read all about d3, and when I felt I was ready, I opened my application and typed:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; d3 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
@@ -597,7 +597,7 @@ To install them, you can run: npm install --save child_process fs&lt;/code&gt;&l
 &lt;/ul&gt;
 &lt;p&gt;I feel like I learned a lot from this experience, and I hope this story gave you something to think about as well. Thanks to Harold for helping me out of this mess, and thanks to the makers of gatsby, webpack, and d3 for all their open source work.&lt;/p&gt;
 &lt;p&gt;Now go squash some bugs!&lt;/p&gt;
-&lt;p&gt;*&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why I'm Starting a Blog]]></title><description><![CDATA[Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere! I’ve decided that I want to have a space to share what’s...]]></description><link>https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</link><guid isPermaLink="false">https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</guid><pubDate>Fri, 15 Sep 2017 10:14:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere!&lt;/p&gt;
+&lt;p&gt;*&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why I'm Starting a Blog]]></title><description><![CDATA[Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere! I’ve decided that I want to have a space to share what’s…]]></description><link>https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</link><guid isPermaLink="false">https://nathanshane.me/blog/why-i&apos;m-starting-a-blog</guid><pubDate>Fri, 15 Sep 2017 10:14:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi folks! I’m Nathan, and yes, this is my grand entrance into the blogosphere!&lt;/p&gt;
 &lt;p&gt;I’ve decided that I want to have a space to share what’s going in my head and my life—whether that be technical subjects, cat memes, reflections on books I’m reading, tasty recipes, beautiful music, life updates... pretty much anything I want to write about.&lt;/p&gt;
 &lt;p&gt;I know that’s a bit vague, so I’ll try to clarify my primary reason for starting this blog. I’ve experimented with various learning techniques over the past few years, and one that’s really stuck has been my use of flashcards. I make flashcards for everything (&lt;a href=&quot;https://ankiweb.net/about&quot;&gt;Anki&lt;/a&gt; anyone?), because I’ve found that flashcards help my ailing 27-year old memory remember what I learned yesterday, a month ago, and even (gasp!) a year ago.&lt;/p&gt;
 &lt;p&gt;Yet, flashcards aren’t ideal for all kinds of learning. Each flashcard only tests a single idea, concept, or chunk of knowledge; often, it’s hard to truly contextualize and understand a subject in depth when you break it up into parts and test those parts separately. And recently, while studying at the &lt;a href=&quot;https://www.recurse.com/&quot;&gt;Recurse Center&lt;/a&gt;, I&apos;ve gained more of an appreciation for this kind of deep knowledge.&lt;/p&gt;
