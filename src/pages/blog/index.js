@@ -3,6 +3,7 @@ import BlogItem from '~/src/components/BlogItem'
 import BlogLayout from '~/src/components/BlogLayout'
 import HelmetTitle from '~/src/components/HelmetTitle'
 import styled from 'styled-components'
+import BlogFooter from '~/src/components/BlogFooter'
 
 const Ul = styled.ul`
   padding: 0;
@@ -21,6 +22,7 @@ const BlogPage = ({data}) => {
           <BlogItem key={blogPost.node.id} {...blogPost} />
         ))}
       </Ul>
+      <BlogFooter />
     </BlogLayout>
   )
 }

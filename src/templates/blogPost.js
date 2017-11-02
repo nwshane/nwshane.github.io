@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import BlogLayout from '~/src/components/BlogLayout'
 import DateWithIcon from '~/src/components/DateWithIcon'
 import HelmetTitle from '~/src/components/HelmetTitle'
+import BlogFooter from '~/src/components/BlogFooter'
 
 const Article = styled.article`
   margin-top: 50px;
@@ -61,6 +62,7 @@ const BlogPost = ({data}) => {
         </IntroSection>
         <MainContent dangerouslySetInnerHTML={{__html: blogPost.html}} />
       </Article>
+      <BlogFooter />
     </BlogLayout>
   )
 }
