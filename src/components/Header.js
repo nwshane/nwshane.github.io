@@ -3,9 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import {secondaryColor} from '~/src/styles'
 
-const Nav = styled.nav`
-`
-
 const Ul = styled.ul`
   display: flex;
   flex-direction: row;
@@ -19,32 +16,45 @@ const Li = styled.li`
   list-style-type: none;
 `
 
-const SLink = styled(Link)`
+// can't use gatsby-link activeStyle prop here, because it makes home
+// active when on any page
+const isActive = (to) => {
+  const currentPath = window.location.pathname
+  if (currentPath === to) return true
+  if (to === '/projects' && currentPath.includes('/projects')) return true
+  if (to === '/blog' && currentPath.includes('/blog')) return true
+  return false
+}
+
+const HeaderLink = styled(Link)`
   font-size: calc(1.6rem + 0.5vw);
   font-family: "Patua One",sans-serif;
   color: ${secondaryColor};
+  padding-bottom: 2px;
+  border-bottom: ${props => isActive(props.to) && '3px solid currentColor'};
+  display: inline-block;
 `
 
 const Header = (props) => (
-  <Nav {...props}>
+  <nav {...props}>
     <Ul>
       <Li>
-        <SLink to='/'>
+        <HeaderLink to='/'>
           Home
-        </SLink>
+        </HeaderLink>
       </Li>
       <Li>
-        <SLink to='/projects'>
+        <HeaderLink to='/projects'>
           Projects
-        </SLink>
+        </HeaderLink>
       </Li>
       <Li>
-        <SLink to='/blog'>
+        <HeaderLink to='/blog'>
           Blog
-        </SLink>
+        </HeaderLink>
       </Li>
     </Ul>
-    </Nav>
+  </nav>
 )
 
 export default Header
