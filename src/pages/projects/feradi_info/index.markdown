@@ -8,6 +8,6 @@ mainUrl: "https://feradi.info"
 featuredImage: "Feradi-Home-Page.png"
 ---
 
-We at JumpStart Georgia create visualizations of many different kinds, including infographics, interactives, videos, and gifographics. We publish these visualizations on [feradi.info]({{ page.mainUrl }}) ("feradi" means "colorful" in Georgian).
+JumpStart Georgia creates visualizations of many different kinds, including infographics, interactives, videos, and gifographics. We publish these visualizations on [feradi.info](https://feradi.info) ("feradi" means "colorful" in Georgian).
 
-My contributions to feradi.info have consisted of making the site more responsive, as well as adding the ability for us to upload video and gifographic visualizations.
+My contributions to feradi.info consisted of making the site more responsive, as well as adding the ability for us to upload video and gifographic visualizations.
