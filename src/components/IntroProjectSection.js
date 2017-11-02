@@ -42,15 +42,17 @@ const minGridWidth = '900px'
 const Wrapper = styled.section`
   margin-top: 30px;
   margin-bottom: 50px;
-  @media (min-width: ${minGridWidth}) {
-    @supports (grid-area: auto) {
-      display: grid;
-      grid-gap: 40px;
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas:
-        '${props => props.featuredImage && 'picture'} heading'
-        '${props => props.featuredImage && 'picture'} metadata';
-    }
+  ${props => props.featuredImage && `
+    @media (min-width: ${minGridWidth}) {
+      @supports (grid-area: auto) {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        'picture heading'
+        'picture metadata';
+      }
+  `}
   }
 `
 
