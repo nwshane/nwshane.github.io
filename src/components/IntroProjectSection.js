@@ -48,8 +48,8 @@ const Wrapper = styled.section`
       grid-gap: 40px;
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
-        'picture heading'
-        'picture metadata';
+        '${props => props.featuredImage && 'picture'} heading'
+        '${props => props.featuredImage && 'picture'} metadata';
     }
   }
 `
@@ -84,7 +84,7 @@ const MetaDataContainer = styled.div`
 `
 
 const IntroProjectSection = ({project: {frontmatter}}) => (
-  <Wrapper>
+  <Wrapper featuredImage={frontmatter.featuredImage}>
     <HeaderGroup>
       <H1>
         {frontmatter.title}
