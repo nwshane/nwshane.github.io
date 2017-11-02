@@ -70,6 +70,8 @@ const ImageAnchor = styled.a`
   }
 
   @media (min-width: ${minGridWidth}) {
+    max-width: 900px;
+    display: block;
     @supports (grid-area: auto) {
       grid-area: picture;
     }
