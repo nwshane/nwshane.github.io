@@ -22,7 +22,7 @@ class BlogFooter extends Component {
     return (
       <Footer>
         <p>
-          Hi! I'm Nathan. I'd love to hear from you, whether you have a question, a comment, or just want to say hi. :)
+          Hi! I'm Nathan. I'd love to <a target='_blank' href='mailto:nathanwshane@gmail.com'>hear from you</a>, whether you have a question, a comment, or just want to say hi. :)
         </p>
         <p>
           <RcIcon />
