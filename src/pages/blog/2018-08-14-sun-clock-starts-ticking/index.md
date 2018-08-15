@@ -22,13 +22,13 @@ Turns out Qaanaaq, a town in northwestern Greenland, is a sunny place in the sum
 
 ![24 Hours of Daylight in Greenland](./images/greenland_24_hours_daylight.png)
 
-Your first time looking at the sun clock, you might have the impression that it's just a fixed image, with no movement. But that's not the case! The hand of the clock is moving, just verrrryyyy sloooooowllllyyyy. It has 86,400 seconds to make a full rotation, which on my laptop screen means that the clock hand has to travel 0.68 inches/hour.[2](#footnote-2)
+Your first time looking at the sun clock, you might have the impression that it's just a fixed image, with no movement. But that's not the case! The hand of the clock is moving, just _verrrryyyy sloooooowllllyyyy_. It has 24 hours to make a full rotation, which on my laptop screen means that the clock hand has to travel 0.68 inches/hour.[2](#footnote-2)
 
 When the clock was only partly finished, I had an intriguing thought: what would it look like if I could _speed it up_? So I added a slider below the date picker, which lets you do just that:
 
 ![Speed up time in Tbilisi, Georgia](./images/speed_up_tbilisi.gif)
 
-Speeding up the clock to multiple days per second made the hour hand's previously unnoticeable progression around the circle into a top-speed, frenetic, and distracting movement. To fix that problem, I borrowed an idea from real life clocks, which depict 12 hours, 60 minutes, and 60 seconds all at the same time. When you increase the speed of the sun clock past one day/second, the clock moves into "year mode": it continues to represent daylight and nighttime as portions of a 24 hour circle, but shows a day hand instead of an hour hand, with points to the winter solstice at the bottom and the summer solstice at the top. The time of day in the center of the circle is also replaced by the date.
+Speeding up the clock to multiple days per second made the hour hand's previously unnoticeable progression around the circle into a top-speed, frenetic, and distracting movement. To fix that problem, I borrowed an idea from real life clocks, which depict 12 hours, 60 minutes, and 60 seconds all at the same time. When you increase the speed of the sun clock past one day/second, the clock moves into "year mode": it continues to represent daylight and nighttime as portions of a 24 hour circle, but shows a day hand instead of an hour hand, which points to the winter solstice at the bottom and the summer solstice at the top. The time of day in the center of the circle is also replaced by the date.
 
 ![Speed up time in Tbilisi, Georgia into year mode](./images/speed_up_tbilisi_into_year_mode.gif)
 
@@ -42,10 +42,10 @@ Making it so easy to speed up the clock made me feel a little off kilter, so I a
 
 It's been fun to show my friends and family the clock and observe what they've used it for: My mom checked January in New Zealand to plan for a potential upcoming trip, while my dad geeked out at the wildly varying sunrise and sunset times in St. Petersburg throughout the year. If you find it useful, or just have fun with it, I'll be happy if you share it around!
 
-Thanks for reading this far, and don't forget to get out in the sun every once in a while ;)
+Thanks for reading this far, and don't forget to get outside and soak up the sun every once in a while ;)
 
 ### Footnotes
 
-<a name="footnote-1">1. I also changed the clock to show a random location when it loads (assuming that no location is specified in the URL). I made this change because the sun clock can only load once it has the latitude and longitude of a location in hand. I would love to show the location of the user as the default, but then the clock has to wait for the browser to "geolocate" the user (find their latitude and longitude), which can sometimes be extremely slow.</a>
+<a name="footnote-1">1. I also changed the clock to show a random location when it loads (assuming that no location is specified in the URL). I made this change because the sun clock can only work once it knows what latitude and longitude to use, and choosing a random location gives it that information immediately. I would love to show the location of the user as the default, but then the clock has to wait for the browser to "geolocate" the user (find their latitude and longitude), which can sometimes be extremely slow.</a>
 
 <a name="footnote-2">2. On my laptop screen, which is 11.3 x 7 inches, the clock hand has an approximate radius of 2.6 inches. Circumference = 16.3 inches; speed of movement = 16.3 inches / 24 hours, or 0.68 in/hr.</a>
