@@ -4,7 +4,7 @@ title: The Sun Clock starts ticking
 date: "2018-08-14T22:00:00.000Z"
 ---
 
-As some of you know, I've been hard at work on a side project for the past half year or so. I call it the "Sun Clock", and I'm happy to say that the [first version](https://sunclock.nathanshane.me) is finished!
+As some of you know, I've been hard at work on a side project for the past half year or so. I call it the "Sun Clock," and I'm happy to say that the [first version](https://sunclock.nathanshane.me) is finished!
 
 ![Sun Clock Circle](./images/sun_clock_circle_only.png)
 
