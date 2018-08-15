@@ -49,6 +49,11 @@ const MainContent = styled.main`
     margin: 0 auto;
     max-width: 100%;
   }
+
+  a[href*="footnote"] {
+    font-size: 0.75em;
+    vertical-align: top;
+  }
 `
 
 const BlogPost = ({data}) => {

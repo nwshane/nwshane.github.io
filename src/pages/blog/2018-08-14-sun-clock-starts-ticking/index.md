@@ -16,13 +16,13 @@ With the sun clock, I can click "Show My Location" in the bottom right, and voil
 
 The yellow and black circle represents the 24 hours of the day (unlike the 12 hours of a typical clock), with noon at the top and midnight at the bottom. Using a 24-hour clock allows one to see at a glance how much of the day is in light and how much in darkness.
 
-I finished this initial version of the sun clock many moons ago (so to speak) and I found myself spurred on to take the visualization a bit farther. What about viewing different locations around the world, and on different dates throughout the year? I was curious how the clock might look in Estonia on January 3rd (which is when I visited my friend Tengo there a few years back), or in Greenland mid-summer. So I added a date picker to the bottom left of the screen, and a list of selectable/searchable locations to the bottom right.[(footnote #1)](#footnote-1)
+I finished this initial version of the sun clock many moons ago (so to speak) and I found myself spurred on to take the visualization a bit farther. What about viewing different locations around the world, and on different dates throughout the year? I was curious how the clock might look in Estonia on January 3rd (which is when I visited my friend Tengo there a few years back), or in Greenland mid-summer. So I added a date picker to the bottom left of the screen, and a list of selectable/searchable locations to the bottom right.[1](#footnote-1)
 
 Turns out Qaanaaq, a town in northwestern Greenland, is a sunny place in the summer!
 
 ![24 Hours of Daylight in Greenland](./images/greenland_24_hours_daylight.png)
 
-Your first time looking at the sun clock, you might have the impression that it's just a fixed image, with no movement. But that's not the case! The hand of the clock is moving, just verrrryyyy sloooooowllllyyyy. It has 86,400 seconds to make a full rotation, which on my laptop screen means that the clock hand has to travel 0.68 inches/hour.[(footnote #2)](#footnote-2)
+Your first time looking at the sun clock, you might have the impression that it's just a fixed image, with no movement. But that's not the case! The hand of the clock is moving, just verrrryyyy sloooooowllllyyyy. It has 86,400 seconds to make a full rotation, which on my laptop screen means that the clock hand has to travel 0.68 inches/hour.[2](#footnote-2)
 
 When the clock was only partly finished, I had an intriguing thought: what would it look like if I could _speed it up_? So I added a slider below the date picker, which lets you do just that:
 
