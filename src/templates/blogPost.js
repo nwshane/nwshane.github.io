@@ -43,6 +43,12 @@ const MainContent = styled.main`
       font-size: 3rem;
     }
   }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
 `
 
 const BlogPost = ({data}) => {
