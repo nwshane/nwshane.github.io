@@ -1,34 +1,32 @@
 ---
 slug: the-sun-clock-starts-ticking
 title: The Sun Clock starts ticking
-date: "2017-10-17T14:00:00.000Z"
+date: "2018-08-14T22:00:00.000Z"
 ---
 
 As some of you know, I've been hard at work on a side project for the past half year or so. I call it the "Sun Clock", and I'm happy to say that the first version is finished!
 
 ![Sun Clock Circle](./images/sun_clock_circle_only.png)
 
-The original idea behind the sun clock was to show the amount of daylight vs. nighttime at the user's location. I live in Brooklyn, New York, and it's absolutely essential that I know when the sun is going to set! (How else would I plan evening picnics in nearby Prospect Park?)
+The original idea behind the sun clock was to show the amount of daylight vs. nighttime at the user's location. I live in Brooklyn, New York, and it's _absolutely essential_ that I know when the sun is going to set. (How else would I plan evening picnics in nearby Prospect Park?)
 
-With the sun clock, I can click "Show My Location" in the bottom right, and voila—the sunrise and sunset times appear in the top-left corner. (You have to allow the Sun Clock to access your location, and then wait for your location to load, before "Show My Location" will appear.)
+With the sun clock, I can click "Show My Location" in the bottom right, and voila—the sunrise and sunset times appear in the top-left corner. You have to allow the Sun Clock to access your location, and then wait for your location to load, before "Show My Location" will appear.
 
-<picture of sun clock>
+![Sunrise and Sunset Times](./images/sun_times.png)
 
 The visually appealing part of the clock, the circle, represents the 24 hours of the day (unlike the 12 hours of a typical clock), with noon at the top and midnight at the bottom. Using a 24-hour clock allows one to see at a glance how much of the day is in light and how much in darkness.
 
-## Around the world with the sun clock
-
 I finished this initial version of the sun clock many moons ago (so to speak) and I found myself spurred on to take the visualization a bit farther. What about viewing different locations around the world, and on different dates throughout the year? I was curious how the clock might look in Estonia on January 3rd (which is when I visited my friend Tengo there a few years back), or in Greenland mid-summer. So I added a date picker to the bottom left of the screen, and a list of selectable/searchable locations to the bottom right.<footnote 1>
 
-Turns out Greenland's a sunny place in the summer!
+Turns out Qaanaaq, a town in northwestern Greenland, is a sunny place in the summer!
 
-<picture of Greenland>
+![24 Hours of Daylight in Greenland](./greenland_24_hours_daylight.png)
 
 Your first time looking at the sun clock, you might have the impression that it's just a fixed image, with no movement. But that's not the case! The hand of the clock is moving, just verrrryyyy sloooooowllllyyyy. It has 86,400 seconds to make a full rotation, which on my laptop screen means that the clock hand has to travel 0.68 inches/hour.<footnote 2>
 
 When the clock was only partly finished, I had an intriguing thought: what would it look like if I could _speed it up_?? So I added a slider below the date picker, which lets you do just that:
 
-<Tbilisi, Georgia, with 12 hours passing for every second in real life.>
+![Speed up time in Tbilisi, Georgia](./speed_up_tbilisi.gif)
 
 Speeding up the clock to multiple days / second made the hour hand's previously unnoticeable progression around the circle into a top-speed, frenetic, and distracting movement. To fix that problem, I borrowed an idea from real life clocks, which depict 12 hours, 60 minutes, and 60 seconds all at the same time. When you increase the speed of the sun clock past one day/second, the clock moves into "year mode": it continues to represent daylight and nighttime as portions of a 24 hour circle, but shows a "day" hand instead of an hour hand, with points to the winter solstice at the bottom and the summer solstice at the top. The time of day in the center of the circle is also replaced by the year date.
 
