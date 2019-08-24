@@ -26,11 +26,13 @@ const Heading = styled.h1`
 const MainContent = styled.main`
   line-height: 1.2;
 
-  ol, ul {
+  ol,
+  ul {
     margin: 40px 0;
   }
 
-  ol li, ul li {
+  ol li,
+  ul li {
     margin-bottom: 15px;
   }
 
@@ -50,15 +52,15 @@ const MainContent = styled.main`
     max-width: 100%;
   }
 
-  a[href*="footnote"] {
+  a[href*='footnote'] {
     font-size: 0.75em;
     vertical-align: top;
   }
 `
 
-const BlogPost = ({data}) => {
+const BlogPost = ({ data }) => {
   const blogPost = data.markdownRemark
-  const {frontmatter} = blogPost
+  const { frontmatter } = blogPost
 
   return (
     <BlogLayout>
@@ -67,11 +69,15 @@ const BlogPost = ({data}) => {
         <IntroSection>
           <Heading>{frontmatter.title}</Heading>
           {frontmatter.draft && (
-            <p><em>(This is a draft, so it's not included in the blog index.)</em></p>
+            <p>
+              <em>
+                (This is a draft, so it's not included in the blog index.)
+              </em>
+            </p>
           )}
           <DateWithIcon date={frontmatter.date} />
         </IntroSection>
-        <MainContent dangerouslySetInnerHTML={{__html: blogPost.html}} />
+        <MainContent dangerouslySetInnerHTML={{ __html: blogPost.html }} />
       </Article>
       <BlogFooter />
     </BlogLayout>
@@ -82,7 +88,7 @@ export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(frontmatter: {slug: {eq: $slug }}) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
