@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Wed, 15 Aug 2018 03:28:06 GMT</lastBuildDate><item><title><![CDATA[The Sun Clock starts ticking]]></title><description><![CDATA[As some of you know, I've been hard at work on a side project for the past half year or so. I call it the "Sun Clock," and I'm happy to say…]]></description><link>https://nathanshane.me/blog/the-sun-clock-starts-ticking</link><guid isPermaLink="false">https://nathanshane.me/blog/the-sun-clock-starts-ticking</guid><pubDate>Tue, 14 Aug 2018 22:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As some of you know, I&apos;ve been hard at work on a side project for the past half year or so. I call it the &quot;Sun Clock,&quot; and I&apos;m happy to say that the &lt;a href=&quot;https://sunclock.nathanshane.me&quot;&gt;first version&lt;/a&gt; is finished!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NathanShane.me]]></title><description><![CDATA[Nathan Shane's portfolio and blog]]></description><link>https://nathanshane.me</link><generator>RSS for Node</generator><lastBuildDate>Sat, 24 Aug 2019 14:50:18 GMT</lastBuildDate><item><title><![CDATA[The Sun Clock starts ticking]]></title><description><![CDATA[As some of you know, I've been hard at work on a side project for the past half year or so. I call it the "Sun Clock," and I'm happy to say…]]></description><link>https://nathanshane.me/blog/the-sun-clock-starts-ticking</link><guid isPermaLink="false">https://nathanshane.me/blog/the-sun-clock-starts-ticking</guid><pubDate>Tue, 14 Aug 2018 22:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As some of you know, I&apos;ve been hard at work on a side project for the past half year or so. I call it the &quot;Sun Clock,&quot; and I&apos;m happy to say that the &lt;a href=&quot;https://sunclock.nathanshane.me&quot;&gt;first version&lt;/a&gt; is finished!&lt;/p&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -6,20 +6,20 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 93.50943396226414%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsSAAALEgHS3X78AAACjUlEQVQ4y5WUXUgUURTHN1SU1AxffFKDINqngr5gLXoShNQyxJA+6KEPkXoKLIgiFX3oJaKX6OshwhcflgyCCGrdXKRUqjVnZtv1Y2SxNZv2a2bd3Zm5/+7ewcZhddQLhxnuPed3//fcc48DGw0tBqQmAMUHZIIA0W3dHWvOkiwQfQbMHAG4bdQcpgUqgYXLQDqwSWCaB6b3mQChApitg8LXAaG9qzYoApb68hRbgKr8Dd6BSqS+OiD7d4PEX9MAFYIgIBQKQZIkIDuP5PRVCiw0wAtXqA/JBxItgcB7J/bsKsTYu/OAnrbPreIFEapAuO0g0pN8oL74ABp/AMGRixDFOSwvL294X0QepTEHoQlH6UEkE0j0FLTAMbp4CEnpB1uIRqNQFMUWmM1mkZq5wYToS89XAZOf2KQmdlgC4vE4EomEvUplwoidvWAC9T8vjF1+P84LkGUZsVhsfSAtMY0/TI/tov/EAHo+fMT9/m68feNmtxkOhy3H8vsnwU1x+BWJWDbiOA7BYBAZ/jgTRPSMAezrG0BBUQP75isgUFWVmaZpa0hUQfgd1HaaCt3uERQUNKCp6S62PFKfjXqc3m/mMBaTUVrajJKSRlrEs5tm5dKRnr9mABdvW+uwo+MhU9na2sukb2aMjQVw+tRNzHyh0KxoBUYif1FVdYZBu7qeQtftoRwnorr6LPPv6Xm19lv2eL6jrKyZOblc1zE+/pPN596yKIrsLSeTKfT2vkRFRQvza2m5Ry9MW7/b+HxTqK09x5xz5nReQnt7P9raulFffwvl5Sf/r3V2PkImo27cD+NxhR2jpsYEr1hx8Qk0Nt6B1zu5hQa70jBoHnO5GhoaxeCgF8PDflYRduMfVLo4dCpuxYoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 93.50943396226414%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsSAAALEgHS3X78AAADQ0lEQVQ4y2VUW0hUQRiehzKol3zIiiJfhIiM0O4XA60Quj0k+BQ9BF0oFEsK8ikjegghCiEiIqiggiDsoSREMdh8sFbR3F3Pek+L1svZPe3q2XNm5mvOzDlnjzrw75l/5p9vvv///lkCZ3CuTM6p+sB1rd/gmS7wdCe4GQHYvL8HbgfOqS9xJtx1uAigEpuB68/BR48AkRXAAPGNa1vA/9QK8EEXiC0CJUEwNQaAsb1AnwDoF6ZthKkdRiZWAT60QwE7e5GV4DMPJVvu/nDJUM5VmvN6GF9erIXRRWBpJcjOfoBtGfj16w8i0SEkkynAjiM9fBncA/570yXEPIYMTJI0EPmyE0WbCL5+vCCDbD8TEcOYXxrnev7vMxArABdZcP21nyVx2EnGiUdYCG/AcNcVjE3M4F86I6WRN+ckUtlwS3qW3oZs31ZQ7ajQR3dFkcKmxGIFaLQUdD4mN+Zmp2EYhnsz983zHZ5ZUXZztB60fzPY7JscIE11YKFnC+zxWgRrquu6qFsSS4cSwW2v9DfY/YWgEzUK0EkI6XfARBGQegnpI1cvB9ABDjKVEUwBgv4FjR0CHTojOiijGLa3teFGzSW0fvqIkZFRTE1N+WxM00Q4HEYsNohEYtpfT6WSiMY0DMd7YUYrwNw6SsC7996CkGLcu/9OBmezln/QUde2bViWBUppIG0GS7h0YQI8ug48vk1UwVCALS0hAbgfVVWNPkgwvcX1W/wQuPEZrFfAjB/LNXYikUR+/lnk5Z1ANDqmetCmyxRWptYYs1W9ddHYGgGbblKieGnU1T0RLEsEyzs+Gwd0KaDDPptV7FpaunCy8jJ+dl4T3qR8IMQJ8FgWFp4ToAdQX/90WZoOMy/WGaHQT6xfXy3id+Nxc7tLwFYpe+mFQgNYvfq0CNqH8vJ6tLf3yCDDmMPk5LgQxhQdMIuGhmdYteqEiNuDmppmXyQe/LfxQLu7B1FcfEkE7xJWhu3bL6Ky8hZOnbqNsrLrWLPmjCwNIcfR2PhqmVgkqKYHmsmYaGp6j9LSq+JghSwDIQelFRRU4/z5B/j+XfOBGMs9SbL0BQR7jVIGTZtER0cvWlu78eNHHDMzqcA+XfK+gf9K3DZdele+lAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Sun Clock Circle&quot;
         title=&quot;&quot;
-        src=&quot;/static/97de6a5547bc76c3171feeb91ff9dc76-c60c9.png&quot;
-        srcset=&quot;/static/97de6a5547bc76c3171feeb91ff9dc76-1ce70.png 163w,
-/static/97de6a5547bc76c3171feeb91ff9dc76-2f82a.png 325w,
-/static/97de6a5547bc76c3171feeb91ff9dc76-c60c9.png 650w,
-/static/97de6a5547bc76c3171feeb91ff9dc76-dbabe.png 975w,
-/static/97de6a5547bc76c3171feeb91ff9dc76-4348d.png 1300w,
-/static/97de6a5547bc76c3171feeb91ff9dc76-0df9f.png 1325w&quot;
+        src=&quot;/static/sun_clock_circle_only-97de6a5547bc76c3171feeb91ff9dc76-83a8b.png&quot;
+        srcset=&quot;/static/sun_clock_circle_only-97de6a5547bc76c3171feeb91ff9dc76-8992e.png 163w,
+/static/sun_clock_circle_only-97de6a5547bc76c3171feeb91ff9dc76-ae0a7.png 325w,
+/static/sun_clock_circle_only-97de6a5547bc76c3171feeb91ff9dc76-83a8b.png 650w,
+/static/sun_clock_circle_only-97de6a5547bc76c3171feeb91ff9dc76-50453.png 975w,
+/static/sun_clock_circle_only-97de6a5547bc76c3171feeb91ff9dc76-af9d4.png 1300w,
+/static/sun_clock_circle_only-97de6a5547bc76c3171feeb91ff9dc76-029ca.png 1325w&quot;
         sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
       /&gt;
     &lt;/span&gt;
@@ -34,17 +34,17 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 110.33898305084746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAAsSAAALEgHS3X78AAADDklEQVQ4y53US2gTQRgHcE8+EK1i8UFFrAfxIghqRSsoqNDWqrVYBakvsIrUQwUrRemhiigFwYta8WQPogiiB60I1kMRW7RN865JNs3msWy2eTbJZpPO7t/Z3doYm8bGgSHLMPnNN998MwtSqRQ4LgCWZREKhxGNRkE4H8hEkP76oUgSSmkLBEGAzWrFiGEUFosVXq8XqeFBpB02iMYfIKJYGhimUbndDBgXA4/Ho4PGYYhWI0TTCORYVItWjkZA+ABISCgOJpNJRCIRirHg+SAFWYh+LyTWjbSHQdrPQvKa6AKfIVpo5D5PcbDQoKIoUBIDIL7rID/3gdi357qrAXLwIZSMf36gkuVAPC35yNgeZGz76ffOP8Z3QRae0MXJ3KCSdoA4Dmp/EC3VkCee0lMeh91mhcloQpCnp54cQtp9LQf72iianQ0qU2EQZ40+iUYoJbm8lWVZnvmWaCkpia8z6ZC5O7NBOXBLx8bPQJHT8yoRJWXQtq7+T0kO5kAlw9LBHbRXYTJkLqnu4u7u6V1dzIHyxDM9dH8HSm0KidND261HmeV1kHiv6mDsPf6nEfayDsY/6aDE9UDydCDCG5BIJCCKuRzGYjF6z73aXec4WlIkVyYMw8DhcCLj69IDCvXq4LaqS1i4vAYf+gYQCHCYnEzkgU6XCyaTCQ6nMw+0mM0wGGgQTOc0+FwH6xpuauDL11+Kbo3n+cJb9rbqYLxPB7vu9mrg+ZbuomA2m0UoFPrrUJL0UKr1HGYCOmizsxq4rPwIzBZXUVR9TNQ8/26j3z9q95uMn8sv7KbTtzX0QG07MplsUVR98tTbYjC6ULb6KOqPdyAZZfJBn1/AusqTGnrsRCfdWmxOcGpqCm/e9qNi0yltfvOFe4Ufh29DNpSvb9QmrdnQiEc97yAIUYzZ7bBabQgGBRhGXTTX97FkZZ0279DhG0ilpLmfLzWfVXtbtclqX1RWg8otzdi89SzKKxpnxhevqEVb+2O69ey/H1i11l686tdWX7qqfgZR+9qNTWi58gAms7tgOn4B7mAXRUPKNGEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 110.33898305084746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAAsSAAALEgHS3X78AAAD9UlEQVQ4y3VUTWwbRRTeUzlxqADRFqQcQMABaCNKgqCEUqqAhAS0KmqpoHApCKiowqGqxE+hUo4cqtKqSFC4AVWrKKTAqQRQEoqS+B87ttcV/lnb6ziOje21d3dmP97u7NrrVB1pNDszb7/3vfe+N1Kr1UKpVEI+X0CR1lajDlYuwlwtwywpsAwd9rA4h2XZ0xJ7Wr1ve+uuValYLCIUDCIQCGKJppLJoLt8He1IAO3QIixmYuPwAd0MqKoVyHIaqVQasdg/yMgytPAStOUFaPEwMV2DUVqFWazAzObB1lbpP5dtn2kfsN1uo16vo1QuQ1VVlCsqtKICQ6lCLxTRzQbRlWehRX6CFvoVeinvY8o8tn1A3GJYrV/Aix+A3xgHT+8Alx8FuzEGnjsCXjlPuS27oLzHkJaq5CWXc9Nxw7U4WOYQWHQILHIv2MqTMNOvQkscAE+Nw4zeBx6l8ySB1654OR1kaFMXrK7DTDwBFhtCO7EfxtoMYFaQTsYRjYRRr1G43RCa6eMwYw/RJPDKl72QXYZcgOn/ktenCYyMSpMwjC6Y67bb1aHrOpgwhU6F5/WrYIkRsr+fmF52AVkfkOePwwhvg5k/6UukCe/eU4eIRpyx2jSM6IN2+JSzii9kLQwWfxjd+G5oTcVXwb6A/UIWTji6BqBlJijf2yysfdUHNMvn0A1uBVPPuF1h3krAPsmIIlqtRcrlAxayh21HrmzUd4H0FqCz4AvNY7OhQwZbzs4oWGqvZaVGbSkJ2YTmv8bczyeQSS0ilys6QveG3eeRaBTxeILucj2wZrOJ+fk5LAdC0FP7LCR3UOpiAnDkmROQpOdxbXYZHa1Jxu0eYH19HYqiIJlMoqAofV5UdZnaNEvtaKRfJsBhWJ0VEfLrb00S4HZcnvpTVJxbG18Todpq1XfmrlYdpl3l9BiJYl0Anj0/RYCP4bUjk46NabKBJ4pzIZNOp+OAOk6ZISCNGVjRuywUjvWrnMur2LzlFUibnqWwl1wxGwNvnwfaaDRQq60735XV//DNhS/QXjlooTljO6hKJhNsPv7sIrHciUd2HkVZrQnh0p3HVuy5U/VarUqd1MGxibP0zyiOvnfG8cw4tR53WRiGibG9E07o2x9/G7//EegBtdtNGHqnt5flLA69cZpsn8Ltd76IuYWo5ToUITO3SavVBnaPf+gwlW7bg8NvTuL7S7OYmr6GH368iktXfsNHpy7i7qEDjs0d9+yjFAUG30MvT8wN3Wb6yeffYvNWyqk0THOEwJ8TU9rlqEHatAf7D55CWi54Rbz5PfQztUc2p+LchWmn8iO73sfw6Dt44aWT+PT0d/jr73jPzs1xD/B/iN0V4/ismcEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Sunrise and Sunset Times&quot;
         title=&quot;&quot;
-        src=&quot;/static/21e1caff75bf0f5e8fafca6f846d3cd6-0eaa1.png&quot;
-        srcset=&quot;/static/21e1caff75bf0f5e8fafca6f846d3cd6-03256.png 163w,
-/static/21e1caff75bf0f5e8fafca6f846d3cd6-f738f.png 325w,
-/static/21e1caff75bf0f5e8fafca6f846d3cd6-0eaa1.png 590w&quot;
+        src=&quot;/static/sun_times-21e1caff75bf0f5e8fafca6f846d3cd6-5e2ba.png&quot;
+        srcset=&quot;/static/sun_times-21e1caff75bf0f5e8fafca6f846d3cd6-205e8.png 163w,
+/static/sun_times-21e1caff75bf0f5e8fafca6f846d3cd6-e5faf.png 325w,
+/static/sun_times-21e1caff75bf0f5e8fafca6f846d3cd6-5e2ba.png 590w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -60,17 +60,17 @@
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 127.86885245901641%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAAsSAAALEgHS3X78AAADDElEQVRIx62VS2/TQBSFs+JfwIp/AAW1gAQLhEBiwwIhAWUFO0DQIrHgJcQaiccOsUCwRlSqhGCDkEDQNiUkaZLm6bwbx0lcO7Gdhz2H67Gb1E1TWoqlka3xzDd37px7xtdsNlEsFKDSu9vrYbePT1VV5PN52O//AqzX6xAyGSSTCRSLJUi12u6APYrKjq5alaAoKlqa7hnAGAPrNcC6K2CW/nfgZp0c0vwGq3gHZvw4zNiBQUufgyU+5wtsC8i6ZZi5a17I8lG0Yyfo+9C6vnFY0mta3BoNZO0UzMRJPkEPH6EJr8A6eUQjSwiFl1CTymCtOejpG32wVbxLUHMYyEwZZvKMMzB7FW3NuyXLGkTS6XQoJV8pHcccqPh0GGiVHzkw4RIl39jWibLWvJuGg2B6aADkeYuN8Z9qLbQjmSipx04g+ZsDoFV743QWpnesO9ar9oNhpuIAzcKUkwv5wz+J2U6TPZ+1frhA4TLvqAgfIa+ukri1/mBRrCKVSlFLQxCy0PWBuCuVCiRJgpa+3Q/IBU7yDqXyBWUapHkmibzWk4k40umMFyiKEKnC2tlpFzjj5tCuCN7xfuS2ZFlGb4R5mJmL7pZ/usD6W/dQbm2ZK3t7w5VV4bIxY4fpUNQ12VRcPY1BlX7tCKgk77vBTG0Q9soT50fmAgm7tSnQMAzuTP3omt9dydjCjmwsPQVm6qxbLVdgNLMe91l7CuTuNpgpn8ggJtzSezHKHASq59N8kLE0zgcyI454LIJQKAxJzCG3PIPA58mBOZQfehzHt6ny89e99kX57USdaF4+2Iv9+/ZAC0/QYb7zRD/SYAkLpvlhle6RnZ3ygBuh84jMPaOFa9t37CG8pRFApmgcHc7OziIWjSCdEZAj0ReKRSQSSeRyOfiq1SoWFxfxOxhCIBDAgt+P5ViUbkBz9AK0TdsT2+0290m72dexaVrw2VenYnT7TdYM3uzvjflZ/9jyCQaD/LDm5xeozgXodPq+VSqpPEmhXCo7hU633lagtadGYxsNmVqDDEREyZ3/B1jhlkpcj0oMAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 127.86885245901641%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAAsSAAALEgHS3X78AAAD2UlEQVRIx51VS4vkVBTOH3Av046KzMIHw6CIjI7jQjc6sxDcuFFwo+jOAYURFV2J7hTFra5cD4jguJVWdBq73o+u7q7XVCqp6qpKKrmVVO69+Tz3JlVJdZcKXjiE3Nz75Ty+8x2DMYbRaATGFoiiCHEcr+3/LMO2bdTrNShgKaXeXIFl4DJnm9/OAE4mExwcHKDd7qDb7cK2R+kFoW3bimOuwaFAcw5owDAMMZvNYFk2xuMxJtOJOpJdlgxxNES8vIuYjxOgNbDY8FjdM7Z6oMz7DWLwEcThy+D1JyHql8AbVyDar0OOvqEf9HOhZ6ky1nmSPAGKbIj+uxDVRyBK58CrFyEPryFsXIdsPQ9efgiyvAPReAby5LuctwmosXJdP8M2ROsaRPk8gupVhOa3QHSI7nEJpeKfmNhNINgDO7qBZflROvcg5OCTHKj2MHVXeBBHr4CX7ofsvoUl6yNK08VYCM9XtEryFUaAcH6BaF4ljx+AtL9a59RYeSetLwhsB/z4NQo/TP95utKxrjCdTu54u+C1JyBqFxGz/VzIlGDReJrCuAR/spdWV5Ecp/iYqygBc3p47c8p9Pso7zcyQDn5QXsn+u+lvBI5j87aqgj67HJALLhMDl2hgg5SwMHH4MV7gfmPZ4C2E3tzP+69Qw6dJ6rtUg5VprpvQ1Qu4KT3E0x7Ds9z14dVn9dqdeqkNnVSj755ep9zDtsa0HkGdnyTwj4HObu1CTgb/Izu3Slc11kDWpaFZrOprdVqgfl+UhApMDT76A99LNofaM5qwP8MOQ3PdV0EQbDRZltD3izK+0miJd8AVktJmxKSfLupL3JbUda0qZylTb44ClDlLjmQ0qZzijb/Tmy+QWzGfMznWX5XxFb9HrO/VoCr1psnrVdWrfcmokUPPG29IIiwjDiW5NxonDDgH1tvUxw6JA7XE3GoPItw8DUlr4XOUQGlwh9wTg7Qad7Gr7feQFRJxEGYn2aSl8lXDjQaQfSUfD2sucWrj5FsvQi/8hJgvoAvb96DCzsG3P3LwOz7rNZ5+cpWTo3930lgP0wF9ikS2MeBw+cwuPMqdm9/RtH0kirLdBSkZig6qDEg6APngiyCEHwNnYwAk5jQg1haeu/OXhGFQhXW0ESv34dFg051kmmaMKbTKYqFfVTKZd0N5VIJ3c4x/LT9Trezeg0WDHPqpgnd9X1V+Tm16FhPTiMiXrmLEA4LMA+W+qmMRYLCiVNyy3TKybXUK6BikZS8VEaj3tDOOI4Lw3EctGl8mjT1+uYQjseILjEiIbfM5+zdpXuzmaPFQtlwONTE/xtCV5DaHsY+7AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;24 Hours of Daylight in Greenland&quot;
         title=&quot;&quot;
-        src=&quot;/static/22a98e3437b300781b7086e8b0ede4a8-0d69f.png&quot;
-        srcset=&quot;/static/22a98e3437b300781b7086e8b0ede4a8-77053.png 163w,
-/static/22a98e3437b300781b7086e8b0ede4a8-64403.png 325w,
-/static/22a98e3437b300781b7086e8b0ede4a8-0d69f.png 549w&quot;
+        src=&quot;/static/greenland_24_hours_daylight-22a98e3437b300781b7086e8b0ede4a8-ecb97.png&quot;
+        srcset=&quot;/static/greenland_24_hours_daylight-22a98e3437b300781b7086e8b0ede4a8-e03b9.png 163w,
+/static/greenland_24_hours_daylight-22a98e3437b300781b7086e8b0ede4a8-71278.png 325w,
+/static/greenland_24_hours_daylight-22a98e3437b300781b7086e8b0ede4a8-ecb97.png 549w&quot;
         sizes=&quot;(max-width: 549px) 100vw, 549px&quot;
       /&gt;
     &lt;/span&gt;
@@ -78,159 +78,149 @@
   &lt;/p&gt;
 &lt;p&gt;Your first time looking at the sun clock, you might have the impression that it&apos;s just a fixed image, with no movement. But that&apos;s not the case! The hand of the clock is moving, just &lt;em&gt;verrrryyyy sloooooowllllyyyy&lt;/em&gt;. It has 24 hours to make a full rotation, which on my laptop screen means that the clock hand has to travel 0.68 inches/hour.&lt;a href=&quot;#footnote-2&quot;&gt;2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When the clock was only partly finished, I had an intriguing thought: what would it look like if I could &lt;em&gt;speed it up&lt;/em&gt;? So I added a slider below the date picker, which lets you do just that:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/f930f4423b4b40321e84f40c614d8887.gif&quot; alt=&quot;Speed up time in Tbilisi, Georgia&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/speed_up_tbilisi-f930f4423b4b40321e84f40c614d8887.gif&quot; alt=&quot;Speed up time in Tbilisi, Georgia&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Speeding up the clock to multiple days per second made the hour hand&apos;s previously unnoticeable progression around the circle into a top-speed, frenetic, and distracting movement. To fix that problem, I borrowed an idea from real life clocks, which depict 12 hours, 60 minutes, and 60 seconds all at the same time. When you increase the speed of the sun clock past one day/second, the clock moves into &quot;year mode&quot;: it continues to represent daylight and nighttime as portions of a 24 hour circle, but shows a day hand instead of an hour hand, which points to the winter solstice at the bottom and the summer solstice at the top. The time of day in the center of the circle is also replaced by the date.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/62216ae6a5de1d1790dcd7771635b84c.gif&quot; alt=&quot;Speed up time in Tbilisi, Georgia into year mode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/speed_up_tbilisi_into_year_mode-62216ae6a5de1d1790dcd7771635b84c.gif&quot; alt=&quot;Speed up time in Tbilisi, Georgia into year mode&quot;&gt;&lt;/p&gt;
 &lt;p&gt;If you were thinking of moving to Greenland to take in the sun, I recommend only doing so for part of the year:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/1dcc67fa537310ba05fb0024d43d7b24.gif&quot; alt=&quot;100 days/second in Qaanaaq, Greenland&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/greenland_100_days_per_second-1dcc67fa537310ba05fb0024d43d7b24.gif&quot; alt=&quot;100 days/second in Qaanaaq, Greenland&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Making it so easy to speed up the clock made me feel a little off kilter, so I added a button to instantly reset time and slow things down (to the right of the date picker). Combine that with the &quot;Show My Location&quot; button, and you&apos;re back to the here and now. 🧘‍♂️🧘&lt;/p&gt;
 &lt;p&gt;...and that&apos;s about it! I have many ideas on how to improve the clock in the future, if I decide I want to return to it. I&apos;d like to make it mobile-friendly, add keyboard shortcuts, create a tutorial mode to walk you through the controls, and much more. For now, though, I&apos;ll be limiting my work to fixing bugs (so please let me know if you see any problems!).&lt;/p&gt;
 &lt;p&gt;It&apos;s been fun to show my friends and family the clock and observe what they&apos;ve used it for: My mom checked January in New Zealand to plan for a potential upcoming trip, while my dad geeked out at the wildly varying sunrise and sunset times in St. Petersburg throughout the year. If you find it useful, or just have fun with it, I&apos;ll be happy if you share it around!&lt;/p&gt;
 &lt;p&gt;Thanks for reading this far, and don&apos;t forget to get outside and soak up the sun every once in a while ;)&lt;/p&gt;
 &lt;h3&gt;Footnotes&lt;/h3&gt;
-&lt;p&gt;&lt;a name=&quot;footnote-1&quot;&gt;&lt;/a&gt;1. I also changed the clock to show a random location when it loads (assuming that no location is specified in the URL). I made this change because the sun clock can only work once it knows what latitude and longitude to use, and choosing a random location gives it that information immediately. I would love to show the location of the user as the default, but then the clock has to wait for the browser to &quot;geolocate&quot; the user (find their latitude and longitude), which can sometimes be extremely slow.&lt;/p&gt;
-&lt;p&gt;&lt;a name=&quot;footnote-2&quot;&gt;&lt;/a&gt;2. On my laptop screen, which is 11.3 x 7 inches, the clock hand has an approximate radius of 2.6 inches. Circumference = 16.3 inches; speed of movement = 16.3 inches / 24 hours, or 0.68 in/hr.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Let's Define "undefined"]]></title><description><![CDATA[The nature of  undefined  in JavaScript can be a bit confusing at times. In this blog post, I'm going to explore  undefined  in the context…]]></description><link>https://nathanshane.me/blog/let&apos;s-define-undefined</link><guid isPermaLink="false">https://nathanshane.me/blog/let&apos;s-define-undefined</guid><pubDate>Tue, 17 Oct 2017 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The nature of &lt;code&gt;undefined&lt;/code&gt; in JavaScript can be a bit confusing at times. In this blog post, I&apos;m going to explore &lt;code&gt;undefined&lt;/code&gt; in the context of Arrays and Objects, in order to cast a bit of light on how it works.&lt;/p&gt;
-&lt;h2&gt;&lt;code&gt;undefined&lt;/code&gt; in Objects&lt;/h2&gt;
-&lt;p&gt;Did you know that there&apos;s a difference in JavaScript between object properties that have not been defined, and object properties that are defined as &lt;code&gt;undefined&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;footnote-1&quot;&gt;1. I also changed the clock to show a random location when it loads (assuming that no location is specified in the URL). I made this change because the sun clock can only work once it knows what latitude and longitude to use, and choosing a random location gives it that information immediately. I would love to show the location of the user as the default, but then the clock has to wait for the browser to &quot;geolocate&quot; the user (find their latitude and longitude), which can sometimes be extremely slow.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;footnote-2&quot;&gt;2. On my laptop screen, which is 11.3 x 7 inches, the clock hand has an approximate radius of 2.6 inches. Circumference = 16.3 inches; speed of movement = 16.3 inches / 24 hours, or 0.68 in/hr.&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Let's Define "undefined"]]></title><description><![CDATA[The nature of   in JavaScript can be a bit confusing at times. In this blog post, I'm going to explore   in the context of Arrays and…]]></description><link>https://nathanshane.me/blog/let&apos;s-define-undefined</link><guid isPermaLink="false">https://nathanshane.me/blog/let&apos;s-define-undefined</guid><pubDate>Tue, 17 Oct 2017 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The nature of &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; in JavaScript can be a bit confusing at times. In this blog post, I&apos;m going to explore &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; in the context of Arrays and Objects, in order to cast a bit of light on how it works.&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; in Objects&lt;/h2&gt;
+&lt;p&gt;Did you know that there&apos;s a difference in JavaScript between object properties that have not been defined, and object properties that are defined as &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;?&lt;/p&gt;
 &lt;p&gt;I&apos;ll explain what I mean. Take a look at the code below and see if you can figure out what it logs to the console:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;obj1.my_prop:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; obj1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;obj2.my_prop:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;obj2.my_prop:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Here&apos;s the answer:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;obj1.my_prop: undefined
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;obj1.my_prop: undefined
 obj2.my_prop: undefined&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Now read the below code. Does it log the same thing as above? Or perhaps nothing it all?&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; obj1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;obj1.&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; key &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; obj1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; obj2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;obj2.&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; key &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; obj2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;If you answered yes to either of the above questions, then... surprise! Nothing is logged for &lt;code&gt;obj1&lt;/code&gt;, but a line &lt;em&gt;is&lt;/em&gt; logged for &lt;code&gt;obj2&lt;/code&gt;: &lt;code&gt;obj2.my_prop: undefined&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Why does this happen? When you set a property on an object, JavaScript sees that property as an &lt;em&gt;enumerable&lt;/em&gt; property, which means that it can be looped through by a &lt;code&gt;for...in&lt;/code&gt; loop. We can check this with the following code:&lt;/p&gt;
+&lt;p&gt;If you answered yes to either of the above questions, then... surprise! Nothing is logged for &lt;code class=&quot;language-text&quot;&gt;obj1&lt;/code&gt;, but a line &lt;em&gt;is&lt;/em&gt; logged for &lt;code class=&quot;language-text&quot;&gt;obj2&lt;/code&gt;: &lt;code class=&quot;language-text&quot;&gt;obj2.my_prop: undefined&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Why does this happen? When you set a property on an object, JavaScript sees that property as an &lt;em&gt;enumerable&lt;/em&gt; property, which means that it can be looped through by a &lt;code class=&quot;language-text&quot;&gt;for...in&lt;/code&gt; loop. We can check this with the following code:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;propertyIsEnumerable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;my_prop&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; false&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; false&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
 
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;propertyIsEnumerable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;my_prop&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;We can also see the enumerable properties of an object by logging the object itself:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// below logs are shown as output by node&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// below logs are shown as output by node&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// {}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// {}&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; obj2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+obj2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;my_prop &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// { my_prop: undefined }&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// { my_prop: undefined }&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2&gt;&lt;code&gt;undefined&lt;/code&gt; in Arrays&lt;/h2&gt;
-&lt;p&gt;Working with &lt;code&gt;undefined&lt;/code&gt; in Arrays is similarly tricky. Let&apos;s start out with something easy. What does this log to the console?&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; in Arrays&lt;/h2&gt;
+&lt;p&gt;Working with &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; in Arrays is similarly tricky. Let&apos;s start out with something easy. What does this log to the console?&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
 
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;This script logs &lt;code&gt;undefined&lt;/code&gt; three times. In all three cases—not initialized, initialized as &lt;code&gt;undefined&lt;/code&gt;, and out of range—accessing the array bucket value returns &lt;code&gt;undefined&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;What if we call &lt;code&gt;forEach&lt;/code&gt; on the below arrays and log their contents? Can you figure out what this script will log?&lt;/p&gt;
+&lt;p&gt;This script logs &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; three times. In all three cases—not initialized, initialized as &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;, and out of range—accessing the array bucket value returns &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What if we call &lt;code class=&quot;language-text&quot;&gt;forEach&lt;/code&gt; on the below arrays and log their contents? Can you figure out what this script will log?&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-arr1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;val&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`arr1 &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;. &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;val&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+arr1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;val&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;arr1 &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;. &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;val&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-arr2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+arr2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
 
-arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;val&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`arr2 &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;. &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;val&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;val&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;arr2 &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;. &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;val&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;This time, only a single line is logged: &lt;code&gt;arr2 1. undefined&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;The reason for this behavior is that &lt;code&gt;forEach&lt;/code&gt; ignores uninitialized values; this goes for other methods that iterate through an array as well, like &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;reduce&lt;/code&gt;. However, these methods work for values that have been &lt;em&gt;initialized as undefined&lt;/em&gt;, so our &lt;code&gt;arr2[1]&lt;/code&gt; value does end up getting logged.&lt;/p&gt;
+&lt;p&gt;This time, only a single line is logged: &lt;code class=&quot;language-text&quot;&gt;arr2 1. undefined&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The reason for this behavior is that &lt;code class=&quot;language-text&quot;&gt;forEach&lt;/code&gt; ignores uninitialized values; this goes for other methods that iterate through an array as well, like &lt;code class=&quot;language-text&quot;&gt;map&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;reduce&lt;/code&gt;. However, these methods work for values that have been &lt;em&gt;initialized as undefined&lt;/em&gt;, so our &lt;code class=&quot;language-text&quot;&gt;arr2[1]&lt;/code&gt; value does end up getting logged.&lt;/p&gt;
 &lt;p&gt;Another way to see this behavior is to log both arrays to the console:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// below logs are shown as output by node&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// below logs are shown as output by node&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// [ &amp;lt;3 empty items&gt; ]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// [ &amp;lt;3 empty items&gt; ]&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-arr2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; undefined
+arr2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// [ &amp;lt;1 empty item&gt;, undefined, &amp;lt;1 empty item&gt; ]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// [ &amp;lt;1 empty item&gt;, undefined, &amp;lt;1 empty item&gt; ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;As you can see, JavaScript distinguishes between &quot;empty&quot; array buckets and &quot;undefined&quot; array buckets, even though accessing an &quot;empty&quot; array bucket will return &lt;code&gt;undefined&lt;/code&gt;. Craziness!&lt;/p&gt;
-&lt;p&gt;Finally, let&apos;s look at a way to create an Array that is filled with &lt;code&gt;undefined&lt;/code&gt;, so that you can &lt;code&gt;map&lt;/code&gt; over it, for example. Credit goes to &lt;a href=&quot;https://mail.mozilla.org/pipermail/es-discuss/2012-April/022273.html&quot;&gt;Brandon Benvie&lt;/a&gt; for this one.&lt;/p&gt;
+&lt;p&gt;As you can see, JavaScript distinguishes between &quot;empty&quot; array buckets and &quot;undefined&quot; array buckets, even though accessing an &quot;empty&quot; array bucket will return &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;. Craziness!&lt;/p&gt;
+&lt;p&gt;Finally, let&apos;s look at a way to create an Array that is filled with &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;, so that you can &lt;code class=&quot;language-text&quot;&gt;map&lt;/code&gt; over it, for example. Credit goes to &lt;a href=&quot;https://mail.mozilla.org/pipermail/es-discuss/2012-April/022273.html&quot;&gt;Brandon Benvie&lt;/a&gt; for this one.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Array&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;val&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`arr &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;. &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;val&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;val&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;arr &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;i&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;. &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;val&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;&lt;code&gt;Array.apply&lt;/code&gt; will fill any empty buckets in the array passed as the second argument with &lt;code&gt;undefined&lt;/code&gt;. The above code will log:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Array.apply&lt;/code&gt; will fill any empty buckets in the array passed as the second argument with &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;. The above code will log:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;arr 0. undefined
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;arr 0. undefined
 arr 1. undefined
 arr 2. undefined&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Fun side note: It doesn&apos;t actually matter what you use as the first argument of &lt;code&gt;Array.apply&lt;/code&gt;. You can replace &lt;code&gt;null&lt;/code&gt; with &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;&apos;hi&apos;&lt;/code&gt;, or &lt;code&gt;undefined&lt;/code&gt;, and it will still return the same value.&lt;/p&gt;
+&lt;p&gt;Fun side note: It doesn&apos;t actually matter what you use as the first argument of &lt;code class=&quot;language-text&quot;&gt;Array.apply&lt;/code&gt;. You can replace &lt;code class=&quot;language-text&quot;&gt;null&lt;/code&gt; with &lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;#39;hi&amp;#39;&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;, and it will still return the same value.&lt;/p&gt;
 &lt;h2&gt;When these details might matter&lt;/h2&gt;
-&lt;p&gt;If you don&apos;t know the specifics about how &lt;code&gt;undefined&lt;/code&gt; works, it probably won&apos;t cause you too many problems. On &lt;em&gt;most&lt;/em&gt; days, anyway. I didn&apos;t know about this stuff until recently, until I had to debug some failing &lt;a href=&quot;https://firebase.google.com/&quot;&gt;firebase&lt;/a&gt; validations.&lt;/p&gt;
-&lt;p&gt;Here&apos;s what happened. My database has a &lt;code&gt;recordings&lt;/code&gt; entity, and each &lt;code&gt;recording&lt;/code&gt; can have a &lt;code&gt;year&lt;/code&gt; field, which is not required but must be an integer if it&apos;s there. It turned out that I was destructuring a &lt;code&gt;year&lt;/code&gt; value from an object representing my form&apos;s input values, and then including it in the object I was sending to firebase.&lt;/p&gt;
+&lt;p&gt;If you don&apos;t know the specifics about how &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; works, it probably won&apos;t cause you too many problems. On &lt;em&gt;most&lt;/em&gt; days, anyway. I didn&apos;t know about this stuff until recently, until I had to debug some failing &lt;a href=&quot;https://firebase.google.com/&quot;&gt;firebase&lt;/a&gt; validations.&lt;/p&gt;
+&lt;p&gt;Here&apos;s what happened. My database has a &lt;code class=&quot;language-text&quot;&gt;recordings&lt;/code&gt; entity, and each &lt;code class=&quot;language-text&quot;&gt;recording&lt;/code&gt; can have a &lt;code class=&quot;language-text&quot;&gt;year&lt;/code&gt; field, which is not required but must be an integer if it&apos;s there. It turned out that I was destructuring a &lt;code class=&quot;language-text&quot;&gt;year&lt;/code&gt; value from an object representing my form&apos;s input values, and then including it in the object I was sending to firebase.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// pseudocode&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// pseudocode&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;year&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; formValues
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// ...other code&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;updateFirebaseRecording&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;recordingId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;year&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ...other code&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;updateFirebaseRecording&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;recordingId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;year&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Can you see the problem there? When the year input was blank, the destructured &lt;code&gt;year&lt;/code&gt; variable was set to &lt;code&gt;undefined&lt;/code&gt;. By creating a new object with the &lt;code&gt;{year}&lt;/code&gt; syntax, I was sending an object to Firebase which included &lt;code&gt;year: undefined&lt;/code&gt;. Thus causing my validation to fail.&lt;/p&gt;
+&lt;p&gt;Can you see the problem there? When the year input was blank, the destructured &lt;code class=&quot;language-text&quot;&gt;year&lt;/code&gt; variable was set to &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt;. By creating a new object with the &lt;code class=&quot;language-text&quot;&gt;{year}&lt;/code&gt; syntax, I was sending an object to Firebase which included &lt;code class=&quot;language-text&quot;&gt;year: undefined&lt;/code&gt;. Thus causing my validation to fail.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// it turns out that this code...&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// it turns out that this code...&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;year&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; formValues
 &lt;span class=&quot;token function&quot;&gt;updateFirebaseRecording&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;recordingId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;year&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// is not the same as this:&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;updateFirebaseRecording&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;recordingId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; formValues&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// is not the same as this:&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;updateFirebaseRecording&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;recordingId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; formValues&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This kind of situation is what makes it worthwhile to learn the details of JavaScript.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Digging into a Babel-Related Error in Jest]]></title><description><![CDATA[Not so long ago, I decided to add some tests to a small program I wrote. I chose to use  jest , a nice testing platform by facebook that I…]]></description><link>https://nathanshane.me/blog/babel-error-in-jest</link><guid isPermaLink="false">https://nathanshane.me/blog/babel-error-in-jest</guid><pubDate>Wed, 11 Oct 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Not so long ago, I decided to add some tests to a small program I wrote. I chose to use &lt;a href=&quot;https://facebook.github.io/jest/&quot;&gt;jest&lt;/a&gt;, a nice testing platform by facebook that I&apos;ve enjoyed using in the past. This time, however, I had some trouble: I ran into a babel-related error with my very first test. I&apos;d like to be a world-class debugger someday, so I figured I&apos;d dig in and really try to understand the error.&lt;/p&gt;
 &lt;p&gt;This post describes how to set up a little app that reproduces the error, and next, how to debug the error using tools from the modern JavaScript toolbox.&lt;/p&gt;
@@ -240,56 +230,53 @@ arr 2. undefined&lt;/code&gt;&lt;/pre&gt;
 &lt;ol&gt;
 &lt;li&gt;Write a sum function that we will test.&lt;/li&gt;
 &lt;li&gt;Write a simple jest test for the sum function.&lt;/li&gt;
-&lt;li&gt;Create an npm &lt;code&gt;test&lt;/code&gt; script to run our tests.&lt;/li&gt;
+&lt;li&gt;Create an npm &lt;code class=&quot;language-text&quot;&gt;test&lt;/code&gt; script to run our tests.&lt;/li&gt;
 &lt;li&gt;Install jest.&lt;/li&gt;
 &lt;li&gt;Configure babel to recognize ES2015 imports.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Let&apos;s start out by creating that sum function.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Simple enough. Now we want to test our sum function, because we&apos;re responsible devs, and that&apos;s what responsible devs do.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// spec.js&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
 
 &lt;span class=&quot;token function&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sum&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;correctly adds 1 and 1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;(If you saw the bug in this code, then good for you! If not, then that&apos;s fine—I didn&apos;t see it either, so I had to learn how to debug it.)&lt;/p&gt;
-&lt;p&gt;Two more steps until we can run our tests. First, we&apos;ll create a &lt;code&gt;package.json&lt;/code&gt; file containing our &lt;code&gt;test&lt;/code&gt; script, which will run jest. Run &lt;code&gt;npm init&lt;/code&gt;, and answer the &lt;code&gt;test command&lt;/code&gt; prompt with &lt;code&gt;jest&lt;/code&gt; (you can use the defaults for everything else).&lt;/p&gt;
-&lt;p&gt;Finally, we install jest with &lt;code&gt;npm i jest&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Hurray! We now run the test script with &lt;code&gt;npm t&lt;/code&gt; (a shortcut for &lt;code&gt;npm test&lt;/code&gt;, or &lt;code&gt;npm run test&lt;/code&gt;), and we see...&lt;/p&gt;
+&lt;p&gt;Two more steps until we can run our tests. First, we&apos;ll create a &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt; file containing our &lt;code class=&quot;language-text&quot;&gt;test&lt;/code&gt; script, which will run jest. Run &lt;code class=&quot;language-text&quot;&gt;npm init&lt;/code&gt;, and answer the &lt;code class=&quot;language-text&quot;&gt;test command&lt;/code&gt; prompt with &lt;code class=&quot;language-text&quot;&gt;jest&lt;/code&gt; (you can use the defaults for everything else).&lt;/p&gt;
+&lt;p&gt;Finally, we install jest with &lt;code class=&quot;language-text&quot;&gt;npm i jest&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Hurray! We now run the test script with &lt;code class=&quot;language-text&quot;&gt;npm t&lt;/code&gt; (a shortcut for &lt;code class=&quot;language-text&quot;&gt;npm test&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;npm run test&lt;/code&gt;), and we see...&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;Test suite failed to run
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Test suite failed to run
 
 SyntaxError: Unexpected token import&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Dang! It looks like jest doesn&apos;t understand the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import&quot;&gt;ES2015 import&lt;/a&gt; syntax. That&apos;s okay, we just need to install &lt;a href=&quot;https://babeljs.io/&quot;&gt;babel&lt;/a&gt; and the &lt;a href=&quot;https://babeljs.io/docs/plugins/preset-es2015/&quot;&gt;ES2015 babel preset&lt;/a&gt;, which jest will use to transform the import syntax into something it understands.&lt;/p&gt;
-&lt;p&gt;Jest&apos;s documentation on &lt;a href=&quot;https://facebook.github.io/jest/docs/en/getting-started.html#using-babel&quot;&gt;configuring babel&lt;/a&gt; is a bit complicated with a number of side notes. Long story short, jest comes with a library called &lt;a href=&quot;https://github.com/facebook/jest/tree/master/packages/babel-jest&quot;&gt;babel-jest&lt;/a&gt;, so all we have to do to make jest understand our &lt;code&gt;import&lt;/code&gt; syntax is the following:&lt;/p&gt;
+&lt;p&gt;Jest&apos;s documentation on &lt;a href=&quot;https://facebook.github.io/jest/docs/en/getting-started.html#using-babel&quot;&gt;configuring babel&lt;/a&gt; is a bit complicated with a number of side notes. Long story short, jest comes with a library called &lt;a href=&quot;https://github.com/facebook/jest/tree/master/packages/babel-jest&quot;&gt;babel-jest&lt;/a&gt;, so all we have to do to make jest understand our &lt;code class=&quot;language-text&quot;&gt;import&lt;/code&gt; syntax is the following:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Add a &lt;code&gt;.babelrc&lt;/code&gt; file to our project:&lt;/li&gt;
+&lt;li&gt;Add a &lt;code class=&quot;language-text&quot;&gt;.babelrc&lt;/code&gt; file to our project:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-json&quot;&gt;&lt;code&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;es2015&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Install the ES2015 preset: &lt;code&gt;npm i babel-preset-es2015&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install the ES2015 preset: &lt;code class=&quot;language-text&quot;&gt;npm i babel-preset-es2015&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;With that done, babel should be good to go.&lt;/p&gt;
 &lt;h2&gt;Debugging our Babel-Related Error&lt;/h2&gt;
-&lt;p&gt;Running our tests again (&lt;code&gt;npm t&lt;/code&gt;), we get a more cryptic error this time:&lt;/p&gt;
+&lt;p&gt;Running our tests again (&lt;code class=&quot;language-text&quot;&gt;npm t&lt;/code&gt;), we get a more cryptic error this time:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;FAIL  ./spec.js
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FAIL  ./spec.js
  sum
    ✕ correctly adds 1 and 1 (4ms)
 
@@ -298,34 +285,33 @@ SyntaxError: Unexpected token import&lt;/code&gt;&lt;/pre&gt;
    TypeError: (0 , _index2.default) is not a function&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Hey, at least our test suite is running now!&lt;/p&gt;
-&lt;p&gt;If you don&apos;t have a lot of experience with babel, then this error will seem a bit strange. Where in the world did &lt;code&gt;_index2.default&lt;/code&gt; come from? Who cares if it&apos;s not a function—I didn&apos;t write anything like that in my code!&lt;/p&gt;
-&lt;p&gt;Hold on a moment. Let&apos;s try to remember what babel is doing. Babel is a transpiler, so it&apos;s transforming your code into something that jest can understand. Does that mean it might be transforming variable names as well, and outputting things like &lt;code&gt;_index2.default&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;If you don&apos;t have a lot of experience with babel, then this error will seem a bit strange. Where in the world did &lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt; come from? Who cares if it&apos;s not a function—I didn&apos;t write anything like that in my code!&lt;/p&gt;
+&lt;p&gt;Hold on a moment. Let&apos;s try to remember what babel is doing. Babel is a transpiler, so it&apos;s transforming your code into something that jest can understand. Does that mean it might be transforming variable names as well, and outputting things like &lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt;?&lt;/p&gt;
 &lt;p&gt;In order to answer that question, let&apos;s consult a handy section of the jest docs, aptly named, &quot;&lt;a href=&quot;https://facebook.github.io/jest/docs/en/troubleshooting.html#tests-are-failing-and-you-don-t-know-why&quot;&gt;Tests are Failing and You Don&apos;t Know Why&lt;/a&gt;&quot;. The docs recommend we use a debugger, which seems like a great idea for getting more info!&lt;/p&gt;
-&lt;p&gt;Let&apos;s add a &lt;code&gt;debugger&lt;/code&gt; line into our code, to tell our debugging tool to stop at that line:&lt;/p&gt;
+&lt;p&gt;Let&apos;s add a &lt;code class=&quot;language-text&quot;&gt;debugger&lt;/code&gt; line into our code, to tell our debugging tool to stop at that line:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
 
 &lt;span class=&quot;token function&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sum&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;correctly adds 1 and 1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;debugger&lt;/span&gt;
     &lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Next, let&apos;s run our tests as recommended by the docs:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;node --inspect-brk node_modules/.bin/jest --runInBand&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;node --inspect-brk node_modules/.bin/jest --runInBand&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This gives us the following output:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;Debugger listening on ws://127.0.0.1:9229/cedc923a-cc9f-4531-a947-9c1ef7226bc8
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Debugger listening on ws://127.0.0.1:9229/cedc923a-cc9f-4531-a947-9c1ef7226bc8
 For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Looking at the above link, we can see a bunch of different options for debugging our code. Let&apos;s use Chrome, since most of us will have it installed already.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Navigate to &lt;code&gt;chrome://inspect/&lt;/code&gt; in Chrome.&lt;/li&gt;
-&lt;li&gt;In the &lt;code&gt;Remote Target&lt;/code&gt; section, you should see the script &lt;code&gt;node_modules/.bin/jest&lt;/code&gt;. Click the &lt;code&gt;inspect&lt;/code&gt; link below it.&lt;/li&gt;
+&lt;li&gt;Navigate to &lt;code class=&quot;language-text&quot;&gt;chrome://inspect/&lt;/code&gt; in Chrome.&lt;/li&gt;
+&lt;li&gt;In the &lt;code class=&quot;language-text&quot;&gt;Remote Target&lt;/code&gt; section, you should see the script &lt;code class=&quot;language-text&quot;&gt;node_modules/.bin/jest&lt;/code&gt;. Click the &lt;code class=&quot;language-text&quot;&gt;inspect&lt;/code&gt; link below it.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
   &lt;span
@@ -334,27 +320,27 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 80.58510638297874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAACMUlEQVQ4y5VUyXLaQBDVr+cHcs85X5GcXIkPYSvAQQJkgdDCJgvtAu0v3UPAYHAq7qqunuoZ9bzX/UZSWZao6wZFUaCqauEnq+saBe2XVYWmac7O9nZ9Msl1XfT7A6hTFTNNo/UQ7s4Tm34QoNVuoz8Yot3toD/8fVX4nkunyheX4DXXfNilJI4gywoURYHn+VcF87LBt2kFZTKGYRjQFwZMitpshqmqUtTgEYtLk/I8RxCESJL4LkI3bbDf769QcG8r6ivHpqnFDM4FORnHMbIsuylYVA26VkXIdBimCd0wYVom5vqcooUFoZ1Mx3Dc3WvBw+EAx3GwFb4VaC5NnkeY2ylGWgSF1k/PEZ6NBFMjphhDsxNoZgx9mWCghkeEDLm5MxXOlVV9pMrniF5T1xf06zNtsSaXWH+bzRpJmt4UzIscYRSB+8zIuW+e51G+ELrNKP/WpIwor9ZrQZs1KahvNwJBTIPq9np4kmXSImmVpmtRD1vdHh5+PorvWBkBTZq/TQmU9K8XUBLCKIqxp0vjJEEQhgKp5/t4zwRCRse+oxfCg3lxXohSSf0qMRpP0Op0YNBUR8qYENqkv/n7BfktR9Snw13ZFHhQv2Np27CXK6xWy6N8SEa2bcGi/IKkFAa+6C3Tl7jRzJ3lc2/KfupD1nz0FQf2lvRK57IwELplEBzFT4SGxOAk/KfVf3sbf/6E9OsXFMpQSOiGMj5oQocV/fIIZd5+RP7rB0pdO+//AfU20R51RfaeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 80.58510638297874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAACU0lEQVQ4y31UyXbaQBDk/y/5gPxKbjnkFD9DiAxI1g4IaUZC+06le4QwOLb7vZY0W09Vd7UWbduiLEsURYG6blBVFcZxBFtV12q+LCs13/e9mr9cLp/6IkkSaNoGvr+HbdlY/9XocK0Oer6H5WqFl80GT8/PEHFyC/iZLfquQ5qmyLLsAQE90Q1AQ49h6BXqYRjAjHgff7Pz/APCssjhOA4sQlcQdbZxnAKaMbD2Mhz3LvaHA8Iogus6hNyH47o0Fv+lYNERwiQ5o2ma2+J4ReilgH7MIaIAQkok5zOEEJPTODgFiJPkSvZypUzweSMnn4NPN00bTjngy5oChgjCCDKOKUiokEoZK6ShmFCOM0LOSZZnFDRRN3PQ2cqyw9bO4AYtXuwSulvB8GqY+5rmatjHFl7QwDkUWOkpynpghEw5pkD9Q7W+quTdrndnxjmHMWmwVlXj8Vxtlyit1mts9Z2Sjut52O520OjbMC2lTS5knudKqyqHTJlzc6Y8siY52SwjtpwUIKRQ62EYqks5LaZlIaI3F7KkoNwYvKYCMiLWIE+yczAuEFtG33/WGiHUYZNMdroBwzBu8vpQ2B0X5RpQUVCtNh1IqwT2wUJMKPM8hWS5UIWZYlVXyvk8g5pdURYiurXbvVlSx9JeUt58bA0XfnCCS3I5EH2LmsF8fUUcS5KQVDKKKTWLrxqdjVVk+iUcOaIzdmi+f8MlOn1O+SOpPL7fpDGSXpufP9BpS7S/f6FbPWEIg8fWe4/obTzpbG7Fqb/vLqefwihC9JaB+Vre+w+5HNHzdWgUKwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Remote Target&quot;
         title=&quot;&quot;
-        src=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-355f8.png&quot;
-        srcset=&quot;/static/c3c45424dfaefd9b73f69e06708a1f97-2d9b1.png 163w,
-/static/c3c45424dfaefd9b73f69e06708a1f97-17d51.png 325w,
-/static/c3c45424dfaefd9b73f69e06708a1f97-355f8.png 376w&quot;
+        src=&quot;/static/chrome_remote_target-c3c45424dfaefd9b73f69e06708a1f97-beeed.png&quot;
+        srcset=&quot;/static/chrome_remote_target-c3c45424dfaefd9b73f69e06708a1f97-a7bfb.png 163w,
+/static/chrome_remote_target-c3c45424dfaefd9b73f69e06708a1f97-c740e.png 325w,
+/static/chrome_remote_target-c3c45424dfaefd9b73f69e06708a1f97-beeed.png 376w&quot;
         sizes=&quot;(max-width: 376px) 100vw, 376px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
 &lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Cool! Looks like a debugger! &lt;code&gt;--inspect-brk&lt;/code&gt; pauses code execution at the first line of the script, so we&apos;ve stopped at the first line of the jest script file. To get to our debugger line, let&apos;s press the play button.&lt;/li&gt;
+&lt;li&gt;Cool! Looks like a debugger! &lt;code class=&quot;language-text&quot;&gt;--inspect-brk&lt;/code&gt; pauses code execution at the first line of the script, so we&apos;ve stopped at the first line of the jest script file. To get to our debugger line, let&apos;s press the play button.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;After a little wait, our &lt;code&gt;spec.js&lt;/code&gt; file will open and you&apos;ll see our sum test containing the &lt;code&gt;debugger&lt;/code&gt; line.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;_index2.default&lt;/code&gt; is still no where in sight, but that&apos;s because we&apos;re looking at the &quot;Source Map&quot; of our code—that is, the original code that we wrote. Chrome shows this to us in a couple places:&lt;/p&gt;
+&lt;p&gt;After a little wait, our &lt;code class=&quot;language-text&quot;&gt;spec.js&lt;/code&gt; file will open and you&apos;ll see our sum test containing the &lt;code class=&quot;language-text&quot;&gt;debugger&lt;/code&gt; line.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt; is still no where in sight, but that&apos;s because we&apos;re looking at the &quot;Source Map&quot; of our code—that is, the original code that we wrote. Chrome shows this to us in a couple places:&lt;/p&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -362,24 +348,24 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 79.39698492462311%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABR0lEQVQ4y+2Uy2rDMBBF/f+f0VWhi5JFoR/RRSkNJo5rx684tuTYliXHD9m3Hi1CFyEEmu564cJoJI6G0SCrKAqQq6pCXddomgZSSrOmmHK3mjgWYwxpmiIMQ3DOkec54ihGlmVg2w3E6hHK/kSz/oDYrKGWS5RSF12WJSwhhIHIvcDQdGDshK46YZAdhqpEl6WY5xmkeRwwTxrXZIBJksBxHNi2Df61hXRsVFGIemtDFRzdIV0ukKaKXgn0fX8dGEYJajXj9cXD6tnF2/sBGe+wzxT8iMMLGYJ46ZOczLlrNkDq4fF4RNv2OHUjxpGsofVkYqqI1rfo3MO2bXEPGSC9zr30D/wD4MTz+wI1O2D03d8Baai11mePokL79AC9DPXP/C22qDoa7CAIEEURfN9HHMfYU+x5Ju+6Lna7nYlpn87T13bJ3+wn3Um7PiHuAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 79.39698492462311%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABxUlEQVQ4y6WUW2/TQBCF/f//C0/wAuKpQuKBxyJaqaRxbCe+xPauvb5n44/ZhFahTWgpIx3Zmt09M3M0M952u+WAfEupSrRWFGVBXpaoLKXaZlRtS9U0VEZQVWehtSbPc7wsy9isN0TLEJUr4iQnDmOyoqT49hXz6T3t/U/MzTVNFNB13Vm0ElQrhWeMIYkTqk2JKWtq3WCVwQ4Tky4YJVvsDsYBOQRmLtser65r1pKhH0Zcf78n+rFCL5YYkaEKA3opc1KaoR9pHOT+MFrsHnZ2PoHEnCyeqz9OUnS948tVwOePPje3qejRkqU1QZDiLzdsEkPdWEwr6PZCPj+D6exDhuuDqKYxEn1gGHomCbmzlq4XfbqWSaJftqMM8zwfCeM4pu97XjL34BIOCu5/a+iye+nBEcdsLhE+ZlhKz506H/5fa88IlfTP08O3ED6W/JTwNOJ/Z3ju0mvwJ6HT0DmmkV3oM0vq/0L215KpNPbuFhmJN2l5mBS3Jdxwu7k2w0AjG0Z9eEcj7dQ4vwR1Z41sHIdB7ozjeBZeURSkaUoURTJmgYzZkkQ2UCjT4/791YrFYkEYhvi+z1J87o3rXVeZ+57iFw7P2zQVU8hkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Source Map&quot;
         title=&quot;&quot;
-        src=&quot;/static/977ee10b94867637f15ba3cbb4d13330-f636d.png&quot;
-        srcset=&quot;/static/977ee10b94867637f15ba3cbb4d13330-1783f.png 163w,
-/static/977ee10b94867637f15ba3cbb4d13330-7ad53.png 325w,
-/static/977ee10b94867637f15ba3cbb4d13330-f636d.png 597w&quot;
+        src=&quot;/static/chrome_source_map-977ee10b94867637f15ba3cbb4d13330-bc8a5.png&quot;
+        srcset=&quot;/static/chrome_source_map-977ee10b94867637f15ba3cbb4d13330-9f60b.png 163w,
+/static/chrome_source_map-977ee10b94867637f15ba3cbb4d13330-a5b96.png 325w,
+/static/chrome_source_map-977ee10b94867637f15ba3cbb4d13330-bc8a5.png 597w&quot;
         sizes=&quot;(max-width: 597px) 100vw, 597px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
-&lt;p&gt;Generally, it&apos;s much nicer to look at the Source Map of some code than its transpiled version, which is why Chrome shows it to us. However, we&apos;re interested to see whether our transpiled code contains &lt;code&gt;_index2.default&lt;/code&gt;, so we need to go beyond the source map.&lt;/p&gt;
-&lt;p&gt;First, let&apos;s look in the Scope section of the debugging window. Scope contains all the variables that are accessible where we paused our code with &lt;code&gt;debugger&lt;/code&gt;, and notably it shows us variables from our &lt;em&gt;transpiled&lt;/em&gt; code, which is what we want to see. Taking a look around, we open up the &lt;code&gt;Closure&lt;/code&gt; object, and... there&apos;s &lt;code&gt;_index2&lt;/code&gt;! Open that up, and we see a &lt;code&gt;sum&lt;/code&gt; property, as well as an &lt;code&gt;__esModule&lt;/code&gt; property, but no &lt;code&gt;default&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;Generally, it&apos;s much nicer to look at the Source Map of some code than its transpiled version, which is why Chrome shows it to us. However, we&apos;re interested to see whether our transpiled code contains &lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt;, so we need to go beyond the source map.&lt;/p&gt;
+&lt;p&gt;First, let&apos;s look in the Scope section of the debugging window. Scope contains all the variables that are accessible where we paused our code with &lt;code class=&quot;language-text&quot;&gt;debugger&lt;/code&gt;, and notably it shows us variables from our &lt;em&gt;transpiled&lt;/em&gt; code, which is what we want to see. Taking a look around, we open up the &lt;code class=&quot;language-text&quot;&gt;Closure&lt;/code&gt; object, and... there&apos;s &lt;code class=&quot;language-text&quot;&gt;_index2&lt;/code&gt;! Open that up, and we see a &lt;code class=&quot;language-text&quot;&gt;sum&lt;/code&gt; property, as well as an &lt;code class=&quot;language-text&quot;&gt;__esModule&lt;/code&gt; property, but no &lt;code class=&quot;language-text&quot;&gt;default&lt;/code&gt; property.&lt;/p&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -387,23 +373,23 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 88.04878048780488%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAABxElEQVQ4y6VU2ZKbMBDk/z9pH1KVl00cs3G2NjY2iMMcQlziNiwF7kjaysO++FhPVdcISmqGnh5pnHMErILMjDEkSYKqqhDHscpRFKm1YRhqT13XF6EVRYGXA0cYhnAcRxHIgzKXZYntdgvXdbFarZBl2XXCJNnBPDyBGN8QOD8RuM9Iot/w3R9wzO9YpgiY6c3Q+i5FXTooc4KE7pDGBsrCRpGZ4LmF94FhGm+HJvXZ7/dYv+hwvSPatn0IWhhS2LYtRN9hres4mOZVnS43hX90VDZHii7zQ4SSxPNcbF5fQUSlXdc9BGUbxmJY5IPs0dCmaVJ+K0JBfEwRBgFMy4LvB18jlBVKE3uiw0eBXDzLrts2QZZmIIQI2DBFsyyLgCXpbRWe6h7UjMGcFMMwYF6WTxvneVb5fD5fJ5TBQgZGGOqqFVUUykrSl3mWo+/7+zT8/+X3XlQbNmjiFl3WCxtVoKwBL4f7CXnBcRIHJXo+iN8e4QgdPc8HpfHthPKKyvNCIEeRcvVymRfM0/xJu0sxDCdkgiNNU2hN06jpoGJapMnHcbwbcoblXRqJK1CjlOLt7xtWax2/9DU2mz84+v6XR+8fFDBg9k61GfIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 88.04878048780488%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAACSklEQVQ4y51UaXPaQAz1//9D/QNt86EJKRCaEHzg2+tlfeID2/AqbdqZHEAPzbzRjL3SSk9PawipYIcl0lQgCEIkSQKlMkRRpL1t2/B9Hw8PKwiRoqpqFEWJsjwPQ6oSa6+lwzGiOKLEHFRCSom6rrF6WMKyTMzubumymL5VFFigouBzMIRYwTY/wbO+wHduEGxvEPu38OyvcK3PwBQDEIQUOEY4jeFVGFnmwXPv4Dn3sDffEHpzSPGEyF9CRCt0bYyhS3AgsB96cRWGUjkcZ4v5cgm5UxjHCft9g6ZpNZizsqrIV2/8JRiJkES8haf1E+aLBdbPz0R68Yvk4iL5F4eyo6pM09SJLJpoTFP+1yRvEqrdDlv3pWU/CDAMA7Xa/DcMbk9QVVvHRUPcTdOEw+GgE59OJxyPxzfgb9dg8KGqrCB9iUrWWmumZZEOFS4ZB14yI88zJHGMMIy0sFWmsNlsNK87SXRst7Adh8Rta0ii6HfCsxX2fY88z6GEQvAcIrYTLY1hGHX7fX9A23YkpT35VlPxOtmHCjmID6VRisRMkMkSKi/h0qAS2t2iyClR8/ct8wDYpuOEtmiRR5VGFmVIZQE/KlGU/Yeq2J1rXVfIxhMe6hFVUqORLfr2QIJ3SJ8WcStwusDZ+2oN5kuRuGMajJL5y43TCdN41FT0fUdcjrhmrD9eCCEEPw4Z8eXqTXE9DxlNfd/stRZfg4f3Hl3X6X+s5TAM6T0NePV2+PH4iNvZDIvlAvff5zoxV87T58N/Aq8cv52shJ/9XF926PUdqwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Debugger Scope&quot;
         title=&quot;&quot;
-        src=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-187b0.png&quot;
-        srcset=&quot;/static/8d7fe9904055b6e733dcde9167c02ba1-855d2.png 163w,
-/static/8d7fe9904055b6e733dcde9167c02ba1-07b9d.png 325w,
-/static/8d7fe9904055b6e733dcde9167c02ba1-187b0.png 410w&quot;
+        src=&quot;/static/chrome_debugger_scope-8d7fe9904055b6e733dcde9167c02ba1-6e092.png&quot;
+        srcset=&quot;/static/chrome_debugger_scope-8d7fe9904055b6e733dcde9167c02ba1-ca167.png 163w,
+/static/chrome_debugger_scope-8d7fe9904055b6e733dcde9167c02ba1-0737a.png 325w,
+/static/chrome_debugger_scope-8d7fe9904055b6e733dcde9167c02ba1-6e092.png 410w&quot;
         sizes=&quot;(max-width: 410px) 100vw, 410px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
-&lt;p&gt;But where is &lt;code&gt;_index2&lt;/code&gt; coming from? And where is &lt;code&gt;_index2.default&lt;/code&gt; being called? Clearly we need to see the actual transpiled code, not just its representation in the debugger. We can select the transpiled files in the Sources file tree, as seen here:&lt;/p&gt;
+&lt;p&gt;But where is &lt;code class=&quot;language-text&quot;&gt;_index2&lt;/code&gt; coming from? And where is &lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt; being called? Clearly we need to see the actual transpiled code, not just its representation in the debugger. We can select the transpiled files in the Sources file tree, as seen here:&lt;/p&gt;
 &lt;p&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
@@ -411,16 +397,16 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 91.22257053291534%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAAClklEQVQ4y5VUyXLaQBDV//9BviC3VKpyzMmV2GWbVYCxMEhIILQhoRVsSYiX7rblxM4Be6qaGXp6Xr/epGRpit1uJ5JlGfI8R5LESEnfSlEUoovjGDnZZNlfHd9nont+qziOg/F4hM7tDe7uNTHU9QUGgx66vR4md1MyLGi/x8WvK1xeXuO2O0Cc5pg/aGLT6/ehqqqAK+w1iiK0OzONSMIwFEniCOZmh44WQ9UzDBcZurMEmrlDsA2RJomwY7CEzgoDjEYjGIYBTdPgeR4MXcdkMhav0+kUs5mGITFeWUu6m2M8GmLCUXU6cF1XQm3DVhiVFSxxnJCXlDxvRcIwejHOhQGfOSVpmiF5yR3/3+/3r6Js+XEQiNgbF36whW6YmC8MWGsbVVXjM0thVNu24Ww22DieMCuKPeq6RlmWOB6Pbx6cTqc38l6n+L4Py7KwIjYP84WwZJDWmFfTNDgcHv8D51WW1VuG/JNSjowUcPMTwsAXpo7rwVytafexNFciprWG7bhyt7I34twiG07PeuPQOxcKM+HE9vUQN+YjNGONbp+qONVwP5vLuTccYWEsJaeu58P3A9oDyfeOCmmYloB5pFdaqnmaYLY9wSKmGZ3DaEdhHqTXWuOqPl8g5TWxTQnP/I7AHWE2X0IdT8QzTwnnjsE4l++LwsL6pnkpSgvY1AcUzjeUuQ4viCgkT1gm1HO8jsdGHrZVPcuwOT4hd34gC4dUDJcKYEnSuTDT+5mE/G+LnAckhun6KwGqVBAaL/oocDUzmaICT0/lJwGJYeH/xCE16OOQPn+qCOh9U3+4KE29R7L8gtC+wHVHxUDl4ujSOr+vbqRF2ib/EMPTqUH96ONYpShpfquqkvHjWeZw2yk5x/IPoOJakxBOg3IAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 91.22257053291534%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAACdElEQVQ4y5VTyXKjQAzl/49zn8vMYWq+Yg5zGi+xAdsYMItZDDY7BjvEy4vUCakklclClVBLrX6tJ6mlsiyx2+2QJAmyPEfTNMhJZ1mGNM2efCnvC18qdNs2pFNxlu2iKESctNvGkGUFw+EA2nJJgQfoug5FkXFzM8FCY19LMTLFDIVMpwqOxyM0bYHhaIzZTIVuGNjv95CqqhIHemGbpa5rIc2+gh/XkJ0DVKeF4jSY2i3caI+2oRgCqeuHM8xW4pRVVYVpmnTTDHEcY0mZTqdTTCYTGHSzqioYDP7BdR1Y1grj8UjsjUYjQXkvQB8SkA6Hg0DmG7gGnGUfwP5ec414zXu85tr2dWOMnqHI0PM8BEEIzw9hO2vMFkshxsrG9XrFVz6Jb+8Bg02E7S4Rjenu7nDbdbhcLk+grNnupfcLm9Zsi6aE4Qa7bUQ6QLxN3ryZD731vWYg8a/KE/x1TjCSM4K1Q3R1mERXmS2w1E2ocw03UxWLpYGV5cAwLWiPfpY5jdZc02nEdEiCxvmEFY3BbNMhTgv4QYCAso7iLSzbJTvEJopR1dysPTWCG9eIkemoLGmWU+Mq4ZfA3CnLtkrxZ3XGPL4gCn2sCCjLC5iWTc2xRAb/o/2C8vWxmPyV7g80+QKuvyVqtsjydb0+kheAlfcLbanB36Rw156gybQO9MyY2nPQT2VYON9RpzJMO8SSXojtruF6PjVEQUgj9VZX36e8/kmU54JyuKFRStJ3R+RDwMr/jbbQsCbATRSJLt/RgD+fwy9lmK++oYgHkOeWaIrluGLmxhOF3m35dcDTMcKpK3G87UQTOLvz+fz0BD8DeA8NoFrCVNvOlAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Sources File Tree&quot;
         title=&quot;&quot;
-        src=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-a9fb3.png&quot;
-        srcset=&quot;/static/8eef1c5b8517f1c23727ec7e47d0f913-a16ad.png 163w,
-/static/8eef1c5b8517f1c23727ec7e47d0f913-a9fb3.png 319w&quot;
+        src=&quot;/static/chrome_sources_file_tree-8eef1c5b8517f1c23727ec7e47d0f913-a8ad9.png&quot;
+        srcset=&quot;/static/chrome_sources_file_tree-8eef1c5b8517f1c23727ec7e47d0f913-cd822.png 163w,
+/static/chrome_sources_file_tree-8eef1c5b8517f1c23727ec7e47d0f913-a8ad9.png 319w&quot;
         sizes=&quot;(max-width: 319px) 100vw, 319px&quot;
       /&gt;
     &lt;/span&gt;
@@ -434,45 +420,45 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 122.16494845360826%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAD10lEQVQ4y6VVy24iVxDlF/MB2UVZZpd1fmAWWSdSFok0i1HGI1mOEieWDQyYGGPej27ANK9+AP0Emm7obk6qLgLbmljK40qle+teOFSdU1WkdF2H4zgn8zwPm80G/noNf7WC7/vCF3d0fu4/v98EgTinVFWFbdtYLBZQFAWu60LVdBjjEfxGBV6tjGA8RDAhvychNDQk263wNyMFoTZFMB0L8x97T4Dz+RyyLIsIR6MRdPJjx4ZTvMWyURX7Smoj1FUB4j0Uxf2KzO/JcPIZOHf5l4DtdluE/X/WC8BWq3VIme7Y53uXeJ3PZtA1Fcz3ivzYc7GzLZHmznWAJAH2e6ynzktASZLEnslkUKvVBKfsd+UuPmazuC0UMCM/MhdYU5pepSTAV0FImDGsjnUAZHVnFEW1SpyQslEUibsCAZTLZTSbDbSIDlMZYNWViLsa1t0OvHIRm8cuZiTcut9FOBk+AXIkjUZDlACvgMpA7nYhdTrotbuUso7AtUlxBf6gR2pT+lKHzn1s1TG2izlWcudTDhlwT3wc187YYPFxAvNehVkzMC8ZUNNjeJILYzbH7u9EOabM6R0jZNCEyLZ0E72yjGFrgFFLQStTRTvXwHw4RaWk0+fjE5hlhq+nfFzGzED+z1uyPB6qZXQoLYWKeraYknBrDBUSKdphYQZoNqzXAVkcrkt1qopS2lJ3sMVxfLIoSoSAnE0UJ9jtkicOTdMUHcKdwqAMyDTwDy2X3itlvP/kfIqQizaTzYgzRzYcjqio3f/WKQzCw6HT7sDxCNyaQDG6UPQe4iSCZo9hrWZwfeoc38LYfERHrdL9CObSwGKpw6T3qaU8AfJeLN4ToI2+1sadfINSPwvDmeDnwve4aZ7jYZBDXvodf9Q/4F3hO5zd/YDz0k+oKLe4pvcfs98ipWkaLMuibmiiXq8L8H6vD3WiYaHNic/g36V8BBwMBmJ88TCY0iyc0TAwSZwliRPmrhDKTUF7EkdEQyyo4P5N9snBqGb3+2cqs7oelceKJvVpcUudv8Pml/eIhv2DluKL+1dNAHKEFpUNl45LEe/qDwivf0Xw4a04nxaPqX80DwnQodQsTvPrL+F88RmW17/BJ39LHwppUGzJQh79tD+3Y8GHYSgsxcXLkan8Z3VfgP3V5zDffIM1/Y9w47uWeSorpoZBuPCPAPzdQ/EvRTMIwEqlAhZHqlbgUJ9Wi0Xc5XJI39zg8vJSvLNoFxcXSKfTyNHb1dWVmJf5fB5nZ2cCdE38p/jAXcKpmxTBkiKwXU+c+Y0jY2Oe2T/e8c7R8T0HxaJyhH8BIhYBFtf80yUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 122.16494845360826%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAD/ElEQVQ4y6VV2W4jVRD1b/ETvPLEMzzxyE/wAQiNeAMhAUEiGV5mkslkPGOcxMR2e9/a3bbb7a0X9765D1XXsT3RaECCtsp1N51bVaeqbkHXdTiOi+12S9qB63lI0xRRHCMkHedAxPNdjijbIeT1OKF1mu92e8kysc9nC5PJBIZhYLFYYDgcwrIsyIoCXR7BlaqwKrcItBm80QDeeIjI2CC2LbiDLjxlBF+RaX8q9t1+BwVN02DbNjabDfr9vrBUlmUxjydjbF69gFN/gF0pw21JCKeqEPPmEtvqPRwhFZjFa5hvX6Mwm80E4Gq1QrPZhO/7+D/fE8BOpwOPYshWuq6LKIoQBoEY2xQK1j6dzVwHuzhCSprH/MVOSKEI9oAct/V6jVarhfl8jouLC1xdXaFSqWA0Gon1387OcFMswgkj+J0mjJsrbP+i+FomXAJPnATzd+rJQgbsdrvCCv6YKA7BYDBAr9fDarlEslzApeCHRFKgKvB6bfgTBUazjljXkHruhzFkl/kzTRO1Wg3VehWdXgems0UeOPBaD4imMiJ9BpfI8vtdRMQyExevlyfAJVkgSdIHpPg9C4vLMRZFFesHHfo7DXqJ0kh1saZL/5GUdrt9BNxRwub0W0+XWMkLrNUl5u0J5DcdaE0VK43ON3XQEfBfmuzguckekFnlimESDoB5Lk6SyzW8fHWJ35+f4/rNNWqtOgbyAN3eCDevTcpXExlViao4KJeWJ5Y5kTn4B1J4ziSx9QyepdnJr3zvAf0jSagUwwx+kD51mVkej8eintMsFaRwWbLk+W4fBtIMftAHLx79FpccAdnlu7s7AVSvSxjLClm1+++Vwiw3Gg2KJ4FvNHTGEnRjhjgNYXkGnMAmsbAl6etNzIwx3HAL2zdofyPGmqm8x/J6hYbUwMpcQDUGKPVfYGoM0ZtL+KPyI66b52hM7khf4LzyA3758xl+LT/DS+kMlVFRrP1c+u4EyEl9f38PwzTIUgmD/hCrxQp59nG3kyw5juM0euoy90Ku2S2NmYj5bIoJ1TVzl9QrSJWhCH1OgT+QckivA2lHQE4bzkUG9oLwZELgI/jpe/gkOyq9E8DH5QhoUN5tLAr8XAO49d++hfftN0ib1ffyL/93lqfTqUgVBjRcD+uvv4D95Wdwn58hpl7I6ZxSe8roEn5rkiR5Ihm9J+njHkuB3xKHXDU8H3bxCsann8D86nP4lOD8ADmPjdV61AFdchAuUw7T4YFjKRzekltieNppw6M+yORUac6JzvXNTYOzoEgNlte4rZXLZVGapVJJNGMGF4DcZbhL97mJEphPpMhUgmN6+XhNIc3CseaLWfgRU1UVHC4ec8my9Qz4N//pAjgLS2k/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Chrome Pretty Print Button&quot;
         title=&quot;&quot;
-        src=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-551fb.png&quot;
-        srcset=&quot;/static/0ad11bac5c6217bb6e808a9d24419ef1-f958f.png 163w,
-/static/0ad11bac5c6217bb6e808a9d24419ef1-551fb.png 194w&quot;
+        src=&quot;/static/chrome_pretty_print-0ad11bac5c6217bb6e808a9d24419ef1-0e716.png&quot;
+        srcset=&quot;/static/chrome_pretty_print-0ad11bac5c6217bb6e808a9d24419ef1-deede.png 163w,
+/static/chrome_pretty_print-0ad11bac5c6217bb6e808a9d24419ef1-0e716.png 194w&quot;
         sizes=&quot;(max-width: 194px) 100vw, 194px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   &lt;/p&gt;
-&lt;p&gt;Now we finally see our transpiled code in all its glory! We&apos;ll want to look at both &lt;code&gt;index.js&lt;/code&gt; and &lt;code&gt;spec.js&lt;/code&gt; to get a complete picture of what&apos;s going wrong. Here&apos;s both of the transpiled files:&lt;/p&gt;
+&lt;p&gt;Now we finally see our transpiled code in all its glory! We&apos;ll want to look at both &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;spec.js&lt;/code&gt; to get a complete picture of what&apos;s going wrong. Here&apos;s both of the transpiled files:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// index.js&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token string&quot;&gt;&quot;Object.&amp;lt;anonymous&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;module&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; require&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __filename&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; global&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; jest&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;Object.&amp;lt;anonymous&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; require&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __filename&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; global&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; jest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token string&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;defineProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;__esModule&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
             value&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;//# sourceMappingURL=...&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//# sourceMappingURL=...&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// spec.js&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token string&quot;&gt;&quot;Object.&amp;lt;anonymous&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;module&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; require&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __filename&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; global&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; jest&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;Object.&amp;lt;anonymous&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; exports&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; require&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; __filename&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; global&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; jest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token string&quot;&gt;&apos;use strict&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; _index &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; _index2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;_interopRequireDefault&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_index&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;_interopRequireDefault&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;_interopRequireDefault&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; obj &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__esModule &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; obj &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
                 &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; obj
             &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -481,24 +467,23 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
         &lt;span class=&quot;token function&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;sum&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;correctly adds 1 and 1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
                 &lt;span class=&quot;token keyword&quot;&gt;debugger&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                _index2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                _index2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
             &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;//# sourceMappingURL=...&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//# sourceMappingURL=...&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Without getting too much into the details of babel&apos;s output, we can get a feeling for how this code works:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;In &lt;code&gt;index.js&lt;/code&gt;, Babel passes in an &lt;code&gt;exports&lt;/code&gt; object, sets &lt;code&gt;exports.__esModule&lt;/code&gt; to true, and sets &lt;code&gt;exports.sum&lt;/code&gt; to our sum function.&lt;/li&gt;
-&lt;li&gt;In &lt;code&gt;spec.js&lt;/code&gt;, Babel uses a &lt;code&gt;require&lt;/code&gt; method to get the value of the &lt;code&gt;index.js&lt;/code&gt; module, which we can assume to be the &lt;code&gt;exports&lt;/code&gt; object in &lt;code&gt;index.js&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;The code sees that the imported object&apos;s &lt;code&gt;__esModule&lt;/code&gt; property is true, so it sets &lt;code&gt;_index2.default&lt;/code&gt; to the default export.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;sum&lt;/code&gt; invocation in our original code is replaced with &lt;code&gt;(0, _index2.default)&lt;/code&gt;, which evaluates to &lt;code&gt;_index2.default&lt;/code&gt;. (The reasons for this specific syntax are beyond the scope of this blog post.)&lt;/li&gt;
+&lt;li&gt;In &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt;, Babel passes in an &lt;code class=&quot;language-text&quot;&gt;exports&lt;/code&gt; object, sets &lt;code class=&quot;language-text&quot;&gt;exports.__esModule&lt;/code&gt; to true, and sets &lt;code class=&quot;language-text&quot;&gt;exports.sum&lt;/code&gt; to our sum function.&lt;/li&gt;
+&lt;li&gt;In &lt;code class=&quot;language-text&quot;&gt;spec.js&lt;/code&gt;, Babel uses a &lt;code class=&quot;language-text&quot;&gt;require&lt;/code&gt; method to get the value of the &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; module, which we can assume to be the &lt;code class=&quot;language-text&quot;&gt;exports&lt;/code&gt; object in &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The code sees that the imported object&apos;s &lt;code class=&quot;language-text&quot;&gt;__esModule&lt;/code&gt; property is true, so it sets &lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt; to the default export.&lt;/li&gt;
+&lt;li&gt;The &lt;code class=&quot;language-text&quot;&gt;sum&lt;/code&gt; invocation in our original code is replaced with &lt;code class=&quot;language-text&quot;&gt;(0, _index2.default)&lt;/code&gt;, which evaluates to &lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt;. (The reasons for this specific syntax are beyond the scope of this blog post.)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Seems like we&apos;re getting somewhere! If &lt;code&gt;index.js&lt;/code&gt; sets &lt;code&gt;exports.sum&lt;/code&gt; to our sum function, then we would expect &lt;code&gt;spec.js&lt;/code&gt; to use it like &lt;code&gt;_index2.sum&lt;/code&gt;. Instead, it tries to use &lt;code&gt;_index2.default&lt;/code&gt;, which explains our original error...&lt;/p&gt;
+&lt;p&gt;Seems like we&apos;re getting somewhere! If &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; sets &lt;code class=&quot;language-text&quot;&gt;exports.sum&lt;/code&gt; to our sum function, then we would expect &lt;code class=&quot;language-text&quot;&gt;spec.js&lt;/code&gt; to use it like &lt;code class=&quot;language-text&quot;&gt;_index2.sum&lt;/code&gt;. Instead, it tries to use &lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt;, which explains our original error...&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;FAIL  ./spec.js
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FAIL  ./spec.js
  sum
    ✕ correctly adds 1 and 1 (4ms)
 
@@ -506,27 +491,25 @@ For help see https://nodejs.org/en/docs/inspector&lt;/code&gt;&lt;/pre&gt;
 
    TypeError: (0 , _index2.default) is not a function&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;&lt;code&gt;_index2.default&lt;/code&gt; isn&apos;t a function because it&apos;s undefined, as we saw when we looked in the &lt;code&gt;_index2&lt;/code&gt; object in the Debugger Scope. But how can we fix our original code? We seem to be accessing the &lt;code&gt;sum&lt;/code&gt; function in the wrong way, so let&apos;s check out how we&apos;re importing and exporting the function:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;_index2.default&lt;/code&gt; isn&apos;t a function because it&apos;s undefined, as we saw when we looked in the &lt;code class=&quot;language-text&quot;&gt;_index2&lt;/code&gt; object in the Debugger Scope. But how can we fix our original code? We seem to be accessing the &lt;code class=&quot;language-text&quot;&gt;sum&lt;/code&gt; function in the wrong way, so let&apos;s check out how we&apos;re importing and exporting the function:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// spec.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Ah-ha! We&apos;re exporting &lt;code&gt;sum&lt;/code&gt; as a named variable and importing it as the default. To fix this error, we can either change the named export into a default export or change the default import into a named import. Let&apos;s do the former:&lt;/p&gt;
+&lt;p&gt;Ah-ha! We&apos;re exporting &lt;code class=&quot;language-text&quot;&gt;sum&lt;/code&gt; as a named variable and importing it as the default. To fix this error, we can either change the named export into a default export or change the default import into a named import. Let&apos;s do the former:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// index.js&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// index.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// spec.js&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token comment&quot;&gt;// spec.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sum &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./index&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Now we run &lt;code&gt;npm t&lt;/code&gt; once again, and we get...&lt;/p&gt;
+&lt;p&gt;Now we run &lt;code class=&quot;language-text&quot;&gt;npm t&lt;/code&gt; once again, and we get...&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;PASS  ./spec.js
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;PASS  ./spec.js
  sum
    ✓ correctly adds 1 and 1 (5ms)
 
@@ -541,12 +524,11 @@ Ran all test suites.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The takeaway from this round of debugging is: do your best to &lt;em&gt;deeply&lt;/em&gt; understand the errors you encounter. If you think you understand an error, but you&apos;re not sure, it can help to write down any questions that are floating around your head. Then you can methodically tackle each question and improve your debugging skills. This is a strategy that I&apos;m learning myself, and I hope it proves useful to you.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Squashing a Gatsby+Webpack+d3 bug]]></title><description><![CDATA[I was in the midst of rebuilding my site a couple weeks ago with  Gatsby JS , a React-based static site generator, when I decided I wanted…]]></description><link>https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</link><guid isPermaLink="false">https://nathanshane.me/blog/squashing-gatsby-webpack-d3-bug</guid><pubDate>Tue, 26 Sep 2017 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I was in the midst of rebuilding my site a couple weeks ago with &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby JS&lt;/a&gt;, a React-based static site generator, when I decided I wanted to add an interactive component to my personal website. You know, something fun to spice it up a little bit.&lt;/p&gt;
 &lt;p&gt;This is a perfect chance to learn &lt;a href=&quot;https://d3js.org/&quot;&gt;d3&lt;/a&gt;, I thought! So I went off and read all about d3, and when I felt I was ready, I opened my application and typed:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; d3 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; d3 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;at the top of the React component that would contain my game (this being the standard way to import d3). I then added some d3 code, just to make sure that d3 was working. With that done, I switched to the terminal to check that gatsby’s develop script had completed its build properly, and this is what I saw...&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;ERROR  Failed to compile with 2 errors
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ERROR  Failed to compile with 2 errors
 
 These dependencies were not found:
 
@@ -558,16 +540,16 @@ To install them, you can run: npm install --save child_process fs&lt;/code&gt;&l
 &lt;p&gt;“Huh? That’s weird! This error seems totally unrelated to d3!” I thought.&lt;/p&gt;
 &lt;h2&gt;The Journey: Part One&lt;/h2&gt;
 &lt;p&gt;They say that the journey of one thousand miles begins with a single step. Well, this debugging journey began with a big &lt;em&gt;Sigh&lt;/em&gt;, and I resigned myself to the fact that nothing is ever easy in JavaScript (okay okay, I know, I&apos;m exaggerating a little bit).&lt;/p&gt;
-&lt;p&gt;The first thing I noticed about the error was that it mentioned failing to compile due to missing dependencies. Maybe it had something to do with webpack? I switched to my editor, commented out everything new except the &lt;code&gt;import * as d3 from &apos;d3&apos;&lt;/code&gt; statement, returned to the terminal, and—same error message. I then commented out the import statement, and the error disappeared.&lt;/p&gt;
-&lt;p&gt;Reading on in the error message, I saw that both of the missing dependencies had been specified by the module &lt;code&gt;xmlhttprequest&lt;/code&gt;. I opened my editor to that module, and there they were:&lt;/p&gt;
+&lt;p&gt;The first thing I noticed about the error was that it mentioned failing to compile due to missing dependencies. Maybe it had something to do with webpack? I switched to my editor, commented out everything new except the &lt;code class=&quot;language-text&quot;&gt;import * as d3 from &amp;#39;d3&amp;#39;&lt;/code&gt; statement, returned to the terminal, and—same error message. I then commented out the import statement, and the error disappeared.&lt;/p&gt;
+&lt;p&gt;Reading on in the error message, I saw that both of the missing dependencies had been specified by the module &lt;code class=&quot;language-text&quot;&gt;xmlhttprequest&lt;/code&gt;. I opened my editor to that module, and there they were:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;var spawn = require(&quot;child_process&quot;).spawn;
-var fs = require(&quot;fs&quot;);&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var spawn = require(&amp;quot;child_process&amp;quot;).spawn;
+var fs = require(&amp;quot;fs&amp;quot;);&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Now I had the error isolated. Well... sort of. I had traced it to a single line of my own code, which eventually led to a module failing to import node modules. But there was a whole lot going on under the hood that I didn’t understand. My confusion could be summarized with these two questions:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Why does importing d3 (a frontend data viz library) cause webpack to import the &lt;code&gt;xmlhttprequest&lt;/code&gt; module, which is used for making http requests on the server?&lt;/li&gt;
-&lt;li&gt;Why would webpack fail to import &lt;code&gt;child_process&lt;/code&gt; and &lt;code&gt;fs&lt;/code&gt;, both of which are built-in node libraries?&lt;/li&gt;
+&lt;li&gt;Why does importing d3 (a frontend data viz library) cause webpack to import the &lt;code class=&quot;language-text&quot;&gt;xmlhttprequest&lt;/code&gt; module, which is used for making http requests on the server?&lt;/li&gt;
+&lt;li&gt;Why would webpack fail to import &lt;code class=&quot;language-text&quot;&gt;child_process&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;fs&lt;/code&gt;, both of which are built-in node libraries?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;All I wanted to do was play around a bit with d3 and start making this game! At a loss, I decided to make a separate, smaller application with no framework to see if I could get d3 working with webpack. A little while later, I had a small app with a tiny webpack config, and—what do you know—importing d3 worked just fine. This gave rise to a third question:&lt;/p&gt;
 &lt;p&gt;Why does importing d3 break in my Gatsby app, but work fine in my small, custom webpack config app?&lt;/p&gt;
@@ -577,7 +559,7 @@ var fs = require(&quot;fs&quot;);&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The next time I took a look at this bug was a few days later, when I met up with &lt;a href=&quot;https://haroldtreen.com/&quot;&gt;Harold Treen&lt;/a&gt;, a fellow Recurser and JavaScript enthusiast.&lt;/p&gt;
 &lt;p&gt;Just as a reminder, this is the error message I was getting:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;ERROR  Failed to compile with 2 errors
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ERROR  Failed to compile with 2 errors
 
 These dependencies were not found:
 
@@ -588,32 +570,30 @@ To install them, you can run: npm install --save child_process fs&lt;/code&gt;&l
       &lt;/div&gt;
 &lt;p&gt;Almost immediately, Harold and I noticed that we could make this error go away by replacing the import all of d3 statement with statements importing parts of specific libraries:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// Replace this...&lt;/span&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Replace this...&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; d3 &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
 
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// With this:&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// With this:&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;forceSimulation&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;selectAll&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;selectAll&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;d3&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;We also figured out &lt;a href=&quot;https://github.com/josephsavona/valuable/issues/9#issuecomment-65000999&quot;&gt;another way&lt;/a&gt; to patch the problem. Webpack lets you override the return value for node modules; you can make &lt;code&gt;require(&apos;fs&apos;)&lt;/code&gt; and &lt;code&gt;require(&apos;child_process&apos;)&lt;/code&gt; return empty objects like this:&lt;/p&gt;
+&lt;p&gt;We also figured out &lt;a href=&quot;https://github.com/josephsavona/valuable/issues/9#issuecomment-65000999&quot;&gt;another way&lt;/a&gt; to patch the problem. Webpack lets you override the return value for node modules; you can make &lt;code class=&quot;language-text&quot;&gt;require(&amp;#39;fs&amp;#39;)&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;require(&amp;#39;child_process&amp;#39;)&lt;/code&gt; return empty objects like this:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code&gt;node&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;node&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   fs&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;empty&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   child_process&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;empty&quot;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Of these two fixes, I especially liked the first one, because it would also reduce bundle size. So we were done, right? Problem solved? Well, we still didn&apos;t know &lt;em&gt;why&lt;/em&gt; this error was occurring with the &lt;code&gt;import *&lt;/code&gt; statement, and both Harold and I were curious enough that we decided to continue digging.&lt;/p&gt;
+&lt;p&gt;Of these two fixes, I especially liked the first one, because it would also reduce bundle size. So we were done, right? Problem solved? Well, we still didn&apos;t know &lt;em&gt;why&lt;/em&gt; this error was occurring with the &lt;code class=&quot;language-text&quot;&gt;import *&lt;/code&gt; statement, and both Harold and I were curious enough that we decided to continue digging.&lt;/p&gt;
 &lt;p&gt;After all, the original questions that had so vexed me earlier were still unanswered:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Why does importing d3, a frontend data viz library, cause webpack to import xmlhttprequest, used for making http requests?&lt;/li&gt;
-&lt;li&gt;How is it possible that built-in node libraries like &lt;code&gt;child_process&lt;/code&gt; and &lt;code&gt;fs&lt;/code&gt; can fail to be imported?&lt;/li&gt;
+&lt;li&gt;How is it possible that built-in node libraries like &lt;code class=&quot;language-text&quot;&gt;child_process&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;fs&lt;/code&gt; can fail to be imported?&lt;/li&gt;
 &lt;li&gt;Why does importing d3 break in my Gatsby app, but work fine in my small, custom webpack config app?&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;To begin answering the first question, Harold had the idea of searching for xmlhttprequest in package-lock.json. Sure enough, &lt;code&gt;xmlhttprequest&lt;/code&gt; was being required by &lt;code&gt;d3-request&lt;/code&gt;, and &lt;code&gt;d3-request&lt;/code&gt; was being required by &lt;code&gt;d3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To begin answering the first question, Harold had the idea of searching for xmlhttprequest in package-lock.json. Sure enough, &lt;code class=&quot;language-text&quot;&gt;xmlhttprequest&lt;/code&gt; was being required by &lt;code class=&quot;language-text&quot;&gt;d3-request&lt;/code&gt;, and &lt;code class=&quot;language-text&quot;&gt;d3-request&lt;/code&gt; was being required by &lt;code class=&quot;language-text&quot;&gt;d3&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-json&quot;&gt;&lt;code&gt;# package-lock.json
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;# package-lock.json
 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;d3-request&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
       &lt;span class=&quot;token property&quot;&gt;&quot;requires&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -625,44 +605,41 @@ To install them, you can run: npm install --save child_process fs&lt;/code&gt;&l
       &lt;span class=&quot;token property&quot;&gt;&quot;d3-request&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.0.6&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;But why would a part of d3 specify a dependency that depends on node? Reading d3-request’s documentation closely, we realized that d3-request can be used both on the server and in the browser. (Its purpose is to make it easy to load different formats of data, such as CSV.)&lt;/p&gt;
 &lt;p&gt;In the npm module system, a module is able to provide different entry points to its code via its package.json file. Taking a look at d3-request’s package.json revealed no less than five different entry points into the module:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-json&quot;&gt;&lt;code&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;main&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;build/d3-request.node.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;unpkg&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;build/d3-request.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;jsdelivr&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;build/d3-request.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;module&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;index&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;jsnext:main&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;index.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Notice anything about those entry points? The &lt;code&gt;main&lt;/code&gt; property is set to the node build! Now we were onto something: if webpack was loading the &lt;code&gt;main&lt;/code&gt; entry point of the module, then that would cause the following import chain:&lt;/p&gt;
+&lt;p&gt;Notice anything about those entry points? The &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; property is set to the node build! Now we were onto something: if webpack was loading the &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; entry point of the module, then that would cause the following import chain:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-js&quot;&gt;&lt;code&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// import * as d3 from &apos;d3&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; d3-request&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; xmlhttprequest&lt;/span&gt;
-&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;// =&gt; fs and child_process&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// import * as d3 from &apos;d3&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; d3-request&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; xmlhttprequest&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// =&gt; fs and child_process&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;At around this time, one of us noticed something else of interest: Gatsby was using version 1 of webpack! I jumped over to my custom webpack config app and checked the version of webpack, which was version 3. We changed the version to 1, migrated webpack’s config to the version 1 syntax, checked the build step—and it broke!&lt;/p&gt;
 &lt;h2&gt;Resolution&lt;/h2&gt;
 &lt;p&gt;Stick with me, dear reader. We&apos;re almost there, I promise!&lt;/p&gt;
 &lt;p&gt;To recap, we had learned two critical pieces of information:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;d3-request&lt;/code&gt; provides a node-based build via package.json’s &lt;code&gt;main&lt;/code&gt; attribute, as well as a few other builds&lt;/li&gt;
-&lt;li&gt;webpack version 1 failed with the &lt;code&gt;import * as d3&lt;/code&gt; statement, whereas webpack version 3 worked&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;d3-request&lt;/code&gt; provides a node-based build via package.json’s &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; attribute, as well as a few other builds&lt;/li&gt;
+&lt;li&gt;webpack version 1 failed with the &lt;code class=&quot;language-text&quot;&gt;import * as d3&lt;/code&gt; statement, whereas webpack version 3 worked&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;With these two things in mind, Harold and I opened the webpack documentation. After some searching, we learned that webpack uses an array of package.json property names to decide how to import a module: it tries the first name in the array, then the second, then the third, etc. The main difference between the versions is the name they give to this array.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;webpack v1 default&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://webpack.github.io/docs/configuration.html#resolve-packagemains&quot;&gt;&lt;code&gt;resolve.packageMains&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;[&quot;webpack&quot;, &quot;browser&quot;, &quot;web&quot;, &quot;browserify&quot;, [&quot;jam&quot;, &quot;main&quot;], &quot;main&quot;]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;webpack v3 default (for &lt;code&gt;target: web&lt;/code&gt;)&lt;/strong&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://webpack.js.org/configuration/resolve/#resolve-mainfields&quot;&gt;&lt;code&gt;resolve.mainFields&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;[&quot;browser&quot;, &quot;module&quot;, &quot;main&quot;]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Of the properties specified by webpack v1, &lt;code&gt;main&lt;/code&gt; is the only one that appears in d3-request’s package.json; thus, webpack v1 was loading the &lt;code&gt;main&lt;/code&gt; build (for node). However, d3-request&apos;s package.json also has a &lt;code&gt;module&lt;/code&gt; property, which webpack v3 includes before &lt;code&gt;main&lt;/code&gt;, meaning that webpack v3 was loading the &lt;code&gt;module&lt;/code&gt; build.&lt;/p&gt;
-&lt;p&gt;Webpack v3’s docs for &lt;a href=&quot;https://webpack.js.org/configuration/resolve/#resolve-mainfields&quot;&gt;&lt;code&gt;resolve.mainFields&lt;/code&gt;&lt;/a&gt; also include a link to webpack’s &lt;a href=&quot;https://webpack.js.org/concepts/targets/&quot;&gt;&lt;code&gt;target&lt;/code&gt;&lt;/a&gt; configuration, which is what makes webpack choose the environment to emulate when building its bundle. By &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/add-custom-webpack-config.md&quot;&gt;hooking into Gatsby’s webpack config&lt;/a&gt; and logging it to the console, we were able to see that &lt;code&gt;target&lt;/code&gt; was set to &lt;code&gt;&apos;web&apos;&lt;/code&gt;, which explained why fs and child_process could not be imported.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://webpack.github.io/docs/configuration.html#resolve-packagemains&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;resolve.packageMains&lt;/code&gt;&lt;/a&gt;: &lt;code class=&quot;language-text&quot;&gt;[&amp;quot;webpack&amp;quot;, &amp;quot;browser&amp;quot;, &amp;quot;web&amp;quot;, &amp;quot;browserify&amp;quot;, [&amp;quot;jam&amp;quot;, &amp;quot;main&amp;quot;], &amp;quot;main&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;webpack v3 default (for &lt;code class=&quot;language-text&quot;&gt;target: web&lt;/code&gt;)&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://webpack.js.org/configuration/resolve/#resolve-mainfields&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;resolve.mainFields&lt;/code&gt;&lt;/a&gt;: &lt;code class=&quot;language-text&quot;&gt;[&amp;quot;browser&amp;quot;, &amp;quot;module&amp;quot;, &amp;quot;main&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Of the properties specified by webpack v1, &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; is the only one that appears in d3-request’s package.json; thus, webpack v1 was loading the &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; build (for node). However, d3-request&apos;s package.json also has a &lt;code class=&quot;language-text&quot;&gt;module&lt;/code&gt; property, which webpack v3 includes before &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt;, meaning that webpack v3 was loading the &lt;code class=&quot;language-text&quot;&gt;module&lt;/code&gt; build.&lt;/p&gt;
+&lt;p&gt;Webpack v3’s docs for &lt;a href=&quot;https://webpack.js.org/configuration/resolve/#resolve-mainfields&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;resolve.mainFields&lt;/code&gt;&lt;/a&gt; also include a link to webpack’s &lt;a href=&quot;https://webpack.js.org/concepts/targets/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;target&lt;/code&gt;&lt;/a&gt; configuration, which is what makes webpack choose the environment to emulate when building its bundle. By &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/add-custom-webpack-config.md&quot;&gt;hooking into Gatsby’s webpack config&lt;/a&gt; and logging it to the console, we were able to see that &lt;code class=&quot;language-text&quot;&gt;target&lt;/code&gt; was set to &lt;code class=&quot;language-text&quot;&gt;&amp;#39;web&amp;#39;&lt;/code&gt;, which explained why fs and child_process could not be imported.&lt;/p&gt;
 &lt;h2&gt;Summary&lt;/h2&gt;
 &lt;p&gt;So, to get back to where we started...&lt;/p&gt;
 &lt;ol&gt;

@@ -1,85 +1,85 @@
 {
   "assetsByChunkName": {
     "path---blog-babel-error-in-jest": [
-      "path---blog-babel-error-in-jest-90feac1c110e20e38675.js",
-      "path---blog-babel-error-in-jest-90feac1c110e20e38675.js.map"
+      "path---blog-babel-error-in-jest-9c2ce15b055ecc8d67fc.js",
+      "path---blog-babel-error-in-jest-9c2ce15b055ecc8d67fc.js.map"
     ],
     "path---blog-lets-define-undefined": [
-      "path---blog-lets-define-undefined-6270af0b4d6178647c73.js",
-      "path---blog-lets-define-undefined-6270af0b4d6178647c73.js.map"
+      "path---blog-lets-define-undefined-00a73a6c3d68f040e3c6.js",
+      "path---blog-lets-define-undefined-00a73a6c3d68f040e3c6.js.map"
     ],
     "path---blog-the-sun-clock-starts-ticking": [
-      "path---blog-the-sun-clock-starts-ticking-21dbfe46403cc4ceeaed.js",
-      "path---blog-the-sun-clock-starts-ticking-21dbfe46403cc4ceeaed.js.map"
+      "path---blog-the-sun-clock-starts-ticking-675c95ff07861427de07.js",
+      "path---blog-the-sun-clock-starts-ticking-675c95ff07861427de07.js.map"
     ],
     "path---projects-georgian-budget": [
-      "path---projects-georgian-budget-dd35c322b565abf226ec.js",
-      "path---projects-georgian-budget-dd35c322b565abf226ec.js.map"
+      "path---projects-georgian-budget-d735e01a6d878558b95e.js",
+      "path---projects-georgian-budget-d735e01a6d878558b95e.js.map"
     ],
     "path---projects-sunclock": [
-      "path---projects-sunclock-54b41ec4274c91ff3a42.js",
-      "path---projects-sunclock-54b41ec4274c91ff3a42.js.map"
+      "path---projects-sunclock-1b6f84c3e03c54b28708.js",
+      "path---projects-sunclock-1b6f84c3e03c54b28708.js.map"
     ],
     "path---blog-squashing-gatsby-webpack-d-3-bug": [
-      "path---blog-squashing-gatsby-webpack-d-3-bug-416672ae84da37bb9647.js",
-      "path---blog-squashing-gatsby-webpack-d-3-bug-416672ae84da37bb9647.js.map"
+      "path---blog-squashing-gatsby-webpack-d-3-bug-f2b1d8c0dd21826ae87c.js",
+      "path---blog-squashing-gatsby-webpack-d-3-bug-f2b1d8c0dd21826ae87c.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-4e820523335a3fa8d132.js",
       "component---src-pages-index-js-4e820523335a3fa8d132.js.map"
     ],
     "path---blog": [
-      "path---blog-fbe308dbe6b5b57938f2.js",
-      "path---blog-fbe308dbe6b5b57938f2.js.map"
+      "path---blog-0d9b6851fb39668fd5ff.js",
+      "path---blog-0d9b6851fb39668fd5ff.js.map"
     ],
     "path---projects-gogocode": [
-      "path---projects-gogocode-c738d6cdc14a2193b17a.js",
-      "path---projects-gogocode-c738d6cdc14a2193b17a.js.map"
+      "path---projects-gogocode-92d7cb0387e5b64ada91.js",
+      "path---projects-gogocode-92d7cb0387e5b64ada91.js.map"
     ],
     "webfontloader": [
       "webfontloader-7e2893ef542a12a5c720.js",
       "webfontloader-7e2893ef542a12a5c720.js.map"
     ],
     "path---projects-scott-shane-net": [
-      "path---projects-scott-shane-net-26d7c8d276937de6a09b.js",
-      "path---projects-scott-shane-net-26d7c8d276937de6a09b.js.map"
+      "path---projects-scott-shane-net-33e3afb983e750cb300f.js",
+      "path---projects-scott-shane-net-33e3afb983e750cb300f.js.map"
     ],
     "path---projects": [
-      "path---projects-af6c9bf05726ba89b16a.js",
-      "path---projects-af6c9bf05726ba89b16a.js.map"
+      "path---projects-4ccf9da7f7045d4e50a6.js",
+      "path---projects-4ccf9da7f7045d4e50a6.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-8fac999e782d62c43ef2.js",
-      "component---src-templates-blog-post-js-8fac999e782d62c43ef2.js.map"
+      "component---src-templates-blog-post-js-fc3a2600801756988f6b.js",
+      "component---src-templates-blog-post-js-fc3a2600801756988f6b.js.map"
     ],
     "component---src-templates-project-js": [
       "component---src-templates-project-js-5ba2de4ba727aaaaf57d.js",
       "component---src-templates-project-js-5ba2de4ba727aaaaf57d.js.map"
     ],
     "path---projects-feradi-info": [
-      "path---projects-feradi-info-b80e5e28f6c07a0e63f2.js",
-      "path---projects-feradi-info-b80e5e28f6c07a0e63f2.js.map"
+      "path---projects-feradi-info-348ebadd89ebe8484ef5.js",
+      "path---projects-feradi-info-348ebadd89ebe8484ef5.js.map"
     ],
     "path---index": [
-      "path---index-1db04e5021b40904aca6.js",
-      "path---index-1db04e5021b40904aca6.js.map"
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-blog-index-js": [
       "component---src-pages-blog-index-js-8f91dfb167481c625613.js",
       "component---src-pages-blog-index-js-8f91dfb167481c625613.js.map"
     ],
     "path---projects-place-ge-scraper": [
-      "path---projects-place-ge-scraper-0df42623f8d4ae9e0ddf.js",
-      "path---projects-place-ge-scraper-0df42623f8d4ae9e0ddf.js.map"
+      "path---projects-place-ge-scraper-b39c6c6e5f1c982adf6a.js",
+      "path---projects-place-ge-scraper-b39c6c6e5f1c982adf6a.js.map"
     ],
     "component---src-pages-resume-js": [
       "component---src-pages-resume-js-8833cd57daf47dafde08.js",
       "component---src-pages-resume-js-8833cd57daf47dafde08.js.map"
     ],
     "commons": [
-      "commons-9b9e2378c6c1ce2dd80d.js",
+      "commons-a449aec6ab82f43091d6.js",
       "build-js-styles.css",
-      "commons-9b9e2378c6c1ce2dd80d.js.map",
+      "commons-a449aec6ab82f43091d6.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-projects-index-js": [
@@ -87,24 +87,28 @@
       "component---src-pages-projects-index-js-ab733981d04e3b461300.js.map"
     ],
     "path---projects-prisoners-watch": [
-      "path---projects-prisoners-watch-2ca8833ec81a216d20c1.js",
-      "path---projects-prisoners-watch-2ca8833ec81a216d20c1.js.map"
+      "path---projects-prisoners-watch-4943c8393669a982a8e5.js",
+      "path---projects-prisoners-watch-4943c8393669a982a8e5.js.map"
     ],
     "path---resume": [
-      "path---resume-1db04e5021b40904aca6.js",
-      "path---resume-1db04e5021b40904aca6.js.map"
+      "path---resume-a0e39f21c11f6a62c5ab.js",
+      "path---resume-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-3f33fa9d4696362e344f.js",
-      "app-3f33fa9d4696362e344f.js.map"
+      "app-4f39ff8badc620053990.js",
+      "app-4f39ff8badc620053990.js.map"
+    ],
+    "path---blog-drafts-how-to-code-review": [
+      "path---blog-drafts-how-to-code-review-799f070bfda67bc79215.js",
+      "path---blog-drafts-how-to-code-review-799f070bfda67bc79215.js.map"
     ],
     "path---blog-why-im-starting-a-blog": [
-      "path---blog-why-im-starting-a-blog-4aa4f7e5cdf00afd9dc2.js",
-      "path---blog-why-im-starting-a-blog-4aa4f7e5cdf00afd9dc2.js.map"
+      "path---blog-why-im-starting-a-blog-72cfae20f873df875ecc.js",
+      "path---blog-why-im-starting-a-blog-72cfae20f873df875ecc.js.map"
     ],
     "path---projects-atoms": [
-      "path---projects-atoms-7e487cce70b265208130.js",
-      "path---projects-atoms-7e487cce70b265208130.js.map"
+      "path---projects-atoms-d7164f504ada23e50baa.js",
+      "path---projects-atoms-d7164f504ada23e50baa.js.map"
     ]
   }
 }
