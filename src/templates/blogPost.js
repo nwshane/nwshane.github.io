@@ -56,6 +56,10 @@ const MainContent = styled.main`
     font-size: 0.75em;
     vertical-align: top;
   }
+
+  .task-list-item {
+    list-style-type: none;
+  }
 `
 
 const BlogPost = ({ data }) => {
