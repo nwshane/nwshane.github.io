@@ -43,6 +43,17 @@ const MainContent = styled.main`
       font-size: 3rem;
     }
   }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  a[href*="footnote"] {
+    font-size: 0.75em;
+    vertical-align: top;
+  }
 `
 
 const BlogPost = ({data}) => {
