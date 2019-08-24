@@ -1,10 +1,11 @@
 ---
 slug: how-to-code-review
-title: Code Review!
-date: "2019-08-24T14:00:00.000Z"
+title: An informal guide to code review
+date: '2019-08-24T14:00:00.000Z'
+draft: true
 ---
 
-When I started at Flocabulary at the beginning of last year, I began reviewing other people's code frequently for the first time, and I realized quickly that code review is really tricky! I recently decided that I wanted to make code review a little less intimidating for new engineers on my team, so I wrote a code review guide. I figured some of the ideas here might be useful to a broader audience, so I've adapted the guide into this blog post.
+I began reviewing other people's code frequently for the first time at the beginning of last year, and I realized quickly that code review is really tricky! I recently decided that I wanted to make code review a little less intimidating for new engineers on my team, so I wrote a code review guide. I figured some of the ideas here might be useful to a broader audience, so I've adapted the guide into this blog post.
 
 To start, here are some reasons I believe code review is absolutely fabulous:
 

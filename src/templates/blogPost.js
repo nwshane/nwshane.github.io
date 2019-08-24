@@ -59,6 +59,11 @@ const MainContent = styled.main`
 
   .task-list-item {
     list-style-type: none;
+    margin-left: -23px;
+  }
+
+  .task-list-item input[type='checkbox'] {
+    margin-right: 3px;
   }
 `
 
