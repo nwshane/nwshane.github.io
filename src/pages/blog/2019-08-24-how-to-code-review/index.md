@@ -1,20 +1,22 @@
 ---
-slug: how-to-code-review
+slug: an-informal-guide-to-code-review
 title: An informal guide to code review
 date: '2019-08-24T14:00:00.000Z'
-draft: true
 ---
 
-I began reviewing other people's code frequently for the first time at the beginning of last year, and I realized quickly that code review is really tricky! I recently decided that I wanted to make code review a little less intimidating for new engineers on my team, so I wrote a code review guide. I figured some of the ideas here might be useful to a broader audience, so I've adapted the guide into this blog post.
+When I began my job at Flocabulary at the beginning of last year, I found few of my tasks as simultaneously difficult and rewarding as code review. Since then, I've learned a lot from reviewing multiple pull requests every week, and from having my own work reviewed extensively as well. I recently decided to record the best practices I've identified, both in order to align our team around them and to make code review a little less intimidating for new engineers. I figured some of the ideas in the doc I wrote might be interesting to a broader audience, so I've adapted it into this informal guide.
 
 To start, here are some reasons I believe code review is absolutely fabulous:
 
-⭐️ prevents bugs from reaching production
+⭐️ catches bugs before they reach users
+
 ⭐️ improves code quality
-⭐️ helps each of us stay in sync with other engineers
+
+⭐️ helps us stay in sync with fellow engineers
+
 ⭐️ a great opportunity to learn new coding skills
 
-Reviewing code is difficult to do well, just like it's difficult to edit someone's essay. But it's also a learnable skill! Just keep trying, and remember to be compassionate not just with the engineer who wrote the code, but the engineer who's staring at it right now and trying to make sense of it. (Psst — that's you!)
+Reviewing code is difficult to do well, just like it's difficult to edit someone's essay. But it's also a learnable skill! Just keep trying, and remember to be compassionate not just with the engineer who wrote the code, but the engineer who's staring at it and trying to make sense of it right now. (Psst — that's you!)
 
 ### 🗒️ Quick overview of how to review code
 
