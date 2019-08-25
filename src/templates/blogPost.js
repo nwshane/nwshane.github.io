@@ -69,6 +69,10 @@ const MainContent = styled.main`
   .task-list-item input[type='checkbox'] {
     margin-right: 3px;
   }
+
+  hr {
+    margin: 30px 0;
+  }
 `
 
 const BlogPost = ({ data }) => {
