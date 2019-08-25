@@ -4,11 +4,13 @@ title: An informal guide to code review
 date: '2019-08-24T14:00:00.000Z'
 ---
 
-When I began my job at Flocabulary at the beginning of last year, I found few of my tasks as simultaneously difficult and rewarding as code review. Since then, I've learned a lot from reviewing multiple pull requests every week, and from having my own work reviewed extensively as well. I recently decided to identify some best practices in the way I try to review other people's code, because I wanted to align our team around some core practices, make code review a little less intimidating for new engineers, and (maybe a little selfishly!) to solidify my own understanding of how I like to review code.
+When I began my job at [Flocabulary](https://www.flocabulary.com) at the beginning of last year, I found few of my tasks as simultaneously difficult and rewarding as code review. Since then, I've learned a lot from reviewing multiple pull requests every week, and from having my own work reviewed extensively as well. I recently decided to identify some best practices in the way I try to review other people's code, because I wanted to align our team around core practices, make code review less intimidating for new engineers, and (maybe a little selfishly 😉) solidify my own understanding of how I want to review code.
 
-I figured some of the ideas in the doc I wrote might be interesting to a broader audience, so I've adapted it into this informal guide.
+I figured some of the ideas in the doc I wrote might be interesting to a broader audience, so I've adapted it into this informal guide. I hope it's helpful for you!
 
-To start, here are some reasons I believe code review is absolutely fabulous:
+<hr />
+
+To start, why is it even worth doing code review? Here are a few reasons I believe code review is absolutely _fabulous_:
 
 ⭐️ catches bugs before they reach users
 
