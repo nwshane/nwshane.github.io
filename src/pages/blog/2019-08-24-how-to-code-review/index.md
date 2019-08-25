@@ -20,7 +20,7 @@ To start, why is it even worth doing code review? Here are a few reasons I belie
 
 ⭐️ a great opportunity to learn new coding skills
 
-Reviewing code is difficult to do well, just like it's difficult to edit someone's essay. But it's also a learnable skill! Just keep trying, and remember to be compassionate not just with the engineer who wrote the code, but the engineer who's staring at it and trying to make sense of it right now. (Psst — that's you!)
+Reviewing code is difficult to do well, just like it's difficult to edit someone's essay. But it's also a learnable skill! Just keep trying, and remember to be compassionate not just with the engineer who wrote the code, but the engineer who's staring at it and trying to make sense of it right now. _(Psst — that's you!)_
 
 ### 🗒️ Quick overview of how to review code
 

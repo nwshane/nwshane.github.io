@@ -61,13 +61,19 @@ const MainContent = styled.main`
     vertical-align: top;
   }
 
+  /* checklist items. Examples:
+   - [ ] buy soy milk
+   - [ ] eat cashewgurt
+   */
   .task-list-item {
     list-style-type: none;
     margin-left: -23px;
-  }
 
-  .task-list-item input[type='checkbox'] {
-    margin-right: 3px;
+    & input[type='checkbox'] {
+      margin-right: 3px;
+      position: relative;
+      top: -2px;
+    }
   }
 
   hr {
