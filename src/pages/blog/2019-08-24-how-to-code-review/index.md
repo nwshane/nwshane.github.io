@@ -4,7 +4,9 @@ title: An informal guide to code review
 date: '2019-08-24T14:00:00.000Z'
 ---
 
-When I began my job at Flocabulary at the beginning of last year, I found few of my tasks as simultaneously difficult and rewarding as code review. Since then, I've learned a lot from reviewing multiple pull requests every week, and from having my own work reviewed extensively as well. I recently decided to record the best practices I've identified, both in order to align our team around them and to make code review a little less intimidating for new engineers. I figured some of the ideas in the doc I wrote might be interesting to a broader audience, so I've adapted it into this informal guide.
+When I began my job at Flocabulary at the beginning of last year, I found few of my tasks as simultaneously difficult and rewarding as code review. Since then, I've learned a lot from reviewing multiple pull requests every week, and from having my own work reviewed extensively as well. I recently decided to identify some best practices in the way I try to review other people's code, because I wanted to align our team around some core practices, make code review a little less intimidating for new engineers, and (maybe a little selfishly!) to solidify my own understanding of how I like to review code.
+
+I figured some of the ideas in the doc I wrote might be interesting to a broader audience, so I've adapted it into this informal guide.
 
 To start, here are some reasons I believe code review is absolutely fabulous:
 
@@ -32,7 +34,7 @@ Reviewing code is difficult to do well, just like it's difficult to edit someone
 
 ### 🔬Specific aspects of code to check for
 
-- [ ] Sufficient automated tests
+- [ ] Sufficient automated tests (unit, integration, and feature)
 - [ ] Good enough performance
 - [ ] Expose the smallest public API possible
 - [ ] Externalize configuration (e.g. use constants)
@@ -42,7 +44,7 @@ Reviewing code is difficult to do well, just like it's difficult to edit someone
 
 ## Tips & best practices
 
-Here are some tips and best practices on how to go about reviewing code. Many of these will sound obvious, but they're easy to forget! If one of these speaks to you in particular, try to keep it in mind the next time you review someone's code.
+Here are some tips and best practices on how to go about reviewing code. Many of these will sound obvious, but they're easy to forget! If one of these speaks to you in particular, try to keep it in mind the next few times you review someone's code, and eventually it will become a habit.
 
 ### 🧠 Understand what you're reviewing
 
