@@ -29,8 +29,8 @@
       "component---src-pages-index-js-4e820523335a3fa8d132.js.map"
     ],
     "path---blog": [
-      "path---blog-0d9b6851fb39668fd5ff.js",
-      "path---blog-0d9b6851fb39668fd5ff.js.map"
+      "path---blog-c5488e324a823b27fdf5.js",
+      "path---blog-c5488e324a823b27fdf5.js.map"
     ],
     "path---projects-gogocode": [
       "path---projects-gogocode-92d7cb0387e5b64ada91.js",
@@ -49,12 +49,16 @@
       "path---projects-4ccf9da7f7045d4e50a6.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-fc3a2600801756988f6b.js",
-      "component---src-templates-blog-post-js-fc3a2600801756988f6b.js.map"
+      "component---src-templates-blog-post-js-54272c8a86c9a2c9b63c.js",
+      "component---src-templates-blog-post-js-54272c8a86c9a2c9b63c.js.map"
     ],
     "component---src-templates-project-js": [
       "component---src-templates-project-js-5ba2de4ba727aaaaf57d.js",
       "component---src-templates-project-js-5ba2de4ba727aaaaf57d.js.map"
+    ],
+    "path---blog-an-informal-guide-to-code-review": [
+      "path---blog-an-informal-guide-to-code-review-7a98ea8b74fb86c22067.js",
+      "path---blog-an-informal-guide-to-code-review-7a98ea8b74fb86c22067.js.map"
     ],
     "path---projects-feradi-info": [
       "path---projects-feradi-info-348ebadd89ebe8484ef5.js",
@@ -65,8 +69,8 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-blog-index-js": [
-      "component---src-pages-blog-index-js-8f91dfb167481c625613.js",
-      "component---src-pages-blog-index-js-8f91dfb167481c625613.js.map"
+      "component---src-pages-blog-index-js-cf248f971a23aca23590.js",
+      "component---src-pages-blog-index-js-cf248f971a23aca23590.js.map"
     ],
     "path---projects-place-ge-scraper": [
       "path---projects-place-ge-scraper-b39c6c6e5f1c982adf6a.js",
@@ -95,12 +99,8 @@
       "path---resume-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-4f39ff8badc620053990.js",
-      "app-4f39ff8badc620053990.js.map"
-    ],
-    "path---blog-drafts-how-to-code-review": [
-      "path---blog-drafts-how-to-code-review-799f070bfda67bc79215.js",
-      "path---blog-drafts-how-to-code-review-799f070bfda67bc79215.js.map"
+      "app-17ca2661fcd4a7f71a07.js",
+      "app-17ca2661fcd4a7f71a07.js.map"
     ],
     "path---blog-why-im-starting-a-blog": [
       "path---blog-why-im-starting-a-blog-72cfae20f873df875ecc.js",
