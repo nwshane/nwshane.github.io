@@ -28,7 +28,7 @@ const MainContent = styled.main`
 
   ol,
   ul {
-    margin: 40px 0;
+    margin: 35px 0;
   }
 
   ol li,
@@ -37,13 +37,17 @@ const MainContent = styled.main`
   }
 
   h2 {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 30px;
     font-size: 2.5rem;
 
     @media (min-width: 600px) {
       font-size: 3rem;
     }
+  }
+
+  h3 {
+    margin-top: 70px;
   }
 
   img {
