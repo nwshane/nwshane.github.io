@@ -2,24 +2,30 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+const Main = styled.main`
+  @media (min-width: 768px) {
+    max-width: 80%;
+  }
+`
+
 const Greeting = styled.p`
-  font-size: calc(2.6rem + 4vw);
+  font-size: calc(2.2rem + 4vw);
   font-family: 'Patua One', sans-serif;
-  margin-top: 1.9em;
+  margin-top: calc(2.2em - 3vw);
   margin-bottom: 1.1em;
   margin-left: auto;
   margin-right: auto;
 `
 
 const IntroP = styled.p`
-  font-size: calc(1.2rem + 2vw);
+  font-size: calc(1.3rem + 1.6vw);
   line-height: 1.35em;
   margin-left: auto;
   margin-right: auto;
 `
 
 const IntroText = () => (
-  <main>
+  <Main>
     <Greeting>Hi, I'm Nathan.</Greeting>
     <IntroP>
       I'm a software engineer, musician, and meditator on a journey to help
@@ -33,7 +39,7 @@ const IntroText = () => (
       </a>
       .
     </IntroP>
-  </main>
+  </Main>
 )
 
 export default IntroText
