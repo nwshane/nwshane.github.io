@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Header from './Header'
-import styled, {injectGlobal} from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 import 'normalize.css'
 import packageJson from '~/package.json'
 import gatsbyConfig from '~/gatsby-config'
 import Helmet from 'react-helmet'
-import {primaryColor, secondaryColor} from '~/src/styles'
+import { primaryColor, secondaryColor } from '~/src/styles'
 import '~/assets/prism.css'
 
 injectGlobal`
@@ -33,7 +33,7 @@ const Wrapper = styled.div`
   padding: 0 20px;
   font-size: 2rem;
   color: #514d54;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
 
   p {
     line-height: 1.5;
@@ -72,19 +72,22 @@ const loadWebFonts = () => {
 }
 
 export default class Layout extends Component {
-  componentDidMount () {
+  componentDidMount() {
     loadWebFonts()
   }
 
-  render () {
+  render() {
     return (
       <Wrapper>
         <StyledHeader />
         <Helmet
           meta={[
-            {property: 'og:site_name', content: gatsbyConfig.siteMetadata.title},
-            {property: 'og:description', content: packageJson.description},
-            {property: 'og:type', content: 'website'}
+            {
+              property: 'og:site_name',
+              content: gatsbyConfig.siteMetadata.title
+            },
+            { property: 'og:description', content: packageJson.description },
+            { property: 'og:type', content: 'website' }
           ]}
         />
         <ContentWrapper
