@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Greeting = styled.p`
   font-size: calc(2.6rem + 4vw);
-  font-family: "Patua One",sans-serif;
+  font-family: 'Patua One', sans-serif;
   margin-top: 1.9em;
   margin-bottom: 1.1em;
   margin-left: auto;
@@ -20,14 +20,18 @@ const IntroP = styled.p`
 
 const IntroText = () => (
   <main>
-    <Greeting>
-      Hi, I'm Nathan.
-    </Greeting>
+    <Greeting>Hi, I'm Nathan.</Greeting>
     <IntroP>
-      I like to build things on the world wide web. I also enjoy cooking, singing, and meditating.
+      I'm a software engineer, musician, and meditator on a journey to help
+      people heal through a deeper understanding of mind, body, and heart.
     </IntroP>
     <IntroP>
-      Check out my <Link to='/projects'>work</Link>, <Link to='/blog'>writing</Link>, <Link target='_blank' to='/resume'>resume</Link>, or <a target='_blank' href='https://github.com/nwshane'>Github profile</a>, and don't hesitate to <a target='_blank' href='mailto:nathanwshane@gmail.com'>get in touch</a>.
+      Check out my <Link to="/projects">work</Link> and{' '}
+      <Link to="/blog">writing</Link>, and don't hesitate to{' '}
+      <a target="_blank" href="mailto:nathanwshane@gmail.com">
+        get in touch
+      </a>
+      .
     </IntroP>
   </main>
 )
